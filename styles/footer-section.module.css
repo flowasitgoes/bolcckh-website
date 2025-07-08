@@ -1,0 +1,56 @@
+/* 桌機預設：多欄橫向排列 */
+.footerNav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+.footerNavCol {
+  min-width: 120px;
+}
+.footerNavTitle {
+  color: #fb923c;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+.footerNavList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footerNavList li {
+  margin-bottom: 0.5rem;
+}
+.footerNavList a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footerNavList a:hover {
+  color: #fb923c;
+}
+
+/* ====== Mobile 覆蓋 ====== */
+@media (max-width: 767px) {
+  .footerNav {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .footerNavCol {
+    min-width: 0;
+    text-align: center;
+  }
+  .footerNavTitle {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .footerNavList li {
+    margin-bottom: 0.8rem;
+  }
+  .footerTitle {
+    text-align: center;
+  }
+} 
+

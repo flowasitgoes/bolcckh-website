@@ -1,0 +1,80 @@
+/* 主要內容區塊（桌機預設） */
+.serviceContent {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.serviceItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  padding: 2.5rem 0.5rem;
+  border-radius: 0;
+  transition: background 0.3s;
+}
+
+.serviceIcon {
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+/* 右側社交欄位（桌機預設） */
+.serviceSocial {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+}
+.serviceSocialImg {
+  width: 5rem;
+}
+
+/* mobile 版社交欄位（桌機預設隱藏） */
+.serviceSocialMobile {
+  display: none;
+}
+
+/* ====== Mobile 覆蓋 ====== */
+@media (max-width: 767px) {
+  .serviceContent {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  .serviceItem {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  .serviceIcon {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+  .serviceSocial {
+    display: none;
+  }
+  .serviceSocialMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .serviceSocialMobile img {
+    width: 200px;
+    align-self: center;
+  }
+} 
