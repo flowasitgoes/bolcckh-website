@@ -17,11 +17,11 @@ export default function Home() {
       <main>
         <HeroSection />
         <ServicesSection />
-        <NewsSection />
+        {/* <NewsSection /> */}
         <TestimonialSection />
         {/* <ArchiveSection />
         <OnlineChannelSection /> */}
-        <FindUsSection />
+        {/* <FindUsSection /> */}
       </main>
       {/* <Footer /> */}
     </div>
