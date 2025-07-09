@@ -10,7 +10,7 @@ export function ArchiveSection() {
     //       <div className="aspect-square lg:aspect-video overflow-hidden rounded-lg order-2 lg:order-1">
     //         <img src="/placeholder.svg?height=400&width=600" alt="Archive" className="w-full h-full object-cover" />
     //       </div>
-    //       <div className="bg-orange-500 text-white p-8 lg:p-12 rounded-lg order-1 lg:order-2">
+    //       <div className="bg-orange-theme text-white p-8 lg:p-12 rounded-lg order-1 lg:order-2">
     //         <h2 className="text-sm lg:text-base mb-2 opacity-90">歷年專案</h2>
     //         <h3 className="text-3xl lg:text-4xl font-bold mb-4">
     //           Archive

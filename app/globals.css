@@ -92,3 +92,11 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.text-orange-footer {
+  color: #fe7f44;
+}
+
+.bg-orange-theme {
+  background-color: #fe7f44 !important;
+}

@@ -4,16 +4,15 @@ import footerStyles from '@/styles/footer-section.module.css'
 
 export function Footer() {
   return (
-    <footer className="bg-[#23413C] text-white pt-12 pb-0">
+    <footer className="bg-[#1e3737] text-white pt-12 pb-0">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex flex-col lg:flex-row justify-between gap-12">
+        <div className={footerStyles.footerNavWrapper + " flex flex-col lg:flex-row justify-between gap-12"}>
           {/* 左側 LOGO、Email、社群icon */}
-          <div className="flex-1 min-w-[260px] flex flex-col items-center lg:items-start">
+          <div className="flex-1 min-w-[320px] flex flex-col items-center lg:items-start">
             <div className="flex items-center mb-6">
               {/* <img src="/logo.png" alt="BOLCCKH" className="h-12 mr-4" /> */}
               <div>
-                <div className={footerStyles.footerTitle + " font-bold text-3xl tracking-widest"}>BOLCCKH</div>
-                <div className="text-sm text-gray-200 mt-1">Bread of Life Christian Church in Kaohsiung</div>
+                <img src="/footer-logo.png" alt="BOLCCKH" />
               </div>
             </div>
             {/* Email 訂閱欄 */}
@@ -24,21 +23,21 @@ export function Footer() {
                 className="flex-1 px-4 py-3 text-gray-800 outline-none bg-white"
               />
               <button type="submit" className="bg-teal-500 hover:bg-teal-600 text-white px-4 flex items-center justify-center">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M12 5l7 7-7 7" /></svg>
+                <img src="/footer-link-btn.png" alt="Submit" className="w-6 h-6" />
               </button>
             </form>
             {/* 社群icon */}
             <div className="flex space-x-6 mb-8 lg:mb-0">
-              <a href="#" className="bg-orange-500 rounded-full w-10 h-10 flex items-center justify-center hover:bg-orange-600 transition">
+              <a href="#" className="bg-orange-theme rounded-full w-10 h-10 flex items-center justify-center hover:bg-orange-600 transition">
                 <SiLine className="w-5 h-5 text-white" />
               </a>
-              <a href="#" className="bg-orange-500 rounded-full w-10 h-10 flex items-center justify-center hover:bg-orange-600 transition">
+              <a href="#" className="bg-orange-theme rounded-full w-10 h-10 flex items-center justify-center hover:bg-orange-600 transition">
                 <Facebook className="w-5 h-5 text-white" />
               </a>
-              <a href="#" className="bg-orange-500 rounded-full w-10 h-10 flex items-center justify-center hover:bg-orange-600 transition">
+              <a href="#" className="bg-orange-theme rounded-full w-10 h-10 flex items-center justify-center hover:bg-orange-600 transition">
                 <Instagram className="w-5 h-5 text-white" />
               </a>
-              {/* <a href="#" className="bg-orange-500 rounded-full w-10 h-10 flex items-center justify-center hover:bg-orange-600 transition">
+              {/* <a href="#" className="bg-orange-theme rounded-full w-10 h-10 flex items-center justify-center hover:bg-orange-600 transition">
                 <img src="/icon-thread.svg" alt="Thread" className="w-5 h-5" />
               </a> */}
             </div>
@@ -49,11 +48,11 @@ export function Footer() {
             {/* Contact 區塊 */}
             <div className={footerStyles.footerNavCol}>
               <div className="font-bold text-lg mb-4">Contact</div>
-              <div className="mb-2 text-orange-400">聯絡電話</div>
+              <div className="mb-2 text-orange-footer">聯絡電話</div>
               <div className="mb-2">07-3456868</div>
-              <div className="mb-2 text-orange-400">免付費電話</div>
+              <div className="mb-2 text-orange-footer">免付費電話</div>
               <div className="mb-2">0800-000-830</div>
-              <div className="mb-2 text-orange-400">傳真</div>
+              <div className="mb-2 text-orange-footer">傳真</div>
               <div className="mb-2">07-3456527</div>
               <div className="mt-4 text-sm text-gray-200">高雄市左營區文川路157號</div>
             </div>
@@ -101,8 +100,8 @@ export function Footer() {
         </div>
       </div>
       {/* 版權宣告 */}
-      <div className="bg-[#223C36] py-6 mt-12">
-        <div className="text-center text-gray-200 text-base tracking-wide">
+      <div className="bg-[#172d2d] py-6 mt-12">
+        <div className={footerStyles.footerCopyright + " text-center text-gray-200 text-base tracking-wide"}>
           Copyright 2025 Bread of Life Christian in Kaohsiung. All rights reserved.
         </div>
       </div>

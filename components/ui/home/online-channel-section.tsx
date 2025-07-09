@@ -7,7 +7,7 @@ export function OnlineChannelSection() {
     // <section className="py-16 lg:py-24">
     //   <div className="container mx-auto px-4">
     //     <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-    //       <div className="bg-orange-500 text-white p-8 lg:p-12 rounded-lg">
+    //       <div className="bg-orange-theme text-white p-8 lg:p-12 rounded-lg">
     //         <h2 className="text-sm lg:text-base mb-2 opacity-90">線上頻道</h2>
     //         <h3 className="text-3xl lg:text-4xl font-bold mb-4">
     //           Online

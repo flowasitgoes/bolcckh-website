@@ -27,8 +27,7 @@ export function Header() {
           <div className="flex items-center space-x-4">
             {/* <img src="/logo.png" alt="BOLCCKH" className="h-12 w-auto" /> */}
             <div className="flex flex-col justify-center">
-              <span className="font-bold text-3xl tracking-widest text-gray-900 leading-tight">BOLCCKH</span>
-              <span className="text-xs text-gray-500 tracking-wide mt-1">Bread of Life Christian Church in Kaohsiung</span>
+              <img src="/header-logo.png" alt="BOLCCKH" className="h-16 header-log-img" />
             </div>
           </div>
 
@@ -37,15 +36,15 @@ export function Header() {
             {navItems.map((item, idx) => (
               <div
                 key={item.en}
-                className={`flex flex-col items-center px-6 h-full justify-center border-r border-gray-200 last:border-r-0 group ${idx === activeIndex ? 'text-orange-500' : 'text-gray-800'}`}
+                className={`flex flex-col items-center px-6 h-full justify-center border-r border-gray-200 last:border-r-0 group ${idx === activeIndex ? 'text-orange-theme' : 'text-gray-800'}`}
               >
-                <span className={`text-base font-bold mb-1 group-hover:text-orange-500 ${idx === activeIndex ? 'text-orange-500' : ''}`}>{item.zh}</span>
-                <span className={`text-sm text-orange-500 font-medium group-hover:underline group-hover:text-orange-600`}>{item.en}</span>
+                <span className={`text-base font-bold mb-1 group-hover:text-orange-theme ${idx === activeIndex ? 'text-orange-theme' : ''}`}>{item.zh}</span>
+                <span className={`text-sm text-orange-theme font-medium group-hover:underline group-hover:text-orange-600`}>{item.en}</span>
               </div>
             ))}
             {/* User icon */}
             <div className="flex items-center pl-6">
-              <Button variant="ghost" size="icon" className="bg-orange-500 hover:bg-orange-600 text-white rounded-full w-10 h-10">
+              <Button variant="ghost" size="icon" className="bg-orange-theme hover:bg-orange-600 text-white rounded-full w-10 h-10">
                 <User className="h-6 w-6" />
               </Button>
             </div>
@@ -65,15 +64,15 @@ export function Header() {
                 <a
                   key={item.en}
                   href={item.href}
-                  className="block text-gray-700 hover:text-orange-500 transition-colors duration-200"
+                  className="block text-gray-700 hover:text-orange-theme transition-colors duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   <div className="font-bold">{item.zh}</div>
-                  <div className="text-orange-500 text-sm">{item.en}</div>
+                  <div className="text-orange-theme text-sm">{item.en}</div>
                 </a>
               ))}
               <div className="flex items-center space-x-4 pt-4 border-t">
-                <Button variant="ghost" size="icon" className="bg-orange-500 hover:bg-orange-600 text-white rounded-full w-10 h-10">
+                <Button variant="ghost" size="icon" className="bg-orange-theme hover:bg-orange-600 text-white rounded-full w-10 h-10">
                   <User className="h-6 w-6" />
                 </Button>
               </div>

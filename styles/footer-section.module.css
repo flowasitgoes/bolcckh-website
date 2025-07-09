@@ -5,8 +5,11 @@
   gap: 2rem;
   width: 100%;
 }
+
+
 .footerNavCol {
   min-width: 120px;
+  margin-bottom: 36px;
 }
 .footerNavTitle {
   color: #fb923c;
@@ -18,6 +21,9 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 .footerNavList li {
   margin-bottom: 0.5rem;
@@ -34,23 +40,39 @@
 /* ====== Mobile 覆蓋 ====== */
 @media (max-width: 767px) {
   .footerNav {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .footerNavWrapper {
+    gap: 1rem !important;
   }
   .footerNavCol {
     min-width: 0;
     text-align: center;
   }
+  .footerNavCol:first-child {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
   .footerNavTitle {
     text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  .footerNavList {
+    flex-direction: column;
+    gap: 0.4rem;
+    align-items: center;
   }
   .footerNavList li {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.4rem;
   }
   .footerTitle {
     text-align: center;
   }
+  .footerCopyright {
+    font-size: 12px;
+  }
+
 } 
 

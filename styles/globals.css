@@ -92,3 +92,44 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.text-orange-footer {
+  color: #fe7f44;
+}
+
+
+.text-orange-theme {
+  color: #fe7f44;
+}
+
+.bg-orange-theme {
+  background-color: #fe7f44 !important;
+}
+
+.bg-teal-theme {
+  background-color: #14b8a6 !important;
+}
+
+.testimonial-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  text-align: left;
+  max-width: 600px;
+  text-align: left;
+  .more-button {
+    margin: 0;
+    padding: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .header-log-img {
+    height: 3.5rem;
+    padding-left: 26px;
+    box-sizing: border-box;
+  }
+} 
+
