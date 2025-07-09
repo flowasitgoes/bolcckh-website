@@ -1,0 +1,40 @@
+/* about-hero.module.css */
+
+.overlayLeft {
+  position: absolute;
+  left: 120px;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  min-width: 240px;
+  max-width: 700px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.about-welcome-container {
+  width: 100%;
+  height: 100%;
+}
+
+.about-welcome-left {
+  width: 50%;
+  padding: 180px 120px;
+}
+
+.about-welcome-right {
+  width: 50%;
+}
+
+.about-welcome-description {
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+@media (max-width: 768px) {
+  .overlayLeft {
+    width: 70%;
+    min-width: 120px;
+    max-width: 100vw;
+  }
+} 

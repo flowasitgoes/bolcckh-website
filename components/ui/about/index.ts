@@ -1,4 +1,7 @@
-// 这里可以导出 about 页面相关的组件
-// export { AboutHero } from './about-hero'
-// export { TeamSection } from './team-section'
-// export { MissionSection } from './mission-section' 
+export { AboutHero } from './about-hero'
+export { AboutWelcome } from './about-welcome'
+export { AboutVision } from './about-vision'
+export { AboutMission } from './about-mission'
+export { AboutCross } from './about-cross'
+export { AboutWorship } from './about-worship'
+export { AboutSchedule } from './about-schedule' 
