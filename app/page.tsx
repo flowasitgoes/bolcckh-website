@@ -13,17 +13,17 @@ import { Footer } from "@/components/footer"
 export default function Home() {
   return (
     <div className="min-h-screen">
-      {/* <Header /> */}
+      <Header />
       <main>
         <HeroSection />
         <ServicesSection />
-        {/* <NewsSection /> */}
+        <NewsSection />
         <TestimonialSection />
-        {/* <ArchiveSection />
-        <OnlineChannelSection /> */}
-        {/* <FindUsSection /> */}
+        <ArchiveSection />
+        <OnlineChannelSection /> 
+        <FindUsSection />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }
