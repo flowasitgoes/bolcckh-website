@@ -17,11 +17,10 @@ export default function AboutPage() {
       <main>
         <AboutHero />
         <AboutWelcome />
-        {/* <AboutVision />
+        <AboutVision />
         <AboutMission />
         <AboutCross />
-        <AboutWorship />
-        <AboutSchedule /> */}
+        <AboutSchedule /> 
       </main>
       <Footer />
     </div>

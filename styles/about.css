@@ -37,4 +37,24 @@
     min-width: 120px;
     max-width: 100vw;
   }
+  .about-welcome-left {
+    width: 100%;
+    padding: 60px 60px;
+  }
+  
+  .about-welcome-right {
+    width: 100%;
+    height: 360px;
+  }
+
+  .mission-container {
+    padding: 30px 40px;
+    background-color: #ff8552;
+  }
+
+  .cross-container {
+    padding: 30px 40px;
+    background-color: #0b9a97;
+  }
+  
 } 

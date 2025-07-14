@@ -8,7 +8,7 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navItems = [
-    { zh: "關於教會", en: "About", href: "#about" },
+    { zh: "關於教會", en: "About", href: "/about" },
     { zh: "教會生活", en: "Church", href: "#church" },
     { zh: "宣教使命", en: "Mission", href: "#mission" },
     { zh: "教會消息", en: "News", href: "#news" },

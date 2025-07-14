@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export function AboutWorship() {
   return (
-    <section className="bg-[#21867a] py-12 flex justify-center items-center">
+    <section className="bg-[#21867a] py-24 flex justify-center items-center">
       <div className="bg-white rounded-xl shadow-lg px-6 py-8 max-w-xl w-full text-center">
         <div className="text-lg md:text-xl font-bold mb-2">崇拜介紹</div>
         <div className="text-base md:text-lg leading-relaxed">
