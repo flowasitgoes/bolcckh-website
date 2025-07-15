@@ -50,7 +50,7 @@ function TimelineItem({ img, year, desc, reverse, idx }: { img: string, year: st
   const alignItems = isEven ? '' : 'items-end'
   
   return (
-    <div className={`flex w-full items-center mb-16 ${reverse ? 'flex-row' : 'flex-row-reverse'}`}>
+    <div className={`about-history-item-wrapper flex w-full items-center mb-16 ${reverse ? 'flex-row' : 'flex-row-reverse'}`}>
       <div className="w-1/2 flex justify-center">
         <Image src={`/about/A-2/${img}`} alt={`歷史事件${idx+1}`} width={320} height={200} className="object-cover" />
       </div>
@@ -71,19 +71,19 @@ function TimelineItem({ img, year, desc, reverse, idx }: { img: string, year: st
 
 export default function AboutHistoryPage() {
   return (
-    <div className="min-h-screen bg-white pb-20 flex flex-col">
+    <div className="about-history-container min-h-screen bg-white pb-20 flex flex-col">
       <Header />
       <main className="flex-1">
         {/* 頁首大圖 */}
-        <div className="w-full h-64 relative" style={{ height: '40rem' }}>
+        <div className="about-history-photo-banner w-full h-64 relative">
           <Image src="/about/A-2/Ａ2-topB.png" alt="about history banner" fill className="object-cover object-center" />
         </div>
         {/* 標題區 */}
-        <div className="max-w-3xl mx-auto text-center py-12">
-          <div className="text-2xl md:text-4xl font-bold mb-2 text-[#21807a]">我們的歷史<br /><span className="text-lg md:text-2xl text-gray-700 font-normal">Our History</span></div>
+        <div className=" max-w-3xl mx-auto text-center py-12">
+          <div className="text-2xl md:text-4xl font-bold mb-2 text-[#21807a]">我們的簡史<br /><span className="text-lg md:text-2xl text-gray-700 font-normal">Our History</span></div>
         </div>
         {/* 垂直時間軸 */}
-        <div className="relative max-w-4xl mx-auto">
+        <div className="history-image-box relative max-w-4xl mx-auto">
           {/* 中央細線 */}
           <div className="timeline-line absolute left-1/2 top-0 bottom-0 w-0.5 -translate-x-1/2 z-0" />
           <div className="relative z-10">

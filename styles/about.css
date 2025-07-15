@@ -42,6 +42,9 @@
 .items-end {
   align-items: flex-end !important;
 }
+.about-history-photo-banner {
+  height: 40rem;
+}
 
 .history-item-wrapper {
   display: flex;
@@ -100,5 +103,28 @@
     padding: 30px 40px;
     background-color: #0b9a97;
   }
+  .about-history-container {
   
+  }
+  .about-history-photo-banner {
+    height: 14rem;
+  }
+  .history-item-wrapper {
+    font-size: 12px;
+  }
+  .history-image-box {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .history-item-date {
+    font-size: 12px;
+    width: 100%;
+  }
+  .history-item-line-wrapper {
+    display: none;
+  }
+  .about-history-container {
+    padding-bottom: 0;
+  }
+
 } 
