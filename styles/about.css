@@ -78,6 +78,18 @@
   align-items: flex-start;
 }
 
+.team-members-section {
+  width: 75%;
+  margin: 12px auto;
+  margin-bottom: 80px;
+  background-color: #ff8552;
+  padding: 30px 12px;
+}
+
+.member-image-wrapper {
+  height: 336px;
+}
+
 @media (max-width: 768px) {
   .overlayLeft {
     width: 70%;
@@ -126,5 +138,17 @@
   .about-history-container {
     padding-bottom: 0;
   }
-
+  .member-image-wrapper {
+    height: 254px;
+  }
+  .team-members-section {
+    margin-bottom: 40px;
+  }
+  .our-team-department-label {
+    padding-bottom: 12px;
+  }
+  .our-team-department-nav {
+    font-size: 14px;
+    gap: 12px;
+  }
 } 
