@@ -31,11 +31,11 @@ export function FindUsSection({ compact = false, showButton = true, className = 
           </div>
 
           {showButton && (
-            <div className="text-center mt-12">
-              <Button className="bg-orange-theme hover:bg-orange-600 text-white w-[260px] h-14 text-lg font-bold rounded-none">
-                更多交通資訊　→
-              </Button>
-            </div>
+          <div className="text-center mt-12">
+            <Button className="bg-orange-theme hover:bg-orange-600 text-white w-[260px] h-14 text-lg font-bold rounded-none">
+              更多交通資訊　→
+            </Button>
+          </div>
           )}
         </div>
       </div>

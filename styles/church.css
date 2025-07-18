@@ -1,0 +1,44 @@
+.equip-banner-container {
+  height: 778px;
+}
+
+.bible-quote-wrapper {
+  padding: 120px 60px;
+  min-width: 480px;
+}
+
+.bible-quote-container {
+  min-width: 680px;
+  border-radius: 28px;
+}
+
+@media (max-width: 768px) {
+  .church-hero-banner {
+    height: 240px;
+  }
+  .church-panel-title {
+    font-size: 14px;
+  }
+  .church-panel-content {
+    font-size: 12px;
+  }
+  .equip-banner-container {
+    height: 320px;
+  }
+  .equip-banner-container-outer {
+    padding: 0;
+  }
+  .bible-quote-wrapper {
+    padding: 30px;
+    min-width: 120px;
+    margin: 0;
+    font-size: 12px;
+  }
+  .bible-quote-container {
+    min-width: 120px;
+    font-size: 12px;
+  }
+  .bible-quote-container p {
+    font-size: 18px;
+  }
+}
