@@ -16,6 +16,29 @@
   border-radius: 28px;
 }
 
+.group-panels-section{
+  padding: 120px;
+}
+
+.group-panel-item {
+  min-height: 200px;
+  max-width: 640px;
+}
+
+.meeting-guidelines-section-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.meeting-guidelines-container {
+  align-items: center;
+  margin: 0 auto;
+}
+
+
 @media (max-width: 768px) {
   .church-hero-banner {
     height: 240px;

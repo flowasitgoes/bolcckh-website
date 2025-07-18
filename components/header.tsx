@@ -17,9 +17,11 @@ export function Header() {
     ] },
     { zh: "教會生活", en: "Church", href: "/church", children: [
       { zh: "教會生活", href: "/church" },
-      { zh: "小組資訊", href: "/church-groups" },
-      { zh: "裝備課程", href: "/church-equip" },
-      { zh: "門徒訓練", href: "/church-discipleship" },
+      { zh: "聚會資訊", href: "/church-groups" },
+      { zh: "牧區族群", href: "/church-department" },
+      { zh: "事工介紹與呼召", href: "/church-calling" },
+      { zh: "牧養裝備", href: "/church-equip" },
+      { zh: "門訓建造", href: "/church-discipleship" },
     ] },
     { zh: "宣教使命", en: "Mission", href: "#mission", children: [
       { zh: "生命見證", href: "#testimony" },
