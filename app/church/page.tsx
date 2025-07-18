@@ -1,7 +1,37 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
+
+export const metadata: Metadata = {
+  title: '教會生活 | 高雄靈糧堂 - 牧養裝備、事工介紹、牧區族群',
+  description: '探索高雄靈糧堂的教會生活，包括牧養裝備、事工介紹與呼召、牧區族群、聚會資訊等，一起在基督裡成長。',
+  keywords: '高雄靈糧堂, 教會生活, 牧養裝備, 事工介紹, 牧區族群, 聚會資訊, 基督教, 信仰生活',
+  
+  // Open Graph (社群分享)
+  openGraph: {
+    title: '教會生活 | 高雄靈糧堂 - 牧養裝備、事工介紹、牧區族群',
+    description: '探索高雄靈糧堂的教會生活，包括牧養裝備、事工介紹與呼召、牧區族群、聚會資訊等，一起在基督裡成長。',
+    url: 'https://conflux-tech.com/church',
+    images: [
+      {
+        url: 'https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png',
+        width: 1200,
+        height: 630,
+        alt: '高雄靈糧堂教會生活',
+      },
+    ],
+  },
+  
+  // Twitter Card
+  twitter: {
+    card: 'summary_large_image',
+    title: '教會生活 | 高雄靈糧堂 - 牧養裝備、事工介紹、牧區族群',
+    description: '探索高雄靈糧堂的教會生活，包括牧養裝備、事工介紹與呼召、牧區族群、聚會資訊等，一起在基督裡成長。',
+    images: ['https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png'],
+  },
+}
 
 // 四面板資料
 const churchPanels = [

@@ -1,7 +1,37 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
+
+export const metadata: Metadata = {
+  title: '小組聚會 | 高雄靈糧堂 - 聚會時間、禱告時段、參加小組',
+  description: '查看高雄靈糧堂小組聚會資訊，包括本週小組聚會資料、聚會時間、禱告時段、參加小組聚會等詳細資訊。',
+  keywords: '高雄靈糧堂, 小組聚會, 聚會時間, 禱告時段, 小組生活, 教會聚會, 基督教小組',
+  
+  // Open Graph (社群分享)
+  openGraph: {
+    title: '小組聚會 | 高雄靈糧堂 - 聚會時間、禱告時段、參加小組',
+    description: '查看高雄靈糧堂小組聚會資訊，包括本週小組聚會資料、聚會時間、禱告時段、參加小組聚會等詳細資訊。',
+    url: 'https://conflux-tech.com/church-groups',
+    images: [
+      {
+        url: 'https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png',
+        width: 1200,
+        height: 630,
+        alt: '高雄靈糧堂小組聚會',
+      },
+    ],
+  },
+  
+  // Twitter Card
+  twitter: {
+    card: 'summary_large_image',
+    title: '小組聚會 | 高雄靈糧堂 - 聚會時間、禱告時段、參加小組',
+    description: '查看高雄靈糧堂小組聚會資訊，包括本週小組聚會資料、聚會時間、禱告時段、參加小組聚會等詳細資訊。',
+    images: ['https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png'],
+  },
+}
 
 // 四個內容面板資料
 const groupPanels = [

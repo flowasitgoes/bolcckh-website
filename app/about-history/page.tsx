@@ -1,6 +1,36 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
+
+export const metadata: Metadata = {
+  title: '教會簡史 | 高雄靈糧堂 - 從1989年至今的成長歷程',
+  description: '了解高雄靈糧堂從1989年成立至今的發展歷程，從鼓山區民泰街到左營區文川路的成長故事，見證神的恩典與帶領。',
+  keywords: '高雄靈糧堂, 教會歷史, 教會簡史, 1989年, 左營區, 文川路, 教會發展, 基督教歷史',
+  
+  // Open Graph (社群分享)
+  openGraph: {
+    title: '教會簡史 | 高雄靈糧堂 - 從1989年至今的成長歷程',
+    description: '了解高雄靈糧堂從1989年成立至今的發展歷程，從鼓山區民泰街到左營區文川路的成長故事，見證神的恩典與帶領。',
+    url: 'https://conflux-tech.com/about-history',
+    images: [
+      {
+        url: 'https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png',
+        width: 1200,
+        height: 630,
+        alt: '高雄靈糧堂教會簡史',
+      },
+    ],
+  },
+  
+  // Twitter Card
+  twitter: {
+    card: 'summary_large_image',
+    title: '教會簡史 | 高雄靈糧堂 - 從1989年至今的成長歷程',
+    description: '了解高雄靈糧堂從1989年成立至今的發展歷程，從鼓山區民泰街到左營區文川路的成長故事，見證神的恩典與帶領。',
+    images: ['https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png'],
+  },
+}
 
 const events = [
   { year: '1989/09月', desc: '於鼓山區民泰街成立高雄禮拜堂' },
