@@ -90,6 +90,42 @@
   height: 336px;
 }
 
+.contact-hero-banner {
+  height: 640px;
+}
+
+.contact-info-section-wrapper {
+  background-color: #ff8552;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+}
+.contact-info-section-title  {
+  background-color: white;
+  padding-bottom: 60px;
+}
+
+
+.contact-info-card-wrapper {
+  padding: 60px 180px 120px 180px; 
+}
+
+.contact-info-card-wrapper,
+.contact-info-card-wrapper-item {
+  background-color: #ff8552;
+}
+
+.schedule-column-title {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #21807a;
+}
+
+.schedule-column {
+  border: 1px solid #21807a;
+  padding: 18px 12px;
+}
+
+
 @media (max-width: 768px) {
   .overlayLeft {
     width: 70%;
@@ -148,7 +184,27 @@
     padding-bottom: 12px;
   }
   .our-team-department-nav {
-    font-size: 14px;
-    gap: 12px;
+  font-size: 14px;
+  gap: 12px;
   }
-} 
+  .contact-info-section {
+    padding-bottom: 0;
+  }
+  .contact-info-card-wrapper {
+    margin-bottom: 20px ;
+  }
+}
+
+/* About Contact Page - Find Us Section Custom Styles */
+
+.about-contact-find-us-section .container {
+  /* 調整容器樣式 */
+}
+
+.about-contact-find-us-section h2 {
+  /* 調整標題樣式 */
+}
+
+.about-contact-find-us-section iframe {
+  /* 調整地圖/影片樣式 */
+}

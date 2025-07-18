@@ -12,7 +12,7 @@ export function Header() {
     { zh: "關於教會", en: "About", href: "/about", children: [
       { zh: "關於教會", href: "/about" },
       { zh: "過去與現在", href: "/about-history" },
-      { zh: "全職團隊", href: "/about-team" },
+      { zh: "全職團隊", href: "/about-our-team" },
       { zh: "聯絡我們", href: "/about-contact" },
     ] },
     { zh: "教會生活", en: "Church", href: "#church", children: [

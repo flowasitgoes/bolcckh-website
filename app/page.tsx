@@ -19,8 +19,8 @@ export default function Home() {
         <ServicesSection />
         <NewsSection />
         <TestimonialSection />
-        <ArchiveSection />
-        <OnlineChannelSection /> 
+        {/* <ArchiveSection /> */}
+        {/* <OnlineChannelSection />  */}
         <FindUsSection />
       </main>
       <Footer />
