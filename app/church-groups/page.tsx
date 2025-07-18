@@ -125,8 +125,8 @@ export default function ChurchGroupsPage() {
         {/* 聚會注意事項 */}
         <section className="meeting-guidelines-section bg-orange-500">
           <div className="meeting-guidelines-section-container max-w-4xl mx-auto px-4 md:px-0 py-16">
-            <div className="text-right mb-12">
-              <h2 className="text-2xl font-bold text-white mb-2">聚會注意事項</h2>
+            <div className="mb-12">
+              <h2 className="text-center text-2xl font-bold text-white mb-2">聚會注意事項</h2>
               <p className="text-2xl font-bold text-gray-800">Meeting Guidelines</p>
             </div>
             
