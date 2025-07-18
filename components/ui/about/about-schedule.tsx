@@ -10,7 +10,7 @@ export function AboutSchedule() {
           <div className="text-white text-2xl md:text-3xl font-bold font-handwriting">聚會時間</div>
         </div>
       </div>
-      <div className="flex-1 bg-[#ff8552] text-white flex flex-col justify-center p-8 md:p-20" style={{ paddingTop: '100px', paddingBottom: '100px' }}>
+      <div className="flex-1 bg-[#fe7f4c] text-white flex flex-col justify-center p-8 md:p-20" style={{ paddingTop: '100px', paddingBottom: '100px' }}>
         <div className="text-lg md:text-xl font-bold mb-4">國語聚會</div>
         <div className="mb-2">每週日 8:30am、10:30am（崇拜中心主禮堂）1F/2F同步</div>
         <div className="text-lg md:text-xl font-bold mt-6 mb-4">台語聚會</div>

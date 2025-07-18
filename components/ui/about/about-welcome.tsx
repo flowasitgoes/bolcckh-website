@@ -3,7 +3,7 @@ import Image from 'next/image'
 export function AboutWelcome() {
   return (
     <section className="about-welcome-container flex flex-col md:flex-row w-full">
-      <div className="about-welcome-left flex-1 bg-[#ff8552] text-white flex flex-col justify-center p-8 md:p-12">
+      <div className="about-welcome-left flex-1 bg-[#fe7f4c] text-white flex flex-col justify-center p-8 md:p-12">
         <div className="text-lg md:text-2xl mb-2">高雄靈糧堂，歡迎你們回家。</div>
         <div className="text-3xl md:text-5xl font-bold mb-6 text-black">Welcome home!</div>
         <div className="about-welcome-description text-lg md:text-2xl leading-relaxed">

@@ -1,6 +1,6 @@
 export function AboutMission() {
   return (
-    <section className="mission-container bg-[#ff8552] py-24 flex justify-center items-center">
+    <section className="mission-container bg-[#fe7f4c] py-24 flex justify-center items-center">
       <div className="bg-white rounded-xl shadow-lg px-16 py-24 mt-12 mb-12 max-w-xl w-full text-center">
         <div className="text-2xl md:text-3xl font-bold text-center mb-2">我們的命定</div>
         <div className="w-36 h-1 bg-[#21807a] mx-auto mb-6" />

@@ -9,7 +9,7 @@ const churchPanels = [
     title: '牧養裝備',
     subtitle: 'Pastoral care equipment',
     href: '/church-equip',
-    bgColor: 'bg-orange-500',
+    bgColor: 'bg-[#fe7f4c]',
     image: '/church/B1/B01-06.png'
   },
   {
@@ -30,15 +30,15 @@ const churchPanels = [
     title: '聚會資訊',
     subtitle: 'Gathering information',
     href: '/church-gathering',
-    bgColor: 'bg-orange-500',
+    bgColor: 'bg-[#fe7f4c]',
     image: '/church/B1/B01-06.png'
   }
 ]
 
 function ChurchPanel({ panel }: { panel: typeof churchPanels[0] }) {
   // 根據背景色決定文字顏色
-  const isOrangeBg = panel.bgColor === 'bg-orange-500'
-  const textColor = isOrangeBg ? 'text-gray-800' : 'text-orange-500'
+  const isOrangeBg = panel.bgColor === 'bg-[#fe7f4c]'
+  const textColor = isOrangeBg ? 'text-gray-800' : 'text-[#fe7f4c]'
   
   return (
     <Link href={panel.href} className="block">
@@ -105,7 +105,7 @@ export default function ChurchPage() {
         </section>
 
         {/* 聖經經文引用 */}
-        <section className="bible-quote-section bg-orange-500">
+        <section className="bible-quote-section bg-[#fe7f4c]">
           <div className="bible-quote-wrapper max-w-4xl mx-auto text-center px-4 md:px-0">
             <div className="bible-quote-container bg-white p-12 shadow-lg">
               <blockquote className="text-gray-800 text-xl leading-relaxed mb-6">
