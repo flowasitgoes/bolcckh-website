@@ -67,17 +67,27 @@ const departments = [
 ]
 
 function DepartmentPanel({ department }: { department: typeof departments[0] }) {
+  // 根據牧區名稱決定連結
+  const getHref = (title: string) => {
+    if (title === '台語牧區') {
+      return '/church-department-taiwanese-language'
+    }
+    return '/church-department'
+  }
+
   return (
-    <div className="department-panel aspect-square relative overflow-hidden group cursor-pointer">
-      <Image 
-        src={department.image} 
-        alt={department.title}
-        fill
-        className="object-cover object-center transition-transform duration-300 group-hover:scale-105"
-      />
-      <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-center">
+    <a href={getHref(department.title)} className="block">
+      <div className="department-panel aspect-square relative overflow-hidden group cursor-pointer">
+        <Image 
+          src={department.image} 
+          alt={department.title}
+          fill
+          className="object-cover object-center transition-transform duration-300 group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-center">
+        </div>
       </div>
-    </div>
+    </a>
   )
 }
 
