@@ -54,11 +54,11 @@ export default function ChurchDepartmentTaiwaneseLanguagePage() {
             />
           </div>
           {/* Right side - Orange background with text */}
-          <div className="dt-right-side-section w-full md:w-1/2 h-48 md:h-full bg-orange-500 flex flex-col justify-center items-center text-white p-4 md:p-8">
-            <div className="text-center">
+          <div className="dt-right-side-section w-full md:w-1/2 h-48 md:h-full bg-[#fe7f4c] flex flex-col justify-center items-center text-white p-4 md:p-8">
+            <div className="text-left">
               <h1 className="text-xl md:text-2xl font-bold mb-2">台語牧區 林麗華傳道</h1>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{color: '#172d2d'}}>Welcome!</h2>
-              <div className="w-12 md:w-16 h-0.5 bg-white mx-auto mb-4"></div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{color: '#172d2d', borderBottom: '1px solid #FFF', paddingBottom: '10px'}}>Welcome!</h2>
+              {/* <div className="w-12 md:w-16 h-0.5 bg-white mx-auto mb-4"></div> */}
               <p className="text-base md:text-lg mb-4">台語牧區主日崇拜時段</p>
               <div className="bg-[#21807a] px-4 md:px-6 py-2 md:py-3 rounded">
                 <p className="text-lg md:text-xl font-semibold">每週四早上 10:00 - 4F 恩惠廳</p>
