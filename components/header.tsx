@@ -37,7 +37,7 @@ export function Header() {
     { zh: "支持奉獻", en: "Offering", href: "#offering", children: [
       { zh: "支持奉獻", href: "/offering" },
       { zh: "會員中心", href: "/offering-member" },
-      { zh: "部門介紹", href: "/offering-department" },
+      { zh: "奉獻資訊", href: "/offering-info" },
     ] },
     { zh: "部門介紹", en: "Department", href: "#department", children: [
       { zh: "會員中心", href: "#member" },

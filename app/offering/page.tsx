@@ -71,7 +71,7 @@ export default function OfferingPage() {
                   已有會員帳號，請登入進行奉獻
                 </p>
                 <a 
-                  href="/offering/member-login"
+                  href="/offering-member"
                   className="block w-full bg-[#21807a] text-white text-center py-3 px-6 rounded-lg hover:bg-[#1a6b66] transition-colors duration-300 font-semibold"
                 >
                   會員登入

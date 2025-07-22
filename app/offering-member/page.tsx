@@ -114,9 +114,9 @@ export default function OfferingMemberPage() {
                       <input type="checkbox" className="rounded border-gray-300 text-[#21807a] focus:ring-[#21807a]" />
                       <span className="ml-2 text-sm text-gray-600">記住我</span>
                     </label>
-                    <a href="#" className="text-sm text-[#21807a] hover:underline">
-                      忘記密碼？
-                    </a>
+                                               {/* <a href="/offering/forgot-password" className="text-sm text-[#21807a] hover:underline">
+                             忘記密碼？
+                           </a> */}
                   </div>
                   
                   <button 
