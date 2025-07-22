@@ -1,0 +1,30 @@
+.line-image-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    button {
+        img {
+        width: 40%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .line-image-wrap {
+        padding-top: 30px;
+    }
+    buttom {
+        img {
+            height: 100%
+        }
+    }
+}
