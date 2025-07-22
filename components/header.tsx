@@ -36,7 +36,6 @@ export function Header() {
     ] },
     { zh: "支持奉獻", en: "Offering", href: "#offering", children: [
       { zh: "支持奉獻", href: "/offering" },
-      { zh: "會員中心", href: "/offering-member" },
       { zh: "奉獻資訊", href: "/offering-info" },
     ] },
     { zh: "部門介紹", en: "Department", href: "#department", children: [
@@ -86,8 +85,13 @@ export function Header() {
               </div>
             ))}
             {/* User icon */}
-            <div className="flex items-center pl-6">
-              <Button variant="ghost" size="icon" className="bg-orange-theme hover:bg-orange-600 text-white rounded-full w-10 h-10">
+            <div className="member-center flex items-center pl-6">
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="bg-orange-theme hover:bg-orange-600 text-white rounded-full w-10 h-10"
+                onClick={() => window.location.href = '/member-center'}
+              >
                 <User className="h-6 w-6" />
               </Button>
             </div>
@@ -100,55 +104,80 @@ export function Header() {
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 right-0 bg-white border-t shadow-lg">
-            <nav className="px-4 py-4 space-y-4">
-              {navItems.map((item, idx) => (
-                item.children ? (
-                  <div key={item.en}>
-                    <button
-                      className="w-full flex justify-between items-center font-bold text-gray-700 hover:text-orange-theme transition-colors duration-200 focus:outline-none"
-                      onClick={() => setOpenMenuIndex(openMenuIndex === idx ? -1 : idx)}
-                      aria-expanded={openMenuIndex === idx}
-                    >
-                      <span>{item.zh}</span>
-                      <span className={`transform transition-transform ${openMenuIndex === idx ? 'rotate-90' : ''}`}>▶</span>
-                    </button>
-                    {openMenuIndex === idx && (
-                      <ul className="pl-4 mt-2 space-y-2 border-l-2 border-orange-theme">
-                        {item.children.map((child) => (
-                          <li key={child.href}>
-                            <a
-                              href={child.href}
-                              className="block text-gray-700 hover:text-orange-theme py-1 px-2 rounded"
-                            >
-                              {child.zh}
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
-                ) : (
-                  <a
-                    key={item.en}
-                    href={item.href}
-                    className="block text-gray-700 hover:text-orange-theme transition-colors duration-200 font-bold"
-                    onClick={() => setIsMenuOpen(false)}
+        <div className={`lg:hidden absolute top-full left-0 right-0 bg-white border-t shadow-lg transition-all duration-300 ease-in-out transform ${
+          isMenuOpen 
+            ? 'opacity-100 translate-y-0' 
+            : 'opacity-0 -translate-y-4 pointer-events-none'
+        }`}>
+          <nav className="px-4 py-4 space-y-4">
+            {navItems.map((item, idx) => (
+              item.children ? (
+                <div key={item.en}>
+                  <button
+                    className="w-full flex justify-between items-center font-bold text-gray-700 hover:text-orange-theme transition-colors duration-200 focus:outline-none"
+                    onClick={() => setOpenMenuIndex(openMenuIndex === idx ? -1 : idx)}
+                    aria-expanded={openMenuIndex === idx}
                   >
-                    <div>{item.zh}</div>
-                    <div className="text-orange-theme text-sm">{item.en}</div>
-                  </a>
-                )
-              ))}
-              <div className="flex items-center space-x-4 pt-4 border-t">
-                <Button variant="ghost" size="icon" className="bg-orange-theme hover:bg-orange-600 text-white rounded-full w-10 h-10">
-                  <User className="h-6 w-6" />
-                </Button>
-              </div>
-            </nav>
-          </div>
-        )}
+                    <span>{item.zh}</span>
+                    <span className={`transform transition-transform duration-200 ${openMenuIndex === idx ? 'rotate-90' : ''}`}>▶</span>
+                  </button>
+                  <div className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                    openMenuIndex === idx ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                  }`}>
+                    <ul className="pl-4 mt-2 space-y-2 border-l-2 border-orange-theme">
+                      {item.children.map((child, childIdx) => (
+                                                 <li key={child.href} className={`transform transition-all duration-300 ease-out ${
+                           openMenuIndex === idx 
+                             ? 'translate-x-0 opacity-100' 
+                             : 'translate-x-4 opacity-0'
+                         }`} style={{ transitionDelay: `${childIdx * 80}ms` }}>
+                          <a
+                            href={child.href}
+                            className="block text-gray-700 hover:text-orange-theme py-1 px-2 rounded transition-colors duration-200"
+                          >
+                            {child.zh}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ) : (
+                <a
+                  key={item.en}
+                  href={item.href}
+                  className={`block text-gray-700 hover:text-orange-theme transition-all duration-200 font-bold transform ${
+                    isMenuOpen 
+                      ? 'translate-x-0 opacity-100' 
+                      : 'translate-x-4 opacity-0'
+                  }`} 
+                  style={{ transitionDelay: `${idx * 50}ms` }}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <div>{item.zh}</div>
+                  <div className="text-orange-theme text-sm">{item.en}</div>
+                </a>
+              )
+            ))}
+            <div className={`flex items-center space-x-4 pt-4 border-t transform transition-all duration-200 ${
+              isMenuOpen 
+                ? 'translate-x-0 opacity-100' 
+                : 'translate-x-4 opacity-0'
+            }`} style={{ transitionDelay: '300ms' }}>
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="bg-orange-theme hover:bg-orange-600 text-white rounded-full w-10 h-10"
+                onClick={() => {
+                  window.location.href = '/member-center'
+                  setIsMenuOpen(false)
+                }}
+              >
+                <User className="h-6 w-6" />
+              </Button>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
   )

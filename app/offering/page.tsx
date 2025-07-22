@@ -71,7 +71,7 @@ export default function OfferingPage() {
                   已有會員帳號，請登入進行奉獻
                 </p>
                 <a 
-                  href="/offering-member"
+                  href="/member-center/login"
                   className="block w-full bg-[#21807a] text-white text-center py-3 px-6 rounded-lg hover:bg-[#1a6b66] transition-colors duration-300 font-semibold"
                 >
                   會員登入
@@ -87,7 +87,7 @@ export default function OfferingPage() {
                   還沒有會員帳號？立即註冊
                 </p>
                 <a 
-                  href="/offering/register"
+                  href="/member-center/register"
                   className="block w-full bg-[#21807a] text-white text-center py-3 px-6 rounded-lg hover:bg-[#1a6b66] transition-colors duration-300 font-semibold"
                 >
                   立即註冊

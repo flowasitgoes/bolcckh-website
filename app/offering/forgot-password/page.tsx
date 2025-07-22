@@ -150,13 +150,13 @@ export default function ForgotPasswordPage() {
               <div className="mt-6 text-center space-y-2">
                 <p className="text-sm text-gray-600">
                   記起密碼了？
-                  <a href="/offering-member" className="text-[#21807a] hover:underline font-semibold">
+                  <a href="/member-center/login" className="text-[#21807a] hover:underline font-semibold">
                     立即登入
                   </a>
                 </p>
                 <p className="text-sm text-gray-600">
                   還沒有帳號？
-                  <a href="/offering/register" className="text-[#21807a] hover:underline font-semibold">
+                  <a href="/member-center/register" className="text-[#21807a] hover:underline font-semibold">
                     立即註冊
                   </a>
                 </p>

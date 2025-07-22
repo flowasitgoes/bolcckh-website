@@ -159,7 +159,7 @@ export default function OfferingInquiryPage() {
               {/* <div className="mt-6 text-center space-y-2">
                 <p className="text-sm text-gray-600">
                   您是會友嗎？
-                  <a href="/offering-member" className="text-[#21807a] hover:underline font-semibold">
+                  <a href="/member-center/login" className="text-[#21807a] hover:underline font-semibold">
                     立即登入會員中心
                   </a>
                 </p>
