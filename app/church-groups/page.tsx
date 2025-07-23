@@ -102,7 +102,7 @@ function GroupPanel({ panel }: { panel: typeof groupPanels[0] }) {
       {!panel.image && (
         <div className="relative z-10">
           <h3 className="text-3xl font-bold text-center mb-2">{panel.title}</h3>
-          <p className="text-lg text-center opacity-90">{panel.subtitle}</p>
+      <p className="text-lg text-center opacity-90">{panel.subtitle}</p>
         </div>
       )}
     </div>

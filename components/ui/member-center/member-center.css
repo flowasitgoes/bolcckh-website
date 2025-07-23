@@ -1,3 +1,4 @@
+/* 會員中心主要容器樣式 */
 .line-image-wrap {
     width: 100%;
     display: flex;
@@ -35,6 +36,33 @@
     margin: 0 auto;
 }
 
+.member-center-register {
+    /* 註冊表單容器樣式 */
+}
+
+.member-center-register-box {
+    /* 註冊表單內部容器樣式 */
+}
+
+/* 表單輸入框通用樣式 */
+.member-center-login input,
+.member-center-register input {
+  /* 輸入框基礎樣式 */
+}
+
+/* 按鈕通用樣式 */
+.member-center-login button,
+.member-center-register button {
+  /* 按鈕基礎樣式 */
+}
+
+/* 響應式設計 */
+@media (max-width: 1024px) {
+    .member-center-login-box {
+        /* 平板設備樣式 */
+    }
+}
+
 @media (max-width: 768px) {
     .line-image-wrap {
         padding-top: 30px;
@@ -45,8 +73,20 @@
     }
     
     .member-center-login-box {
-        width: 100%;
-        margin: 0 auto;
+        width: initial;
+        margin: initial;
         padding: 0 20px;
-    }   
-}
+    }
+    
+    .member-center-login {
+        padding: 30px;
+    }
+
+    .member-center-register {
+        /* 手機設備註冊樣式 */
+    }
+    
+    .member-center-register-box {
+        /* 手機設備註冊內部容器樣式 */
+    }
+} 

@@ -65,13 +65,13 @@ export default function MemberLoginPage() {
             {/* Back to Member Center Button */}
             <div className="mb-8 text-center">
               <a 
-                href="/member-center"
+                href="/offering"
                 className="inline-flex items-center text-white hover:text-white/80 transition-colors duration-200 font-semibold"
               >
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                 </svg>
-                回到會員中心
+                返回奉獻主頁
               </a>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
