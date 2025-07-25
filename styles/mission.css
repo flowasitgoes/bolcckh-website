@@ -1,0 +1,63 @@
+.article-content-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 5rem;
+}
+
+.article-image-wrapper {
+  width: 100%;
+}
+
+/* Mission页面响应式布局 */
+.mission-layout {
+  display: flex;
+}
+
+.mission-sidebar {
+  width: 320px;
+  min-height: 100vh;
+}
+
+.mission-content {
+  flex: 1;
+}
+
+/* 手机版本 - 768px以下 */
+@media (max-width: 768px) {
+  .mission-layout {
+    flex-direction: column;
+  }
+  
+  .mission-sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+  
+  .mission-content {
+    width: 100%;
+  }
+  
+  .mission-breadcrumb {
+    padding: 1.5rem !important;
+  }
+  
+  .article-content-wrapper {
+    padding: 1.5rem !important;
+    max-width: 100%;
+  }
+}
+
+/* 平板版本 - 768px到1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .mission-sidebar {
+    width: 280px;
+  }
+  
+  .mission-breadcrumb {
+    padding: 2rem !important;
+  }
+  
+  .article-content-wrapper {
+    padding: 3rem !important;
+  }
+}

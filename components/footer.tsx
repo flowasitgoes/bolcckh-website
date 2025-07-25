@@ -79,7 +79,7 @@ export function Footer() {
               <div className={footerStyles.footerNavTitle}>宣教使命</div>
               <ul className={footerStyles.footerNavList}>
                 <li><a href="#">生命見證</a></li>
-                <li><a href="#">南島凱凱走</a></li>
+                <li><a href="#">南島趴趴走</a></li>
               </ul>
             </div>
             <div className={footerStyles.footerNavCol}>

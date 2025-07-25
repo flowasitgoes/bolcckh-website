@@ -26,7 +26,6 @@ export function Header() {
     { zh: "宣教使命", en: "Mission", href: "#mission", children: [
       { zh: "宣教使命", href: "/mission" },
       { zh: "生命見證", href: "/mission-testimony" },
-      { zh: "南島凱凱走", href: "/mission-island" },
     ] },
     { zh: "教會消息", en: "News", href: "#news", children: [
       { zh: "主日直播", href: "#sunday-live" },
