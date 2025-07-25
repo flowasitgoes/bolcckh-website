@@ -8,7 +8,7 @@ import {
   MissionLifeTestimony,
   MissionImageGrid
 } from '@/components/ui/mission'
-import '../../styles/mission.css'
+import '@/styles/mission.css'
 
 export const metadata: Metadata = {
   title: '宣教使命 | 高雄靈糧堂 - 生命見證與主崇信息',

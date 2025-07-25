@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import './member-center.css'
+import '@/styles/member-center.css'
 
 interface MemberLoginProps {
   onSwitchToRegister: () => void

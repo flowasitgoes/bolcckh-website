@@ -1,6 +1,6 @@
 'use client'
 
-import './member-center.css'
+import '@/styles/member-center.css'
 
 interface MemberRegisterProps {
   onSwitchToLogin: () => void

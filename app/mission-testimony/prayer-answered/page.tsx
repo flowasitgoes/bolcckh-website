@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import Link from 'next/link'
-import '../../../styles/mission.css'
+import '@/styles/mission.css'
 
 export const metadata: Metadata = {
   title: '禱告蒙應允 | 高雄靈糧堂 - 神的作為何等美好',

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import Image from 'next/image'
-import '../../styles/offering.css'
+import '@/styles/offering.css'
 
 export const metadata: Metadata = {
   title: '奉獻查詢 | 高雄靈糧堂 - 奉獻紀錄查詢服務',
