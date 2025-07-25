@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 export function MissionImageGrid() {
   const testimonies = [
     {
@@ -24,13 +22,11 @@ export function MissionImageGrid() {
     <section className="mission-image-grid">
       <div className="flex w-full">
         {testimonies.map((testimony, index) => (
-          <div key={index} className="w-1/4 relative">
-            <Image
+          <div key={index} className="w-1/4">
+            <img
               src={testimony.image}
               alt={testimony.alt}
-              width={400}
-              height={400}
-              className="w-full h-full object-cover"
+              className="w-full h-auto object-cover"
             />
           </div>
         ))}

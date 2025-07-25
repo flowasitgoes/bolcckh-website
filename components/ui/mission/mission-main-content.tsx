@@ -1,11 +1,9 @@
-import Image from 'next/image'
-
 export function MissionMainContent() {
   return (
-    <section className="mission-main-content flex h-96 md:h-[500px] lg:h-[600px]">
+    <section className="mission-main-content">
       {/* Left Block */}
       <div className="w-1/2 flex flex-col">
-        {/* Bottom Text Area - Orange background */}
+        {/* Text Area - Orange background */}
         <div className="h-full bg-[#fe7f4c] flex items-center justify-center p-6 md:p-8">
           <div className="text-white text-center max-w-sm">
             <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-4" style={{borderBottom: '1px solid #FFF', paddingBottom: '10px'}}>
@@ -21,13 +19,12 @@ export function MissionMainContent() {
         </div>
       </div>
       
-      {/* Right Block - Blurred book image */}
-      <div className="w-1/2 relative">
-        <Image
+      {/* Right Block - Book image */}
+      <div className="w-1/2">
+        <img
           src="/mission/C1/C1-02.png"
           alt="模糊的書本圖片"
-          fill
-          className="object-cover"
+          className="w-full h-full object-cover"
         />
       </div>
     </section>

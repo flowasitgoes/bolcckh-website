@@ -1,16 +1,12 @@
-import Image from 'next/image'
-
 export function MissionHero() {
   return (
-    <section className="mission-hero relative h-96 md:h-[500px] lg:h-[600px] flex">
+    <section className="mission-hero">
       {/* Left Side - Person reading on pier */}
-      <div className="w-1/2 relative">
-        <Image
+      <div className="w-1/2">
+        <img
           src="/mission/C1/C1-01.png"
           alt="人在碼頭看書"
-          fill
-          className="object-cover"
-          priority
+          className="w-full h-full object-cover"
         />
       </div>
       

@@ -22,8 +22,24 @@
   flex: 1;
 }
 
+/* Mission主页面基础样式 */
+.mission-hero {
+  display: flex;
+  min-height: 500px;
+}
+
+.mission-main-content {
+  display: flex;
+  min-height: 500px;
+}
+
+.mission-image-grid {
+  display: block;
+}
+
 /* 手机版本 - 768px以下 */
 @media (max-width: 768px) {
+  /* Mission testimony 系列页面 */
   .mission-layout {
     flex-direction: column;
   }
@@ -45,6 +61,51 @@
     padding: 1.5rem !important;
     max-width: 100%;
   }
+  
+  /* Mission 主页面组件 - 1列布局 */
+  .mission-hero {
+    flex-direction: column !important;
+    height: auto !important;
+  }
+  
+  .mission-hero > div {
+    width: 100% !important;
+  }
+  
+  /* MissionHero: 文字在前，图片在后 */
+  .mission-hero > div:first-child {
+    order: 2 !important; /* 图片移到后面 */
+  }
+  
+  .mission-hero > div:last-child {
+    order: 1 !important; /* 文字移到前面 */
+  }
+  
+  .mission-main-content {
+    flex-direction: column !important;
+    height: auto !important;
+  }
+  
+  .mission-main-content > div {
+    width: 100% !important;
+  }
+  
+  /* MissionMainContent: 保持原顺序 (文字在前，图片在后) */
+  
+  /* 调整内边距 */
+  .mission-hero > div:last-child,
+  .mission-main-content > div:first-child > div {
+    padding: 2rem !important;
+  }
+  
+  /* Mission Image Grid - 手机版本2x2布局 */
+  .mission-image-grid > div {
+    flex-wrap: wrap !important;
+  }
+  
+  .mission-image-grid > div > div {
+    width: 50% !important;
+  }
 }
 
 /* 平板版本 - 768px到1024px */
@@ -59,5 +120,16 @@
   
   .article-content-wrapper {
     padding: 3rem !important;
+  }
+  
+  /* 平板版本的Mission组件调整 */
+  .mission-hero,
+  .mission-main-content {
+    height: 400px !important;
+  }
+  
+  .mission-hero > div:last-child,
+  .mission-main-content > div:first-child > div {
+    padding: 1.5rem !important;
   }
 }
