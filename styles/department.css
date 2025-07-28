@@ -36,6 +36,10 @@
   min-height: 400px;
 }
 
+.department-description-line-height {
+  line-height: 2.25rem;
+}
+
 /* 手机版本 - 768px以下 */
 @media (max-width: 768px) {
   .department-layout {

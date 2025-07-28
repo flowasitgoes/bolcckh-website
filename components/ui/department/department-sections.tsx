@@ -21,6 +21,13 @@ export function DepartmentSections() {
       layout: 'left-image-right-text'
     },
     {
+      id: 'gospel',
+      name: '福音外展部',
+      rightImage: '/department/06-row-4-right-care--bgImage-1:3-width.png',
+      layout: 'right-image-left-text',
+      description: '負責傳揚福音，透過各類活動，將福音信息傳遞給未信者，引領他們認識耶穌。'
+    },
+    {
       id: 'youth',
       name: '青少年部門',
       leftImage: '/department/07-row-5-left-youth-bgImage-1:3-width.png',
@@ -62,20 +69,80 @@ export function DepartmentSections() {
           {dept.layout === 'left-image-right-text' ? (
             <div className="department-layout">
               {/* Left Image (1/3 width) */}
-              <div className="department-image-left">
+              <div className="department-image-left relative">
                 <img
                   src={dept.leftImage}
                   alt={dept.name}
                   className="w-full h-full object-cover"
                 />
+                {/* 行政部特殊样式：图片中间显示部门名称 */}
+                {dept.id === 'admin' && (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-white px-8 py-4 rounded-lg">
+                      <h2 className="text-2xl md:text-3xl font-bold text-center">
+                        行政部
+                      </h2>
+                    </div>
+                  </div>
+                )}
+                {/* 牧養關懷部特殊样式：图片中间显示部门名称 */}
+                {dept.id === 'care' && (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-white px-8 py-4 rounded-lg">
+                      <h2 className="text-2xl md:text-3xl font-bold text-center">
+                        牧養關懷部
+                      </h2>
+                    </div>
+                  </div>
+                )}
+                {/* 兒童青少年事工部特殊样式：图片中间显示部门名称 */}
+                {dept.id === 'youth' && (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-white px-8 py-4 rounded-lg">
+                      <h2 className="text-2xl md:text-3xl font-bold text-center">
+                        兒童青少年事工部
+                      </h2>
+                    </div>
+                  </div>
+                )}
               </div>
               {/* Right Text/Content (2/3 width) */}
-              <div className="department-content-right">
+              <div className="department-content-right relative">
                 <img
                   src={dept.rightImage}
                   alt={`${dept.name}介紹`}
                   className="w-full h-full object-cover"
                 />
+                {/* 行政部描述文字叠加 */}
+                {dept.id === 'admin' && (
+                  <div className="absolute inset-0 flex items-center justify-center p-6">
+                    <div className="text-white text-center max-w-md">
+                      <p className="text-lg md:text-xl leading-relaxed department-description-line-height">
+                        負責教會的整體行政事務，包括文件處理、活動協調、政策制定等，確保教會的日常運作順暢。
+                      </p>
+                    </div>
+                  </div>
+                )}
+                {/* 關懷部門描述文字叠加 */}
+                {dept.id === 'care' && (
+                  <div className="absolute inset-0 flex items-center justify-center p-6">
+                    <div className="text-white text-center max-w-md">
+                      <p className="text-lg md:text-xl leading-relaxed department-description-line-height">
+                        負責信徒的牧養和關懷，提供屬靈指導、輔導、探訪等服務，幫助信徒在信仰上成長。
+                      </p>
+                    </div>
+                  </div>
+                )}
+                {/* 兒童青少年事工部描述文字叠加 */}
+                {dept.id === 'youth' && (
+                  <div className="absolute inset-0 flex items-center justify-center p-6">
+                    <div className="text-white text-center max-w-md">
+                      <p className="text-lg md:text-xl leading-relaxed department-description-line-height">
+                        針對兒童和青少年，提供相關的信仰教育和活動，培養他們的信仰生活。
+                      </p>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           ) : (
@@ -84,27 +151,52 @@ export function DepartmentSections() {
               <div className="department-content-left">
                 <div className="bg-[#21807a] text-white h-full flex items-center justify-center p-8">
                   <div className="text-center">
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
-                      {dept.name}
-                    </h2>
-                    <div className="w-16 h-1 bg-[#fe7f4c] mx-auto mb-6"></div>
-                    <p className="text-lg md:text-xl leading-relaxed max-w-md">
-                      致力於透過專業的事工服務，
-                      <br />
-                      建立弟兄姊妹的屬靈生命，
-                      <br />
-                      讓每一個人都能在神的愛中成長。
-                    </p>
+                    <div className="text-lg md:text-xl leading-relaxed max-w-md department-description-line-height">
+                      {dept.id === 'praise' && '帶領信徒進行敬拜讚美，透過音樂、詩歌等方式，表達對上帝的敬拜和感謝，營造屬靈氛圍。'}
+                      {dept.id === 'gospel' && '負責傳揚福音，透過各類活動，將福音信息傳遞給未信者，引領他們認識耶穌。'}
+                      {dept.id === 'social' && '關懷社會上的弱勢群體，提供救助、關懷、輔導等服務，彰顯上帝的愛和關懷。'}
+                      {dept.id === 'ministry8' && '負責教會的媒體製作與技術支援，包括影音設備操作、直播服務、宣傳設計等工作。'}
+                    </div>
                   </div>
                 </div>
               </div>
               {/* Right Image (1/3 width) */}
-              <div className="department-image-right">
+              <div className="department-image-right relative">
                 <img
                   src={dept.rightImage}
                   alt={dept.name}
                   className="w-full h-full object-cover"
                 />
+                {/* 敬拜讚美部特殊样式：图片中间显示部门名称 */}
+                {dept.id === 'praise' && (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-white px-8 py-4 rounded-lg">
+                      <h2 className="text-2xl md:text-3xl font-bold text-center">
+                        敬拜讚美部
+                      </h2>
+                    </div>
+                  </div>
+                )}
+                {/* 福音外展部特殊样式：图片中间显示部门名称 */}
+                {dept.id === 'gospel' && (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-white px-8 py-4 rounded-lg">
+                      <h2 className="text-2xl md:text-3xl font-bold text-center">
+                        福音外展部
+                      </h2>
+                    </div>
+                  </div>
+                )}
+                {/* 社福事工部特殊样式：图片中间显示部门名称 */}
+                {dept.id === 'social' && (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-white px-8 py-4 rounded-lg">
+                      <h2 className="text-2xl md:text-3xl font-bold text-center">
+                        社福事工部
+                      </h2>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           )}
