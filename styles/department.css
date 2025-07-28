@@ -40,36 +40,79 @@
   line-height: 2.25rem;
 }
 
-/* 手机版本 - 768px以下 */
+/* 手机版本 - 768px以下 - 强制单列布局 */
 @media (max-width: 768px) {
+  /* 强制所有布局变为单列 */
   .department-layout {
     flex-direction: column !important;
+    min-height: auto !important;
   }
   
+  /* 所有元素都占满宽度，移除固定高度限制 */
   .department-image-left,
   .department-content-right,
   .department-content-left,
   .department-image-right {
     width: 100% !important;
-    min-height: 300px !important;
+    min-height: auto !important;
   }
   
+  /* 图片区域设置最小高度 */
+  .department-image-left,
+  .department-image-right {
+    min-height: 200px !important;
+  }
+  
+  /* 文字内容区域使用flex自动调整高度 */
+  .department-content-left,
+  .department-content-right {
+    min-height: auto !important;
+  }
+  
+  /* 绿色背景区域确保有足够高度 */
+  .department-content-left div[class*="bg-[#21807a]"] {
+    min-height: 200px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  
+  /* 调整行高度 */
   .department-row {
     min-height: auto !important;
   }
   
-  /* 手机版本调整文字内容 */
+  /* 手机版本文字大小调整 */
+  .department-image-left h2,
+  .department-image-right h2 {
+    font-size: 1.5rem !important;
+    line-height: 1.4 !important;
+  }
+  
+  /* 手机版本描述文字调整 */
+  .department-content-left .text-lg,
+  .department-content-right .text-lg,
+  .department-content-left .text-xl,
+  .department-content-right .text-xl {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+  }
+  
+  /* 手机版本内边距调整 */
+  .absolute.inset-0.flex.items-center.justify-center.p-6 {
+    padding: 1rem !important;
+  }
+  
+  /* 确保文字容器在mobile上占满宽度 */
+  .text-center.max-w-md {
+    max-width: 100% !important;
+    padding: 0 1rem !important;
+  }
+  
+  /* 调整内容区域的内边距 */
   .department-content-left > div,
   .department-content-right > div {
-    padding: 2rem !important;
-  }
-  
-  .department-content-left h2 {
-    font-size: 1.5rem !important;
-  }
-  
-  .department-content-left p {
-    font-size: 1rem !important;
+    padding: 1.5rem !important;
   }
 }
 
