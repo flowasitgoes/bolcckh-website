@@ -105,6 +105,26 @@ export function DepartmentSections() {
                     </div>
                   </div>
                 )}
+                {/* 媒體事工部特殊样式：图片中间显示部门名称 */}
+                {dept.id === 'ministry7' && (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-white px-8 py-4 rounded-lg">
+                      <h2 className="text-2xl md:text-3xl font-bold text-center">
+                        媒體事工部
+                      </h2>
+                    </div>
+                  </div>
+                )}
+                {/* 總務部特殊样式：图片中间显示部门名称 */}
+                {dept.id === 'ministry9' && (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-white px-8 py-4 rounded-lg">
+                      <h2 className="text-2xl md:text-3xl font-bold text-center">
+                        總務部
+                      </h2>
+                    </div>
+                  </div>
+                )}
               </div>
               {/* Right Text/Content (2/3 width) */}
               <div className="department-content-right relative">
@@ -139,6 +159,26 @@ export function DepartmentSections() {
                     <div className="text-white text-center max-w-md">
                       <p className="text-lg md:text-xl leading-relaxed department-description-line-height">
                         針對兒童和青少年，提供相關的信仰教育和活動，培養他們的信仰生活。
+                      </p>
+                    </div>
+                  </div>
+                )}
+                {/* 媒體事工部描述文字叠加 */}
+                {dept.id === 'ministry7' && (
+                  <div className="absolute inset-0 flex items-center justify-center p-6">
+                    <div className="text-white text-center max-w-md">
+                      <p className="text-lg md:text-xl leading-relaxed department-description-line-height">
+                        利用媒體平台，如網站、社群媒體等，傳播教會信息，與外界保持聯繫。
+                      </p>
+                    </div>
+                  </div>
+                )}
+                {/* 總務部描述文字叠加 */}
+                {dept.id === 'ministry9' && (
+                  <div className="absolute inset-0 flex items-center justify-center p-6">
+                    <div className="text-white text-center max-w-md">
+                      <p className="text-lg md:text-xl leading-relaxed department-description-line-height">
+                        負責教會的硬體設施、設備維護、場地管理等事務。
                       </p>
                     </div>
                   </div>
@@ -193,6 +233,16 @@ export function DepartmentSections() {
                     <div className="text-white px-8 py-4 rounded-lg">
                       <h2 className="text-2xl md:text-3xl font-bold text-center">
                         社福事工部
+                      </h2>
+                    </div>
+                  </div>
+                )}
+                {/* 財務部特殊样式：图片中间显示部门名称 */}
+                {dept.id === 'ministry8' && (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-white px-8 py-4 rounded-lg">
+                      <h2 className="text-2xl md:text-3xl font-bold text-center">
+                        財務部
                       </h2>
                     </div>
                   </div>
