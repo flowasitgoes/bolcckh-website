@@ -15,7 +15,7 @@ export function NewsHero() {
             src="/news/hero-image-overlay.png"
             alt="左側裝飾"
             className="absolute inset-0 w-full h-full object-contain object-left"
-            style={{zIndex: 2, pointerEvents: 'none'}}
+            style={{zIndex: 2, pointerEvents: 'none', width: '50%', filter: 'invert(1)', left: '100px'}}
           />
         </div>
       </div>
