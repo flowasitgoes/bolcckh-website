@@ -1,0 +1,96 @@
+/* Department 页面基础样式 */
+.department-sections {
+  width: 100%;
+}
+
+.department-row {
+  width: 100%;
+  min-height: 400px;
+}
+
+.department-layout {
+  display: flex;
+  width: 100%;
+  min-height: 400px;
+}
+
+/* 左图右文布局 (1:3 + 2:3) */
+.department-image-left {
+  width: 33.333%; /* 1/3 */
+  min-height: 400px;
+}
+
+.department-content-right {
+  width: 66.667%; /* 2/3 */
+  min-height: 400px;
+}
+
+/* 右图左文布局 (2:3 + 1:3) */
+.department-content-left {
+  width: 66.667%; /* 2/3 */
+  min-height: 400px;
+}
+
+.department-image-right {
+  width: 33.333%; /* 1/3 */
+  min-height: 400px;
+}
+
+/* 手机版本 - 768px以下 */
+@media (max-width: 768px) {
+  .department-layout {
+    flex-direction: column !important;
+  }
+  
+  .department-image-left,
+  .department-content-right,
+  .department-content-left,
+  .department-image-right {
+    width: 100% !important;
+    min-height: 300px !important;
+  }
+  
+  .department-row {
+    min-height: auto !important;
+  }
+  
+  /* 手机版本调整文字内容 */
+  .department-content-left > div,
+  .department-content-right > div {
+    padding: 2rem !important;
+  }
+  
+  .department-content-left h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  .department-content-left p {
+    font-size: 1rem !important;
+  }
+}
+
+/* 平板版本 - 768px到1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .department-row {
+    min-height: 350px;
+  }
+  
+  .department-layout {
+    min-height: 350px;
+  }
+  
+  .department-image-left,
+  .department-content-right,
+  .department-content-left,
+  .department-image-right {
+    min-height: 350px;
+  }
+  
+  .department-content-left h2 {
+    font-size: 1.875rem;  /* text-3xl */
+  }
+  
+  .department-content-left p {
+    font-size: 1.125rem;  /* text-lg */
+  }
+} 
