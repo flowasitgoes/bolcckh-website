@@ -23,11 +23,12 @@ export function Header() {
       { zh: "牧養裝備", href: "/church-equip" },
       { zh: "門訓建造", href: "/church-discipleship" },
     ] },
-    // { zh: "宣教使命", en: "Mission", href: "#mission", children: [
-    //   { zh: "宣教使命", href: "/mission" },
-    //   { zh: "生命見證", href: "/mission-testimony" },
-    // ] },
-    { zh: "教會消息", en: "News", href: "#news", children: [
+    { zh: "宣教使命", en: "Mission", href: "#mission", children: [
+      { zh: "宣教使命", href: "/mission" },
+      { zh: "生命見證", href: "/mission-testimony" },
+    ] },
+    { zh: "教會消息", en: "News", href: "/news", children: [
+      { zh: "教會消息", href: "/news" },
       { zh: "主日直播", href: "#sunday-live" },
       { zh: "禮合會直播", href: "#ceremony-live" },
       { zh: "重溫信息", href: "#review" },
