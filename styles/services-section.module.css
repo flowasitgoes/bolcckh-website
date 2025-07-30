@@ -1,6 +1,6 @@
 /* 主要內容區塊（桌機預設） */
 .serviceContent {
-  width: 80%;
+  width: 62%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -45,6 +45,54 @@
 /* mobile 版社交欄位（桌機預設隱藏） */
 .serviceSocialMobile {
   display: none;
+}
+
+.socialContentWrap {
+  /* background-color: red; */
+  width: 320px; 
+}
+.socialContentItemWrap {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.socialContentItemWrap {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.socialContentItemWrapBook {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.socialContentItemWrapInnerLabel {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.socialContentItemWrapInnerBox {
+  position: absolute;
+  top: 32px;
+  right: 60px;
+  
+  border-radius: 16px;
+  border: 3px solid white;
+  background-color: #fe7f45;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(20px);
+  transition: all 0.3s ease-in-out;
+}
+.socialContentItemWrapBook.bookOpen .socialContentItemWrapInnerBox {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
 }
 
 /* ====== Mobile 覆蓋 ====== */
