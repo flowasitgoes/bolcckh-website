@@ -5,21 +5,21 @@ import Image from 'next/image'
 import '@/styles/offering.css'
 
 export const metadata: Metadata = {
-  title: '會員中心 | 高雄靈糧堂 - 會員登入與註冊',
-  description: '高雄靈糧堂會員中心，提供 LINE 登入和手機會員登入/註冊服務，讓您輕鬆管理奉獻記錄。',
-  keywords: '高雄靈糧堂, 會員中心, 會員登入, LINE登入, 手機會員, 奉獻記錄',
+  title: '會友中心 | 高雄靈糧堂 - 會友登入與註冊',
+  description: '高雄靈糧堂會友中心，提供 LINE 登入和手機會友登入/註冊服務，讓您輕鬆管理奉獻記錄。',
+  keywords: '高雄靈糧堂, 會友中心, 會友登入, LINE登入, 手機會友, 奉獻記錄',
   
   // Open Graph (社群分享)
   openGraph: {
-    title: '會員中心 | 高雄靈糧堂 - 會員登入與註冊',
-    description: '高雄靈糧堂會員中心，提供 LINE 登入和手機會員登入/註冊服務，讓您輕鬆管理奉獻記錄。',
+    title: '會友中心 | 高雄靈糧堂 - 會友登入與註冊',
+    description: '高雄靈糧堂會友中心，提供 LINE 登入和手機會友登入/註冊服務，讓您輕鬆管理奉獻記錄。',
     url: 'https://conflux-tech.com/member-center/login',
     images: [
       {
         url: 'https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png',
         width: 1200,
         height: 630,
-        alt: '高雄靈糧堂會員中心',
+        alt: '高雄靈糧堂會友中心',
       },
     ],
   },
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
   // Twitter Card
   twitter: {
     card: 'summary_large_image',
-    title: '會員中心 | 高雄靈糧堂 - 會員登入與註冊',
-    description: '高雄靈糧堂會員中心，提供 LINE 登入和手機會員登入/註冊服務，讓您輕鬆管理奉獻記錄。',
+    title: '會友中心 | 高雄靈糧堂 - 會友登入與註冊',
+    description: '高雄靈糧堂會友中心，提供 LINE 登入和手機會友登入/註冊服務，讓您輕鬆管理奉獻記錄。',
     images: ['https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png'],
   },
 }
@@ -42,7 +42,7 @@ export default function OfferingMemberPage() {
         <section className="hero-section relative h-96 md:h-[500px] lg:h-[600px] overflow-hidden">
           <Image
             src="/offering/offering-landing-page-hero-bgImage.png"
-            alt="會員中心 - 雙手捧著花朵"
+            alt="會友中心 - 雙手捧著花朵"
             fill
             className="object-cover object-center"
             priority
@@ -66,7 +66,7 @@ export default function OfferingMemberPage() {
               {/* LINE 登入 */}
               <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
                 <h3 className="text-xl md:text-2xl font-bold text-[#21807a] mb-4 text-center border-b border-[#21807a] pb-4">
-                  使用LINE會員登入
+                  使用LINE會友登入
                 </h3>
                 <div className="line-image-wrap text-center">
                   <button className="bg-transparent hover:bg-gray-50 transition-colors duration-300 p-4 rounded-lg">
@@ -81,10 +81,10 @@ export default function OfferingMemberPage() {
                 </div>
               </div>
 
-              {/* 手機會員登入/註冊 */}
+              {/* 手機會友登入/註冊 */}
               <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
                 <h3 className="text-xl md:text-2xl font-bold text-[#21807a] mb-6 text-center">
-                  手機會員登入
+                  手機會友登入
                 </h3>
                 <form className="space-y-4">
                   <div>

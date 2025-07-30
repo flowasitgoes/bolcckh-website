@@ -139,7 +139,7 @@ export default function OfferingInquiryPage() {
                   <h4 className="text-blue-800 font-semibold mb-2">查詢說明</h4>
                   <ul className="text-blue-700 text-sm space-y-1">
                     <li>• 此查詢功能僅供非會友使用</li>
-                    <li>• 會友請登入會員中心查詢奉獻紀錄</li>
+                    <li>• 會友請登入會友中心查詢奉獻紀錄</li>
                     <li>• 查詢結果將顯示最近6個月的奉獻紀錄</li>
                     <li>• 如有疑問請聯繫教會辦公室</li>
                   </ul>
@@ -160,7 +160,7 @@ export default function OfferingInquiryPage() {
                 <p className="text-sm text-gray-600">
                   您是會友嗎？
                   <a href="/member-center/login" className="text-[#21807a] hover:underline font-semibold">
-                    立即登入會員中心
+                    立即登入會友中心
                   </a>
                 </p>
                 <p className="text-sm text-gray-600">

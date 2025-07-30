@@ -25,7 +25,7 @@ export function MemberRegister({ onSwitchToLogin }: MemberRegisterProps) {
       {/* 註冊表單 */}
       <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
         <h3 className="text-xl md:text-2xl font-bold text-[#21807a] mb-6 text-center border-b border-[#21807a] pb-4">
-          手機會員註冊
+          手機會友註冊
         </h3>
         <form className="space-y-6">
           {/* 手機門號 */}

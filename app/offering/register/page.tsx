@@ -5,21 +5,21 @@ import Image from 'next/image'
 import '@/styles/offering.css'
 
 export const metadata: Metadata = {
-  title: '會員註冊 | 高雄靈糧堂 - 快速註冊成為會友',
-  description: '高雄靈糧堂會員註冊，提供快速註冊服務，包含手機驗證、個人資料設定等功能。',
-  keywords: '高雄靈糧堂, 會員註冊, 會友註冊, 手機驗證, 快速註冊',
+  title: '會友註冊 | 高雄靈糧堂 - 快速註冊成為會友',
+  description: '高雄靈糧堂會友註冊，提供快速註冊服務，包含手機驗證、個人資料設定等功能。',
+  keywords: '高雄靈糧堂, 會友註冊, 會友註冊, 手機驗證, 快速註冊',
   
   // Open Graph (社群分享)
   openGraph: {
-    title: '會員註冊 | 高雄靈糧堂 - 快速註冊成為會友',
-    description: '高雄靈糧堂會員註冊，提供快速註冊服務，包含手機驗證、個人資料設定等功能。',
+    title: '會友註冊 | 高雄靈糧堂 - 快速註冊成為會友',
+    description: '高雄靈糧堂會友註冊，提供快速註冊服務，包含手機驗證、個人資料設定等功能。',
     url: 'https://conflux-tech.com/member-center/register',
     images: [
       {
         url: 'https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png',
         width: 1200,
         height: 630,
-        alt: '高雄靈糧堂會員註冊',
+        alt: '高雄靈糧堂會友註冊',
       },
     ],
   },
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
   // Twitter Card
   twitter: {
     card: 'summary_large_image',
-    title: '會員註冊 | 高雄靈糧堂 - 快速註冊成為會友',
-    description: '高雄靈糧堂會員註冊，提供快速註冊服務，包含手機驗證、個人資料設定等功能。',
+    title: '會友註冊 | 高雄靈糧堂 - 快速註冊成為會友',
+    description: '高雄靈糧堂會友註冊，提供快速註冊服務，包含手機驗證、個人資料設定等功能。',
     images: ['https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png'],
   },
 }
@@ -42,7 +42,7 @@ export default function OfferingRegisterPage() {
         <section className="hero-section relative h-96 md:h-[500px] lg:h-[600px] overflow-hidden">
           <Image
             src="/offering/offering-landing-page-hero-bgImage.png"
-            alt="會員註冊 - 雙手捧著花朵"
+            alt="會友註冊 - 雙手捧著花朵"
             fill
             className="object-cover object-center"
             priority
@@ -64,7 +64,7 @@ export default function OfferingRegisterPage() {
           <div className="max-w-2xl mx-auto px-4">
             <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
               <h3 className="text-xl md:text-2xl font-bold text-[#21807a] mb-6 text-center border-b border-[#21807a] pb-4">
-                手機會員註冊
+                手機會友註冊
               </h3>
               
               <form className="space-y-6">

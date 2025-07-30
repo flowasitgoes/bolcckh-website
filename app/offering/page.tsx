@@ -68,13 +68,13 @@ export default function OfferingPage() {
                   我是會友
                 </h3>
                 <p className="text-gray-600 text-center mb-6">
-                  已有會員帳號，請登入進行奉獻
+                  已有會友帳號，請登入進行奉獻
                 </p>
                 <a 
                   href="/member-center/login"
                   className="block w-full bg-[#21807a] text-white text-center py-3 px-6 rounded-lg hover:bg-[#1a6b66] transition-colors duration-300 font-semibold"
                 >
-                  會員登入
+                  會友登入
                 </a>
               </div>
 
@@ -84,7 +84,7 @@ export default function OfferingPage() {
                   快速註冊成為會友
                 </h3>
                 <p className="text-gray-600 text-center mb-6">
-                  還沒有會員帳號？立即註冊
+                  還沒有會友帳號？立即註冊
                 </p>
                 <a 
                   href="/member-center/register"

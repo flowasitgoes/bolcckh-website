@@ -10,10 +10,10 @@ interface MemberLoginProps {
 export function MemberLogin({ onSwitchToRegister }: MemberLoginProps) {
   return (
     <div className="member-center-login-box grid grid-cols-1 lg:grid-cols-2 gap-8">
-      {/* LINE會員登入 */}
+      {/* LINE會友登入 */}
       <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
         <h3 className="text-xl md:text-2xl font-bold text-[#21807a] mb-4 text-center border-b border-[#21807a] pb-4">
-          使用LINE會員登入
+          使用LINE會友登入
         </h3>
         <div className="line-image-wrap text-center">
           <button className="bg-transparent hover:bg-gray-50 transition-colors duration-300 p-4 rounded-lg">
@@ -31,10 +31,10 @@ export function MemberLogin({ onSwitchToRegister }: MemberLoginProps) {
         </div>
       </div>
       
-      {/* 手機會員登入 */}
+      {/* 手機會友登入 */}
       <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
         <h3 className="text-xl md:text-2xl font-bold text-[#21807a] mb-6 text-center">
-          手機會員登入
+          手機會友登入
         </h3>
         <form className="space-y-4">
           <div>

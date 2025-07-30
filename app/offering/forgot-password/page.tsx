@@ -6,13 +6,13 @@ import '@/styles/offering.css'
 
 export const metadata: Metadata = {
   title: '忘記密碼 | 高雄靈糧堂 - 密碼重置服務',
-  description: '高雄靈糧堂會員密碼重置服務，透過手機驗證安全重置密碼。',
-  keywords: '高雄靈糧堂, 忘記密碼, 密碼重置, 手機驗證, 會員服務',
+  description: '高雄靈糧堂會友密碼重置服務，透過手機驗證安全重置密碼。',
+  keywords: '高雄靈糧堂, 忘記密碼, 密碼重置, 手機驗證, 會友服務',
   
   // Open Graph (社群分享)
   openGraph: {
     title: '忘記密碼 | 高雄靈糧堂 - 密碼重置服務',
-    description: '高雄靈糧堂會員密碼重置服務，透過手機驗證安全重置密碼。',
+    description: '高雄靈糧堂會友密碼重置服務，透過手機驗證安全重置密碼。',
     url: 'https://conflux-tech.com/offering/forgot-password',
     images: [
       {
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: '忘記密碼 | 高雄靈糧堂 - 密碼重置服務',
-    description: '高雄靈糧堂會員密碼重置服務，透過手機驗證安全重置密碼。',
+    description: '高雄靈糧堂會友密碼重置服務，透過手機驗證安全重置密碼。',
     images: ['https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png'],
   },
 }

@@ -10,7 +10,7 @@ export default function MemberCenterPage() {
   const [activeSection, setActiveSection] = useState('login-register')
   const [showRegister, setShowRegister] = useState(false)
 
-  // 模擬會員資料
+  // 模擬會友資料
   const memberData = {
     name: '薛憲聰',
     phone: '0919394300',
@@ -146,7 +146,7 @@ export default function MemberCenterPage() {
             </div>
             
             <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
-              {/* 會員資料 */}
+              {/* 會友資料 */}
               <div className="mb-6 pb-4 border-b border-gray-200">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center">
@@ -337,7 +337,7 @@ export default function MemberCenterPage() {
         <section className="hero-section relative h-96 md:h-[500px] lg:h-[600px] overflow-hidden">
           <Image
             src="/member-center/hero-image.png"
-            alt="會員中心 - 雙手捧著花朵"
+            alt="會友中心 - 雙手捧著花朵"
             fill
             className="object-cover object-center"
             priority
