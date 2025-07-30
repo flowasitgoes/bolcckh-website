@@ -47,6 +47,40 @@
   display: none;
 }
 
+/* Mobile版本读经计划样式 */
+.mobileBookContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.mobileBookLabel {
+  cursor: pointer;
+}
+
+.mobileBookContent {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fe7f45;
+  border: 2px solid white;
+  border-radius: 12px;
+  margin-top: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%) translateY(-10px);
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+  min-width: 280px;
+}
+
+.mobileBookContent.mobileBookOpen {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
 .socialContentWrap {
   /* background-color: red; */
   width: 320px; 

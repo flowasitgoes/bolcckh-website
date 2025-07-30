@@ -80,7 +80,26 @@ export function ServicesSection() {
         {/* mobile 版社交欄位（下方） */}
         <div className={styles.serviceSocialMobile}>
           <img src="/home/service-content/mobile/0708-09.png" alt="線上諮詢" className={styles.serviceSocialImg} />
-          <img src="/home/service-content/mobile/0708-10.png" alt="本週讀經進度" className={styles.serviceSocialImg} />
+          <div className={styles.mobileBookContainer}>
+            <div 
+              className={styles.mobileBookLabel}
+              onClick={handleBookClick}
+              style={{ cursor: 'pointer' }}
+            >
+              <img src="/home/service-content/mobile/0708-10.png" alt="本週讀經進度" className={styles.serviceSocialImg} />
+            </div>
+            <div className={`${styles.mobileBookContent} ${isBookOpen ? styles.mobileBookOpen : ''}`}>
+              <div className="text-white text-sm leading-relaxed p-4">
+                <div className="mb-2">10/08 尼希米記7章01–73節</div>
+                <div className="mb-2">10/09 尼希米記8章01-18節</div>
+                <div className="mb-2">10/10 尼希米記9章01-21節</div>
+                <div className="mb-2">10/11 尼希米記10章22-38節</div>
+                <div className="mb-2">10/12 尼希米記11章01-39節</div>
+                <div className="mb-2">10/13 尼希米記12章01-36節</div>
+                <div className="mb-2">10/14 尼希米記13章01-26節</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
