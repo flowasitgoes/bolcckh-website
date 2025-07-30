@@ -34,14 +34,14 @@ export function ServicesSection() {
 
           <div className={`${styles.socialContentItemWrapBook} ${isBookOpen ? styles.bookOpen : ''}`}>
             <div className={styles.socialContentItemWrapInnerBox}>
-              <div className="text-white text-sm leading-relaxed">
-                <div className="mb-2">10/08 尼希米記7章01–73節</div>
-                <div className="mb-2">10/09 尼希米記8章01-18節</div>
-                <div className="mb-2">10/10 尼希米記9章01-21節</div>
-                <div className="mb-2">10/11 尼希米記10章22-38節</div>
-                <div className="mb-2">10/12 尼希米記11章01-39節</div>
-                <div className="mb-2">10/13 尼希米記12章01-36節</div>
-                <div className="mb-2">10/14 尼希米記13章01-26節</div>
+              <div className="text-sm leading-relaxed">
+                <div className="mb-2 text-white">10/08 尼希米記7章01–73節</div>
+                <div className="mb-2 text-[#333]">10/09 尼希米記8章01-18節</div>
+                <div className="mb-2 text-white">10/10 尼希米記9章01-21節</div>
+                <div className="mb-2 text-[#333]">10/11 尼希米記10章22-38節</div>
+                <div className="mb-2 text-white">10/12 尼希米記11章01-39節</div>
+                <div className="mb-2 text-[#333]">10/13 尼希米記12章01-36節</div>
+                <div className="mb-2 text-white">10/14 尼希米記13章01-26節</div>
               </div>
             </div>
             <div 
@@ -89,14 +89,14 @@ export function ServicesSection() {
               <img src="/home/service-content/mobile/0708-10.png" alt="本週讀經進度" className={styles.serviceSocialImg} />
             </div>
             <div className={`${styles.mobileBookContent} ${isBookOpen ? styles.mobileBookOpen : ''}`}>
-              <div className="text-white text-sm leading-relaxed p-4">
-                <div className="mb-2">10/08 尼希米記7章01–73節</div>
-                <div className="mb-2">10/09 尼希米記8章01-18節</div>
-                <div className="mb-2">10/10 尼希米記9章01-21節</div>
-                <div className="mb-2">10/11 尼希米記10章22-38節</div>
-                <div className="mb-2">10/12 尼希米記11章01-39節</div>
-                <div className="mb-2">10/13 尼希米記12章01-36節</div>
-                <div className="mb-2">10/14 尼希米記13章01-26節</div>
+              <div className="text-sm leading-relaxed p-4">
+                <div className="mb-2 text-white">10/08 尼希米記7章01–73節</div>
+                <div className="mb-2 text-[#333]">10/09 尼希米記8章01-18節</div>
+                <div className="mb-2 text-white">10/10 尼希米記9章01-21節</div>
+                <div className="mb-2 text-[#333]">10/11 尼希米記10章22-38節</div>
+                <div className="mb-2 text-white">10/12 尼希米記11章01-39節</div>
+                <div className="mb-2 text-[#333]">10/13 尼希米記12章01-36節</div>
+                <div className="mb-2 text-white">10/14 尼希米記13章01-26節</div>
               </div>
             </div>
           </div>
