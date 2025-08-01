@@ -4,11 +4,18 @@ import { useState } from 'react'
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import Image from 'next/image'
-import { MemberLogin, MemberRegister } from '@/components/ui/member-center'
 import '@/styles/member-center.css'
 
-export default function MemberCenterPage() {
-  const [showRegister, setShowRegister] = useState(false)
+export default function PasswordPage() {
+  const [currentPassword, setCurrentPassword] = useState('')
+  const [newPassword, setNewPassword] = useState('')
+  const [confirmPassword, setConfirmPassword] = useState('')
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    // 處理密碼修改邏輯
+    console.log('修改密碼')
+  }
 
   return (
     <div className="min-h-screen">
@@ -37,10 +44,10 @@ export default function MemberCenterPage() {
               
               {/* Navigation Menu */}
               <nav className="space-y-2">
-                {/* 登入與註冊 - 預設選中 */}
+                {/* 登入與註冊 */}
                 <a 
                   href="/member-center"
-                  className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 bg-white/20"
+                  className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-white/10"
                 >
                   <div className="flex items-center">
                     <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -72,7 +79,7 @@ export default function MemberCenterPage() {
                   {/* 密碼修改 */}
                   <a 
                     href="/member-center/password"
-                    className="block w-full text-left text-white rounded-lg px-4 py-2 ml-4 transition-colors duration-200 hover:bg-white/10"
+                    className="block w-full text-left text-white rounded-lg px-4 py-2 ml-4 transition-colors duration-200 bg-white/20"
                   >
                     <div className="flex items-center">
                       <svg className="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -120,13 +127,71 @@ export default function MemberCenterPage() {
             </div>
 
             {/* Right Content Area */}
-            <div className={`${!showRegister ? 'member-center-login' : 'member-center-register'} right-content-area lg:col-span-3 bg-[#fe7f4c] p-6 md:p-8`}>
-              <div className="member-center-login-box grid grid-cols-1 lg:grid-cols-2 gap-8">
-                {showRegister ? (
-                  <MemberRegister onSwitchToLogin={() => setShowRegister(false)} />
-                ) : (
-                  <MemberLogin onSwitchToRegister={() => setShowRegister(true)} />
-                )}
+            <div className="member-center-login right-content-area lg:col-span-3 bg-[#fe7f4c] p-6 md:p-8">
+              <div className="member-center-login-box">
+                <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
+                  <div className="text-center mb-8">
+                    <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+                      密碼修改
+                    </h2>
+                    <p className="text-gray-600">
+                      修改您的登入密碼
+                    </p>
+                  </div>
+                  
+                  <form onSubmit={handleSubmit} className="space-y-6">
+                    <div>
+                      <label className="block text-gray-700 font-medium mb-2">
+                        目前密碼
+                      </label>
+                      <input
+                        type="password"
+                        value={currentPassword}
+                        onChange={(e) => setCurrentPassword(e.target.value)}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#21807a] focus:border-transparent"
+                        placeholder="請輸入目前密碼"
+                        required
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block text-gray-700 font-medium mb-2">
+                        新密碼
+                      </label>
+                      <input
+                        type="password"
+                        value={newPassword}
+                        onChange={(e) => setNewPassword(e.target.value)}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#21807a] focus:border-transparent"
+                        placeholder="請輸入新密碼"
+                        required
+                      />
+                    </div>
+
+                    <div>
+                      <label className="block text-gray-700 font-medium mb-2">
+                        確認新密碼
+                      </label>
+                      <input
+                        type="password"
+                        value={confirmPassword}
+                        onChange={(e) => setConfirmPassword(e.target.value)}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#21807a] focus:border-transparent"
+                        placeholder="請再次輸入新密碼"
+                        required
+                      />
+                    </div>
+
+                    <div className="pt-6">
+                      <button 
+                        type="submit"
+                        className="w-full bg-[#21807a] text-white py-3 rounded-lg hover:bg-[#1a6b66] transition-colors duration-200 font-semibold"
+                      >
+                        修改密碼
+                      </button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>

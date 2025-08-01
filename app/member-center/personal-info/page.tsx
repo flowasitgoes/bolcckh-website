@@ -4,11 +4,18 @@ import { useState } from 'react'
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import Image from 'next/image'
-import { MemberLogin, MemberRegister } from '@/components/ui/member-center'
 import '@/styles/member-center.css'
 
-export default function MemberCenterPage() {
-  const [showRegister, setShowRegister] = useState(false)
+export default function PersonalInfoPage() {
+  // 模擬會友資料
+  const memberData = {
+    name: '薛憲聰',
+    phone: '0919394300',
+    email: 'rott497@gmail.com',
+    donationId: '7503114134',
+    accountLevel: '會友',
+    discipleshipCourse: '門徒大學一年級'
+  }
 
   return (
     <div className="min-h-screen">
@@ -37,10 +44,10 @@ export default function MemberCenterPage() {
               
               {/* Navigation Menu */}
               <nav className="space-y-2">
-                {/* 登入與註冊 - 預設選中 */}
+                {/* 登入與註冊 */}
                 <a 
                   href="/member-center"
-                  className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 bg-white/20"
+                  className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-white/10"
                 >
                   <div className="flex items-center">
                     <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -59,7 +66,7 @@ export default function MemberCenterPage() {
                   {/* 個人資料 */}
                   <a 
                     href="/member-center/personal-info"
-                    className="block w-full text-left text-white rounded-lg px-4 py-2 ml-4 transition-colors duration-200 hover:bg-white/10"
+                    className="block w-full text-left text-white rounded-lg px-4 py-2 ml-4 transition-colors duration-200 bg-white/20"
                   >
                     <div className="flex items-center">
                       <svg className="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -120,13 +127,51 @@ export default function MemberCenterPage() {
             </div>
 
             {/* Right Content Area */}
-            <div className={`${!showRegister ? 'member-center-login' : 'member-center-register'} right-content-area lg:col-span-3 bg-[#fe7f4c] p-6 md:p-8`}>
-              <div className="member-center-login-box grid grid-cols-1 lg:grid-cols-2 gap-8">
-                {showRegister ? (
-                  <MemberRegister onSwitchToLogin={() => setShowRegister(false)} />
-                ) : (
-                  <MemberLogin onSwitchToRegister={() => setShowRegister(true)} />
-                )}
+            <div className="member-center-login right-content-area lg:col-span-3 bg-[#fe7f4c] p-6 md:p-8">
+              <div className="member-center-login-box">
+                <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
+                  <div className="text-center mb-8">
+                    <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+                      個人資料
+                    </h2>
+                    <p className="text-gray-600">
+                      查看和管理您的個人資料
+                    </p>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <div className="flex items-center">
+                      <span className="text-gray-600 font-medium w-24">姓名：</span>
+                      <span className="text-gray-800 font-semibold">{memberData.name}</span>
+                    </div>
+                    <div className="flex items-center">
+                      <span className="text-gray-600 font-medium w-24">手機號碼：</span>
+                      <span className="text-gray-800 font-semibold">{memberData.phone}</span>
+                    </div>
+                    <div className="flex items-center">
+                      <span className="text-gray-600 font-medium w-24">Email：</span>
+                      <span className="text-gray-800 font-semibold">{memberData.email}</span>
+                    </div>
+                    <div className="flex items-center">
+                      <span className="text-gray-600 font-medium w-24">奉獻編號：</span>
+                      <span className="text-gray-800 font-semibold">{memberData.donationId}</span>
+                    </div>
+                    <div className="flex items-center">
+                      <span className="text-gray-600 font-medium w-24">帳號等級：</span>
+                      <span className="text-gray-800 font-semibold">{memberData.accountLevel}</span>
+                    </div>
+                    <div className="flex items-center">
+                      <span className="text-gray-600 font-medium w-24">門訓課程：</span>
+                      <span className="text-gray-800 font-semibold">{memberData.discipleshipCourse}</span>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-8 pt-6 border-t border-gray-200">
+                    <button className="bg-[#21807a] text-white px-6 py-2 rounded-lg hover:bg-[#1a6b66] transition-colors duration-200 font-semibold">
+                      編輯資料
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

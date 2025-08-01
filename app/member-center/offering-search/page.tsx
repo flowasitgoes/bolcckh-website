@@ -4,11 +4,47 @@ import { useState } from 'react'
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import Image from 'next/image'
-import { MemberLogin, MemberRegister } from '@/components/ui/member-center'
 import '@/styles/member-center.css'
 
-export default function MemberCenterPage() {
-  const [showRegister, setShowRegister] = useState(false)
+export default function OfferingSearchPage() {
+  // 模擬奉獻紀錄資料
+  const donationRecords = [
+    {
+      id: 1,
+      date: '2025/01/15',
+      amount: 1000,
+      type: '十一奉獻',
+      status: '已確認'
+    },
+    {
+      id: 2,
+      date: '2025/01/08',
+      amount: 500,
+      type: '感恩奉獻',
+      status: '已確認'
+    },
+    {
+      id: 3,
+      date: '2025/01/01',
+      amount: 2000,
+      type: '建堂奉獻',
+      status: '處理中'
+    },
+    {
+      id: 4,
+      date: '2024/12/25',
+      amount: 800,
+      type: '聖誕奉獻',
+      status: '已確認'
+    },
+    {
+      id: 5,
+      date: '2024/12/18',
+      amount: 1200,
+      type: '十一奉獻',
+      status: '已確認'
+    }
+  ]
 
   return (
     <div className="min-h-screen">
@@ -37,10 +73,10 @@ export default function MemberCenterPage() {
               
               {/* Navigation Menu */}
               <nav className="space-y-2">
-                {/* 登入與註冊 - 預設選中 */}
+                {/* 登入與註冊 */}
                 <a 
                   href="/member-center"
-                  className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 bg-white/20"
+                  className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-white/10"
                 >
                   <div className="flex items-center">
                     <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -85,7 +121,7 @@ export default function MemberCenterPage() {
                   {/* 奉獻紀錄查詢 */}
                   <a 
                     href="/member-center/offering-search"
-                    className="block w-full text-left text-white rounded-lg px-4 py-2 ml-4 transition-colors duration-200 hover:bg-white/10"
+                    className="block w-full text-left text-white rounded-lg px-4 py-2 ml-4 transition-colors duration-200 bg-white/20"
                   >
                     <div className="flex items-center">
                       <svg className="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -120,13 +156,60 @@ export default function MemberCenterPage() {
             </div>
 
             {/* Right Content Area */}
-            <div className={`${!showRegister ? 'member-center-login' : 'member-center-register'} right-content-area lg:col-span-3 bg-[#fe7f4c] p-6 md:p-8`}>
-              <div className="member-center-login-box grid grid-cols-1 lg:grid-cols-2 gap-8">
-                {showRegister ? (
-                  <MemberRegister onSwitchToLogin={() => setShowRegister(false)} />
-                ) : (
-                  <MemberLogin onSwitchToRegister={() => setShowRegister(true)} />
-                )}
+            <div className="member-center-login right-content-area lg:col-span-3 bg-[#fe7f4c] p-6 md:p-8">
+              <div className="member-center-login-box">
+                <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
+                  <div className="text-center mb-8">
+                    <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+                      奉獻紀錄查詢
+                    </h2>
+                    <p className="text-gray-600">
+                      查看您的奉獻紀錄和歷史
+                    </p>
+                  </div>
+                  
+                  <div className="overflow-x-auto">
+                    <table className="w-full">
+                      <thead>
+                        <tr className="border-b border-gray-200">
+                          <th className="text-left py-3 px-4 font-semibold text-gray-700">日期</th>
+                          <th className="text-left py-3 px-4 font-semibold text-gray-700">金額</th>
+                          <th className="text-left py-3 px-4 font-semibold text-gray-700">類型</th>
+                          <th className="text-left py-3 px-4 font-semibold text-gray-700">狀態</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {donationRecords.map((record) => (
+                          <tr key={record.id} className="border-b border-gray-100 hover:bg-gray-50">
+                            <td className="py-4 px-4 text-gray-800">{record.date}</td>
+                            <td className="py-4 px-4 text-gray-800 font-semibold">NT$ {record.amount.toLocaleString()}</td>
+                            <td className="py-4 px-4 text-gray-800">{record.type}</td>
+                            <td className="py-4 px-4">
+                              <span className={`px-3 py-1 rounded-full text-xs font-medium ${
+                                record.status === '已確認' 
+                                  ? 'bg-green-100 text-green-800' 
+                                  : 'bg-yellow-100 text-yellow-800'
+                              }`}>
+                                {record.status}
+                              </span>
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                  <div className="mt-8 pt-6 border-t border-gray-200">
+                    <div className="flex justify-between items-center">
+                      <div className="text-gray-600">
+                        總計: <span className="font-semibold text-gray-800">NT$ 5,500</span>
+                      </div>
+                      <button className="bg-[#21807a] text-white px-6 py-2 rounded-lg hover:bg-[#1a6b66] transition-colors duration-200 font-semibold">
+                        下載紀錄
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

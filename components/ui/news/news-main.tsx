@@ -33,36 +33,43 @@ export function NewsMain() {
           {/* Left Sidebar Navigation */}
           <div className="news-sidebar bg-[#21807a]">
             <div className="p-6">
-              <div className="mb-8">
+              {/* <div className="mb-8">
                 <h2 className="text-white text-lg font-bold mb-4 relative">
                   <span className="absolute left-0 top-0 w-1 h-6 bg-[#fe7f4c]"></span>
                   <span className="ml-4">教會消息</span>
                 </h2>
                 <div className="border-b border-white/30"></div>
-              </div>
+              </div> */}
               <nav className="space-y-0">
                 <a 
-                  href="#"
+                  href="/news"
                   className="block text-white px-4 py-3 border-l-4 border-l-[#fe7f4c] border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                 >
-                  主日直撥
+                  教會消息
                 </a>
                 <a 
-                  href="#"
+                  href="/news/sunday-live"
+                  className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
+                >
+                  <span>主日直播</span>
+                  <span className="text-[#fe7f4c] text-lg">›</span>
+                </a>
+                <a 
+                  href="/news/prayer-meeting"
                   className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                 >
                   <span>禱告會直播</span>
                   <span className="text-[#fe7f4c] text-lg">›</span>
                 </a>
                 <a 
-                  href="#"
+                  href="/news/message-review"
                   className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                 >
                   <span>重溫信息</span>
                   <span className="text-[#fe7f4c] text-lg">›</span>
                 </a>
                 <a 
-                  href="#"
+                  href="/news/good-articles"
                   className="flex justify-between items-center text-white px-4 py-3 hover:bg-[#1a6860] transition-colors"
                 >
                   <span>好文分享</span>

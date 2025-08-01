@@ -54,7 +54,7 @@
   }
   
   /* News 项目布局调整 */
-  .news-layout .space-y-8 > div {
+  .news-layout .space-y-8 > div:not(.pagination-container) {
     flex-direction: column !important;
     gap: 1rem !important;
   }
