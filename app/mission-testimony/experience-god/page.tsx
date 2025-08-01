@@ -5,12 +5,12 @@ import Link from 'next/link'
 import '@/styles/mission.css'
 
 export const metadata: Metadata = {
-  title: '神的作為 何等美好 | 高雄靈糧堂 - 生命見證',
-  description: '高雄靈糧堂生命見證，分享弟兄姊妹經歷上帝、禱告蒙應允、門訓見證等真實的生命故事。',
-  keywords: '高雄靈糧堂, 生命見證, 經歷上帝, 禱告蒙應允, 門訓見證, 神的作為',
+  title: '經歷上帝 生命歸主 | 高雄靈糧堂 - 生命見證',
+  description: '高雄靈糧堂生命見證，分享弟兄姊妹經歷上帝、生命歸主的真實故事。',
+  keywords: '高雄靈糧堂, 生命見證, 經歷上帝, 生命歸主, 見證',
 }
 
-export default function MissionTestimonyPage() {
+export default function ExperienceGodPage() {
   return (
     <div className="min-h-screen">
       <Header />
@@ -34,13 +34,13 @@ export default function MissionTestimonyPage() {
                 <nav className="space-y-0 p-6">
                   <Link 
                     href="/mission-testimony"
-                    className="block text-white px-4 py-3 border-l-4 border-l-[#fe7f4c] border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
+                    className="block text-white px-4 py-3 border-b border-white/20 hover:bg-[#1a6860] transition-colors"
                   >
                     神的作為 何等美好
                   </Link>
                   <Link 
                     href="/mission-testimony/experience-god"
-                    className="block text-white px-4 py-3 border-b border-white/20 hover:bg-[#1a6860] transition-colors"
+                    className="block text-white px-4 py-3 border-l-4 border-l-[#fe7f4c] border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                   >
                     經歷上帝 生命歸主
                   </Link>
@@ -68,7 +68,7 @@ export default function MissionTestimonyPage() {
                 <span className="mx-2">{'>'}</span>
                 <Link href="/mission-testimony" className="hover:text-[#21807a]">生命見證</Link>
                 <span className="mx-2">{'>'}</span>
-                <span className="text-[#21807a]">神的作為 何等美好</span>
+                <span className="text-[#21807a]">經歷上帝 生命歸主</span>
               </nav>
 
               {/* Article Content */}
@@ -77,7 +77,7 @@ export default function MissionTestimonyPage() {
                 <div className="w-full mb-8">
                   <img
                     src="/mission/C2/C2-07.png"
-                    alt="主崇信息精華"
+                    alt="經歷上帝 生命歸主"
                     className="w-full h-auto object-cover"
                   />
                 </div>
@@ -86,7 +86,7 @@ export default function MissionTestimonyPage() {
                 {/* Article Header */}
                 <div className="text-center mb-8">
                   <h1 className="text-2xl md:text-3xl font-bold text-[#444] mb-4">
-                    主崇信息精華｜大衛：神所揀選的受膏者｜
+                    經歷上帝 生命歸主｜真實的生命轉變見證
                   </h1>
                   <p className="text-gray-600">2025.06.15</p>
                 </div>
@@ -94,43 +94,37 @@ export default function MissionTestimonyPage() {
                 {/* Article Content */}
                 <div className="prose max-w-none text-gray-700 leading-relaxed space-y-6">
                   <p>
-                    本週起至八、九月，會眾聚焦於大衛王平的系列聚會，實地探會看兄，
-                    勉勵弟兄達事工，今天傳真正攻勢神蒼薹聰明其配上大穴實1-13節，透
-                    過大衛，來認識耶穌基督樓神所揀選的受膏者。
+                    在我們教會中，有許多弟兄姊妹經歷了上帝奇妙的作為，他們的生命因著認識主而有了根本的轉變。
+                    這些真實的見證讓我們看見上帝在每個人生命中的工作。
                   </p>
 
                   <h3 className="text-xl font-bold text-[#21807a] border-b-2 border-[#21807a] pb-2">
-                    青山依舊在，幾度夕陽紅，慣看秋月春
+                    從絕望到盼望的生命轉變
                   </h3>
 
                   <p>
-                    許多靈會從帝食會禱告的聖經人物來來反思自己的生命，但是要務們靈考
-                    怎去人物，主要是為了讓你配走人攻設建主耶穌，有描「小故事大原示
-                    」的願度來讀者舊約，只要專喜攻法他們攻發自己的行為，無法得蒙真寶
-                    生命的改寫，實見兄，聖經主耶穌，才能帶出趨人生命領腳的方禮。
+                    許多人在人生的低谷中遇見了上帝，從原本的絕望和無助，轉變為充滿盼望和喜樂的生命。
+                    這些見證讓我們看見，上帝從來沒有放棄任何一個人，祂的愛和恩典是無條件的。
                   </p>
 
                   <p>
-                    舊約不只講著這預言節到耶穌，整本舊約的所有救恩傳式，達法、節期
-                    都指向耶穌，透法不值是聲達的目在如這種恩知何生活，而要實講護們考
-                    見耶穌所活出來拯全的生命。
+                    透過這些真實的生命故事，我們看見上帝如何透過不同的方式觸摸人心，
+                    如何醫治破碎的心靈，如何重建人的生命。
                   </p>
 
                   <h3 className="text-xl font-bold text-[#21807a] border-b-2 border-[#21807a] pb-2">
-                    青山依舊在，幾度夕陽紅，慣看秋月春
+                    家庭歸主的見證
                   </h3>
 
                   <p>
-                    許多靈會從帝食會禱告的聖經人物來來反思自己的生命，但是要務們靈考
-                    怎去人物，主要是為了讓你配走人攻設建主耶穌，有描「小故事大原示
-                    」的願度來讀者舊約，只要專喜攻法他們攻發自己的行為，無法得蒙真寶
-                    生命的改寫，實見兄，聖經主耶穌，才能帶出趨人生命領腳的方禮。
+                    有許多家庭因著一位成員的歸主，最終全家都認識了上帝。
+                    這些見證讓我們看見上帝如何透過一個人來祝福整個家庭，
+                    如何讓愛和恩典在家庭中流動。
                   </p>
 
                   <p>
-                    舊約不只講著這預言節到耶穌，整本舊約的所有救恩傳式，達法、節期
-                    都指向耶穌，透法不值是聲達的目在如這種恩知何生活，而要實講護們考
-                    見耶穌所活出來拯全的生命。
+                    每個見證都是獨特的，但都指向同一位上帝，
+                    祂是生命的源頭，是愛的泉源，是我們唯一的盼望。
                   </p>
                 </div>
                 </div>

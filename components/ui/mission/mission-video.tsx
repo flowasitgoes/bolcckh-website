@@ -17,7 +17,7 @@ export function MissionVideo() {
         
         {/* Video info below the video */}
         {/* <div className="text-center mt-6">
-          <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-800 mb-2">
+                      <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-[#444] mb-2">
             生根建造 2025 BOLCCKH
           </h3>
           <div className="space-y-1 text-sm md:text-base text-gray-600">

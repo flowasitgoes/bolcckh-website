@@ -80,7 +80,7 @@ export default function ChurchDepartmentTaiwaneseLanguageLessonPage() {
                   🔴 門徒學校(上)「第十四期」
                 </h1>
                 
-                <div className="space-y-3 md:space-y-4 text-gray-800 text-sm md:text-base">
+                <div className="space-y-3 md:space-y-4 text-[#444] text-sm md:text-base">
                   <p><strong>上課教材：</strong>門徒學校</p>
                   <p><strong>必讀書籍：</strong>標竿人生（晉昇版） / 幸福到你家</p>
                   

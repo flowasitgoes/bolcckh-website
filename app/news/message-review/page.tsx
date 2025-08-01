@@ -111,7 +111,7 @@ export default function MessageReviewPage() {
                         <div className="flex-1">
                           <div className="flex justify-between items-start gap-4">
                             <div>
-                              <h3 className="text-xl font-bold text-gray-800 mb-2">職場英雄好漢報名處</h3>
+                              <h3 className="text-xl font-bold text-[#444] mb-2">職場英雄好漢報名處</h3>
                               <p className="text-gray-600">「買了商務艙,卻進不了貴賓室」《人生的現場理解》影畫展</p>
                               <p className="text-gray-600">6/29(日)~7/05(日)</p>
                               <div className="flex flex-wrap gap-2 mt-2">
@@ -136,7 +136,7 @@ export default function MessageReviewPage() {
                         <div className="flex-1">
                           <div className="flex justify-between items-start gap-4">
                             <div>
-                              <h3 className="text-xl font-bold text-gray-800 mb-2">職場英雄好漢報名處</h3>
+                              <h3 className="text-xl font-bold text-[#444] mb-2">職場英雄好漢報名處</h3>
                               <p className="text-gray-600">「買了商務艙,卻進不了貴賓室」《人生的現場理解》影畫展</p>
                               <p className="text-gray-600">6/29(日)~7/05(日)</p>
                               <div className="flex flex-wrap gap-2 mt-2">
@@ -161,7 +161,7 @@ export default function MessageReviewPage() {
                         <div className="flex-1">
                           <div className="flex justify-between items-start gap-4">
                             <div>
-                              <h3 className="text-xl font-bold text-gray-800 mb-2">職場英雄好漢報名處</h3>
+                              <h3 className="text-xl font-bold text-[#444] mb-2">職場英雄好漢報名處</h3>
                               <p className="text-gray-600">「買了商務艙,卻進不了貴賓室」《人生的現場理解》影畫展</p>
                               <p className="text-gray-600">6/29(日)~7/05(日)</p>
                               <div className="flex flex-wrap gap-2 mt-2">

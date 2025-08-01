@@ -20,7 +20,7 @@ export function Footer() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-3 text-gray-800 outline-none bg-white"
+                className="flex-1 px-4 py-3 text-[#444] outline-none bg-white"
               />
               <button type="submit" className="bg-teal-500 hover:bg-teal-600 text-white px-4 flex items-center justify-center">
                 <img src="/footer-link-btn.png" alt="Submit" className="w-6 h-6" />

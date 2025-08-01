@@ -5,12 +5,12 @@ import Link from 'next/link'
 import '@/styles/mission.css'
 
 export const metadata: Metadata = {
-  title: '神的作為 何等美好 | 高雄靈糧堂 - 生命見證',
-  description: '高雄靈糧堂生命見證，分享弟兄姊妹經歷上帝、禱告蒙應允、門訓見證等真實的生命故事。',
-  keywords: '高雄靈糧堂, 生命見證, 經歷上帝, 禱告蒙應允, 門訓見證, 神的作為',
+  title: '門訓見證 | 高雄靈糧堂 - 生命見證',
+  description: '高雄靈糧堂生命見證，分享弟兄姊妹門訓過程中的真實故事。',
+  keywords: '高雄靈糧堂, 生命見證, 門訓見證, 門徒訓練, 見證',
 }
 
-export default function MissionTestimonyPage() {
+export default function WitnessPage() {
   return (
     <div className="min-h-screen">
       <Header />
@@ -34,7 +34,7 @@ export default function MissionTestimonyPage() {
                 <nav className="space-y-0 p-6">
                   <Link 
                     href="/mission-testimony"
-                    className="block text-white px-4 py-3 border-l-4 border-l-[#fe7f4c] border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
+                    className="block text-white px-4 py-3 border-b border-white/20 hover:bg-[#1a6860] transition-colors"
                   >
                     神的作為 何等美好
                   </Link>
@@ -52,7 +52,7 @@ export default function MissionTestimonyPage() {
                   </Link>
                   <Link 
                     href="/mission-testimony/witness"
-                    className="block text-white px-4 py-3 hover:bg-[#1a6860] transition-colors"
+                    className="block text-white px-4 py-3 border-l-4 border-l-[#fe7f4c] hover:bg-[#1a6860] transition-colors"
                   >
                     門訓見證
                   </Link>
@@ -68,7 +68,7 @@ export default function MissionTestimonyPage() {
                 <span className="mx-2">{'>'}</span>
                 <Link href="/mission-testimony" className="hover:text-[#21807a]">生命見證</Link>
                 <span className="mx-2">{'>'}</span>
-                <span className="text-[#21807a]">神的作為 何等美好</span>
+                <span className="text-[#21807a]">門訓見證</span>
               </nav>
 
               {/* Article Content */}
@@ -77,7 +77,7 @@ export default function MissionTestimonyPage() {
                 <div className="w-full mb-8">
                   <img
                     src="/mission/C2/C2-07.png"
-                    alt="主崇信息精華"
+                    alt="門訓見證"
                     className="w-full h-auto object-cover"
                   />
                 </div>
@@ -86,7 +86,7 @@ export default function MissionTestimonyPage() {
                 {/* Article Header */}
                 <div className="text-center mb-8">
                   <h1 className="text-2xl md:text-3xl font-bold text-[#444] mb-4">
-                    主崇信息精華｜大衛：神所揀選的受膏者｜
+                    門訓見證｜跟隨主耶穌的成長之路
                   </h1>
                   <p className="text-gray-600">2025.06.15</p>
                 </div>
@@ -94,43 +94,53 @@ export default function MissionTestimonyPage() {
                 {/* Article Content */}
                 <div className="prose max-w-none text-gray-700 leading-relaxed space-y-6">
                   <p>
-                    本週起至八、九月，會眾聚焦於大衛王平的系列聚會，實地探會看兄，
-                    勉勵弟兄達事工，今天傳真正攻勢神蒼薹聰明其配上大穴實1-13節，透
-                    過大衛，來認識耶穌基督樓神所揀選的受膏者。
+                    門徒訓練是基督徒生命成長的重要過程，在我們教會中，有許多弟兄姊妹透過門訓課程，
+                    在信仰上有了更深的認識和成長，這些見證讓我們看見上帝如何塑造祂的門徒。
                   </p>
 
                   <h3 className="text-xl font-bold text-[#21807a] border-b-2 border-[#21807a] pb-2">
-                    青山依舊在，幾度夕陽紅，慣看秋月春
+                    生命品格的重塑
                   </h3>
 
                   <p>
-                    許多靈會從帝食會禱告的聖經人物來來反思自己的生命，但是要務們靈考
-                    怎去人物，主要是為了讓你配走人攻設建主耶穌，有描「小故事大原示
-                    」的願度來讀者舊約，只要專喜攻法他們攻發自己的行為，無法得蒙真寶
-                    生命的改寫，實見兄，聖經主耶穌，才能帶出趨人生命領腳的方禮。
+                    透過門訓課程，許多弟兄姊妹在品格上有了顯著的改變，
+                    原本的軟弱和缺點在上帝的恩典中得到了更新和改變。
+                    這些見證讓我們看見上帝如何透過門訓來塑造我們的生命。
                   </p>
 
                   <p>
-                    舊約不只講著這預言節到耶穌，整本舊約的所有救恩傳式，達法、節期
-                    都指向耶穌，透法不值是聲達的目在如這種恩知何生活，而要實講護們考
-                    見耶穌所活出來拯全的生命。
+                    門訓不只是知識的學習，更是生命的轉變，
+                    透過系統性的學習和實踐，我們的生命逐漸被上帝的話語更新。
                   </p>
 
                   <h3 className="text-xl font-bold text-[#21807a] border-b-2 border-[#21807a] pb-2">
-                    青山依舊在，幾度夕陽紅，慣看秋月春
+                    服事能力的提升
                   </h3>
 
                   <p>
-                    許多靈會從帝食會禱告的聖經人物來來反思自己的生命，但是要務們靈考
-                    怎去人物，主要是為了讓你配走人攻設建主耶穌，有描「小故事大原示
-                    」的願度來讀者舊約，只要專喜攻法他們攻發自己的行為，無法得蒙真寶
-                    生命的改寫，實見兄，聖經主耶穌，才能帶出趨人生命領腳的方禮。
+                    有許多弟兄姊妹透過門訓課程，在服事上有了更大的突破，
+                    原本不敢服事的人，現在能夠勇敢地站出來服事上帝和教會。
+                    這些見證讓我們看見上帝如何裝備祂的僕人。
                   </p>
 
                   <p>
-                    舊約不只講著這預言節到耶穌，整本舊約的所有救恩傳式，達法、節期
-                    都指向耶穌，透法不值是聲達的目在如這種恩知何生活，而要實講護們考
-                    見耶穌所活出來拯全的生命。
+                    門訓讓我們明白，服事不是靠自己的能力，
+                    而是靠著上帝的恩典和聖靈的能力，我們只是上帝手中的器皿。
+                  </p>
+
+                  <h3 className="text-xl font-bold text-[#21807a] border-b-2 border-[#21807a] pb-2">
+                    家庭生活的見證
+                  </h3>
+
+                  <p>
+                    有許多家庭因著門訓課程，家庭關係得到了改善，
+                    原本緊張的關係因著上帝的愛而得到修復，
+                    這些見證讓我們看見門訓如何影響整個家庭。
+                  </p>
+
+                  <p>
+                    門訓不只是個人的成長，更是整個家庭的祝福，
+                    當我們的生命被上帝更新時，我們的家庭也會跟著蒙福。
                   </p>
                 </div>
                 </div>

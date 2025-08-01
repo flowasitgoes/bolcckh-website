@@ -58,7 +58,7 @@ export function Header() {
             {navItems.map((item, idx) => (
               <div
                 key={item.en}
-                className={`flex flex-col items-center px-6 h-full justify-center border-r border-gray-200 last:border-r-0 group relative ${idx === activeIndex ? 'text-orange-theme' : 'text-gray-800'}`}
+                className={`flex flex-col items-center px-6 h-full justify-center border-r border-gray-200 last:border-r-0 group relative ${idx === activeIndex ? 'text-orange-theme' : 'text-[#444]'}`}
               >
                 <span className={`text-base font-bold mb-1 group-hover:text-orange-theme ${idx === activeIndex ? 'text-orange-theme' : ''}`}>{item.zh}</span>
                 <span className={`text-sm text-orange-theme font-medium group-hover:underline group-hover:text-orange-600`}>{item.en}</span>
@@ -68,7 +68,7 @@ export function Header() {
                     <ul className="space-y-2">
                       {item.children.map((child) => (
                         <li key={child.href}>
-                          <a href={child.href} className="block text-gray-800 hover:text-orange-theme font-medium py-1 px-2 rounded transition-colors duration-150 hover:underline cursor-pointer">
+                          <a href={child.href} className="block text-[#444] hover:text-orange-theme font-medium py-1 px-2 rounded transition-colors duration-150 hover:underline cursor-pointer">
                             {child.zh}
                           </a>
                         </li>

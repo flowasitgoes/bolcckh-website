@@ -12,7 +12,7 @@ export function FindUsSection({ compact = false, showButton = true, className = 
     <section className={`${compact ? 'py-8' : 'py-16 lg:py-24'} bg-gray-50 ${className}`}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-2">Find Us</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold text-[#444] mb-2">Find Us</h2>
           <p className="text-teal-700 text-xl font-bold tracking-widest">找到我們</p>
         </div>
 

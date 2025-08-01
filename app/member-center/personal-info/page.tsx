@@ -131,7 +131,7 @@ export default function PersonalInfoPage() {
               <div className="member-center-login-box">
                 <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
                   <div className="text-center mb-8">
-                    <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+                    <h2 className="text-2xl md:text-3xl font-bold text-[#444] mb-4">
                       個人資料
                     </h2>
                     <p className="text-gray-600">
@@ -142,27 +142,27 @@ export default function PersonalInfoPage() {
                   <div className="space-y-4">
                     <div className="flex items-center">
                       <span className="text-gray-600 font-medium w-24">姓名：</span>
-                      <span className="text-gray-800 font-semibold">{memberData.name}</span>
+                      <span className="text-[#444] font-semibold">{memberData.name}</span>
                     </div>
                     <div className="flex items-center">
                       <span className="text-gray-600 font-medium w-24">手機號碼：</span>
-                      <span className="text-gray-800 font-semibold">{memberData.phone}</span>
+                      <span className="text-[#444] font-semibold">{memberData.phone}</span>
                     </div>
                     <div className="flex items-center">
                       <span className="text-gray-600 font-medium w-24">Email：</span>
-                      <span className="text-gray-800 font-semibold">{memberData.email}</span>
+                      <span className="text-[#444] font-semibold">{memberData.email}</span>
                     </div>
                     <div className="flex items-center">
                       <span className="text-gray-600 font-medium w-24">奉獻編號：</span>
-                      <span className="text-gray-800 font-semibold">{memberData.donationId}</span>
+                      <span className="text-[#444] font-semibold">{memberData.donationId}</span>
                     </div>
                     <div className="flex items-center">
                       <span className="text-gray-600 font-medium w-24">帳號等級：</span>
-                      <span className="text-gray-800 font-semibold">{memberData.accountLevel}</span>
+                      <span className="text-[#444] font-semibold">{memberData.accountLevel}</span>
                     </div>
                     <div className="flex items-center">
                       <span className="text-gray-600 font-medium w-24">門訓課程：</span>
-                      <span className="text-gray-800 font-semibold">{memberData.discipleshipCourse}</span>
+                      <span className="text-[#444] font-semibold">{memberData.discipleshipCourse}</span>
                     </div>
                   </div>
                   

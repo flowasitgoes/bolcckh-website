@@ -57,7 +57,7 @@ export function NewsSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-2xl lg:text-4xl text-teal-600 font-bold tracking-widest mb-2">最新消息</h2>
-          <h3 className="text-3xl lg:text-5xl font-bold text-gray-800">Latest News</h3>
+          <h3 className="text-3xl lg:text-5xl font-bold text-[#444]">Latest News</h3>
         </div>
         {/* Carousel 區塊 */}
         <div className="overflow-hidden" ref={emblaRef}>
@@ -87,7 +87,7 @@ export function NewsSection() {
                         {item.comments} Comments
                       </span>
                     </div>
-                    <h4 className="font-bold text-lg mb-2 text-gray-800 leading-snug mt-4">{item.title}</h4>
+                    <h4 className="font-bold text-lg mb-2 text-[#444] leading-snug mt-4">{item.title}</h4>
                     {item.subtitle && <p className="text-gray-600 text-sm leading-relaxed">{item.subtitle}</p>}
                     <div className="mt-4 flex items-center justify-between">
                       <span className="inline-block bg-teal-100 text-teal-800 text-xs px-2 py-1 rounded">

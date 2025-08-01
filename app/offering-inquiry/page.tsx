@@ -146,7 +146,7 @@ export default function OfferingInquiryPage() {
                 </div>
                 
                 <div className="bg-gray-50 p-4 rounded-lg">
-                  <h4 className="text-gray-800 font-semibold mb-2">聯絡資訊</h4>
+                  <h4 className="text-[#444] font-semibold mb-2">聯絡資訊</h4>
                   <div className="text-gray-600 text-sm space-y-1">
                     <p>電話: 07-3456868</p>
                     <p>傳真: 07-3456527</p>

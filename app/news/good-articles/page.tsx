@@ -111,7 +111,7 @@ export default function GoodArticlesPage() {
                         <div className="flex-1">
                           <div className="flex justify-between items-start gap-4">
                             <div>
-                              <h3 className="text-xl font-bold text-gray-800 mb-2">每日靈修心得</h3>
+                              <h3 className="text-xl font-bold text-[#444] mb-2">每日靈修心得</h3>
                               <p className="text-gray-600">透過每日讀經，讓我們更親近神，在生活中經歷祂的恩典</p>
                               <p className="text-gray-600">7/01(日)~7/07(日)</p>
                               <div className="flex flex-wrap gap-2 mt-2">
@@ -136,7 +136,7 @@ export default function GoodArticlesPage() {
                         <div className="flex-1">
                           <div className="flex justify-between items-start gap-4">
                             <div>
-                              <h3 className="text-xl font-bold text-gray-800 mb-2">生命見證分享</h3>
+                              <h3 className="text-xl font-bold text-[#444] mb-2">生命見證分享</h3>
                               <p className="text-gray-600">弟兄姊妹們分享在信仰路上的經歷與神的恩典</p>
                               <p className="text-gray-600">7/08(日)~7/14(日)</p>
                               <div className="flex flex-wrap gap-2 mt-2">
@@ -161,7 +161,7 @@ export default function GoodArticlesPage() {
                         <div className="flex-1">
                           <div className="flex justify-between items-start gap-4">
                             <div>
-                              <h3 className="text-xl font-bold text-gray-800 mb-2">精選文章推薦</h3>
+                              <h3 className="text-xl font-bold text-[#444] mb-2">精選文章推薦</h3>
                               <p className="text-gray-600">精選各類信仰文章，幫助我們在屬靈生命上成長</p>
                               <p className="text-gray-600">7/15(日)~7/21(日)</p>
                               <div className="flex flex-wrap gap-2 mt-2">

@@ -5,7 +5,7 @@ export function AboutWelcome() {
     <section className="about-welcome-container flex flex-col md:flex-row w-full">
       <div className="about-welcome-left flex-1 bg-[#fe7f4c] text-white flex flex-col justify-center p-8 md:p-12">
         <div className="text-lg md:text-2xl mb-2">高雄靈糧堂，歡迎你們回家。</div>
-        <div className="text-3xl md:text-5xl font-bold mb-6 text-black">Welcome home!</div>
+        <div className="text-3xl md:text-5xl font-bold mb-6 text-[#444]">Welcome home!</div>
         <div className="about-welcome-description text-lg md:text-2xl leading-relaxed">
           上帝的家教會就是我們的家，今天你們來到教會，就是回到上帝的家。<br />
           高雄靈糧堂是一個被神揀選建立在台灣南部的教會，祂的恩典一直在我們當中。<br />

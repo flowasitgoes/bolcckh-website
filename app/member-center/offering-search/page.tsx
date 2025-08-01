@@ -160,7 +160,7 @@ export default function OfferingSearchPage() {
               <div className="member-center-login-box">
                 <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
                   <div className="text-center mb-8">
-                    <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+                    <h2 className="text-2xl md:text-3xl font-bold text-[#444] mb-4">
                       奉獻紀錄查詢
                     </h2>
                     <p className="text-gray-600">
@@ -181,9 +181,9 @@ export default function OfferingSearchPage() {
                       <tbody>
                         {donationRecords.map((record) => (
                           <tr key={record.id} className="border-b border-gray-100 hover:bg-gray-50">
-                            <td className="py-4 px-4 text-gray-800">{record.date}</td>
-                            <td className="py-4 px-4 text-gray-800 font-semibold">NT$ {record.amount.toLocaleString()}</td>
-                            <td className="py-4 px-4 text-gray-800">{record.type}</td>
+                            <td className="py-4 px-4 text-[#444]">{record.date}</td>
+                            <td className="py-4 px-4 text-[#444] font-semibold">NT$ {record.amount.toLocaleString()}</td>
+                            <td className="py-4 px-4 text-[#444]">{record.type}</td>
                             <td className="py-4 px-4">
                               <span className={`px-3 py-1 rounded-full text-xs font-medium ${
                                 record.status === '已確認' 
@@ -202,7 +202,7 @@ export default function OfferingSearchPage() {
                   <div className="mt-8 pt-6 border-t border-gray-200">
                     <div className="flex justify-between items-center">
                       <div className="text-gray-600">
-                        總計: <span className="font-semibold text-gray-800">NT$ 5,500</span>
+                        總計: <span className="font-semibold text-[#444]">NT$ 5,500</span>
                       </div>
                       <button className="bg-[#21807a] text-white px-6 py-2 rounded-lg hover:bg-[#1a6b66] transition-colors duration-200 font-semibold">
                         下載紀錄

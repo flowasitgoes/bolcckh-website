@@ -105,7 +105,7 @@ export default function SundayLivePage() {
                     <div className="space-y-8">
                       {/* Event Title */}
                       <div className="mb-8">
-                        <h1 className="text-3xl text-center font-bold text-gray-800 mb-4">
+                        <h1 className="text-3xl text-center font-bold text-[#444] mb-4">
                           2025/07/06 | 主崇第一堂 | 高雄靈糧堂主日聚會直播
                         </h1>
                         <p className="text-lg text-center text-gray-600">
@@ -183,7 +183,7 @@ export default function SundayLivePage() {
 
                       {/* Worship Times */}
                       <div className="bg-gray-50 p-6 rounded-lg">
-                        <h3 className="text-xl font-bold text-gray-800 mb-4">崇拜時間:</h3>
+                        <h3 className="text-xl font-bold text-[#444] mb-4">崇拜時間:</h3>
                         <div className="space-y-3">
                           <div className="flex items-center gap-3">
                             <div className="w-3 h-3 bg-[#fe7f4c] rounded-full"></div>

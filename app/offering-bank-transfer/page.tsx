@@ -83,7 +83,7 @@ export default function OfferingBankTransferPage() {
             <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
               {/* Bible Verse at the top */}
               <div className="mb-8">
-                <p className="text-lg md:text-xl leading-relaxed mb-2 text-gray-800">
+                <p className="text-lg md:text-xl leading-relaxed mb-2 text-[#444]">
                   萬軍之耶和華說：你們要將當納的十分之一全然送入倉庫，使我家有糧，以此試試我，是否為你們敞開天上的窗戶，傾福與你們，甚至無處可容。
                 </p>
                 <p className="text-base md:text-lg font-semibold text-gray-600">

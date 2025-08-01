@@ -131,7 +131,7 @@ export default function PasswordPage() {
               <div className="member-center-login-box">
                 <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
                   <div className="text-center mb-8">
-                    <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+                    <h2 className="text-2xl md:text-3xl font-bold text-[#444] mb-4">
                       密碼修改
                     </h2>
                     <p className="text-gray-600">

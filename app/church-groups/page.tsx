@@ -113,7 +113,7 @@ function GuidelineItem({ guideline }: { guideline: typeof meetingGuidelines[0] }
   return (
     <div className="group-panel-item bg-white rounded-lg p-6 mb-4 shadow-sm">
       <div className="flex flex-col">
-        <p className="text-gray-800 leading-relaxed mb-4">{guideline.content}</p>
+                        <p className="text-[#444] leading-relaxed mb-4">{guideline.content}</p>
         <div className="self-end">
           <Image 
             src={`/church/B2/${guideline.number}.png`}
@@ -157,7 +157,7 @@ export default function ChurchGroupsPage() {
           <div className="meeting-guidelines-section-container max-w-4xl mx-auto px-4 md:px-0 py-16">
             <div className="mb-12">
               <h2 className="text-center text-2xl font-bold text-white mb-2">聚會注意事項</h2>
-              <p className="text-2xl font-bold text-gray-800">Meeting Guidelines</p>
+              <p className="text-2xl font-bold text-[#333]">Meeting Guidelines</p>
             </div>
             
             <div className="meeting-guidelines-container space-y-4">

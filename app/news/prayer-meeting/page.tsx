@@ -105,7 +105,7 @@ export default function PrayerMeetingPage() {
                     <div className="space-y-8">
                       {/* Event Title */}
                       <div className="mb-8">
-                        <h1 className="text-3xl text-center font-bold text-gray-800 mb-4">
+                        <h1 className="text-3xl text-center font-bold text-[#444] mb-4">
                           2025/08/01迎接平安月禱告會
                         </h1>
                         <p className="text-lg text-center text-gray-600">

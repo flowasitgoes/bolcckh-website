@@ -68,7 +68,7 @@ const churchPanels = [
 function ChurchPanel({ panel }: { panel: typeof churchPanels[0] }) {
   // 根據背景色決定文字顏色
   const isOrangeBg = panel.bgColor === 'bg-[#fe7f4c]'
-  const textColor = isOrangeBg ? 'text-gray-800' : 'text-[#fe7f4c]'
+  const textColor = isOrangeBg ? 'text-[#444]' : 'text-[#fe7f4c]'
   
   return (
     <Link href={panel.href} className="block">
@@ -138,7 +138,7 @@ export default function ChurchPage() {
         <section className="bible-quote-section bg-[#fe7f4c]">
           <div className="bible-quote-wrapper max-w-4xl mx-auto text-center px-4 md:px-0">
             <div className="bible-quote-container bg-white p-12 shadow-lg">
-              <blockquote className="text-gray-800 text-xl leading-relaxed mb-6">
+              <blockquote className="text-[#444] text-xl leading-relaxed mb-6">
                 <p className="mb-4">正如我們一個身子上有好些肢體，肢體也不都是一樣的用處。</p>
                 <p className="mb-4">我們這許多人，在基督裡成為一身，互相聯絡作肢體，也是如此。</p>
                 <div className="text-lg ">羅馬書 12:4-5</div>

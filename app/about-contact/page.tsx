@@ -101,7 +101,7 @@ function BusScheduleCard() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
         {busSchedule.schedules.map((schedule, index) => (
           <div key={index} className={`schedule-column ${index === 0 ? 'border-r border-gray-300' : ''}`}>
-            <h4 className="schedule-column-title font-semibold text-gray-800 mb-4 text-center">{schedule.direction}</h4>
+                            <h4 className="schedule-column-title font-semibold text-[#444] mb-4 text-center">{schedule.direction}</h4>
             <div className="space-y-2 text-center">
               {schedule.times.map((time, timeIndex) => (
                 <div key={timeIndex} className="text-gray-700 text-sm">{time}</div>
@@ -140,7 +140,7 @@ export default function AboutContactPage() {
           <div className="contact-info-section-wrapper max-w-6xl mx-auto px-4">
             <div className="contact-info-section-title text-center mb-12">
               <h2 className="text-lg text-[#21807a] mb-2">聯絡資訊</h2>
-              <p className="text-3xl font-bold text-gray-800">Contact Information</p>
+              <p className="text-3xl font-bold text-[#444]">Contact Information</p>
             </div>
             
             {/* 橙色背景的聯絡資訊卡片 */}

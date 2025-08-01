@@ -71,7 +71,7 @@ export default function ChurchDepartmentTaiwaneseLanguagePage() {
         <section className="main-content-section bg-[#21807a] py-16">
           <div className="max-w-4xl mx-auto px-4">
             <div className="bg-white rounded-lg p-12 shadow-lg" style={{borderRadius: '40px'}}>
-              <div className="prose prose-lg max-w-none text-gray-800">
+              <div className="prose prose-lg max-w-none text-[#444]">
                 <p className="text-lg leading-relaxed mb-6">
                   在全球高齡化社會的趨勢下，台語牧區肩負著重要的使命。我們相信每個人都需要聽到救恩的故事，參與在神的救恩故事中，經歷基督信仰的真實——不只是死後上天堂，更是在地上如同在天上。
                 </p>
