@@ -32,54 +32,17 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  position: absolute;
+  position: fixed;
   right: 2rem;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 20;
+  z-index: 3;
 }
 .serviceSocialImg {
   width: 5rem;
 }
 
-/* mobile 版社交欄位（桌機預設隱藏） */
-.serviceSocialMobile {
-  display: none;
-}
 
-/* Mobile版本读经计划样式 */
-.mobileBookContainer {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-.mobileBookLabel {
-  cursor: pointer;
-}
-
-.mobileBookContent {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #fe7f45;
-  border: 2px solid white;
-  border-radius: 12px;
-  margin-top: 8px;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateX(-50%) translateY(-10px);
-  transition: all 0.3s ease-in-out;
-  z-index: 10;
-  min-width: 280px;
-}
-
-.mobileBookContent.mobileBookOpen {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%) translateY(0);
-}
 
 .socialContentWrap {
   /* background-color: red; */
@@ -145,18 +108,17 @@
     width: 7.5rem;
     height: 7.5rem;
   }
+  /* 移動端調整固定區塊的位置和大小 */
   .serviceSocial {
-    display: none;
+    right: 1rem;
+    top: 140px;
+    bottom: auto;
+    transform: none;
   }
-  .serviceSocialMobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
+  .serviceSocialImg {
+    width: 4rem;
   }
-  .serviceSocialMobile img {
-    width: 200px;
-    align-self: center;
+  .socialContentWrap {
+    width: 340px;
   }
 } 

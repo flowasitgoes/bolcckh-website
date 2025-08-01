@@ -105,10 +105,10 @@ export default function SundayLivePage() {
                     <div className="space-y-8">
                       {/* Event Title */}
                       <div className="mb-8">
-                        <h1 className="text-3xl font-bold text-gray-800 mb-4">
+                        <h1 className="text-3xl text-center font-bold text-gray-800 mb-4">
                           2025/07/06 | 主崇第一堂 | 高雄靈糧堂主日聚會直播
                         </h1>
-                        <p className="text-lg text-gray-600">
+                        <p className="text-lg text-center text-gray-600">
                           線上直播時間: 上午7:30
                         </p>
                       </div>
