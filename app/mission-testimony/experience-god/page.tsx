@@ -11,6 +11,52 @@ export const metadata: Metadata = {
 }
 
 export default function ExperienceGodPage() {
+  // 見證數據
+  const testimonies = [
+    {
+      id: 1,
+      title: "全家信主 - 侯淑樺 姊妹",
+      subtitle: "全家信主 家師",
+      image: "/mission/C2/C2-07.png",
+      date: "2025.01.15"
+    },
+    {
+      id: 2,
+      title: "從絕望到盼望 - 張明德 弟兄",
+      subtitle: "生命轉變 見證",
+      image: "/mission/C2/C2-07.png",
+      date: "2025.01.10"
+    },
+    {
+      id: 3,
+      title: "醫治與恢復 - 李美玲 姊妹",
+      subtitle: "疾病得醫治 見證",
+      image: "/mission/C2/C2-07.png",
+      date: "2025.01.05"
+    },
+    {
+      id: 4,
+      title: "工作蒙祝福 - 王建國 弟兄",
+      subtitle: "事業發展 見證",
+      image: "/mission/C2/C2-07.png",
+      date: "2024.12.28"
+    },
+    {
+      id: 5,
+      title: "家庭關係修復 - 陳雅婷 姊妹",
+      subtitle: "家庭和好 見證",
+      image: "/mission/C2/C2-07.png",
+      date: "2024.12.20"
+    },
+    {
+      id: 6,
+      title: "靈命成長 - 林志豪 弟兄",
+      subtitle: "屬靈生命 見證",
+      image: "/mission/C2/C2-07.png",
+      date: "2024.12.15"
+    }
+  ]
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -71,62 +117,67 @@ export default function ExperienceGodPage() {
                 <span className="text-[#21807a]">經歷上帝 生命歸主</span>
               </nav>
 
-              {/* Article Content */}
-              <div className="bg-white shadow-sm">
-                {/* Main Image */}
-                <div className="w-full mb-8">
-                  <img
-                    src="/mission/C2/C2-07.png"
-                    alt="經歷上帝 生命歸主"
-                    className="w-full h-auto object-cover"
-                  />
-                </div>
-
-                <div className="article-content-wrapper">
-                {/* Article Header */}
-                <div className="text-center mb-8">
+              {/* Testimonies List */}
+              <div className="bg-white shadow-sm p-12">
+                <div className="mb-8">
                   <h1 className="text-2xl md:text-3xl font-bold text-[#444] mb-4">
-                    經歷上帝 生命歸主｜真實的生命轉變見證
+                    經歷上帝 生命歸主
                   </h1>
-                  <p className="text-gray-600">2025.06.15</p>
+                  <p className="text-gray-600">真實的生命轉變見證</p>
                 </div>
 
-                {/* Article Content */}
-                <div className="prose max-w-none text-gray-700 leading-relaxed space-y-6">
-                  <p>
-                    在我們教會中，有許多弟兄姊妹經歷了上帝奇妙的作為，他們的生命因著認識主而有了根本的轉變。
-                    這些真實的見證讓我們看見上帝在每個人生命中的工作。
-                  </p>
+                {/* Testimonies Grid */}
+                <div className="space-y-6">
+                  {testimonies.map((testimony, index) => (
+                    <div key={testimony.id} className="flex items-center space-x-6 p-6 border-b border-gray-200 last:border-b-0 hover:bg-gray-50 transition-colors">
+                      {/* Testimony Image */}
+                      <div className="flex-shrink-0">
+                        <div className="w-24 h-24">
+                          <img
+                            src={testimony.image}
+                            alt={testimony.title}
+                            className="w-full h-full object-cover rounded-lg border-2 border-[#fe7f4c]"
+                          />
+                        </div>
+                      </div>
 
-                  <h3 className="text-xl font-bold text-[#21807a] border-b-2 border-[#21807a] pb-2">
-                    從絕望到盼望的生命轉變
-                  </h3>
+                      {/* Testimony Content */}
+                      <div className="flex-1">
+                        <h3 className="text-lg font-semibold text-[#333] mb-2">
+                          {testimony.title}
+                        </h3>
+                        <p className="text-sm text-gray-600">
+                          {testimony.date}
+                        </p>
+                      </div>
 
-                  <p>
-                    許多人在人生的低谷中遇見了上帝，從原本的絕望和無助，轉變為充滿盼望和喜樂的生命。
-                    這些見證讓我們看見，上帝從來沒有放棄任何一個人，祂的愛和恩典是無條件的。
-                  </p>
-
-                  <p>
-                    透過這些真實的生命故事，我們看見上帝如何透過不同的方式觸摸人心，
-                    如何醫治破碎的心靈，如何重建人的生命。
-                  </p>
-
-                  <h3 className="text-xl font-bold text-[#21807a] border-b-2 border-[#21807a] pb-2">
-                    家庭歸主的見證
-                  </h3>
-
-                  <p>
-                    有許多家庭因著一位成員的歸主，最終全家都認識了上帝。
-                    這些見證讓我們看見上帝如何透過一個人來祝福整個家庭，
-                    如何讓愛和恩典在家庭中流動。
-                  </p>
-
-                  <p>
-                    每個見證都是獨特的，但都指向同一位上帝，
-                    祂是生命的源頭，是愛的泉源，是我們唯一的盼望。
-                  </p>
+                      {/* View Button */}
+                      <div className="flex-shrink-0">
+                        <Link 
+                          href={`/mission-testimony/experience-god/${testimony.id}`}
+                          className="inline-flex items-center px-4 py-2 bg-[#21807a] text-white rounded-lg hover:bg-[#1a6860] transition-colors text-sm font-medium"
+                        >
+                          查看詳情
+                          <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                        </Link>
+                      </div>
+                    </div>
+                  ))}
                 </div>
+
+                {/* Pagination */}
+                <div className="mt-8 flex justify-center">
+                  <nav className="flex items-center space-x-2">
+                    <button className="px-3 py-2 text-sm text-gray-500 hover:text-[#21807a] disabled:opacity-50 disabled:cursor-not-allowed">
+                      上一頁
+                    </button>
+                    <span className="px-3 py-2 text-sm bg-[#21807a] text-white rounded">1</span>
+                    <button className="px-3 py-2 text-sm text-gray-500 hover:text-[#21807a]">
+                      下一頁
+                    </button>
+                  </nav>
                 </div>
               </div>
             </div>

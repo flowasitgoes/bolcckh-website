@@ -6,8 +6,8 @@ import '@/styles/mission.css'
 
 export const metadata: Metadata = {
   title: '門訓見證 | 高雄靈糧堂 - 生命見證',
-  description: '高雄靈糧堂生命見證，分享弟兄姊妹門訓過程中的真實故事。',
-  keywords: '高雄靈糧堂, 生命見證, 門訓見證, 門徒訓練, 見證',
+  description: '高雄靈糧堂門訓見證，分享弟兄姊妹在門徒訓練中的成長與突破見證。',
+  keywords: '高雄靈糧堂, 門訓見證, 門徒訓練, 屬靈成長',
 }
 
 export default function WitnessPage() {
@@ -71,78 +71,103 @@ export default function WitnessPage() {
                 <span className="text-[#21807a]">門訓見證</span>
               </nav>
 
-              {/* Article Content */}
-              <div className="bg-white shadow-sm">
-                {/* Main Image */}
-                <div className="w-full mb-8">
-                  <img
-                    src="/mission/C2/C2-07.png"
-                    alt="門訓見證"
-                    className="w-full h-auto object-cover"
-                  />
+              {/* Main Content */}
+              <div className="bg-white shadow-sm p-12">
+                {/* Video Section */}
+                <div className="mb-12">
+                  {/* <h2 className="text-2xl font-bold text-[#333] mb-6">南島語系國家介紹</h2> */}
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {/* First Video */}
+                    <div className="space-y-4">
+                      <div className="relative aspect-video bg-gray-900 rounded-lg overflow-hidden">
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="text-center">
+                            <div className="w-16 h-16 bg-red-600 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                              <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z"/>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#fe7f4c]/20 to-[#21807a]/20">
+                          <div className="absolute inset-0 bg-[url('/mission/C2/C2-07.png')] bg-cover bg-center opacity-30"></div>
+                        </div>
+                      </div>
+                      <p className="text-sm text-gray-600">以及特殊的地緣環境</p>
+                      <h3 className="text-lg font-semibold text-[#333]">水泥叢林中的宣教船艦</h3>
+                    </div>
+
+                    {/* Second Video */}
+                    <div className="space-y-4">
+                      <div className="relative aspect-video bg-gray-900 rounded-lg overflow-hidden">
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="text-center">
+                            <div className="w-16 h-16 bg-red-600 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                              <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z"/>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#fe7f4c]/20 to-[#21807a]/20">
+                          <div className="absolute inset-0 bg-[url('/mission/C2/C2-07.png')] bg-cover bg-center opacity-30"></div>
+                        </div>
+                      </div>
+                      <p className="text-sm text-gray-600">以及特殊的地緣環境</p>
+                      <h3 className="text-lg font-semibold text-[#333]">南島語系國家介紹影片</h3>
+                    </div>
+                  </div>
                 </div>
 
-                <div className="article-content-wrapper">
-                {/* Article Header */}
-                <div className="text-center mb-8">
-                  <h1 className="text-2xl md:text-3xl font-bold text-[#444] mb-4">
-                    門訓見證｜跟隨主耶穌的成長之路
-                  </h1>
-                  <p className="text-gray-600">2025.06.15</p>
+                {/* Map Section */}
+                <div className="mb-12">
+                  <div className="relative">
+                    {/* Map Image */}
+                    <div className="relative w-full h-96 bg-cover bg-center rounded-lg overflow-hidden" 
+                         style={{
+                           backgroundImage: 'url("https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80")'
+                         }}>
+                      {/* Map Overlay */}
+                      <div className="absolute inset-0 bg-brown-800/20"></div>
+                      
+                      {/* Heart Pins */}
+                      <div className="absolute top-1/3 left-1/4 w-6 h-6 bg-red-500 rounded-full animate-pulse"></div>
+                      <div className="absolute top-1/2 right-1/3 w-6 h-6 bg-red-500 rounded-full animate-pulse"></div>
+                      
+                      {/* Map Title */}
+                      <div className="absolute top-4 left-4 bg-white/90 px-4 py-2 rounded-lg">
+                        <h3 className="text-lg font-bold text-[#333]">南島語系國家分佈圖</h3>
+                      </div>
+                      
+                      {/* Notebook */}
+                      <div className="absolute bottom-4 left-4 w-16 h-20 bg-white rounded-lg shadow-lg flex items-center justify-center">
+                        <div className="w-8 h-10 bg-purple-500 rounded"></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                {/* Article Content */}
-                <div className="prose max-w-none text-gray-700 leading-relaxed space-y-6">
-                  <p>
-                    門徒訓練是基督徒生命成長的重要過程，在我們教會中，有許多弟兄姊妹透過門訓課程，
-                    在信仰上有了更深的認識和成長，這些見證讓我們看見上帝如何塑造祂的門徒。
-                  </p>
-
-                  <h3 className="text-xl font-bold text-[#21807a] border-b-2 border-[#21807a] pb-2">
-                    生命品格的重塑
-                  </h3>
-
-                  <p>
-                    透過門訓課程，許多弟兄姊妹在品格上有了顯著的改變，
-                    原本的軟弱和缺點在上帝的恩典中得到了更新和改變。
-                    這些見證讓我們看見上帝如何透過門訓來塑造我們的生命。
-                  </p>
-
-                  <p>
-                    門訓不只是知識的學習，更是生命的轉變，
-                    透過系統性的學習和實踐，我們的生命逐漸被上帝的話語更新。
-                  </p>
-
-                  <h3 className="text-xl font-bold text-[#21807a] border-b-2 border-[#21807a] pb-2">
-                    服事能力的提升
-                  </h3>
-
-                  <p>
-                    有許多弟兄姊妹透過門訓課程，在服事上有了更大的突破，
-                    原本不敢服事的人，現在能夠勇敢地站出來服事上帝和教會。
-                    這些見證讓我們看見上帝如何裝備祂的僕人。
-                  </p>
-
-                  <p>
-                    門訓讓我們明白，服事不是靠自己的能力，
-                    而是靠著上帝的恩典和聖靈的能力，我們只是上帝手中的器皿。
-                  </p>
-
-                  <h3 className="text-xl font-bold text-[#21807a] border-b-2 border-[#21807a] pb-2">
-                    家庭生活的見證
-                  </h3>
-
-                  <p>
-                    有許多家庭因著門訓課程，家庭關係得到了改善，
-                    原本緊張的關係因著上帝的愛而得到修復，
-                    這些見證讓我們看見門訓如何影響整個家庭。
-                  </p>
-
-                  <p>
-                    門訓不只是個人的成長，更是整個家庭的祝福，
-                    當我們的生命被上帝更新時，我們的家庭也會跟著蒙福。
-                  </p>
+                {/* Orange Background Section */}
+                <div className="mission-testmony-witness-section bg-[#fe7f4c] p-32 rounded-lg">
+                  <div className="text-center">
+                    <p className="text-black text-lg leading-relaxed">
+                      隨著全球化的發展，南島語系國家的基督教面臨現代化和世俗化的挑戰，可能需要重新詮釋其信仰和實踐。
+                    </p>
+                  </div>
                 </div>
+
+                {/* Navigation Button */}
+                <div className="mt-8 text-right">
+                  <Link 
+                    href="/mission-testimony"
+                    className="inline-flex items-center px-6 py-3 bg-[#21807a] text-white rounded-lg hover:bg-[#1a6860] transition-colors"
+                  >
+                    <svg className="mr-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                    </svg>
+                    回上一頁
+                  </Link>
                 </div>
               </div>
             </div>

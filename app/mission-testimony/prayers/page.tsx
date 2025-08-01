@@ -6,7 +6,7 @@ import '@/styles/mission.css'
 
 export const metadata: Metadata = {
   title: '禱告蒙應允 | 高雄靈糧堂 - 生命見證',
-  description: '高雄靈糧堂生命見證，分享弟兄姊妹禱告蒙應允的真實故事。',
+  description: '高雄靈糧堂禱告蒙應允見證，分享弟兄姊妹禱告得到回應的真實故事。',
   keywords: '高雄靈糧堂, 生命見證, 禱告蒙應允, 禱告, 見證',
 }
 
@@ -71,75 +71,61 @@ export default function PrayersPage() {
                 <span className="text-[#21807a]">禱告蒙應允</span>
               </nav>
 
-              {/* Article Content */}
-              <div className="bg-white shadow-sm">
-                {/* Main Image */}
-                <div className="w-full mb-8">
-                  <img
-                    src="/mission/C2/C2-07.png"
-                    alt="禱告蒙應允"
-                    className="w-full h-auto object-cover"
-                  />
+              {/* Main Content */}
+              <div className="bg-white shadow-sm p-12">
+                {/* Video Section */}
+                <div className="mb-8">
+                  <div className="relative w-full aspect-video bg-gray-900 rounded-lg overflow-hidden">
+                    {/* Video Player with Overlay */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      {/* Placeholder for video - you can replace with actual YouTube embed */}
+                      <div className="text-center">
+                        <div className="w-20 h-20 bg-red-600 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                          <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z"/>
+                          </svg>
+                        </div>
+                        <div className="text-white text-2xl font-bold mb-2">
+                          全家歸主
+                        </div>
+                        <div className="text-white text-sm opacity-80">
+                          【全家信主】侯淑樺 姐妹
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Background Image */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#fe7f4c]/20 to-[#21807a]/20">
+                      <div className="absolute inset-0 bg-[url('/mission/C2/C2-07.png')] bg-cover bg-center opacity-30"></div>
+                    </div>
+                  </div>
                 </div>
 
-                <div className="article-content-wrapper">
-                {/* Article Header */}
-                <div className="text-center mb-8">
-                  <h1 className="text-2xl md:text-3xl font-bold text-[#444] mb-4">
-                    禱告蒙應允｜上帝垂聽禱告的奇妙作為
+                {/* Testimony Title */}
+                <div className="mb-6">
+                  <h1 className="text-3xl font-bold text-[#333] mb-4">
+                    全家信主 - 侯淑樺 姊妹
                   </h1>
-                  <p className="text-gray-600">2025.06.15</p>
                 </div>
 
-                {/* Article Content */}
-                <div className="prose max-w-none text-gray-700 leading-relaxed space-y-6">
-                  <p>
-                    禱告是我們與上帝溝通的橋樑，在我們教會中，有許多弟兄姊妹經歷了禱告蒙應允的奇妙作為。
-                    這些見證讓我們看見上帝是垂聽禱告的神，祂的應許是信實的。
-                  </p>
-
-                  <h3 className="text-xl font-bold text-[#21807a] border-b-2 border-[#21807a] pb-2">
-                    疾病得醫治的見證
-                  </h3>
-
-                  <p>
-                    有許多弟兄姊妹在疾病中經歷了上帝的醫治，透過禱告和信心，
-                    他們的身體得到了完全的恢復，這些見證讓我們看見上帝的大能。
-                  </p>
-
-                  <p>
-                    上帝不僅醫治身體的疾病，更醫治心靈的創傷，
-                    透過禱告，我們可以將一切的憂慮卸給祂，因為祂顧念我們。
-                  </p>
-
-                  <h3 className="text-xl font-bold text-[#21807a] border-b-2 border-[#21807a] pb-2">
-                    家庭關係的恢復
-                  </h3>
-
-                  <p>
-                    有許多家庭因著禱告而經歷了關係的恢復，原本破裂的關係因著上帝的愛而得到修復。
-                    這些見證讓我們看見禱告的力量，以及上帝如何透過禱告來改變人心。
-                  </p>
-
-                  <p>
-                    上帝的時間是最好的時間，有時候我們需要等待，
-                    但我們相信祂必按著祂的時間和方式來回應我們的禱告。
-                  </p>
-
-                  <h3 className="text-xl font-bold text-[#21807a] border-b-2 border-[#21807a] pb-2">
-                    工作事業的祝福
-                  </h3>
-
-                  <p>
-                    有許多弟兄姊妹在工作和事業上經歷了上帝的祝福，
-                    透過禱告，他們找到了合適的工作，事業也得到了發展。
-                  </p>
-
-                  <p>
-                    這些見證提醒我們，無論在什麼情況下，我們都可以來到上帝面前禱告，
-                    祂必垂聽我們的禱告，並按著祂的美意來回應我們。
+                {/* Simple Content */}
+                <div className="prose max-w-none text-gray-700 leading-relaxed">
+                  <p className="text-lg">
+                    為何要全家歸主，理由有四：一、是神的旨意；二、合情合理；三、有真正的快樂；四、有美好的見證。既然全家歸主如此的重要，我們不可不尋求研討使全家信主、歸主的方法。
                   </p>
                 </div>
+
+                {/* Navigation Button */}
+                <div className="mt-8 text-right">
+                  <Link 
+                    href="/mission-testimony"
+                    className="inline-flex items-center px-6 py-3 bg-[#21807a] text-white rounded-lg hover:bg-[#1a6860] transition-colors"
+                  >
+                    <svg className="mr-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                    </svg>
+                    回上一頁
+                  </Link>
                 </div>
               </div>
             </div>

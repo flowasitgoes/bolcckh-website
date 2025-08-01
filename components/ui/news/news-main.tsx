@@ -111,7 +111,12 @@ export function NewsMain() {
                         <div className="flex justify-between items-start gap-4">
                           <div>
                             <h3 className="text-xl font-bold text-[#444] mb-2">
-                              {item.title}
+                              <a 
+                                href="/news/news-article" 
+                                className="hover:text-[#21807a] transition-colors"
+                              >
+                                {item.title}
+                              </a>
                             </h3>
                             <p className="text-gray-600">{item.date}</p>
                           </div>

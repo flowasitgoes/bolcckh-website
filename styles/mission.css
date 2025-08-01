@@ -106,6 +106,10 @@
   .mission-image-grid > div > div {
     width: 50% !important;
   }
+
+  .mission-testmony-witness-section {
+    padding: 1.5rem ;
+  }
 }
 
 /* 平板版本 - 768px到1024px */
