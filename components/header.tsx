@@ -48,9 +48,9 @@ export function Header() {
           {/* Logo區塊 */}
           <div className="flex items-center space-x-4">
             {/* <img src="/logo.png" alt="BOLCCKH" className="h-12 w-auto" /> */}
-            <div className="flex flex-col justify-center">
+            <a href="/" className="flex flex-col justify-center">
               <img src="/header-logo.png" alt="BOLCCKH" className="h-16 header-log-img" />
-            </div>
+            </a>
           </div>
 
           {/* Desktop Navigation */}
