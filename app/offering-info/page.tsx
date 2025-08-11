@@ -78,7 +78,7 @@ export default function OfferingInfoPage() {
           </div>
 
           {/* Right Content Area */}
-          <div className="flex-1 bg-[#fe7f4c] p-8">
+          <div className="flex-1 bg-[#F3A149] p-8">
             <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
               <h2 className="text-2xl md:text-3xl font-bold text-[#21807a] mb-6 text-center">
                 線上奉獻

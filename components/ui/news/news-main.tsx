@@ -35,7 +35,7 @@ export function NewsMain() {
             <div className="p-6">
               {/* <div className="mb-8">
                 <h2 className="text-white text-lg font-bold mb-4 relative">
-                  <span className="absolute left-0 top-0 w-1 h-6 bg-[#fe7f4c]"></span>
+                  <span className="absolute left-0 top-0 w-1 h-6 bg-[#F3A149]"></span>
                   <span className="ml-4">教會消息</span>
                 </h2>
                 <div className="border-b border-white/30"></div>
@@ -43,7 +43,7 @@ export function NewsMain() {
               <nav className="space-y-0">
                 <a 
                   href="/news"
-                  className="block text-white px-4 py-3 border-l-4 border-l-[#fe7f4c] border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
+                  className="block text-white px-4 py-3 border-l-4 border-l-[#F3A149] border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                 >
                   教會消息
                 </a>
@@ -52,28 +52,28 @@ export function NewsMain() {
                   className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                 >
                   <span>主日直播</span>
-                  <span className="text-[#fe7f4c] text-lg">›</span>
+                  <span className="text-[#F3A149] text-lg">›</span>
                 </a>
                 <a 
                   href="/news/prayer-meeting"
                   className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                 >
                   <span>禱告會直播</span>
-                  <span className="text-[#fe7f4c] text-lg">›</span>
+                  <span className="text-[#F3A149] text-lg">›</span>
                 </a>
                 <a 
                   href="/news/message-review"
                   className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                 >
                   <span>重溫信息</span>
-                  <span className="text-[#fe7f4c] text-lg">›</span>
+                  <span className="text-[#F3A149] text-lg">›</span>
                 </a>
                 <a 
                   href="/news/good-articles"
                   className="flex justify-between items-center text-white px-4 py-3 hover:bg-[#1a6860] transition-colors"
                 >
                   <span>好文分享</span>
-                  <span className="text-[#fe7f4c] text-lg">›</span>
+                  <span className="text-[#F3A149] text-lg">›</span>
                 </a>
               </nav>
             </div>
@@ -120,7 +120,7 @@ export function NewsMain() {
                             </h3>
                             <p className="text-gray-600">{item.date}</p>
                           </div>
-                          <div className="bg-[#fe7f4c] text-white p-3 text-center min-w-[80px] min-h-[80px] flex flex-col justify-center items-center flex-shrink-0">
+                          <div className="bg-[#F3A149] text-white p-3 text-center min-w-[80px] min-h-[80px] flex flex-col justify-center items-center flex-shrink-0">
                             <div className="text-xs font-medium leading-tight">{item.dayMonth.month}</div>
                             <div className="text-2xl font-bold leading-tight mt-1">{item.dayMonth.day}</div>
                           </div>

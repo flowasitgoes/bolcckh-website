@@ -54,7 +54,7 @@ export default function ChurchDepartmentTaiwaneseLanguagePage() {
             />
           </div>
           {/* Right side - Orange background with text */}
-          <div className="dt-right-side-section w-full md:w-1/2 h-48 md:h-full bg-[#fe7f4c] flex flex-col justify-center items-center text-white p-4 md:p-8">
+          <div className="dt-right-side-section w-full md:w-1/2 h-48 md:h-full bg-[#F3A149] flex flex-col justify-center items-center text-white p-4 md:p-8">
             <div className="text-left">
               <h1 className="text-xl md:text-2xl font-bold mb-2">台語牧區 林麗華傳道</h1>
               <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{color: '#172d2d', borderBottom: '1px solid #FFF', paddingBottom: '10px'}}>Welcome!</h2>

@@ -33,7 +33,7 @@ export default function NewsArticlePage() {
                 <nav className="space-y-0">
                   <a 
                     href="/news"
-                    className="block text-white px-4 py-3 border-l-4 border-l-[#fe7f4c] border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
+                    className="block text-white px-4 py-3 border-l-4 border-l-[#F3A149] border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                   >
                     教會消息
                   </a>
@@ -42,28 +42,28 @@ export default function NewsArticlePage() {
                     className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                   >
                     <span>主日直播</span>
-                    <span className="text-[#fe7f4c] text-lg">›</span>
+                    <span className="text-[#F3A149] text-lg">›</span>
                   </a>
                   <a 
                     href="/news/prayer-meeting"
                     className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                   >
                     <span>禱告會直播</span>
-                    <span className="text-[#fe7f4c] text-lg">›</span>
+                    <span className="text-[#F3A149] text-lg">›</span>
                   </a>
                   <a 
                     href="/news/message-review"
                     className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                   >
                     <span>重溫信息</span>
-                    <span className="text-[#fe7f4c] text-lg">›</span>
+                    <span className="text-[#F3A149] text-lg">›</span>
                   </a>
                   <a 
                     href="/news/good-articles"
                     className="flex justify-between items-center text-white px-4 py-3 hover:bg-[#1a6860] transition-colors"
                   >
                     <span>好文分享</span>
-                    <span className="text-[#fe7f4c] text-lg">›</span>
+                    <span className="text-[#F3A149] text-lg">›</span>
                   </a>
                 </nav>
               </div>
@@ -149,7 +149,7 @@ export default function NewsArticlePage() {
                   <div className="mt-12 text-right">
                     <Link 
                       href="/news"
-                      className="inline-flex items-center px-6 py-3 bg-[#fe7f4c] text-white rounded-lg hover:bg-[#e66a3d] transition-colors"
+                      className="inline-flex items-center px-6 py-3 bg-[#F3A149] text-white rounded-lg hover:bg-[#e66a3d] transition-colors"
                     >
                       <svg className="mr-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />

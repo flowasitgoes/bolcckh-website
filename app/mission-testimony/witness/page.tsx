@@ -52,7 +52,7 @@ export default function WitnessPage() {
                   </Link>
                   <Link 
                     href="/mission-testimony/witness"
-                    className="block text-white px-4 py-3 border-l-4 border-l-[#fe7f4c] hover:bg-[#1a6860] transition-colors"
+                    className="block text-white px-4 py-3 border-l-4 border-l-[#F3A149] hover:bg-[#1a6860] transition-colors"
                   >
                     門訓見證
                   </Link>
@@ -90,7 +90,7 @@ export default function WitnessPage() {
                             </div>
                           </div>
                         </div>
-                        <div className="absolute inset-0 bg-gradient-to-br from-[#fe7f4c]/20 to-[#21807a]/20">
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#F3A149]/20 to-[#21807a]/20">
                           <div className="absolute inset-0 bg-[url('/mission/C2/C2-07.png')] bg-cover bg-center opacity-30"></div>
                         </div>
                       </div>
@@ -110,7 +110,7 @@ export default function WitnessPage() {
                             </div>
                           </div>
                         </div>
-                        <div className="absolute inset-0 bg-gradient-to-br from-[#fe7f4c]/20 to-[#21807a]/20">
+                        <div className="absolute inset-0 bg-gradient-to-br from-[#F3A149]/20 to-[#21807a]/20">
                           <div className="absolute inset-0 bg-[url('/mission/C2/C2-07.png')] bg-cover bg-center opacity-30"></div>
                         </div>
                       </div>
@@ -149,7 +149,7 @@ export default function WitnessPage() {
                 </div>
 
                 {/* Orange Background Section */}
-                <div className="mission-testmony-witness-section bg-[#fe7f4c] p-32 rounded-lg">
+                <div className="mission-testmony-witness-section bg-[#F3A149] p-32 rounded-lg">
                   <div className="text-center">
                     <p className="text-black text-lg leading-relaxed">
                       隨著全球化的發展，南島語系國家的基督教面臨現代化和世俗化的挑戰，可能需要重新詮釋其信仰和實踐。

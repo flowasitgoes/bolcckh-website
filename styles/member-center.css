@@ -38,15 +38,36 @@
 @media (max-width: 768px) {
     .line-image-wrap {
         padding-top: 30px;
+        padding-bottom: 20px;
     }
     
     .line-image-wrap button img {
         height: 100%;
+        width: 60%;
+    }
+    
+    .member-center-login {
+        padding: 40px 20px;
     }
     
     .member-center-login-box {
         width: 100%;
         margin: 0 auto;
-        padding: 0 20px;
-    }   
+        padding: 0;
+    }
+    
+    .member-center-register {
+        padding: 40px 20px;
+    }
+    
+    /* 確保在 mobile 上表單元素有適當的間距 */
+    .bg-white.rounded-lg {
+        margin-bottom: 1rem;
+    }
+    
+    /* 調整 mobile 上的按鈕大小 */
+    .bg-\[#21807a\] {
+        font-size: 0.875rem;
+        padding: 0.75rem 1rem;
+    }
 }

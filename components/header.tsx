@@ -14,6 +14,7 @@ export function Header() {
       { zh: "過去與現在", href: "/about-history" },
       { zh: "全職團隊", href: "/about-our-team" },
       { zh: "聯絡我們", href: "/about-contact" },
+      { zh: "檔案專區", href: "/about-files" },
     ] },
     { zh: "教會生活", en: "Church", href: "/church", children: [
       { zh: "教會生活", href: "/church" },

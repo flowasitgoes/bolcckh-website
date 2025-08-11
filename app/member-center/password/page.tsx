@@ -127,7 +127,7 @@ export default function PasswordPage() {
             </div>
 
             {/* Right Content Area */}
-            <div className="member-center-login right-content-area lg:col-span-3 bg-[#fe7f4c] p-6 md:p-8">
+            <div className="member-center-login right-content-area lg:col-span-3 bg-[#F3A149] p-6 md:p-8">
               <div className="member-center-login-box">
                 <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
                   <div className="text-center mb-8">

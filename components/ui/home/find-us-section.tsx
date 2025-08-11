@@ -21,7 +21,7 @@ export function FindUsSection({ compact = false, showButton = true, className = 
             <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/jp4dbtAlbnA"
+              src="https://www.youtube.com/embed/Bt53iUKUzZc"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

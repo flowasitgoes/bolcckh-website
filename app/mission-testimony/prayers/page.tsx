@@ -46,7 +46,7 @@ export default function PrayersPage() {
                   </Link>
                   <Link 
                     href="/mission-testimony/prayers"
-                    className="block text-white px-4 py-3 border-l-4 border-l-[#fe7f4c] border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
+                    className="block text-white px-4 py-3 border-l-4 border-l-[#F3A149] border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                   >
                     禱告蒙應允
                   </Link>
@@ -95,7 +95,7 @@ export default function PrayersPage() {
                     </div>
                     
                     {/* Background Image */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#fe7f4c]/20 to-[#21807a]/20">
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#F3A149]/20 to-[#21807a]/20">
                       <div className="absolute inset-0 bg-[url('/mission/C2/C2-07.png')] bg-cover bg-center opacity-30"></div>
                     </div>
                   </div>

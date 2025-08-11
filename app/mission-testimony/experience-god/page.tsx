@@ -86,7 +86,7 @@ export default function ExperienceGodPage() {
                   </Link>
                   <Link 
                     href="/mission-testimony/experience-god"
-                    className="block text-white px-4 py-3 border-l-4 border-l-[#fe7f4c] border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
+                    className="block text-white px-4 py-3 border-l-4 border-l-[#F3A149] border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                   >
                     經歷上帝 生命歸主
                   </Link>
@@ -136,7 +136,7 @@ export default function ExperienceGodPage() {
                           <img
                             src={testimony.image}
                             alt={testimony.title}
-                            className="w-full h-full object-cover rounded-lg border-2 border-[#fe7f4c]"
+                            className="w-full h-full object-cover rounded-lg border-2 border-[#F3A149]"
                           />
                         </div>
                       </div>

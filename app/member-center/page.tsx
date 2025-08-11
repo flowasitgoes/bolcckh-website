@@ -22,6 +22,7 @@ export default function MemberCenterPage() {
             fill
             className="object-cover object-center"
             priority
+            sizes="100vw"
           />
         </section>
 
@@ -120,14 +121,12 @@ export default function MemberCenterPage() {
             </div>
 
             {/* Right Content Area */}
-            <div className={`${!showRegister ? 'member-center-login' : 'member-center-register'} right-content-area lg:col-span-3 bg-[#fe7f4c] p-6 md:p-8`}>
-              <div className="member-center-login-box grid grid-cols-1 lg:grid-cols-2 gap-8">
-                {showRegister ? (
-                  <MemberRegister onSwitchToLogin={() => setShowRegister(false)} />
-                ) : (
-                  <MemberLogin onSwitchToRegister={() => setShowRegister(true)} />
-                )}
-              </div>
+            <div className={`${!showRegister ? 'member-center-login' : 'member-center-register'} right-content-area lg:col-span-3 bg-[#F3A149]`}>
+              {showRegister ? (
+                <MemberRegister onSwitchToLogin={() => setShowRegister(false)} />
+              ) : (
+                <MemberLogin onSwitchToRegister={() => setShowRegister(true)} />
+              )}
             </div>
           </div>
         </section>

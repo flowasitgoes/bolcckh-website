@@ -110,7 +110,7 @@ export default function AboutOurTeamPage() {
                   key={index}
                   className={`department-tab px-4 py-2 text-lg font-medium transition-colors duration-200 ${
                     dept === '行政部' 
-                      ? 'text-orange-500 border-b-2 border-orange-500' 
+                      ? 'text-[#F3A149] border-b-2 border-[#F3A149]' 
                       : 'text-gray-600 hover:text-[#21807a]'
                   }`}
                 >

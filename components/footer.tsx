@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="bg-[#1e3737] text-white pt-12 pb-0">
       <div className="max-w-7xl mx-auto px-4">
-        <div className={footerStyles.footerNavWrapper + " flex flex-col lg:flex-row justify-between gap-12"}>
+        <div className={footerStyles.footerNavWrapper + " flex flex-col lg:flex-row justify-between gap-10"}>
           {/* 左側 LOGO、Email、社群icon */}
           <div className="flex-1 min-w-[320px] flex flex-col items-center lg:items-start">
             <div className="flex items-center mb-6">
@@ -28,13 +28,31 @@ export function Footer() {
             </form>
             {/* 社群icon */}
             <div className="flex space-x-6 mb-8 lg:mb-0">
-              <a href="#" className="bg-orange-theme rounded-full w-10 h-10 flex items-center justify-center hover:bg-orange-600 transition">
+              <a 
+                href="https://lin.ee/TdJiEoj" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-orange-theme rounded-full w-10 h-10 flex items-center justify-center hover:bg-orange-600 transition"
+                title="高雄靈糧堂LINE@"
+              >
                 <SiLine className="w-5 h-5 text-white" />
               </a>
-              <a href="#" className="bg-orange-theme rounded-full w-10 h-10 flex items-center justify-center hover:bg-orange-600 transition">
+              <a 
+                href="https://facebook.com/bolcckh" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-orange-theme rounded-full w-10 h-10 flex items-center justify-center hover:bg-orange-600 transition"
+                title="高雄靈糧堂官方臉書"
+              >
                 <Facebook className="w-5 h-5 text-white" />
               </a>
-              <a href="#" className="bg-orange-theme rounded-full w-10 h-10 flex items-center justify-center hover:bg-orange-600 transition">
+              <a 
+                href="https://instagram.com/bolcc.kh" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-orange-theme rounded-full w-10 h-10 flex items-center justify-center hover:bg-orange-600 transition"
+                title="高雄靈糧堂官方IG"
+              >
                 <Instagram className="w-5 h-5 text-white" />
               </a>
               {/* <a href="#" className="bg-orange-theme rounded-full w-10 h-10 flex items-center justify-center hover:bg-orange-600 transition">
@@ -54,45 +72,48 @@ export function Footer() {
               <div className="mb-2">0800-000-830</div>
               <div className="mb-2 text-orange-footer">傳真</div>
               <div className="mb-2">07-3456527</div>
-              <div className="mt-4 text-sm text-gray-200">高雄市左營區文川路157號</div>
+              <div className="mb-2 text-orange-footer">地址</div>
+              <div className="mb-2 text-sm text-gray-200">高雄市左營區文川路157號</div>
             </div>
             {/* 多欄導覽 */}
             <div className={footerStyles.footerNavCol}>
               <div className={footerStyles.footerNavTitle}>關於教會</div>
               <ul className={footerStyles.footerNavList}>
-                <li><a href="#">過去與現在</a></li>
-                <li><a href="#">全職團隊</a></li>
-                <li><a href="#">聯絡我們</a></li>
+                <li><a href="/about-history">過去與現在</a></li>
+                <li><a href="/about-our-team">全職團隊</a></li>
+                <li><a href="/about-contact">聯絡我們</a></li>
+                <li><a href="/about-files">檔案專區</a></li>
               </ul>
             </div>
             <div className={footerStyles.footerNavCol}>
               <div className={footerStyles.footerNavTitle}>教會生活</div>
               <ul className={footerStyles.footerNavList}>
-                <li><a href="#">聚會資訊</a></li>
-                <li><a href="#">牧區族群</a></li>
-                <li><a href="#">事工介紹與呼召</a></li>
-                <li><a href="#">牧養裝備</a></li>
-                <li><a href="#">門訓建造</a></li>
+                <li><a href="/church-groups">聚會資訊</a></li>
+                <li><a href="/church-department">牧區族群</a></li>
+                <li><a href="/church-calling">事工介紹與呼召</a></li>
+                <li><a href="/church-equip">牧養裝備</a></li>
+                <li><a href="/church-discipleship">門訓建造</a></li>
               </ul>
             </div>
             <div className={footerStyles.footerNavCol}>
               <div className={footerStyles.footerNavTitle}>宣教使命</div>
               <ul className={footerStyles.footerNavList}>
-                <li><a href="#">生命見證</a></li>
-                <li><a href="#">南島趴趴走</a></li>
+                <li><a href="/mission-testimony">生命見證</a></li>
+                <li><a href="/mission">南島趴趴走</a></li>
               </ul>
             </div>
             <div className={footerStyles.footerNavCol}>
               <div className={footerStyles.footerNavTitle}>教會消息</div>
               <ul className={footerStyles.footerNavList}>
-                <li><a href="#">主日直播</a></li>
-                <li><a href="#">禮合會直播</a></li>
-                <li><a href="#">重溫信息</a></li>
-                <li><a href="#">好文分享</a></li>
+                <li><a href="/news/sunday-live">主日直播</a></li>
+                <li><a href="/news/prayer-meeting">禮合會直播</a></li>
+                <li><a href="/news/message-review">重溫信息</a></li>
+                <li><a href="/news/good-articles">好文分享</a></li>
               </ul>
               <div className={footerStyles.footerNavTitle + " mt-6 mb-4"}>支持奉獻</div>
               <ul className={footerStyles.footerNavList}>
-                <li><a href="#">奉獻資訊</a></li>
+                <li><a href="/offering">奉獻資訊</a></li>
+                <li><a href="/member-center">會員中心</a></li>
               </ul>
             </div>
           </div>

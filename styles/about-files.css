@@ -1,0 +1,132 @@
+/* 檔案專區樣式 */
+.files-table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.files-table th {
+  background-color: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+}
+
+.files-table td {
+  border-bottom: 1px solid #f3f4f6;
+  padding: 1rem 1.5rem;
+}
+
+.files-table tr:hover {
+  background-color: #f0fdfa;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.files-table tr.selected {
+  background-color: #f0fdfa;
+}
+
+/* 檔案類型按鈕 */
+.file-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.file-btn.pdf {
+  color: #dc2626;
+  background-color: #fef2f2;
+  border: 1px solid transparent;
+}
+
+.file-btn.pdf:hover {
+  background-color: #fee2e2;
+}
+
+.file-btn.zip {
+  color: #2563eb;
+  background-color: #eff6ff;
+  border: 1px solid transparent;
+}
+
+.file-btn.zip:hover {
+  background-color: #dbeafe;
+}
+
+/* 分頁導覽 */
+.tabs-nav {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tab-button {
+  padding: 1rem 0.25rem;
+  border-bottom: 2px solid transparent;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.tab-button.active {
+  border-bottom-color: #14b8a6;
+  color: #14b8a6;
+}
+
+.tab-button:not(.active) {
+  color: #6b7280;
+}
+
+.tab-button:not(.active):hover {
+  color: #374151;
+  border-bottom-color: #d1d5db;
+}
+
+/* 分頁器 */
+.pagination-button {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.375rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.pagination-button.active {
+  background-color: #f97316;
+  color: white;
+}
+
+.pagination-button:not(.active) {
+  color: #6b7280;
+  background-color: white;
+  border: 1px solid #d1d5db;
+}
+
+.pagination-button:not(.active):hover {
+  background-color: #f9fafb;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  .files-table {
+    font-size: 0.875rem;
+  }
+  
+  .files-table td,
+  .files-table th {
+    padding: 0.75rem 1rem;
+  }
+  
+  .tab-button {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.8rem;
+  }
+  
+  .pagination-button {
+    padding: 0.375rem 0.5rem;
+    font-size: 0.8rem;
+  }
+}

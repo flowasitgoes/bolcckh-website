@@ -36,9 +36,29 @@ export function NewsSection() {
       author: "Qrowd",
       comments: 2,
     },
+    {
+      id: 4,
+      title: "週三禱告會－為教會與城市守望",
+      subtitle: "每週三晚上7:30，邀請您一起為教會、家庭、城市禱告",
+      date: "2024.05.25",
+      image: "/home/news-section/Home-05.png",
+      category: "禱告會",
+      author: "Qrowd",
+      comments: 5,
+    },
+    {
+      id: 5,
+      title: "青年團契－探索信仰與生活",
+      subtitle: "週五晚上6:30，歡迎年輕人一起分享生活、討論信仰",
+      date: "2024.05.26",
+      image: "/home/news-section/Home-06.png",
+      category: "青年事工",
+      author: "Qrowd",
+      comments: 3,
+    },
   ]
 
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'start', slidesToScroll: 1 })
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false, align: 'start', slidesToScroll: 1 })
   const [selectedIndex, setSelectedIndex] = useState(0)
 
   const onSelect = useCallback(() => {
@@ -104,16 +124,37 @@ export function NewsSection() {
             ))}
           </div>
         </div>
-        {/* 分頁圓點 */}
-        <div className="flex justify-center mt-6 gap-2">
-          {news.map((_, idx) => (
-            <button
-              key={idx}
-              className={`w-3 h-3 rounded-full border-2 border-teal-400 ${selectedIndex === idx ? 'bg-teal-400' : 'bg-white'}`}
-              onClick={() => emblaApi && emblaApi.scrollTo(idx)}
-              aria-label={`Go to slide ${idx + 1}`}
-            />
-          ))}
+        {/* 左右箭頭按鈕 */}
+        <div className="flex justify-center mt-6 gap-4">
+          <button
+            onClick={() => emblaApi && emblaApi.scrollPrev()}
+            disabled={selectedIndex === 0}
+            className={`w-10 h-10 rounded-full border-2 transition-all duration-300 flex items-center justify-center ${
+              selectedIndex === 0 
+                ? 'border-gray-300 bg-gray-100 text-gray-400 cursor-not-allowed' 
+                : 'border-teal-400 bg-white hover:bg-teal-400 hover:text-white'
+            }`}
+            aria-label="Previous slide"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          
+          <button
+            onClick={() => emblaApi && emblaApi.scrollNext()}
+            disabled={selectedIndex === news.length - 1}
+            className={`w-10 h-10 rounded-full border-2 transition-all duration-300 flex items-center justify-center ${
+              selectedIndex === news.length - 1 
+                ? 'border-gray-300 bg-gray-100 text-gray-400 cursor-not-allowed' 
+                : 'border-teal-400 bg-white hover:bg-teal-400 hover:text-white'
+            }`}
+            aria-label="Next slide"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
         </div>
       </div>
     </section>

@@ -11,7 +11,7 @@ export function MissionHero() {
       </div>
       
       {/* Right Side - Orange background with text */}
-      <div className="w-1/2 bg-[#fe7f4c] flex items-center justify-center p-8 md:p-12">
+      <div className="w-1/2 bg-[#F3A149] flex items-center justify-center p-8 md:p-12">
         <div className="text-white text-center max-w-md">
           
           <h1 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">

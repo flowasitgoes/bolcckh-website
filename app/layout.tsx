@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import '@/styles/globals.css'
 import '@/styles/about.css'
 import '@/styles/church.css'
+import { ReadingProgress } from '@/components/ui/reading-progress'
 
 export const metadata: Metadata = {
   title: '高雄靈糧堂 - 歡迎來到主的家',
@@ -61,7 +62,10 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <ReadingProgress />
+      </body>
     </html>
   )
 }

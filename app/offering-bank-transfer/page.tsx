@@ -78,7 +78,7 @@ export default function OfferingBankTransferPage() {
           </div>
 
           {/* Right Content Area */}
-          <div className="flex-1 bg-[#fe7f4c] p-8">
+          <div className="flex-1 bg-[#F3A149] p-8">
             {/* Main White Content Section */}
             <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
               {/* Bible Verse at the top */}
@@ -94,14 +94,14 @@ export default function OfferingBankTransferPage() {
               <div className="space-y-8">
                 {/* 一般匯款及ATM轉帳 */}
                 <div>
-                  <h3 className="text-xl font-semibold text-[#fe7f4c] mb-4">
+                  <h3 className="text-xl font-semibold text-[#F3A149] mb-4">
                     一般匯款及ATM轉帳
                   </h3>
                   <div className="space-y-3 text-gray-700">
                     <p><span className="font-semibold">帳戶名稱:</span> 合作金庫苓雅分行(代碼:006)</p>
                     <p><span className="font-semibold">戶名:</span> 財團法人中國基督教靈糧世界佈道會高雄靈糧堂</p>
                     <p><span className="font-semibold">銀行帳號:</span> 0510871004577</p>
-                    <p className="text-[#fe7f4c] font-semibold mt-4">
+                    <p className="text-[#F3A149] font-semibold mt-4">
                       ※溫馨提醒:作業後,請務必來電或傳真至教會,以確認入帳記錄。
                     </p>
                     <p className="text-gray-700">
@@ -112,13 +112,13 @@ export default function OfferingBankTransferPage() {
 
                 {/* 開立支票 */}
                 <div>
-                  <h3 className="text-xl font-semibold text-[#fe7f4c] mb-4">
+                  <h3 className="text-xl font-semibold text-[#F3A149] mb-4">
                     開立支票
                   </h3>
                   <div className="space-y-3 text-gray-700">
                     <p><span className="font-semibold">抬頭:</span> 財團法人中國基督教靈糧世界佈道會高雄靈糧堂</p>
                     <p><span className="font-semibold">地址:</span> 高雄市左營區文川路157號</p>
-                    <p className="text-[#fe7f4c] font-semibold mt-4">
+                    <p className="text-[#F3A149] font-semibold mt-4">
                       ※可郵寄或主日奉獻進來
                     </p>
                   </div>
@@ -126,7 +126,7 @@ export default function OfferingBankTransferPage() {
 
                 {/* 郵局劃撥方式 */}
                 <div>
-                  <h3 className="text-xl font-semibold text-[#fe7f4c] mb-4">
+                  <h3 className="text-xl font-semibold text-[#F3A149] mb-4">
                     郵局劃撥方式
                   </h3>
                   <div className="space-y-3 text-gray-700">
@@ -137,7 +137,7 @@ export default function OfferingBankTransferPage() {
 
                 {/* 發票奉獻方式 */}
                 <div>
-                  <h3 className="text-xl font-semibold text-[#fe7f4c] mb-4">
+                  <h3 className="text-xl font-semibold text-[#F3A149] mb-4">
                     發票奉獻方式
                   </h3>
                   <div className="space-y-3 text-gray-700">

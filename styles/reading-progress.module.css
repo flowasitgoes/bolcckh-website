@@ -1,0 +1,86 @@
+/* 讀經進度固定區塊 */
+.readingProgress {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: fixed;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.serviceSocialImg {
+  width: 5rem;
+}
+
+.socialContentWrap {
+  width: 320px; 
+}
+
+.socialContentItemWrap {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.socialContentItemWrapBook {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.socialContentItemWrapInnerLabel {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.socialContentItemWrapInnerBox {
+  position: absolute;
+  top: 32px;
+  right: 60px;
+  
+  border-radius: 16px;
+  border: 3px solid white;
+  background-color: #fe7f45;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(20px);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.socialContentItemWrapBook.bookOpen .socialContentItemWrapInnerBox {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+/* ====== Mobile 覆蓋 ====== */
+@media (max-width: 767px) {
+  .readingProgress {
+    right: 1rem;
+    top: 140px;
+    bottom: auto;
+    transform: none;
+  }
+  
+  .serviceSocialImg {
+    width: 4rem;
+  }
+  
+  .socialContentWrap {
+    width: 340px;
+  }
+  
+  .socialContentItemWrapInnerBox {
+    right: 50px;
+    padding: 0.75rem 1rem;
+  }
+}
