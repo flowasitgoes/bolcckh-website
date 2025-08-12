@@ -89,8 +89,29 @@ const meetingGuidelines = [
 ]
 
 function GroupPanel({ panel }: { panel: typeof groupPanels[0] }) {
+  // 根據標題生成對應的連結
+  const getLink = (title: string) => {
+    switch (title) {
+      case '本週小組聚會資料':
+        return '/church-groups/weekly-meeting-data'
+      case '聚會時間':
+        return '/church-groups/meeting-time'
+      case '禱告時段':
+        return '/church-groups/prayer-time'
+      case '參加小組聚會':
+        return '/church-groups/join-small-group'
+      default:
+        return '#'
+    }
+  }
+
+  const link = getLink(panel.title)
+
   return (
-    <div className={`group-panel ${panel.bgColor} aspect-square flex flex-col items-center justify-center text-white relative overflow-hidden`}>
+    <a 
+      href={link}
+      className={`group-panel ${panel.bgColor} aspect-square flex flex-col items-center justify-center text-white relative overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105`}
+    >
       {panel.image && (
         <Image 
           src={panel.image} 
@@ -102,10 +123,10 @@ function GroupPanel({ panel }: { panel: typeof groupPanels[0] }) {
       {!panel.image && (
         <div className="relative z-10">
           <h3 className="text-3xl font-bold text-center mb-2">{panel.title}</h3>
-      <p className="text-lg text-center opacity-90">{panel.subtitle}</p>
+          <p className="text-lg text-center opacity-90">{panel.subtitle}</p>
         </div>
       )}
-    </div>
+    </a>
   )
 }
 
