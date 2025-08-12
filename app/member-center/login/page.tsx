@@ -146,6 +146,31 @@ export default function MemberLoginPage() {
                 </div>
               </div>
             </div>
+            
+            {/* 註冊提示區塊 */}
+            <div className="mt-8">
+              <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
+                <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+                  {/* 左側文字提示 */}
+                  <div className="text-center md:text-left">
+                    <p className="text-gray-700 text-lg font-medium">
+                      若您還不是我們的會友,也可以點擊
+                    </p>
+                    <div className="w-full h-0.5 bg-[#21807a] mt-2"></div>
+                  </div>
+                  
+                  {/* 右側註冊按鈕 */}
+                  <div>
+                    <a 
+                      href="/member-center/register"
+                      className="inline-block bg-[#21807a] text-white px-8 py-3 rounded-lg hover:bg-[#1a6b66] transition-colors duration-300 font-semibold text-lg"
+                    >
+                      進行註冊!
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>

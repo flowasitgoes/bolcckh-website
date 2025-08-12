@@ -8,26 +8,35 @@ interface MemberRegisterProps {
 
 export function MemberRegister({ onSwitchToLogin }: MemberRegisterProps) {
   return (
-    <div className="member-center-register max-w-2xl mx-auto px-4">
-      {/* 返回按鈕 */}
-      <div className="mb-8 text-center">
-        <button 
-          onClick={onSwitchToLogin}
-          className="inline-flex items-center text-white hover:text-white/80 transition-colors duration-200 font-semibold"
-        >
-          <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-          </svg>
-          返回
-        </button>
-      </div>
-      
-      {/* 註冊表單 */}
-      <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
-        <h3 className="text-xl md:text-2xl font-bold text-[#21807a] mb-6 text-center border-b border-[#21807a] pb-4">
-          手機會友註冊
-        </h3>
-        <form className="space-y-6">
+    <div className="member-center-login right-content-area lg:col-span-3 bg-[#F3A149]">
+      <div className="member-center-login-box grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {/* LINE 會友登入 */}
+        <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg flex flex-col justify-center">
+          <h3 className="text-xl md:text-2xl font-bold text-[#21807a] mb-4 text-center">
+            使用LINE會友註冊
+          </h3>
+          <div className="line-image-wrap text-center">
+            <button className="bg-transparent hover:bg-gray-50 transition-colors duration-300 p-4 rounded-lg">
+              <img 
+                alt="LINE" 
+                loading="lazy" 
+                width="80" 
+                height="80" 
+                decoding="async" 
+                className="mx-auto" 
+                style={{color: 'transparent'}} 
+                src="/offering/offering-line.png"
+              />
+            </button>
+          </div>
+        </div>
+        
+                {/* 手機會友註冊 */}
+        <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
+          <h3 className="text-xl md:text-2xl font-bold text-[#21807a] mb-6 text-center border-b border-[#21807a] pb-4">
+            手機會友註冊
+          </h3>
+                  <form className="space-y-6">
           {/* 手機門號 */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -170,5 +179,6 @@ export function MemberRegister({ onSwitchToLogin }: MemberRegisterProps) {
         </div>
       </div>
     </div>
+  </div>
   )
 } 
