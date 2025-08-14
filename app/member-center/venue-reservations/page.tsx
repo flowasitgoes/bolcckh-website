@@ -6,22 +6,26 @@ import { Footer } from "@/components/footer"
 import Image from 'next/image'
 import '@/styles/member-center.css'
 
-export default function ReservationsPage() {
+export default function VenueReservationsPage() {
   const [formData, setFormData] = useState({
-    applicantName: '',
+    gatheringName: '',
+    rentalMethod: '單次',
+    user: '',
+    group: '',
     phone: '',
-    eventDate: '',
-    eventTime: '',
-    eventType: '',
-    estimatedAttendees: '',
-    eventDescription: '',
-    specialRequirements: ''
+    attendees: '',
+    venue: '601',
+    startDate: '',
+    endDate: '',
+    startTime: '',
+    endTime: '',
+    applicant: ''
   })
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // 處理預約邏輯
-    console.log('提交預約', formData)
+    // 處理場地借用申請邏輯
+    console.log('提交場地借用申請', formData)
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -30,6 +34,29 @@ export default function ReservationsPage() {
       [e.target.name]: e.target.value
     })
   }
+
+  const handleVenueChange = (venue: string) => {
+    setFormData({
+      ...formData,
+      venue
+    })
+  }
+
+  // 場地選項
+  const venues = [
+    { id: '601', name: '601 (100人)' },
+    { id: '602', name: '602 (100人)' },
+    { id: '603', name: '603 (100人)' },
+    { id: '604', name: '604 (100人)' },
+    { id: '605', name: '605 (100人)' },
+    { id: '606', name: '606 (100人)' },
+    { id: '607', name: '607 (100人)' },
+    { id: '608', name: '608 (100人)' },
+    { id: '609', name: '609 (100人)' },
+    { id: '610', name: '610 (100人)' },
+    { id: '611', name: '611 (100人)' },
+    { id: '612', name: '612 (100人)' }
+  ]
 
   return (
     <div className="min-h-screen">
@@ -129,7 +156,7 @@ export default function ReservationsPage() {
                 {/* 預約恩惠廳 */}
                 <a 
                   href="/member-center/reservations"
-                  className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 bg-white/20"
+                  className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-white/10"
                 >
                   <div className="flex items-center">
                     <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -142,7 +169,7 @@ export default function ReservationsPage() {
                 {/* 活動場地預約 */}
                 <a 
                   href="/member-center/venue-reservations"
-                  className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-white/10"
+                  className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 bg-white/20"
                 >
                   <div className="flex items-center">
                     <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -160,10 +187,10 @@ export default function ReservationsPage() {
                 <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
                   <div className="text-center mb-8">
                     <h2 className="text-2xl md:text-3xl font-bold text-[#444] mb-4">
-                      預約恩惠廳
+                      場地借用申請表 (一般場地)
                     </h2>
                     <p className="text-gray-600">
-                      預約使用恩惠廳進行活動
+                      申請借用教會場地進行活動
                     </p>
                   </div>
                   
@@ -171,22 +198,68 @@ export default function ReservationsPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
                         <label className="block text-gray-700 font-medium mb-2">
-                          申請人姓名
+                          聚會名稱
                         </label>
                         <input
                           type="text"
-                          name="applicantName"
-                          value={formData.applicantName}
+                          name="gatheringName"
+                          value={formData.gatheringName}
                           onChange={handleChange}
                           className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#21807a] focus:border-transparent"
-                          placeholder="請輸入申請人姓名"
+                          placeholder="請輸入聚會名稱"
                           required
                         />
                       </div>
 
                       <div>
                         <label className="block text-gray-700 font-medium mb-2">
-                          聯絡電話
+                          借用方式
+                        </label>
+                        <select
+                          name="rentalMethod"
+                          value={formData.rentalMethod}
+                          onChange={handleChange}
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#21807a] focus:border-transparent"
+                          required
+                        >
+                          <option value="單次">單次</option>
+                          <option value="定期">定期</option>
+                        </select>
+                      </div>
+
+                      <div>
+                        <label className="block text-gray-700 font-medium mb-2">
+                          使用者
+                        </label>
+                        <input
+                          type="text"
+                          name="user"
+                          value={formData.user}
+                          onChange={handleChange}
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#21807a] focus:border-transparent"
+                          placeholder="請輸入使用者姓名"
+                          required
+                        />
+                      </div>
+
+                      <div>
+                        <label className="block text-gray-700 font-medium mb-2">
+                          小組
+                        </label>
+                        <input
+                          type="text"
+                          name="group"
+                          value={formData.group}
+                          onChange={handleChange}
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#21807a] focus:border-transparent"
+                          placeholder="請輸入小組名稱"
+                          required
+                        />
+                      </div>
+
+                      <div>
+                        <label className="block text-gray-700 font-medium mb-2">
+                          手機
                         </label>
                         <input
                           type="tel"
@@ -194,70 +267,19 @@ export default function ReservationsPage() {
                           value={formData.phone}
                           onChange={handleChange}
                           className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#21807a] focus:border-transparent"
-                          placeholder="請輸入聯絡電話"
+                          placeholder="請輸入手機號碼"
                           required
                         />
                       </div>
 
                       <div>
                         <label className="block text-gray-700 font-medium mb-2">
-                          活動日期
-                        </label>
-                        <input
-                          type="date"
-                          name="eventDate"
-                          value={formData.eventDate}
-                          onChange={handleChange}
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#21807a] focus:border-transparent"
-                          required
-                        />
-                      </div>
-
-                      <div>
-                        <label className="block text-gray-700 font-medium mb-2">
-                          活動時間
-                        </label>
-                        <select
-                          name="eventTime"
-                          value={formData.eventTime}
-                          onChange={handleChange}
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#21807a] focus:border-transparent"
-                          required
-                        >
-                          <option value="">請選擇時間</option>
-                          <option value="09:00-12:00">09:00-12:00</option>
-                          <option value="13:00-16:00">13:00-16:00</option>
-                          <option value="18:00-21:00">18:00-21:00</option>
-                        </select>
-                      </div>
-
-                      <div>
-                        <label className="block text-gray-700 font-medium mb-2">
-                          活動類型
-                        </label>
-                        <select
-                          name="eventType"
-                          value={formData.eventType}
-                          onChange={handleChange}
-                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#21807a] focus:border-transparent"
-                          required
-                        >
-                          <option value="">請選擇活動類型</option>
-                          <option value="小組聚會">小組聚會</option>
-                          <option value="禱告會">禱告會</option>
-                          <option value="讀書會">讀書會</option>
-                          <option value="其他">其他</option>
-                        </select>
-                      </div>
-
-                      <div>
-                        <label className="block text-gray-700 font-medium mb-2">
-                          預估人數
+                          聚會人數約
                         </label>
                         <input
                           type="number"
-                          name="estimatedAttendees"
-                          value={formData.estimatedAttendees}
+                          name="attendees"
+                          value={formData.attendees}
                           onChange={handleChange}
                           className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#21807a] focus:border-transparent"
                           placeholder="請輸入預估人數"
@@ -267,33 +289,96 @@ export default function ReservationsPage() {
                       </div>
                     </div>
 
+                    {/* 借用場地選擇 */}
                     <div>
-                      <label className="block text-gray-700 font-medium mb-2">
-                        活動說明
+                      <label className="block text-gray-700 font-medium mb-4">
+                        借用場地 (可複選)
                       </label>
-                      <textarea
-                        name="eventDescription"
-                        value={formData.eventDescription}
-                        onChange={handleChange}
-                        rows={4}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#21807a] focus:border-transparent"
-                        placeholder="請詳細說明活動內容"
-                        required
-                      />
+                      <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
+                        {venues.map((venue) => (
+                          <label key={venue.id} className="flex items-center space-x-2 cursor-pointer">
+                            <input
+                              type="radio"
+                              name="venue"
+                              value={venue.id}
+                              checked={formData.venue === venue.id}
+                              onChange={() => handleVenueChange(venue.id)}
+                              className="w-4 h-4 text-[#21807a] border-gray-300 focus:ring-[#21807a]"
+                            />
+                            <span className="text-gray-700">{venue.name}</span>
+                          </label>
+                        ))}
+                      </div>
                     </div>
 
-                    <div>
-                      <label className="block text-gray-700 font-medium mb-2">
-                        特殊需求
-                      </label>
-                      <textarea
-                        name="specialRequirements"
-                        value={formData.specialRequirements}
-                        onChange={handleChange}
-                        rows={3}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#21807a] focus:border-transparent"
-                        placeholder="如有特殊需求請說明"
-                      />
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <label className="block text-gray-700 font-medium mb-2">
+                          借用日期
+                        </label>
+                        <div className="flex items-center space-x-2">
+                          <input
+                            type="date"
+                            name="startDate"
+                            value={formData.startDate}
+                            onChange={handleChange}
+                            className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#21807a] focus:border-transparent"
+                            required
+                          />
+                          <span className="text-gray-500">至</span>
+                          <input
+                            type="date"
+                            name="endDate"
+                            value={formData.endDate}
+                            onChange={handleChange}
+                            className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#21807a] focus:border-transparent"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      <div>
+                        <label className="block text-gray-700 font-medium mb-2">
+                          活動開始時間
+                        </label>
+                        <input
+                          type="time"
+                          name="startTime"
+                          value={formData.startTime}
+                          onChange={handleChange}
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#21807a] focus:border-transparent"
+                          required
+                        />
+                      </div>
+
+                      <div>
+                        <label className="block text-gray-700 font-medium mb-2">
+                          活動結束時間
+                        </label>
+                        <input
+                          type="time"
+                          name="endTime"
+                          value={formData.endTime}
+                          onChange={handleChange}
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#21807a] focus:border-transparent"
+                          required
+                        />
+                      </div>
+
+                      <div>
+                        <label className="block text-gray-700 font-medium mb-2">
+                          申請人
+                        </label>
+                        <input
+                          type="text"
+                          name="applicant"
+                          value={formData.applicant}
+                          onChange={handleChange}
+                          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#21807a] focus:border-transparent"
+                          placeholder="請輸入申請人姓名"
+                          required
+                        />
+                      </div>
                     </div>
 
                     <div className="pt-6">
@@ -301,7 +386,7 @@ export default function ReservationsPage() {
                         type="submit"
                         className="w-full bg-[#21807a] text-white py-3 rounded-lg hover:bg-[#1a6b66] transition-colors duration-200 font-semibold"
                       >
-                        送出預約
+                        送出申請
                       </button>
                     </div>
                   </form>
@@ -314,4 +399,4 @@ export default function ReservationsPage() {
       <Footer />
     </div>
   )
-} 
+}
