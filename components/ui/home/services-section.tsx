@@ -6,14 +6,14 @@ import styles from '@/styles/services-section.module.css'
 export function ServicesSection() {
 
   const services = [
-    { icon: "/home/icon/0708-01.png", title: "主日週報" },
-    { icon: "/home/icon/0708-02.png", title: "講道信息" },
-    { icon: "/home/icon/0708-03.png", title: "我要奉獻" },
-    { icon: "/home/icon/0708-04.png", title: "牧區介紹" },
-    { icon: "/home/icon/0708-05.png", title: "認識我們" },
-    { icon: "/home/icon/0708-06.png", title: "活動訊息" },
-    { icon: "/home/icon/0708-07.png", title: "領袖訓練" },
-    { icon: "/home/icon/0708-08.png", title: "社區關懷" },
+    { icon: "/home/icon/Home-01.png", title: "主日週報" },
+    { icon: "/home/icon/Home-02.png", title: "講道信息" },
+    { icon: "/home/icon/Home-03.png", title: "我要奉獻" },
+    { icon: "/home/icon/Home-04.png", title: "牧區介紹" },
+    { icon: "/home/icon/Home-05.png", title: "認識我們" },
+    { icon: "/home/icon/Home-06.png", title: "活動訊息" },
+    { icon: "/home/icon/Home-07.png", title: "領袖訓練" },
+    { icon: "/home/icon/Home-08.png", title: "社區關懷" },
   ]
 
   return (

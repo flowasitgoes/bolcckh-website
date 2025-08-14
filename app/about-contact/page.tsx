@@ -112,9 +112,18 @@ function BusScheduleCard() {
       </div>
       
       <div className="text-center">
-        <button className="bg-orange-500 text-white px-8 py-3  hover:bg-orange-600 transition-colors duration-200 font-medium">
-          詳細公車路線圖 →
-        </button>
+        <a 
+          href="#" 
+          className="inline-block hover:brightness-110 hover:saturate-125 transition-all duration-200"
+        >
+          <Image 
+            src="/about/A-4/A4.png" 
+            alt="詳細公車路線圖" 
+            width={240} 
+            height={66} 
+            className="mx-auto"
+          />
+        </a>
       </div>
     </div>
   )
