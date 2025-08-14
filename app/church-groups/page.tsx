@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: 'https://conflux-tech.com/church-groups',
     images: [
       {
-        url: 'https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png',
+        url: 'https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png',
         width: 1200,
         height: 630,
         alt: '高雄靈糧堂小組聚會',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '小組聚會 | 高雄靈糧堂 - 聚會時間、禱告時段、參加小組',
     description: '查看高雄靈糧堂小組聚會資訊，包括本週小組聚會資料、聚會時間、禱告時段、參加小組聚會等詳細資訊。',
-    images: ['https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png'],
+    images: ['https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png'],
   },
 }
 

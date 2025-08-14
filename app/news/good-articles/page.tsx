@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     url: 'https://conflux-tech.com/news/good-articles',
     images: [
       {
-        url: 'https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png',
+        url: 'https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png',
         width: 1200,
         height: 630,
         alt: '高雄靈糧堂好文分享',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '好文分享 | 高雄靈糧堂 - 精選文章與見證',
     description: '高雄靈糧堂好文分享，包含精選文章、見證分享、靈修心得等重要內容。',
-    images: ['https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png'],
+    images: ['https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png'],
   },
 }
 

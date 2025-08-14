@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     url: 'https://conflux-tech.com/church-department-taiwanese-language',
     images: [
       {
-        url: 'https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png',
+        url: 'https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png',
         width: 1200,
         height: 630,
         alt: '高雄靈糧堂台語牧區',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '台語牧區 | 高雄靈糧堂 - 林麗華傳道 | 每週四早上10:00',
     description: '台語牧區主日崇拜時段，每週四早上10:00在4F恩惠廳舉行，由林麗華傳道帶領，歡迎參加台語牧區的聚會。',
-    images: ['https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png'],
+    images: ['https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png'],
   },
 }
 

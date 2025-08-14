@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     url: 'https://conflux-tech.com/church-department',
     images: [
       {
-        url: 'https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png',
+        url: 'https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png',
         width: 1200,
         height: 630,
         alt: '高雄靈糧堂牧區族群',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '牧區族群 | 高雄靈糧堂 - 成人、原民、學生、台語、社青、兒童牧區',
     description: '認識高雄靈糧堂的六大牧區族群：成人牧區、原民牧區、學生牧區、台語牧區、社青牧區、兒童牧區，每個牧區都有獨特的關懷與服事。',
-    images: ['https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png'],
+    images: ['https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png'],
   },
 }
 

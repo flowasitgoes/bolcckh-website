@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     url: 'https://conflux-tech.com/church-department-taiwanese-language-lesson',
     images: [
       {
-        url: 'https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png',
+        url: 'https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png',
         width: 1200,
         height: 630,
         alt: '高雄靈糧堂門徒學校',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '門徒學校第十四期報名 | 高雄靈糧堂 - 台語牧區課程',
     description: '門徒學校第十四期報名，課程時間10週，包含全人更新營會，歡迎本堂會友報名參加。',
-    images: ['https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png'],
+    images: ['https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png'],
   },
 }
 

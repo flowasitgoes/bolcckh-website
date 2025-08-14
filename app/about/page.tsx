@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     url: 'https://conflux-tech.com/about',
     images: [
       {
-        url: 'https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png',
+        url: 'https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png',
         width: 1200,
         height: 630,
         alt: '高雄靈糧堂關於我們',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '關於我們 | 高雄靈糧堂 - 認識我們的異象與使命',
     description: '認識高雄靈糧堂的異象、使命、核心價值與聚會時間，了解我們如何透過敬拜、禱告、小組生活來建立基督的身體。',
-    images: ['https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png'],
+    images: ['https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png'],
   },
 }
 

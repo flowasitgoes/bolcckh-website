@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     url: 'https://conflux-tech.com/offering',
     images: [
       {
-        url: 'https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png',
+        url: 'https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png',
         width: 1200,
         height: 630,
         alt: '高雄靈糧堂支持奉獻',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '支持奉獻 | 高雄靈糧堂 - 線上奉獻與奉獻查詢',
     description: '高雄靈糧堂線上奉獻服務，提供多種奉獻方式，包含線上奉獻、銀行轉帳、奉獻查詢等功能。',
-    images: ['https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png'],
+    images: ['https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png'],
   },
 }
 

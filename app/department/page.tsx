@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: 'https://conflux-tech.com/department',
     images: [
       {
-        url: 'https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png',
+        url: 'https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png',
         width: 1200,
         height: 630,
         alt: '高雄靈糧堂部門介紹',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '部門介紹 | 高雄靈糧堂 - 認識我們的事工團隊',
     description: '高雄靈糧堂部門介紹，包含行政部門、敬拜部門、關懷部門、青少年部門等各個事工團隊的詳細介紹。',
-    images: ['https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png'],
+    images: ['https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png'],
   },
 }
 

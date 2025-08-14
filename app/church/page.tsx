@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: 'https://conflux-tech.com/church',
     images: [
       {
-        url: 'https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png',
+        url: 'https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png',
         width: 1200,
         height: 630,
         alt: '高雄靈糧堂教會生活',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '教會生活 | 高雄靈糧堂 - 牧養裝備、事工介紹、牧區族群',
     description: '探索高雄靈糧堂的教會生活，包括牧養裝備、事工介紹與呼召、牧區族群、聚會資訊等，一起在基督裡成長。',
-    images: ['https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png'],
+    images: ['https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png'],
   },
 }
 
