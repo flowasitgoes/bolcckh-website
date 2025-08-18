@@ -54,9 +54,15 @@ const adminTeam = [
 ]
 
 function TeamMemberCard({ member }: { member: typeof adminTeam[0] }) {
+  const isCouple = member.name.includes('夫婦')
+  
   return (
-    <div className="team-member-card bg-white  shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-      <div className="member-image-wrapper relative">
+    <div className={`team-member-card bg-white shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 ${
+      isCouple ? 'col-span-full' : ''
+    }`}>
+      <div className={`member-image-wrapper relative ${
+        isCouple ? 'h-80' : ''
+      }`}>
         <Image 
           src={`/about/A-3/${member.image}`} 
           alt={member.name}
