@@ -1,62 +1,56 @@
-import type { Metadata } from 'next'
+'use client'
+
+import { useState } from 'react'
 import Image from 'next/image'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 
-export const metadata: Metadata = {
-  title: '我們的團隊 | 高雄靈糧堂 - 傳道同工、行政團隊介紹',
-  description: '認識高雄靈糧堂的團隊成員，包括傳道同工、總務部、場地部、媒體部、裝備部、拓展部、行政部等各部門同工。',
-  keywords: '高雄靈糧堂, 我們的團隊, 傳道同工, 行政團隊, 教會同工, 事工團隊, 基督教團隊',
-  
-  // Open Graph (社群分享)
-  openGraph: {
-    title: '我們的團隊 | 高雄靈糧堂 - 傳道同工、行政團隊介紹',
-    description: '認識高雄靈糧堂的團隊成員，包括傳道同工、總務部、場地部、媒體部、裝備部、拓展部、行政部等各部門同工。',
-    url: 'https://conflux-tech.com/about-our-team',
-    images: [
-      {
-        url: 'https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png',
-        width: 1200,
-        height: 630,
-        alt: '高雄靈糧堂我們的團隊',
-      },
-    ],
-  },
-  
-  // Twitter Card
-  twitter: {
-    card: 'summary_large_image',
-    title: '我們的團隊 | 高雄靈糧堂 - 傳道同工、行政團隊介紹',
-    description: '認識高雄靈糧堂的團隊成員，包括傳道同工、總務部、場地部、媒體部、裝備部、拓展部、行政部等各部門同工。',
-    images: ['https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png'],
-  },
-}
-
 // 部門導航
 const departments = [
   '傳道同工團隊',
-  '總務部',
-  '場地部',
-  '媒體部',
-  '裝備部',
-  '拓展部',
-  '行政部'
+  '行政同工團隊'
 ]
 
-// 行政部團隊成員資料（按照從上到下的順序）
+// 傳道同工團隊成員資料
+const pastoralTeam = [
+  { name: '羅邦明 曾惠娟 夫婦', image: 'pastoral/羅邦明和曾惠娟夫婦.jpg' },
+  { name: '駱世雄 魏世文 夫婦', image: 'pastoral/駱世雄 魏世文 夫婦.jpg' },
+  { name: '鄭定煇 楊明娟 夫婦', image: 'pastoral/鄭定煇 楊明娟 夫婦.jpg' },
+  { name: '兵乾瑋 張煦慈 夫婦', image: 'pastoral/兵乾瑋 張煦慈 夫婦.jpg' },
+  { name: '李翠燕 牧師', image: 'pastoral/李翠燕 牧師.jpg' },
+  { name: '陳沛伶 傳道', image: 'pastoral/陳沛伶 傳道.jpg' },
+  { name: '王麗貴 傳道', image: 'pastoral/王麗貴 傳道.jpg' },
+  { name: '林麗華 傳道', image: 'pastoral/林麗華 傳道.jpg' },
+  { name: '劉美玲 傳道', image: 'pastoral/劉美玲 傳道.jpg' },
+  { name: '歐陽聖愛 傳道', image: 'pastoral/歐陽聖愛 傳道.jpg' },
+  { name: '尹倩玉 傳道', image: 'pastoral/尹倩玉 傳道.jpg' },
+  { name: '吳佩蓉 傳道', image: 'pastoral/吳佩蓉 傳道.jpg' },
+  { name: '林永正 傳道', image: 'pastoral/林永正 傳道.jpg' }
+]
+
+// 行政同工團隊成員資料
 const adminTeam = [
-  { name: '石建華', image: 'A3-img_工作區域 1 複本 10.png' },
-  { name: '力秀麗', image: 'A3-img_工作區域 1 複本 11.png' },
-  { name: '文祥', image: 'A3-img_工作區域 1 複本 12.png' },
-  { name: '宋君達', image: 'A3-img_工作區域 1 複本 13.png' },
-  { name: '林忠弘', image: 'A3-img_工作區域 1 複本 14.png' },
-  { name: '翁雅玲', image: 'A3-img_工作區域 1 複本 15.png' },
-  { name: '陳威仲', image: 'A3-img_工作區域 1 複本 16.png' },
-  { name: '曾柏宇', image: 'A3-img_工作區域 1 複本 17.png' },
-  { name: '黃安瑜', image: 'A3-img_工作區域 1 複本 18.png' },
-  { name: '楊宸睿', image: 'A3-img_工作區域 1 複本 19.png' },
-  { name: '潘進德', image: 'A3-img_工作區域 1 複本 20.png' },
-  { name: '龔碧霞', image: 'A3-img_工作區域 1 複本 21.png' }
+  { name: '石建華 總務部部長', image: 'admin/石建華.jpg' },
+  { name: '林忠弘', image: 'admin/林忠弘.jpg' },
+  { name: '曾柏宇', image: 'admin/曾柏宇.jpg' },
+  { name: '潘進德', image: 'admin/潘進德.jpg' },
+  { name: '呂文祥', image: 'admin/呂文祥.jpg' },
+  { name: '宋君達', image: 'admin/宋君達.jpg' },
+  { name: '陳威仲', image: 'admin/陳威仲.jpg' },
+  { name: '力秀麗', image: 'admin/力秀麗.jpg' },
+  { name: '賴碧霞', image: 'admin/賴碧霞.jpg' },
+  { name: '黃安瑜', image: 'admin/黃安瑜.jpg' },
+  { name: '簡富渝', image: 'admin/簡富渝.jpg' },
+  { name: '吳靜賢', image: 'admin/吳靜賢.jpg' },
+  { name: '解貴鷦', image: 'admin/解貴鷦.jpg' },
+  { name: '翁雅玲', image: 'admin/翁雅玲.jpg' },
+  { name: '蔡麗紅', image: 'admin/蔡麗紅.jpg' },
+  { name: '方昌圓', image: 'admin/方昌圓.jpg' },
+  { name: '吳芯芯', image: 'admin/芯芯.jpg' },
+  { name: '包惠玲', image: 'admin/包惠玲.jpg' },
+  { name: '蘇孟琳', image: 'admin/蘇孟琳.jpg' },
+  { name: '劉芷吟', image: 'admin/芷吟.jpg' },
+  { name: '鄭如君', image: 'admin/鄭如君.jpg' }
 ]
 
 function TeamMemberCard({ member }: { member: typeof adminTeam[0] }) {
@@ -69,6 +63,9 @@ function TeamMemberCard({ member }: { member: typeof adminTeam[0] }) {
           fill
           className="object-contain"
         />
+        <div className="absolute bottom-2 right-2 text-[#555] px-2 py-1 text-base font-medium bg-[#d4d4d49e] rounded">
+          {member.name}
+        </div>
       </div>
 
     </div>
@@ -76,6 +73,10 @@ function TeamMemberCard({ member }: { member: typeof adminTeam[0] }) {
 }
 
 export default function AboutOurTeamPage() {
+  const [selectedDepartment, setSelectedDepartment] = useState('傳道同工團隊')
+
+  const currentTeam = selectedDepartment === '傳道同工團隊' ? pastoralTeam : adminTeam
+
   return (
     <div className="about-our-team-container min-h-screen bg-gray-50">
       <Header />
@@ -108,8 +109,9 @@ export default function AboutOurTeamPage() {
               {departments.map((dept, index) => (
                 <button
                   key={index}
+                  onClick={() => setSelectedDepartment(dept)}
                   className={`department-tab px-4 py-2 text-lg font-medium transition-colors duration-200 ${
-                    dept === '行政部' 
+                    selectedDepartment === dept
                       ? 'text-[#F3A149] border-b-2 border-[#F3A149]' 
                       : 'text-gray-600 hover:text-[#21807a]'
                   }`}
@@ -125,7 +127,7 @@ export default function AboutOurTeamPage() {
         <section className="team-members-section py-16" >
           <div className="max-w-6xl mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {adminTeam.map((member, index) => (
+              {currentTeam.map((member, index) => (
                 <TeamMemberCard key={index} member={member} />
               ))}
             </div>
