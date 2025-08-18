@@ -99,101 +99,350 @@ export default function MessageReviewPage() {
                   <span className="text-[#21807a]">重溫信息</span>
                 </nav>
 
-                {/* Message Review Content */}
+                {/* YouTube Videos Section */}
                 <div className="bg-white shadow-sm">
                   <div className="news-content-wrapper p-12">
-                    <div className="space-y-8">
-                      {/* News Items */}
-                      <div className="flex gap-8 p-6 border-b border-gray-200 last:border-b-0 hover:bg-gray-50 transition-colors">
-                        <div className="w-48 h-32 flex-shrink-0">
-                          <img src="/news/D-m01.png" alt="7月青年之夜" className="w-full h-full object-contain" />
+                    <h2 className="text-2xl font-bold text-[#444] mb-8">重溫信息</h2>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                      {/* Video 1 */}
+                      <div className="space-y-4">
+                        <div className="aspect-video w-full">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/8jYcZ4C_SbQ"
+                            title="8/17 主崇聚會直播"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
                         </div>
-                        <div className="flex-1">
-                          <div className="flex justify-between items-start gap-4">
-                            <div>
-                              <h3 className="text-xl font-bold text-[#444] mb-2">職場英雄好漢報名處</h3>
-                              <p className="text-gray-600">「買了商務艙,卻進不了貴賓室」《人生的現場理解》影畫展</p>
-                              <p className="text-gray-600">6/29(日)~7/05(日)</p>
-                              <div className="flex flex-wrap gap-2 mt-2">
-                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">人生必修</span>
-                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">青年之夜</span>
-                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">黃志靖</span>
-                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">出社會學</span>
-                              </div>
-                            </div>
-                            <div className="bg-[#F3A149] text-white p-3 text-center min-w-[80px] min-h-[80px] flex flex-col justify-center items-center flex-shrink-0">
-                              <div className="text-xs font-medium leading-tight">2025/07</div>
-                              <div className="text-2xl font-bold leading-tight mt-1">05</div>
-                            </div>
-                          </div>
-                        </div>
+                        <h3 className="text-lg font-semibold text-[#444]">8/17 主崇聚會直播</h3>
                       </div>
 
-                      <div className="flex gap-8 p-6 border-b border-gray-200 last:border-b-0 hover:bg-gray-50 transition-colors">
-                        <div className="w-48 h-32 flex-shrink-0">
-                          <img src="/news/D-m02.png" alt="預備基督的新婦" className="w-full h-full object-contain" />
+                      {/* Video 2 */}
+                      <div className="space-y-4">
+                        <div className="aspect-video w-full">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/GzTEvcTx-CI"
+                            title="重新得力的父親ing~效法天父脫離崩耗"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
                         </div>
-                        <div className="flex-1">
-                          <div className="flex justify-between items-start gap-4">
-                            <div>
-                              <h3 className="text-xl font-bold text-[#444] mb-2">職場英雄好漢報名處</h3>
-                              <p className="text-gray-600">「買了商務艙,卻進不了貴賓室」《人生的現場理解》影畫展</p>
-                              <p className="text-gray-600">6/29(日)~7/05(日)</p>
-                              <div className="flex flex-wrap gap-2 mt-2">
-                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">人生必修</span>
-                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">青年之夜</span>
-                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">黃志靖</span>
-                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">出社會學</span>
-                              </div>
-                            </div>
-                            <div className="bg-[#F3A149] text-white p-3 text-center min-w-[80px] min-h-[80px] flex flex-col justify-center items-center flex-shrink-0">
-                              <div className="text-xs font-medium leading-tight">2025/08</div>
-                              <div className="text-2xl font-bold leading-tight mt-1">07</div>
-                            </div>
-                          </div>
-                        </div>
+                        <h3 className="text-lg font-semibold text-[#444]">重新得力的父親ing~效法天父脫離崩耗</h3>
                       </div>
 
-                      <div className="flex gap-8 p-6 border-b border-gray-200 last:border-b-0 hover:bg-gray-50 transition-colors">
-                        <div className="w-48 h-32 flex-shrink-0">
-                          <img src="/news/D-m03.png" alt="雙律師同時服務諮詢" className="w-full h-full object-contain" />
+                      {/* Video 3 */}
+                      <div className="space-y-4">
+                        <div className="aspect-video w-full">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/95TZoyxVr7c"
+                            title="成為有「影響⼒」的⼈"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
                         </div>
-                        <div className="flex-1">
-                          <div className="flex justify-between items-start gap-4">
-                            <div>
-                              <h3 className="text-xl font-bold text-[#444] mb-2">職場英雄好漢報名處</h3>
-                              <p className="text-gray-600">「買了商務艙,卻進不了貴賓室」《人生的現場理解》影畫展</p>
-                              <p className="text-gray-600">6/29(日)~7/05(日)</p>
-                              <div className="flex flex-wrap gap-2 mt-2">
-                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">人生必修</span>
-                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">青年之夜</span>
-                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">黃志靖</span>
-                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">出社會學</span>
-                              </div>
-                            </div>
-                            <div className="bg-[#F3A149] text-white p-3 text-center min-w-[80px] min-h-[80px] flex flex-col justify-center items-center flex-shrink-0">
-                              <div className="text-xs font-medium leading-tight">2025/08</div>
-                              <div className="text-2xl font-bold leading-tight mt-1">28</div>
-                            </div>
-                          </div>
-                        </div>
+                        <h3 className="text-lg font-semibold text-[#444]">成為有「影響⼒」的⼈</h3>
                       </div>
 
-                      {/* Pagination */}
-                      <div className="pagination-container flex justify-center items-center gap-2 mt-8">
-                        <button className="w-10 h-10 bg-[#F3A149] text-white rounded-full flex items-center justify-center font-bold">1</button>
-                        <button className="w-10 h-10 bg-gray-200 text-gray-700 rounded-full flex items-center justify-center hover:bg-gray-300 transition-colors">2</button>
-                        <button className="w-10 h-10 bg-gray-200 text-gray-700 rounded-full flex items-center justify-center hover:bg-gray-300 transition-colors">3</button>
-                        <button className="w-10 h-10 bg-gray-200 text-gray-700 rounded-full flex items-center justify-center hover:bg-gray-300 transition-colors">
-                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
-                          </svg>
-                        </button>
-                        <button className="w-10 h-10 bg-gray-200 text-gray-700 rounded-full flex items-center justify-center hover:bg-gray-300 transition-colors">
-                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M4 18h2V6H4v12zm8 0h2V6h-2v12z"/>
-                          </svg>
-                        </button>
+                      {/* Video 4 */}
+                      <div className="space-y-4">
+                        <div className="aspect-video w-full">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/dFXOwxQ6yfg"
+                            title="末世神兒女的豐盛-從⼤戰爭到⼤活⽔"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                        <h3 className="text-lg font-semibold text-[#444]">末世神兒女的豐盛-從⼤戰爭到⼤活⽔</h3>
+                      </div>
+
+                      {/* Video 5 */}
+                      <div className="space-y-4">
+                        <div className="aspect-video w-full">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/CDN0DzCuXuE"
+                            title="詩篇頌禱～健康靈命的保養"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                        <h3 className="text-lg font-semibold text-[#444]">詩篇頌禱～健康靈命的保養</h3>
+                      </div>
+
+                      {/* Video 6 */}
+                      <div className="space-y-4">
+                        <div className="aspect-video w-full">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/HojMZ3tDOhU"
+                            title="關鍵時刻"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                        <h3 className="text-lg font-semibold text-[#444]">關鍵時刻</h3>
+                      </div>
+
+                      {/* Video 7 */}
+                      <div className="space-y-4">
+                        <div className="aspect-video w-full">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/4VlJxYRWLeA"
+                            title="仰望神，免除羞愧"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                        <h3 className="text-lg font-semibold text-[#444]">仰望神，免除羞愧</h3>
+                      </div>
+
+                      {/* Video 8 */}
+                      <div className="space-y-4">
+                        <div className="aspect-video w-full">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/ovGToBd1kh4"
+                            title="價錢與價值-⼈⽣意義觀"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                        <h3 className="text-lg font-semibold text-[#444]">價錢與價值-⼈⽣意義觀</h3>
+                      </div>
+
+                      {/* Video 9 */}
+                      <div className="space-y-4">
+                        <div className="aspect-video w-full">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/Efzv0FSckEQ"
+                            title="真福⾳的⼤能"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                        <h3 className="text-lg font-semibold text-[#444]">真福⾳的⼤能</h3>
+                      </div>
+
+                      {/* Video 10 */}
+                      <div className="space-y-4">
+                        <div className="aspect-video w-full">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/qIDOuB9UTH4"
+                            title="⼀顆⽯頭改變了世界"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                        <h3 className="text-lg font-semibold text-[#444]">⼀顆⽯頭改變了世界</h3>
+                      </div>
+
+                      {/* Video 11 */}
+                      <div className="space-y-4">
+                        <div className="aspect-video w-full">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/Pm5BH286p-g"
+                            title="讓家成為⽣命彼此祝福的窩"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                        <h3 className="text-lg font-semibold text-[#444]">讓家成為⽣命彼此祝福的窩</h3>
+                      </div>
+
+                      {/* Video 12 */}
+                      <div className="space-y-4">
+                        <div className="aspect-video w-full">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/MyrtHyc0ZaA"
+                            title="教會～敬拜禱告的⼤軍"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                        <h3 className="text-lg font-semibold text-[#444]">教會～敬拜禱告的⼤軍</h3>
+                      </div>
+
+                      {/* Video 13 */}
+                      <div className="space-y-4">
+                        <div className="aspect-video w-full">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/ndXcRFLBiwo"
+                            title="不要怕，主與我們同在"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                        <h3 className="text-lg font-semibold text-[#444]">不要怕，主與我們同在</h3>
+                      </div>
+
+                      {/* Video 14 */}
+                      <div className="space-y-4">
+                        <div className="aspect-video w-full">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/7sNE8Ye66bM"
+                            title="經歷與神同在"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                        <h3 className="text-lg font-semibold text-[#444]">經歷與神同在</h3>
+                      </div>
+
+                      {/* Video 15 */}
+                      <div className="space-y-4">
+                        <div className="aspect-video w-full">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/sL_urbH5lTo"
+                            title="⺟親的秘密武器"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                        <h3 className="text-lg font-semibold text-[#444]">⺟親的秘密武器</h3>
+                      </div>
+
+                      {/* Video 16 */}
+                      <div className="space-y-4">
+                        <div className="aspect-video w-full">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/iOea-_dTOdI"
+                            title="屬天的價值"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                        <h3 className="text-lg font-semibold text-[#444]">屬天的價值</h3>
+                      </div>
+
+                      {/* Video 17 */}
+                      <div className="space-y-4">
+                        <div className="aspect-video w-full">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/QWxxFJQAmlE"
+                            title="亞伯拉罕之約"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                        <h3 className="text-lg font-semibold text-[#444]">亞伯拉罕之約</h3>
+                      </div>
+
+                      {/* Video 18 */}
+                      <div className="space-y-4">
+                        <div className="aspect-video w-full">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/vuyVxyRzKrQ"
+                            title="初熟的果子是基督"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                        <h3 className="text-lg font-semibold text-[#444]">初熟的果子是基督</h3>
+                      </div>
+
+                      {/* Video 19 */}
+                      <div className="space-y-4">
+                        <div className="aspect-video w-full">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/v8ut2DAL1_k"
+                            title="重建⽣命根基"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                        <h3 className="text-lg font-semibold text-[#444]">重建⽣命根基</h3>
+                      </div>
+
+                      {/* Video 20 */}
+                      <div className="space-y-4">
+                        <div className="aspect-video w-full">
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/n6AmQ8qphrQ"
+                            title="上帝的性情與能⼒"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                            className="rounded-lg"
+                          ></iframe>
+                        </div>
+                        <h3 className="text-lg font-semibold text-[#444]">上帝的性情與能⼒</h3>
                       </div>
                     </div>
                   </div>
