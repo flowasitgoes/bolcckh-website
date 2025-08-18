@@ -8,50 +8,50 @@ export function NewsSection() {
   const news = [
     {
       id: 1,
-      title: "2F榮耀廳－母親的祕密武器",
+      title: "超推~不只是歌唱班的歌唱班，歡迎愛唱歌的你，隨時加入!",
       subtitle: "",
       date: "2024.05.11",
-      image: "/home/news-section/Home-05.png",
+      image: "/home/news-section/01.jpg",
       category: "主日講員：柯芳圓",
       author: "Qrowd",
       comments: 2,
     },
     {
       id: 2,
-      title: "兒童美術館－1樓圖書室－一頁書博物館",
+      title: "一支氣球捲出一朵花，一雙巧手變出幸福感",
       subtitle: "",
       date: "2024.05.18",
-      image: "/home/news-section/Home-06.png",
+      image: "/home/news-section/02.jpg",
       category: "活動資訊",
       author: "Qrowd",
       comments: 2,
     },
     {
       id: 3,
-      title: "2F榮耀廳 今年母親節幸福電影院特選 導暖心之作，片名《BIG》",
+      title: "姐妹特會『蒙福之鑰』",
       subtitle: "",
       date: "2024.05.18",
-      image: "/home/news-section/Home-07.png",
+      image: "/home/news-section/03.jpg",
       category: "電影欣賞",
       author: "Qrowd",
       comments: 2,
     },
     {
       id: 4,
-      title: "週三禱告會－為教會與城市守望",
+      title: "《長青學苑》秋季班 點我線上報名",
       subtitle: "每週三晚上7:30，邀請您一起為教會、家庭、城市禱告",
       date: "2024.05.25",
-      image: "/home/news-section/Home-05.png",
+      image: "/home/news-section/04.jpg",
       category: "禱告會",
       author: "Qrowd",
       comments: 5,
     },
     {
       id: 5,
-      title: "青年團契－探索信仰與生活",
+      title: "雙律師專業諮詢：為幫助大家在生活中遇到的法律相關問題",
       subtitle: "週五晚上6:30，歡迎年輕人一起分享生活、討論信仰",
       date: "2024.05.26",
-      image: "/home/news-section/Home-06.png",
+      image: "/home/news-section/05.jpg",
       category: "青年事工",
       author: "Qrowd",
       comments: 3,
@@ -97,16 +97,7 @@ export function NewsSection() {
                       <Calendar className="w-4 h-4 mr-2" />
                       {item.date}
                     </div>
-                    <div className="flex items-center gap-4 text-gray-500 text-sm mt-4 justify-end">
-                      <span className="flex items-center gap-1">
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-                        {item.author}
-                      </span>
-                      <span className="flex items-center gap-1">
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M17 8h2a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2v-8a2 2 0 012-2h2m10 0V6a4 4 0 00-8 0v2m8 0H7" /></svg>
-                        {item.comments} Comments
-                      </span>
-                    </div>
+
                     <h4 className="font-bold text-lg mb-2 text-[#444] leading-snug mt-4">{item.title}</h4>
                     {item.subtitle && <p className="text-gray-600 text-sm leading-relaxed">{item.subtitle}</p>}
                     <div className="mt-4 flex items-center justify-between">

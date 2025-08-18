@@ -15,7 +15,9 @@ export function ReadingProgress() {
       <div className={styles.socialContentWrap}>
         
         <div className={styles.socialContentItemWrap}>
-          <img src="/home/service-content/Home-16.png" alt="線上諮詢" className={styles.serviceSocialImg} />
+          <a href="https://lin.ee/TdJiEoj" target="_blank" rel="noopener noreferrer">
+            <img src="/home/service-content/Home-16.png" alt="線上諮詢" className={styles.serviceSocialImg} />
+          </a>
         </div>
 
         <div className={`${styles.socialContentItemWrapBook} ${isBookOpen ? styles.bookOpen : ''}`}>

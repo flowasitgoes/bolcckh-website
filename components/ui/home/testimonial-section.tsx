@@ -14,7 +14,7 @@ export function TestimonialSection() {
             variant="default"
             className="more-button bg-teal-theme text-white px-10 py-3 text-lg font-bold rounded-none hover:bg-teal-800 flex items-center gap-2 mx-auto"
             >
-            更多消息
+            點我前往
             <span className="ml-2 text-2xl">→</span>
             </Button>
           </div>
@@ -32,12 +32,12 @@ export function TestimonialSection() {
         <div className="testimonial-wrapper">
           <h2 className="text-white text-lg mb-4 tracking-widest">檔案專區</h2>
           <h3 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight text-neutral-900">Archive<br />Section</h3>
-          <p className="text-white text-base md:text-lg mb-10 leading-relaxed">信仰之旅：我們的團契活動影像集</p>
+          <p className="text-white text-base md:text-lg mb-10 leading-relaxed">各式檔案下載區(信仰之旅：我們的團契活動影像集)</p>
           <Button
             variant="default"
             className="more-button bg-teal-theme text-white px-10 py-3 text-lg font-bold rounded-none hover:bg-teal-800 flex items-center gap-2 mx-auto"
           >
-            更多消息
+            點我前往
             <span className="ml-2 text-2xl">→</span>
           </Button>
         </div>
