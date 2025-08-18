@@ -60,9 +60,11 @@ const busSchedule = {
 
 function ContactInfoCard({ image, index }: { image: string, index: number }) {
   const isAddressCard = index === 3; // 第四張卡片 (索引為3)
+  const isPhoneCard1 = index === 0; // 第一張卡片 (索引為0) - 電話卡片1
+  const isPhoneCard2 = index === 1; // 第二張卡片 (索引為1) - 電話卡片2
   
   const cardContent = (
-    <div className={`contact-info-card-wrapper-item contact-info-card rounded-lg p-6 text-center ${isAddressCard ? 'cursor-pointer hover:shadow-lg transition-shadow duration-200' : ''}`}>
+    <div className={`contact-info-card-wrapper-item contact-info-card rounded-lg p-6 text-center ${(isAddressCard || isPhoneCard1 || isPhoneCard2) ? 'cursor-pointer hover:shadow-lg transition-shadow duration-200' : ''}`}>
       <Image 
         src={`/about/A-4/${image}`} 
         alt="聯絡資訊"
@@ -79,6 +81,28 @@ function ContactInfoCard({ image, index }: { image: string, index: number }) {
         href="https://maps.app.goo.gl/wf7tt5L7igxhSdP87" 
         target="_blank" 
         rel="noopener noreferrer"
+        className="block"
+      >
+        {cardContent}
+      </a>
+    );
+  }
+
+  if (isPhoneCard1) {
+    return (
+      <a 
+        href="tel:07-3456868"
+        className="block"
+      >
+        {cardContent}
+      </a>
+    );
+  }
+
+  if (isPhoneCard2) {
+    return (
+      <a 
+        href="tel:0800-000-830"
         className="block"
       >
         {cardContent}
