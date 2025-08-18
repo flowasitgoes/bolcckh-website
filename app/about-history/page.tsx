@@ -80,20 +80,37 @@ function TimelineItem({ img, year, desc, reverse, idx }: { img: string, year: st
   const alignItems = isEven ? '' : 'items-end'
   
   return (
-    <div className={`about-history-item-wrapper flex w-full items-center mb-16 ${reverse ? 'flex-row' : 'flex-row-reverse'}`}>
+    <div className={`about-history-item-wrapper flex w-full items-center mb-16 ${reverse ? 'flex-row' : 'flex-row-reverse'} animate-fade-in-up`} 
+         style={{ 
+           animationDelay: `${idx * 0.3}s`,
+           animationFillMode: 'both'
+         }}>
       <div className="w-1/2 flex justify-center">
-        <Image src={`/about/A-2/${img}`} alt={`歷史事件${idx+1}`} width={320} height={200} className="object-cover" />
+        <div className="image-container relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105">
+          <Image 
+            src={`/about/A-2/${img}`} 
+            alt={`歷史事件${idx+1}`} 
+            width={320} 
+            height={200} 
+            className="object-cover transition-transform duration-700 hover:scale-110" 
+          />
+          <div className="absolute inset-0 bg-black opacity-0 hover:opacity-10 transition-opacity duration-300"></div>
+        </div>
       </div>
-      <div className={`history-item-wrapper w-1/2 px-6 text-gray-700 text-lg ${textAlign} ${alignItems}`}>
+      <div className={`history-item-wrapper w-1/2 px-6 text-gray-700 text-lg ${textAlign} ${alignItems} animate-slide-in`}
+           style={{ 
+             animationDelay: `${idx * 0.3 + 0.2}s`,
+             animationFillMode: 'both'
+           }}>
         
-        <div className={`history-item-date-and-line-wrapper flex ${flexDirection}`}>
-          <div className="history-item-date mb-2 font-bold">{year}</div>
+        <div className={`history-item-date-and-line-wrapper flex ${flexDirection} animate-pulse-slow`}>
+          <div className="history-item-date mb-2 font-bold text-[#21807a] transition-all duration-300 hover:scale-105 hover:text-[#1a6b66]">{year}</div>
           <div className="history-item-line-wrapper">
-            <div className="history-item-line"></div>
+            <div className="history-item-line bg-gradient-to-r from-[#21807a] to-[#1a6b66] animate-pulse"></div>
           </div>
         </div>
 
-        <div className="history-item-desc">{desc}</div>
+        <div className="history-item-desc transition-all duration-300 hover:text-[#444] hover:scale-105">{desc}</div>
       </div>
     </div>
   )
