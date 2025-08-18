@@ -27,6 +27,7 @@ export function Header() {
     { zh: "宣教使命", en: "Mission", href: "#mission", children: [
       { zh: "宣教使命", href: "/mission" },
       { zh: "生命見證", href: "/mission-testimony" },
+      { zh: "南島趴趴走", href: "/mission-austronesian" },
     ] },
     { zh: "教會消息", en: "News", href: "/news", children: [
       { zh: "教會消息", href: "/news" }

@@ -71,103 +71,160 @@ export default function WitnessPage() {
                 <span className="text-[#21807a]">門訓見證</span>
               </nav>
 
-              {/* Main Content */}
+              {/* YouTube Videos */}
               <div className="bg-white shadow-sm p-12">
-                {/* Video Section */}
-                <div className="mb-12">
-                  {/* <h2 className="text-2xl font-bold text-[#333] mb-6">南島語系國家介紹</h2> */}
-                  
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {/* First Video */}
-                    <div className="space-y-4">
-                      <div className="relative aspect-video bg-gray-900 rounded-lg overflow-hidden">
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <div className="text-center">
-                            <div className="w-16 h-16 bg-red-600 rounded-lg flex items-center justify-center mb-4 mx-auto">
-                              <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M8 5v14l11-7z"/>
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="absolute inset-0 bg-gradient-to-br from-[#F3A149]/20 to-[#21807a]/20">
-                          <div className="absolute inset-0 bg-[url('/mission/C2/C2-07.png')] bg-cover bg-center opacity-30"></div>
-                        </div>
-                      </div>
-                      <p className="text-sm text-gray-600">以及特殊的地緣環境</p>
-                      <h3 className="text-lg font-semibold text-[#333]">水泥叢林中的宣教船艦</h3>
-                    </div>
-
-                    {/* Second Video */}
-                    <div className="space-y-4">
-                      <div className="relative aspect-video bg-gray-900 rounded-lg overflow-hidden">
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <div className="text-center">
-                            <div className="w-16 h-16 bg-red-600 rounded-lg flex items-center justify-center mb-4 mx-auto">
-                              <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M8 5v14l11-7z"/>
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="absolute inset-0 bg-gradient-to-br from-[#F3A149]/20 to-[#21807a]/20">
-                          <div className="absolute inset-0 bg-[url('/mission/C2/C2-07.png')] bg-cover bg-center opacity-30"></div>
-                        </div>
-                      </div>
-                      <p className="text-sm text-gray-600">以及特殊的地緣環境</p>
-                      <h3 className="text-lg font-semibold text-[#333]">南島語系國家介紹影片</h3>
-                    </div>
-                  </div>
+                <div className="mb-8">
+                  {/* <h1 className="text-2xl md:text-3xl font-bold text-[#444] mb-4">
+                    門訓見證
+                  </h1> */}
+                  {/* <p className="text-gray-600">門徒訓練的成長見證</p> */}
                 </div>
 
-                {/* Map Section */}
-                <div className="mb-12">
-                  <div className="relative">
-                    {/* Map Image */}
-                    <div className="relative w-full h-96 bg-cover bg-center rounded-lg overflow-hidden" 
-                         style={{
-                           backgroundImage: 'url("https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80")'
-                         }}>
-                      {/* Map Overlay */}
-                      <div className="absolute inset-0 bg-brown-800/20"></div>
-                      
-                      {/* Heart Pins */}
-                      <div className="absolute top-1/3 left-1/4 w-6 h-6 bg-red-500 rounded-full animate-pulse"></div>
-                      <div className="absolute top-1/2 right-1/3 w-6 h-6 bg-red-500 rounded-full animate-pulse"></div>
-                      
-                      {/* Map Title */}
-                      <div className="absolute top-4 left-4 bg-white/90 px-4 py-2 rounded-lg">
-                        <h3 className="text-lg font-bold text-[#333]">南島語系國家分佈圖</h3>
-                      </div>
-                      
-                      {/* Notebook */}
-                      <div className="absolute bottom-4 left-4 w-16 h-20 bg-white rounded-lg shadow-lg flex items-center justify-center">
-                        <div className="w-8 h-10 bg-purple-500 rounded"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Orange Background Section */}
-                <div className="mission-testmony-witness-section bg-[#F3A149] p-32 rounded-lg">
+                {/* Videos Grid */}
+                <div className="space-y-8">
+                  {/* First Video */}
                   <div className="text-center">
-                    <p className="text-black text-lg leading-relaxed">
-                      隨著全球化的發展，南島語系國家的基督教面臨現代化和世俗化的挑戰，可能需要重新詮釋其信仰和實踐。
-                    </p>
+                    <div className="mb-4">
+                      <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/XUoXfnDdZ9Y?si=ufL3pVkwo2fq3pyn" 
+                        title="YouTube video player" 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen
+                        className="mx-auto"
+                      ></iframe>
+                    </div>
+                    <h3 className="text-xl font-bold text-[#21807a]">門訓的喜悅</h3>
                   </div>
-                </div>
 
-                {/* Navigation Button */}
-                <div className="mt-8 text-right">
-                  <Link 
-                    href="/mission-testimony"
-                    className="inline-flex items-center px-6 py-3 bg-[#21807a] text-white rounded-lg hover:bg-[#1a6860] transition-colors"
-                  >
-                    <svg className="mr-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                    </svg>
-                    回上一頁
-                  </Link>
+                  {/* Second Video */}
+                  <div className="text-center">
+                    <div className="mb-4">
+                      <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/03rtvF8AM7g?si=B21OuaRfbaGtAc5q" 
+                        title="YouTube video player" 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen
+                        className="mx-auto"
+                      ></iframe>
+                    </div>
+                    <h3 className="text-xl font-bold text-[#21807a]">門訓的喜悅</h3>
+                  </div>
+
+                  {/* Third Video */}
+                  <div className="text-center">
+                    <div className="mb-4">
+                      <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/lcrFJH2bNEI?si=t7c2APt0r2H78UCS" 
+                        title="YouTube video player" 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen
+                        className="mx-auto"
+                      ></iframe>
+                    </div>
+                    <h3 className="text-xl font-bold text-[#21807a]">養育班見證</h3>
+                  </div>
+
+                  {/* Fourth Video */}
+                  <div className="text-center">
+                    <div className="mb-4">
+                      <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/VXQa-WP8F_Q?si=EgTY5af512ylI2aR" 
+                        title="YouTube video player" 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen
+                        className="mx-auto"
+                      ></iframe>
+                    </div>
+                    <h3 className="text-xl font-bold text-[#21807a]">接受門訓蒙祝福</h3>
+                  </div>
+
+                  {/* Fifth Video */}
+                  <div className="text-center">
+                    <div className="mb-4">
+                      <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/W6O8QDG7E1c?si=Cxnwz8bu6L4a3eK4" 
+                        title="YouTube video player" 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen
+                        className="mx-auto"
+                      ></iframe>
+                    </div>
+                    <h3 className="text-xl font-bold text-[#21807a]">養育的喜悅</h3>
+                  </div>
+
+                  {/* Sixth Video */}
+                  <div className="text-center">
+                    <div className="mb-4">
+                      <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/mnxdOUYDQrc?si=j8990L4lV84YQEe6" 
+                        title="YouTube video player" 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen
+                        className="mx-auto"
+                      ></iframe>
+                    </div>
+                    <h3 className="text-xl font-bold text-[#21807a]">代禱學校見證</h3>
+                  </div>
+
+                  {/* Seventh Video */}
+                  <div className="text-center">
+                    <div className="mb-4">
+                      <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/Yf2-AZOslew?si=H7zmKxOgQ6TxfQcR" 
+                        title="YouTube video player" 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen
+                        className="mx-auto"
+                      ></iframe>
+                    </div>
+                    <h3 className="text-xl font-bold text-[#21807a]">代禱學校見證</h3>
+                  </div>
+
+                  {/* Eighth Video */}
+                  <div className="text-center">
+                    <div className="mb-4">
+                      <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/hwqMRjtnOPI?si=hxM7UknDZn8-UMMY" 
+                        title="YouTube video player" 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen
+                        className="mx-auto"
+                      ></iframe>
+                    </div>
+                    <h3 className="text-xl font-bold text-[#21807a]">代禱學校見證</h3>
+                  </div>
                 </div>
               </div>
             </div>

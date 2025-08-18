@@ -71,61 +71,52 @@ export default function PrayersPage() {
                 <span className="text-[#21807a]">禱告蒙應允</span>
               </nav>
 
-              {/* Main Content */}
+              {/* YouTube Videos */}
               <div className="bg-white shadow-sm p-12">
-                {/* Video Section */}
                 <div className="mb-8">
-                  <div className="relative w-full aspect-video bg-gray-900 rounded-lg overflow-hidden">
-                    {/* Video Player with Overlay */}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      {/* Placeholder for video - you can replace with actual YouTube embed */}
-                      <div className="text-center">
-                        <div className="w-20 h-20 bg-red-600 rounded-lg flex items-center justify-center mb-4 mx-auto">
-                          <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M8 5v14l11-7z"/>
-                          </svg>
-                        </div>
-                        <div className="text-white text-2xl font-bold mb-2">
-                          全家歸主
-                        </div>
-                        <div className="text-white text-sm opacity-80">
-                          【全家信主】侯淑樺 姐妹
-                        </div>
-                      </div>
+                  {/* <h1 className="text-2xl md:text-3xl font-bold text-[#444] mb-4">
+                    禱告蒙應允
+                  </h1> */}
+                  {/* <p className="text-gray-600">禱告得到回應的真實見證</p> */}
+                </div>
+
+                {/* Videos Grid */}
+                <div className="space-y-8">
+                  {/* First Video */}
+                  <div className="text-center">
+                    <div className="mb-4">
+                      <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/iAaf7QXBfIg?si=sSGlQaEJRwhDPF3t" 
+                        title="YouTube video player" 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen
+                        className="mx-auto"
+                      ></iframe>
                     </div>
-                    
-                    {/* Background Image */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#F3A149]/20 to-[#21807a]/20">
-                      <div className="absolute inset-0 bg-[url('/mission/C2/C2-07.png')] bg-cover bg-center opacity-30"></div>
-                    </div>
+                    <h3 className="text-xl font-bold text-[#21807a]">禱告蒙應允</h3>
                   </div>
-                </div>
 
-                {/* Testimony Title */}
-                <div className="mb-6">
-                  <h1 className="text-3xl font-bold text-[#333] mb-4">
-                    全家信主 - 侯淑樺 姊妹
-                  </h1>
-                </div>
-
-                {/* Simple Content */}
-                <div className="prose max-w-none text-gray-700 leading-relaxed">
-                  <p className="text-lg">
-                    為何要全家歸主，理由有四：一、是神的旨意；二、合情合理；三、有真正的快樂；四、有美好的見證。既然全家歸主如此的重要，我們不可不尋求研討使全家信主、歸主的方法。
-                  </p>
-                </div>
-
-                {/* Navigation Button */}
-                <div className="mt-8 text-right">
-                  <Link 
-                    href="/mission-testimony"
-                    className="inline-flex items-center px-6 py-3 bg-[#21807a] text-white rounded-lg hover:bg-[#1a6860] transition-colors"
-                  >
-                    <svg className="mr-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                    </svg>
-                    回上一頁
-                  </Link>
+                  {/* Second Video */}
+                  <div className="text-center">
+                    <div className="mb-4">
+                      <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/7-ZEVTG2uTs?si=FBVDEAGdW2SHn6Cr" 
+                        title="YouTube video player" 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen
+                        className="mx-auto"
+                      ></iframe>
+                    </div>
+                    <h3 className="text-xl font-bold text-[#21807a]">禱告蒙應允</h3>
+                  </div>
                 </div>
               </div>
             </div>
