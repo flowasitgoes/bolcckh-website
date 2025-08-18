@@ -74,65 +74,46 @@ export default function MissionTestimonyPage() {
               {/* Article Content */}
               <div className="bg-white shadow-sm">
                 {/* Main Image */}
-                <div className="w-full mb-8">
-                  <img
-                    src="/mission/C2/C2-07.png"
-                    alt="主崇信息精華"
-                    className="w-full h-auto object-cover"
-                  />
-                </div>
 
                 <div className="article-content-wrapper">
-                {/* Article Header */}
-                <div className="text-center mb-8">
-                  <h1 className="text-2xl md:text-3xl font-bold text-[#444] mb-4">
-                    主崇信息精華｜大衛：神所揀選的受膏者｜
-                  </h1>
-                  <p className="text-gray-600">2025.06.15</p>
-                </div>
+                  {/* YouTube Videos */}
+                  <div className="space-y-8">
+                    {/* First Video */}
+                    <div className="text-center">
+                      <div className="mb-4">
+                        <iframe 
+                          width="560" 
+                          height="315" 
+                          src="https://www.youtube.com/embed/Ymt2YU1s9Ac?si=mkF9mRr26fhwpvLi" 
+                          title="YouTube video player" 
+                          frameBorder="0" 
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                          referrerPolicy="strict-origin-when-cross-origin" 
+                          allowFullScreen
+                          className="mx-auto"
+                        ></iframe>
+                      </div>
+                      <h3 className="text-xl font-bold text-[#21807a]">全家信主</h3>
+                    </div>
 
-                {/* Article Content */}
-                <div className="prose max-w-none text-gray-700 leading-relaxed space-y-6">
-                  <p>
-                    本週起至八、九月，會眾聚焦於大衛王平的系列聚會，實地探會看兄，
-                    勉勵弟兄達事工，今天傳真正攻勢神蒼薹聰明其配上大穴實1-13節，透
-                    過大衛，來認識耶穌基督樓神所揀選的受膏者。
-                  </p>
-
-                  <h3 className="text-xl font-bold text-[#21807a] border-b-2 border-[#21807a] pb-2">
-                    青山依舊在，幾度夕陽紅，慣看秋月春
-                  </h3>
-
-                  <p>
-                    許多靈會從帝食會禱告的聖經人物來來反思自己的生命，但是要務們靈考
-                    怎去人物，主要是為了讓你配走人攻設建主耶穌，有描「小故事大原示
-                    」的願度來讀者舊約，只要專喜攻法他們攻發自己的行為，無法得蒙真寶
-                    生命的改寫，實見兄，聖經主耶穌，才能帶出趨人生命領腳的方禮。
-                  </p>
-
-                  <p>
-                    舊約不只講著這預言節到耶穌，整本舊約的所有救恩傳式，達法、節期
-                    都指向耶穌，透法不值是聲達的目在如這種恩知何生活，而要實講護們考
-                    見耶穌所活出來拯全的生命。
-                  </p>
-
-                  <h3 className="text-xl font-bold text-[#21807a] border-b-2 border-[#21807a] pb-2">
-                    青山依舊在，幾度夕陽紅，慣看秋月春
-                  </h3>
-
-                  <p>
-                    許多靈會從帝食會禱告的聖經人物來來反思自己的生命，但是要務們靈考
-                    怎去人物，主要是為了讓你配走人攻設建主耶穌，有描「小故事大原示
-                    」的願度來讀者舊約，只要專喜攻法他們攻發自己的行為，無法得蒙真寶
-                    生命的改寫，實見兄，聖經主耶穌，才能帶出趨人生命領腳的方禮。
-                  </p>
-
-                  <p>
-                    舊約不只講著這預言節到耶穌，整本舊約的所有救恩傳式，達法、節期
-                    都指向耶穌，透法不值是聲達的目在如這種恩知何生活，而要實講護們考
-                    見耶穌所活出來拯全的生命。
-                  </p>
-                </div>
+                    {/* Second Video */}
+                    <div className="text-center">
+                      <div className="mb-4">
+                        <iframe 
+                          width="560" 
+                          height="315" 
+                          src="https://www.youtube.com/embed/ciJVr2_29og?si=scYU03Iwv8qswy7s" 
+                          title="YouTube video player" 
+                          frameBorder="0" 
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                          referrerPolicy="strict-origin-when-cross-origin" 
+                          allowFullScreen
+                          className="mx-auto"
+                        ></iframe>
+                      </div>
+                      <h3 className="text-xl font-bold text-[#21807a]">職場轉化</h3>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
