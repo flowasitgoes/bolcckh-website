@@ -84,9 +84,43 @@ export default function ChurchDepartmentTaiwaneseLanguagePage() {
                   台語牧區是一個充滿神蹟的地方，許多人在這裡經歷了性情的改變、心情的改善、家庭關係的修復，甚至身體健康的恢復。我們相信透過按著聖經真理生活，透過禱告經歷神的醫治，我們能夠一起建立基督的身體，在愛中彼此聯絡。
                 </p>
                 
-                <p className="text-lg leading-relaxed">
+                <p className="text-lg leading-relaxed mb-8">
                   台語牧區的使命是裝備聖徒，各盡其職，建立基督的身體，在愛中彼此聯絡。
                 </p>
+
+                {/* 台語牧區圖片展示 */}
+                <div className="mt-12">
+                  <h3 className="text-2xl font-bold text-[#07847f] mb-6 text-center">台語牧區活動剪影</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div className="relative overflow-hidden rounded-lg shadow-lg">
+                      <Image
+                        src="/church/taiwanese-faction/LINE_ALBUM_台語牧區_250818_1.jpg"
+                        alt="台語牧區活動照片1"
+                        width={400}
+                        height={300}
+                        className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <div className="relative overflow-hidden rounded-lg shadow-lg">
+                      <Image
+                        src="/church/taiwanese-faction/LINE_ALBUM_台語牧區_250818_2.jpg"
+                        alt="台語牧區活動照片2"
+                        width={400}
+                        height={300}
+                        className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <div className="relative overflow-hidden rounded-lg shadow-lg">
+                      <Image
+                        src="/church/taiwanese-faction/LINE_ALBUM_台語牧區_250818_3.jpg"
+                        alt="台語牧區活動照片3"
+                        width={400}
+                        height={300}
+                        className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

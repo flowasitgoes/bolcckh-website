@@ -72,6 +72,21 @@ function DepartmentPanel({ department }: { department: typeof departments[0] }) 
     if (title === '台語牧區') {
       return '/church-department-taiwanese-language'
     }
+    if (title === '成人牧區') {
+      return '/church-department-adult'
+    }
+    if (title === '原民牧區') {
+      return '/church-department-indigenous'
+    }
+    if (title === '學生牧區') {
+      return '/church-department-student'
+    }
+    if (title === '兒童牧區') {
+      return '/church-department-children'
+    }
+    if (title === '社青牧區') {
+      return '#' // 社青牧區暫時不連結到任何頁面
+    }
     return '/church-department'
   }
 

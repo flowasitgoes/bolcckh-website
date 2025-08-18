@@ -126,9 +126,11 @@ export default function ChurchPage() {
                 className="object-cover w-full h-full"
               />
               <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center">
-                <h2 className="text-4xl font-bold text-white mb-2">牧養裝備</h2>
-                <p className="text-2xl font-bold text-white mb-4">Pastoral resources</p>
-                <div className="text-white text-2xl">→</div>
+                <blockquote className="text-white text-center text-xl leading-relaxed mb-6">
+                  <p className="mb-4">正如我們一個身子上有好些肢體，肢體也不都是一樣的用處。</p>
+                  <p className="mb-4">我們這許多人，在基督裡成為一身，互相聯絡作肢體，也是如此。</p>
+                  <div className="text-lg ">羅馬書 12:4-5</div>
+                </blockquote>
               </div>
             </div>
           </div>
@@ -138,11 +140,7 @@ export default function ChurchPage() {
         <section className="bible-quote-section bg-[#F3A149]">
           <div className="bible-quote-wrapper max-w-4xl mx-auto text-center px-4 md:px-0">
             <div className="bible-quote-container bg-white p-12 shadow-lg">
-              <blockquote className="text-[#444] text-xl leading-relaxed mb-6">
-                <p className="mb-4">正如我們一個身子上有好些肢體，肢體也不都是一樣的用處。</p>
-                <p className="mb-4">我們這許多人，在基督裡成為一身，互相聯絡作肢體，也是如此。</p>
-                <div className="text-lg ">羅馬書 12:4-5</div>
-              </blockquote>
+              
             </div>
           </div>
         </section>

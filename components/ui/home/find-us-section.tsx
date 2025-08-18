@@ -32,9 +32,13 @@ export function FindUsSection({ compact = false, showButton = true, className = 
 
           {showButton && (
           <div className="text-center mt-12">
-            <Button className="bg-orange-theme hover:bg-orange-600 text-white w-[260px] h-14 text-lg font-bold rounded-none">
+            <a 
+              href="/home/bus-route.jpg" 
+              download
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 px-4 py-2 bg-orange-theme hover:bg-orange-600 text-white w-[260px] h-14 text-lg font-bold rounded-none"
+            >
               更多交通資訊　→
-            </Button>
+            </a>
           </div>
           )}
         </div>
