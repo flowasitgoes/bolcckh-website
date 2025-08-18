@@ -20,7 +20,7 @@ export function Header() {
       { zh: "教會生活", href: "/church" },
       { zh: "聚會資訊", href: "/church-groups" },
       { zh: "牧區族群", href: "/church-department" },
-      { zh: "事工介紹與呼召", href: "/church-calling" },
+      { zh: "事工介紹與呼召", href: "/ministry-calling" },
       { zh: "牧養裝備", href: "/church-equip" },
       { zh: "門訓建造", href: "/church-discipleship" },
     ] },

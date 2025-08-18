@@ -90,7 +90,7 @@ export function Footer() {
               <ul className={footerStyles.footerNavList}>
                 <li><a href="/church-groups">聚會資訊</a></li>
                 <li><a href="/church-department">牧區族群</a></li>
-                <li><a href="/church-calling">事工介紹與呼召</a></li>
+                <li><a href="/ministry-calling">事工介紹與呼召</a></li>
                 <li><a href="/church-equip">牧養裝備</a></li>
                 <li><a href="/church-discipleship">門訓建造</a></li>
               </ul>
