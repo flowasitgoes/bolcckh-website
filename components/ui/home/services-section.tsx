@@ -6,14 +6,46 @@ import styles from '@/styles/services-section.module.css'
 export function ServicesSection() {
 
   const services = [
-    { icon: "/home/icon/Home-01.png", title: "主日週報" },
-    { icon: "/home/icon/Home-02.png", title: "講道信息" },
-    { icon: "/home/icon/Home-03.png", title: "我要奉獻" },
-    { icon: "/home/icon/Home-04.png", title: "牧區介紹" },
-    { icon: "/home/icon/Home-05.png", title: "認識我們" },
-    { icon: "/home/icon/Home-06.png", title: "活動訊息" },
-    { icon: "/home/icon/Home-07.png", title: "領袖訓練" },
-    { icon: "/home/icon/Home-08.png", title: "社區關懷" },
+    { 
+      icon: "/home/icon/Home-01.png", 
+      title: "主日週報",
+      href: "https://drive.google.com/drive/folders/1t8h37AhnVgz4ABBHNZUm6mB3lizdSsso"
+    },
+    { 
+      icon: "/home/icon/Home-02.png", 
+      title: "講道信息",
+      href: "https://bolcckh.vercel.app/news/sunday-live"
+    },
+    { 
+      icon: "/home/icon/Home-03.png", 
+      title: "我要奉獻",
+      href: "https://bolcckh.vercel.app/offering"
+    },
+    { 
+      icon: "/home/icon/Home-04.png", 
+      title: "牧區介紹",
+      href: "https://bolcckh.vercel.app/church-department"
+    },
+    { 
+      icon: "/home/icon/Home-05.png", 
+      title: "認識我們",
+      href: "https://bolcckh.vercel.app/about"
+    },
+    { 
+      icon: "/home/icon/Home-06.png", 
+      title: "活動訊息",
+      href: "https://bolcckh.vercel.app/news"
+    },
+    { 
+      icon: "/home/icon/Home-07.png", 
+      title: "領袖訓練",
+      href: "https://bolcckh.vercel.app/up-coming"
+    },
+    { 
+      icon: "/home/icon/Home-08.png", 
+      title: "社區關懷",
+      href: "https://line.me/R/ti/p/@528fzbuu?ts=06111711&oat_content=url"
+    },
   ]
 
   return (
@@ -24,9 +56,12 @@ export function ServicesSection() {
           </div>
           <div className={styles.serviceContent}>
             {services.map((service, index) => (
-              <div
+              <a
                 key={index}
-                className={`${styles.serviceItem} group transition-all duration-300 bg-transparent hover:bg-white/10`}
+                href={service.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${styles.serviceItem} group transition-all duration-300 bg-transparent hover:bg-white/10 block`}
               >
                 <img 
                   src={service.icon} 
@@ -37,7 +72,7 @@ export function ServicesSection() {
                 <h3 className="text-white text-lg lg:text-2xl tracking-wide text-center">
                   {service.title}
                 </h3>
-              </div>
+              </a>
             ))}
           </div>
         </div>

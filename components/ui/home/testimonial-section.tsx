@@ -13,9 +13,12 @@ export function TestimonialSection() {
             <Button
             variant="default"
             className="more-button bg-teal-theme text-white px-10 py-3 text-lg font-bold rounded-none hover:bg-teal-800 flex items-center gap-2 mx-auto"
+            asChild
             >
-            點我前往
-            <span className="ml-2 text-2xl">→</span>
+              <a href="https://bolcckh.vercel.app/mission-testimony" target="_blank" rel="noopener noreferrer">
+                點我前往
+                <span className="ml-2 text-2xl">→</span>
+              </a>
             </Button>
           </div>
         </div>
@@ -36,9 +39,12 @@ export function TestimonialSection() {
           <Button
             variant="default"
             className="more-button bg-teal-theme text-white px-10 py-3 text-lg font-bold rounded-none hover:bg-teal-800 flex items-center gap-2 mx-auto"
+            asChild
           >
-            點我前往
-            <span className="ml-2 text-2xl">→</span>
+            <a href="https://bolcckh.vercel.app/about-files" target="_blank" rel="noopener noreferrer">
+              點我前往
+              <span className="ml-2 text-2xl">→</span>
+            </a>
           </Button>
         </div>
         </div>

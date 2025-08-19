@@ -7,7 +7,8 @@ export function HeroSection() {
   
   const backgroundImages = [
     '/home/Home_bgBackground.png',
-    '/home/Home_bn02.png' // 假设这是第二张图片，您可以根据实际图片路径调整
+    '/home/Home_bn02.png',
+    '/home/hero-family-home-page.jpg'
   ]
 
   useEffect(() => {

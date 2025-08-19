@@ -136,14 +136,7 @@ export default function ChurchPage() {
           </div>
         </section>
 
-        {/* 聖經經文引用 */}
-        <section className="bible-quote-section bg-[#F3A149]">
-          <div className="bible-quote-wrapper max-w-4xl mx-auto text-center px-4 md:px-0">
-            <div className="bible-quote-container bg-white p-12 shadow-lg">
-              
-            </div>
-          </div>
-        </section>
+
       </main>
       <Footer />
     </div>
