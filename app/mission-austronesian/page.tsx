@@ -26,35 +26,9 @@ export default function AustronesianPage() {
 
       <main className="bg-gray-50">
         <div className="w-full">
-          <div className="mission-layout">
-            {/* Left Sidebar Navigation */}
-            <div className="mission-sidebar bg-[#21807a]">
-              <div className="p-6">
-                <nav className="space-y-0 p-6">
-                  <Link 
-                    href="/mission"
-                    className="block text-white px-4 py-3 border-b border-white/20 hover:bg-[#1a6860] transition-colors"
-                  >
-                    宣教使命
-                  </Link>
-                  <Link 
-                    href="/mission-testimony"
-                    className="block text-white px-4 py-3 border-b border-white/20 hover:bg-[#1a6860] transition-colors"
-                  >
-                    生命見證
-                  </Link>
-                  <Link 
-                    href="/mission-austronesian"
-                    className="block text-white px-4 py-3 border-l-4 border-l-[#F3A149] hover:bg-[#1a6860] transition-colors"
-                  >
-                    南島趴趴走
-                  </Link>
-                </nav>
-              </div>
-            </div>
-
+          <div className="max-w-7xl mx-auto px-4">
             {/* Main Content Area */}
-            <div className="mission-content">
+            <div className="w-full">
               {/* Breadcrumb */}
               <nav className="mission-breadcrumb text-sm text-gray-600 p-12">
                 <Link href="/" className="hover:text-[#21807a]">首頁</Link>
