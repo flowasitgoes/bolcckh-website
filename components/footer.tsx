@@ -113,6 +113,7 @@ export function Footer() {
               <div className={footerStyles.footerNavTitle + " mt-6 mb-4"}>支持奉獻</div>
               <ul className={footerStyles.footerNavList}>
                 <li><a href="/offering">前往奉獻</a></li>
+                <li><a href="/online-offering">線上奉獻</a></li>
                 <li><a href="/member-center">會友中心</a></li>
               </ul>
             </div>

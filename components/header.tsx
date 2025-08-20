@@ -34,6 +34,7 @@ export function Header() {
     ] },
     { zh: "支持奉獻", en: "Offering", href: "#offering", children: [
       { zh: "支持奉獻", href: "/offering" },
+      { zh: "線上奉獻", href: "/online-offering" },
     ] },
     { zh: "部門介紹", en: "Department", href: "/department", children: [
       { zh: "部門介紹", href: "/department" }

@@ -59,118 +59,117 @@ export default function OfferingInquiryPage() {
           </div>
         </section>
 
-        {/* Main Content Section */}
-        <section className="main-content-section flex">
-          {/* Left Sidebar */}
-          <div className="w-64 bg-[#21807a] p-6 hidden lg:block">
-            <div className="text-white space-y-4">
-              <h3 className="text-lg font-semibold mb-6">－ 奉獻中心 －</h3>
-              <a href="/offering-info" className="block text-white hover:text-orange-300 transition-colors duration-300 border-b border-white pb-2">
-                線上奉獻
-              </a>
-              <a href="/offering-bank-transfer" className="block text-white hover:text-orange-300 transition-colors duration-300 border-b border-white pb-2">
-                銀行轉帳
-              </a>
-              <a href="/offering-inquiry" className="block text-white hover:text-orange-300 transition-colors duration-300 border-b border-white pb-2 border-l-4 border-orange-300 pl-2">
-                奉獻查詢
-              </a>
-            </div>
-          </div>
-
-          {/* Right Content Area */}
-          <div className="flex-1 bg-[#F3A149] p-8">
-            <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
-              <h2 className="text-2xl md:text-3xl font-bold text-[#21807a] mb-6 text-center">
-                奉獻查詢
+        {/* Online Offering Dashboard Section */}
+        <section className="member-dashboard-section">
+          <div className="grid grid-cols-1 lg:grid-cols-4">
+            {/* Left Sidebar - Navigation */}
+            <div className="lg:col-span-1 bg-[#21807a] p-6 md:p-8">
+              <h2 className="text-xl md:text-2xl font-bold text-white mb-6 text-center">
+                | 線上奉獻
               </h2>
               
-              {/* Introductory Text */}
-              <div className="bg-orange-50 border-l-4 border-orange-400 p-4 mb-6">
-                <p className="text-orange-800 text-sm md:text-base">
-                  以下欄位提供非會友查詢記錄,若您是會友,請按會友登入後查詢奉獻紀錄,感謝
-                </p>
-              </div>
-              
-              <form className="space-y-6">
-                {/* 奉獻單號 */}
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    奉獻單號 <span className="text-red-500">*</span>
-                  </label>
-                  <input 
-                    type="text" 
-                    placeholder="請輸入奉獻單號"
-                    className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#21807a] focus:border-transparent"
-                    required
-                  />
-                  <p className="text-xs text-gray-500 mt-1">
-                    請輸入您奉獻時收到的奉獻單號
-                  </p>
-                </div>
-                
-                {/* 手機號碼 */}
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    手機號碼 <span className="text-red-500">*</span>
-                  </label>
-                  <input 
-                    type="tel" 
-                    placeholder="請輸入手機號碼"
-                    className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#21807a] focus:border-transparent"
-                    required
-                  />
-                  <p className="text-xs text-gray-500 mt-1">
-                    請輸入您奉獻時登記的手機號碼
-                  </p>
-                </div>
-                
-                {/* 送出查詢按鈕 */}
-                <button 
-                  type="submit"
-                  className="w-full bg-[#21807a] text-white py-3 px-6 rounded-lg hover:bg-[#1a6b66] transition-colors duration-300 font-semibold text-lg"
+              {/* Navigation Menu */}
+              <nav className="space-y-2">
+                <a 
+                  href="/online-offering"
+                  className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-white/10"
                 >
-                  送出查詢
-                </button>
-              </form>
-              
-              {/* Additional Information */}
-              {/* <div className="mt-8 space-y-4">
-                <div className="bg-blue-50 border-l-4 border-blue-400 p-4">
-                  <h4 className="text-blue-800 font-semibold mb-2">查詢說明</h4>
-                  <ul className="text-blue-700 text-sm space-y-1">
-                    <li>• 此查詢功能僅供非會友使用</li>
-                    <li>• 會友請登入會友中心查詢奉獻紀錄</li>
-                    <li>• 查詢結果將顯示最近6個月的奉獻紀錄</li>
-                    <li>• 如有疑問請聯繫教會辦公室</li>
-                  </ul>
-                </div>
-                
-                <div className="bg-gray-50 p-4 rounded-lg">
-                  <h4 className="text-[#444] font-semibold mb-2">聯絡資訊</h4>
-                  <div className="text-gray-600 text-sm space-y-1">
-                    <p>電話: 07-3456868</p>
-                    <p>傳真: 07-3456527</p>
-                    <p>地址: 高雄市左營區文川路157號</p>
+                  <div className="flex items-center">
+                    <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                    </svg>
+                    線上奉獻
                   </div>
-                </div>
-              </div> */}
-              
-              {/* Navigation Links */}
-              {/* <div className="mt-6 text-center space-y-2">
-                <p className="text-sm text-gray-600">
-                  您是會友嗎？
-                  <a href="/member-center/login" className="text-[#21807a] hover:underline font-semibold">
-                    立即登入會友中心
-                  </a>
-                </p>
-                <p className="text-sm text-gray-600">
-                  想要進行奉獻？
-                  <a href="/offering-info" className="text-[#21807a] hover:underline font-semibold">
-                    前往線上奉獻
-                  </a>
-                </p>
-              </div> */}
+                </a>
 
+                <div className="border-t border-white/20 my-4"></div>
+
+                <a 
+                  href="/offering-bank-transfer"
+                  className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-white/10"
+                >
+                  <div className="flex items-center">
+                    <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                    </svg>
+                    銀行轉帳
+                  </div>
+                </a>
+
+                <div className="border-t border-white/20 my-4"></div>
+
+                <a 
+                  href="/offering-inquiry"
+                  className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 bg-white/20"
+                >
+                  <div className="flex items-center">
+                    <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                    </svg>
+                    奉獻查詢
+                  </div>
+                </a>
+              </nav>
+            </div>
+
+            {/* Right Content Area */}
+            <div className="member-center-login right-content-area lg:col-span-3 bg-[#F3A149] p-6 md:p-8">
+              <div className="member-center-login-box">
+                <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
+                  <h2 className="text-2xl md:text-3xl font-bold text-[#21807a] mb-6 text-center">
+                    奉獻查詢
+                  </h2>
+                  
+                  {/* Introductory Text */}
+                  <div className="bg-orange-50 border-l-4 border-orange-400 p-4 mb-6">
+                    <p className="text-orange-800 text-sm md:text-base">
+                      以下欄位提供非會友查詢記錄,若您是會友,請按會友登入後查詢奉獻紀錄,感謝
+                    </p>
+                  </div>
+                  
+                  <form className="space-y-6">
+                    {/* 奉獻單號 */}
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        奉獻單號 <span className="text-red-500">*</span>
+                      </label>
+                      <input 
+                        type="text" 
+                        placeholder="請輸入奉獻單號"
+                        className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#21807a] focus:border-transparent"
+                        required
+                      />
+                      <p className="text-xs text-gray-500 mt-1">
+                        請輸入您奉獻時收到的奉獻單號
+                      </p>
+                    </div>
+                    
+                    {/* 手機號碼 */}
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        手機號碼 <span className="text-red-500">*</span>
+                      </label>
+                      <input 
+                        type="tel" 
+                        placeholder="請輸入手機號碼"
+                        className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#21807a] focus:border-transparent"
+                        required
+                      />
+                      <p className="text-xs text-gray-500 mt-1">
+                        請輸入您奉獻時登記的手機號碼
+                      </p>
+                    </div>
+                    
+                    {/* 送出查詢按鈕 */}
+                    <button 
+                      type="submit"
+                      className="w-full bg-[#21807a] text-white py-3 px-6 rounded-lg hover:bg-[#1a6b66] transition-colors duration-300 font-semibold text-lg"
+                    >
+                      送出查詢
+                    </button>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </section>

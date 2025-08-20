@@ -119,8 +119,6 @@ export function NewsMain() {
               <a href="/" className="hover:text-[#21807a]">首頁</a>
               <span className="mx-2">{'>'}</span>
               <span className="text-[#21807a]">教會消息</span>
-              <span className="mx-2">{'>'}</span>
-              <span className="text-[#21807a]">主日直撥</span>
             </nav>
 
             {/* News Content */}
@@ -132,11 +130,20 @@ export function NewsMain() {
                     <div key={item.id} className="flex gap-8 p-6 border-b border-gray-200 last:border-b-0 hover:bg-gray-50 transition-colors">
                       {/* Image */}
                       <div className="w-48 h-32 flex-shrink-0">
-                        <img
-                          src={item.image}
-                          alt={item.title}
-                          className="w-full h-full object-contain"
-                        />
+                        <a 
+                          href={item.id === 1 ? "/news/art-exhibition" :
+                                item.id === 2 ? "/news/parenting-lecture" :
+                                item.id === 3 ? "/news/baptism-ceremony" :
+                                item.id === 4 ? "/news/children-summer-camp" :
+                                "/news/youth-retreat"}
+                          className="block w-full h-full hover:opacity-80 transition-opacity"
+                        >
+                          <img
+                            src={item.image}
+                            alt={item.title}
+                            className="w-full h-full object-contain"
+                          />
+                        </a>
                       </div>
                       
                       {/* Content */}
