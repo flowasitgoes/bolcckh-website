@@ -46,18 +46,17 @@ export default function AustronesianPage() {
                     {/* First Video */}
                     <div className="space-y-4">
                       <div className="relative aspect-video bg-gray-900 rounded-lg overflow-hidden">
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <div className="text-center">
-                            <div className="w-16 h-16 bg-red-600 rounded-lg flex items-center justify-center mb-4 mx-auto">
-                              <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M8 5v14l11-7z"/>
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="absolute inset-0 bg-gradient-to-br from-[#F3A149]/20 to-[#21807a]/20">
-                          <div className="absolute inset-0 bg-[url('/mission/C2/C2-07.png')] bg-cover bg-center opacity-30"></div>
-                        </div>
+                        <iframe 
+                          width="100%" 
+                          height="100%" 
+                          src="https://www.youtube.com/embed/GKq60jcmaXA?si=J55Ac1GnwfnI8W67" 
+                          title="YouTube video player" 
+                          frameBorder="0" 
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                          referrerPolicy="strict-origin-when-cross-origin" 
+                          allowFullScreen
+                          className="absolute inset-0 w-full h-full rounded-lg"
+                        ></iframe>
                       </div>
                       <p className="text-sm text-gray-600">以及特殊的地緣環境</p>
                       <h3 className="text-lg font-semibold text-[#333]">水泥叢林中的宣教船艦</h3>
@@ -66,18 +65,17 @@ export default function AustronesianPage() {
                     {/* Second Video */}
                     <div className="space-y-4">
                       <div className="relative aspect-video bg-gray-900 rounded-lg overflow-hidden">
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <div className="text-center">
-                            <div className="w-16 h-16 bg-red-600 rounded-lg flex items-center justify-center mb-4 mx-auto">
-                              <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M8 5v14l11-7z"/>
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="absolute inset-0 bg-gradient-to-br from-[#F3A149]/20 to-[#21807a]/20">
-                          <div className="absolute inset-0 bg-[url('/mission/C2/C2-07.png')] bg-cover bg-center opacity-30"></div>
-                        </div>
+                        <iframe 
+                          width="100%" 
+                          height="100%" 
+                          src="https://www.youtube.com/embed/TBoLjG9fWSo?si=mTnh8oJjwPsa7bjM" 
+                          title="YouTube video player" 
+                          frameBorder="0" 
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                          referrerPolicy="strict-origin-when-cross-origin" 
+                          allowFullScreen
+                          className="absolute inset-0 w-full h-full rounded-lg"
+                        ></iframe>
                       </div>
                       <p className="text-sm text-gray-600">以及特殊的地緣環境</p>
                       <h3 className="text-lg font-semibold text-[#333]">南島語系國家介紹影片</h3>
@@ -91,7 +89,7 @@ export default function AustronesianPage() {
                     {/* Map Image */}
                     <div className="relative w-full h-96 bg-cover bg-center rounded-lg overflow-hidden" 
                          style={{
-                           backgroundImage: 'url("https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80")'
+                           backgroundImage: 'url("/mission/picture-new.jpg")'
                          }}>
                       {/* Map Overlay */}
                       <div className="absolute inset-0 bg-brown-800/20"></div>

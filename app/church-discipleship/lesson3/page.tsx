@@ -4,35 +4,12 @@ import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 
 export const metadata: Metadata = {
-  title: '門訓建造 | 高雄靈糧堂',
-  description: '高雄靈糧堂門訓建造，提供門徒學校、幸福大學等課程，幫助弟兄姊妹在信仰上成長。',
-  keywords: '高雄靈糧堂, 門訓建造, 門徒學校, 幸福大學, 信仰成長',
-  
-  // Open Graph (社群分享)
-  openGraph: {
-    title: '門訓建造 | 高雄靈糧堂',
-    description: '高雄靈糧堂門訓建造，提供門徒學校、幸福大學等課程，幫助弟兄姊妹在信仰上成長。',
-    url: 'https://conflux-tech.com/church-discipleship',
-    images: [
-      {
-        url: 'https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png',
-        width: 1200,
-        height: 630,
-        alt: '高雄靈糧堂門訓建造',
-      },
-    ],
-  },
-  
-  // Twitter Card
-  twitter: {
-    card: 'summary_large_image',
-    title: '門訓建造 | 高雄靈糧堂',
-    description: '高雄靈糧堂門訓建造，提供門徒學校、幸福大學等課程，幫助弟兄姊妹在信仰上成長。',
-    images: ['https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png'],
-  },
+  title: '慕道班第三課「天下第一書-聖經」| 高雄靈糧堂',
+  description: '高雄靈糧堂慕道班第三課「天下第一書-聖經」，幫助弟兄姊妹認識聖經的重要。',
+  keywords: '高雄靈糧堂, 慕道班, 聖經, 天下第一書, 信仰成長',
 }
 
-export default function ChurchDiscipleshipPage() {
+export default function Lesson3Page() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -68,8 +45,8 @@ export default function ChurchDiscipleshipPage() {
             {/* Navigation Menu */}
             <nav className="space-y-2">
               <a 
-                href="#lesson1" 
-                className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 bg-white/20"
+                href="/church-discipleship" 
+                className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-white/10"
               >
                 <div className="flex items-center">
                   <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -93,7 +70,7 @@ export default function ChurchDiscipleshipPage() {
 
               <a 
                 href="/church-discipleship/lesson3" 
-                className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-white/10"
+                className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 bg-white/20"
               >
                 <div className="flex items-center">
                   <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -129,81 +106,15 @@ export default function ChurchDiscipleshipPage() {
 
               <div className="border-t border-white/20 my-4"></div>
 
-              <div className="border-l-4 border-orange-300 pl-2 mb-2">
-                <div className="text-white font-semibold text-sm mb-2">
+              <a 
+                href="#discipleship-school" 
+                className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-white/10"
+              >
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                  </svg>
                   牧養裝備-門徒學校
-                </div>
-              </div>
-              
-              <a 
-                href="/church-discipleship/discipleship-school-upper-register" 
-                className="block w-full text-left text-orange-300 rounded-lg px-4 py-2 transition-colors duration-200 hover:bg-white/10 ml-4"
-              >
-                <div className="flex items-center">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                  </svg>
-                  門徒學校上-線上報名
-                </div>
-              </a>
-
-              <a 
-                href="/church-discipleship/discipleship-school-upper-tuesday" 
-                className="block w-full text-left text-white rounded-lg px-4 py-2 transition-colors duration-200 hover:bg-white/10 ml-4"
-              >
-                <div className="flex items-center">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-                  </svg>
-                  門徒學校上—週二班完成報名查詢
-                </div>
-              </a>
-
-              <a 
-                href="/church-discipleship/discipleship-school-upper-thursday" 
-                className="block w-full text-left text-white rounded-lg px-4 py-2 transition-colors duration-200 hover:bg-white/10 ml-4"
-              >
-                <div className="flex items-center">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-                  </svg>
-                  門徒學校上—週四班完成報名查詢
-                </div>
-              </a>
-
-              <a 
-                href="/church-discipleship/discipleship-school-lower-register" 
-                className="block w-full text-left text-white rounded-lg px-4 py-2 transition-colors duration-200 hover:bg-white/10 ml-4"
-              >
-                <div className="flex items-center">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                  </svg>
-                  門徒學校下-線上報名
-                </div>
-              </a>
-
-              <a 
-                href="/church-discipleship/discipleship-school-lower-tuesday" 
-                className="block w-full text-left text-white rounded-lg px-4 py-2 transition-colors duration-200 hover:bg-white/10 ml-4"
-              >
-                <div className="flex items-center">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-                  </svg>
-                  門徒學校下—週二班完成報名查詢
-                </div>
-              </a>
-
-              <a 
-                href="/church-discipleship/discipleship-school-lower-thursday" 
-                className="block w-full text-left text-white rounded-lg px-4 py-2 transition-colors duration-200 hover:bg-white/10 ml-4"
-              >
-                <div className="flex items-center">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-                  </svg>
-                  門徒學校下—週四班完成報名查詢
                 </div>
               </a>
 
@@ -229,8 +140,8 @@ export default function ChurchDiscipleshipPage() {
                 <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
                   <iframe
                     className="absolute top-0 left-0 w-full h-full rounded-lg"
-                    src="https://www.youtube.com/embed/clXw_TvwGpE"
-                    title="永恆唯一的盼望 - The Hope of Our Lives"
+                    src="https://www.youtube.com/embed/p__vWlx_PxI"
+                    title="慕道班第三課「天下第一書-聖經」"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -241,23 +152,23 @@ export default function ChurchDiscipleshipPage() {
               {/* Content Section */}
               <div>
                 <h3 className="text-2xl md:text-3xl font-bold text-[#21807a] mb-6">
-                  慕道班第一課「耶穌是誰」| 高雄靈糧堂
+                  慕道班第三課「天下第一書-聖經」| 高雄靈糧堂
                 </h3>
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                   <p className="mb-4">
-                    全家歸主是神的心意，也是我們每個基督徒的責任。我們要找到方法幫助家人相信耶穌，讓他們也能得著永生的盼望。
+                    聖經是神的話語，是我們信仰的根基。透過聖經，我們可以認識神的心意，明白救恩的真理。
                   </p>
                   <p className="mb-4">
-                    為什麼全家都要歸主？因為：
+                    聖經的重要性：
                   </p>
                   <ul className="list-disc pl-6 space-y-2">
-                    <li>這是神對我們家庭的祝福</li>
-                    <li>讓我們在信仰上同心同行</li>
-                    <li>為下一代建立屬靈的根基</li>
-                    <li>在永恆中一起享受神的同在</li>
+                    <li>是神啟示的話語，具有權威性</li>
+                    <li>指引我們人生的方向</li>
+                    <li>幫助我們認識神的性情</li>
+                    <li>是我們信仰生活的準則</li>
                   </ul>
                   <p className="mt-6">
-                    讓我們一起學習如何帶領家人認識耶穌，讓整個家庭都能經歷神的愛和恩典。
+                    讓我們一起學習如何讀經，讓神的話語成為我們生命的指引。
                   </p>
                 </div>
               </div>

@@ -52,14 +52,14 @@ const churchPanels = [
   {
     title: '牧區族群',
     subtitle: 'Congregation',
-    href: '/church-groups',
+    href: '/church-department',
     bgColor: 'bg-[#21807a]',
     image: '/church/B1/B01-06.png'
   },
   {
     title: '聚會資訊',
     subtitle: 'Gathering information',
-    href: '/church-gathering',
+    href: 'https://www.bolkh.org.tw/service/servicetime/ ',
     bgColor: 'bg-[#F3A149]',
     image: '/church/B1/B01-06.png'
   }
