@@ -4,12 +4,12 @@ import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 
 export const metadata: Metadata = {
-  title: '門徒學校上-線上報名 | 高雄靈糧堂',
-  description: '高雄靈糧堂門徒學校上冊線上報名，提供完整的門徒訓練課程。',
-  keywords: '高雄靈糧堂, 門徒學校, 線上報名, 門徒訓練, 信仰成長',
+  title: '幸福大學下-線上報名 | 高雄靈糧堂',
+  description: '高雄靈糧堂幸福大學下冊線上報名，提供進階的幸福課程訓練。',
+  keywords: '高雄靈糧堂, 幸福大學, 線上報名, 幸福課程, 信仰成長',
 }
 
-export default function DiscipleshipSchoolUpperRegisterPage() {
+export default function HappinessUniversityLowerRegisterPage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -28,7 +28,7 @@ export default function DiscipleshipSchoolUpperRegisterPage() {
         </div>
         <div className="relative z-10 flex items-center justify-center h-full">
           <h1 className="text-4xl md:text-6xl font-bold text-white text-center">
-            牧養裝備
+            門訓建造
           </h1>
         </div>
       </section>
@@ -45,8 +45,8 @@ export default function DiscipleshipSchoolUpperRegisterPage() {
             {/* Navigation Menu */}
             <nav className="space-y-2">
               <a 
-                href="#lesson1" 
-                className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 bg-white/20"
+                href="/church-discipleship" 
+                className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-white/10"
               >
                 <div className="flex items-center">
                   <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -114,7 +114,7 @@ export default function DiscipleshipSchoolUpperRegisterPage() {
               
               <a 
                 href="/church-discipleship/discipleship-school-upper-register" 
-                className="block w-full text-left text-orange-300 rounded-lg px-4 py-2 transition-colors duration-200 bg-white/20 ml-4"
+                className="block w-full text-left text-white rounded-lg px-4 py-2 transition-colors duration-200 hover:bg-white/10 ml-4"
               >
                 <div className="flex items-center">
                   <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -184,6 +184,8 @@ export default function DiscipleshipSchoolUpperRegisterPage() {
                 </div>
               </a>
 
+              <div className="border-t border-white/20 my-4"></div>
+
               <div className="border-l-4 border-orange-300 pl-2 mb-2">
                 <div className="text-white font-semibold text-sm mb-2">
                   牧養裝備-幸福大學
@@ -228,7 +230,7 @@ export default function DiscipleshipSchoolUpperRegisterPage() {
 
               <a 
                 href="/church-discipleship/happiness-university-lower-register" 
-                className="block w-full text-left text-white rounded-lg px-4 py-2 transition-colors duration-200 hover:bg-white/10 ml-4"
+                className="block w-full text-left text-orange-300 rounded-lg px-4 py-2 transition-colors duration-200 bg-white/20 ml-4"
               >
                 <div className="flex items-center">
                   <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -258,23 +260,21 @@ export default function DiscipleshipSchoolUpperRegisterPage() {
               {/* Content Section */}
               <div>
                 <h3 className="text-2xl md:text-3xl font-bold text-[#21807a] mb-6">
-                  門徒學校上-線上報名 | 高雄靈糧堂
+                  幸福大學下-線上報名 | 高雄靈糧堂
                 </h3>
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-          
-                  
-
-
-               
+                  <p className="mb-4">
+                    歡迎參加幸福大學下冊課程！
+                  </p>
 
                   {/* Google Form */}
                   <div className="mt-8">
                     <h4 className="text-lg font-semibold text-[#21807a] mb-4">線上報名表單</h4>
                     <div className="bg-gray-50 p-4 rounded-lg">
                       <iframe 
-                        src="https://docs.google.com/forms/d/e/1FAIpQLSe85Sk9aOP_EQ3OpCDXYzITlwA6lRZGFwS2DdBnO4k8jmiclQ/viewform?embedded=true" 
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSciHShLvk45Xq9QnhHTGPDM5Qo_Cl-OsYMidjCL1i2N_cfA2g/viewform?embedded=true" 
                         width="100%" 
-                        height="2463" 
+                        height="2557" 
                         frameBorder="0" 
                         marginHeight="0" 
                         marginWidth="0"

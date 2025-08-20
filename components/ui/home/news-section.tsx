@@ -15,6 +15,7 @@ export function NewsSection() {
       category: "主日講員：柯芳圓",
       author: "Qrowd",
       comments: 2,
+      link: "/news/art-exhibition",
     },
     {
       id: 2,
@@ -25,6 +26,7 @@ export function NewsSection() {
       category: "活動資訊",
       author: "Qrowd",
       comments: 2,
+      link: "/news/parenting-lecture",
     },
     {
       id: 3,
@@ -35,6 +37,7 @@ export function NewsSection() {
       category: "電影欣賞",
       author: "Qrowd",
       comments: 2,
+      link: "/news/baptism-ceremony",
     },
     {
       id: 4,
@@ -45,6 +48,7 @@ export function NewsSection() {
       category: "禱告會",
       author: "Qrowd",
       comments: 5,
+      link: "/news/children-summer-camp",
     },
     {
       id: 5,
@@ -55,6 +59,7 @@ export function NewsSection() {
       category: "青年事工",
       author: "Qrowd",
       comments: 3,
+      link: "/news/youth-retreat",
     },
   ]
 
@@ -85,31 +90,33 @@ export function NewsSection() {
             {news.map((item) => (
               <div className="min-w-0 flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_33.3333%] px-2" key={item.id}>
                 <Card className="overflow-hidden bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border-0">
-                  <div className="aspect-video overflow-hidden">
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <CardContent className="p-6">
-                    <div className="flex items-center text-sm text-gray-500 mb-3 justify-end">
-                      <Calendar className="w-4 h-4 mr-2" />
-                      {item.date}
+                  <a href={item.link} className="block">
+                    <div className="aspect-video overflow-hidden">
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      />
                     </div>
+                    <CardContent className="p-6">
+                      <div className="flex items-center text-sm text-gray-500 mb-3 justify-end">
+                        <Calendar className="w-4 h-4 mr-2" />
+                        {item.date}
+                      </div>
 
-                    <h4 className="font-bold text-lg mb-2 text-[#444] leading-snug mt-4">{item.title}</h4>
-                    {item.subtitle && <p className="text-gray-600 text-sm leading-relaxed">{item.subtitle}</p>}
-                    <div className="mt-4 flex items-center justify-between">
-                      <span className="inline-block bg-teal-100 text-teal-800 text-xs px-2 py-1 rounded">
-                        {item.category}
-                      </span>
-                      <button className="text-xs text-gray-500 hover:text-teal-600 font-semibold flex items-center gap-1 group">
-                        READ MORE
-                        <span className="inline-block group-hover:translate-x-1 transition-transform">→</span>
-                      </button>
-                    </div>
-                  </CardContent>
+                      <h4 className="font-bold text-lg mb-2 text-[#444] leading-snug mt-4 hover:text-teal-600 transition-colors">{item.title}</h4>
+                      {item.subtitle && <p className="text-gray-600 text-sm leading-relaxed">{item.subtitle}</p>}
+                      <div className="mt-4 flex items-center justify-between">
+                        <span className="inline-block bg-teal-100 text-teal-800 text-xs px-2 py-1 rounded">
+                          {item.category}
+                        </span>
+                        <span className="text-xs text-gray-500 hover:text-teal-600 font-semibold flex items-center gap-1 group">
+                          READ MORE
+                          <span className="inline-block group-hover:translate-x-1 transition-transform">→</span>
+                        </span>
+                      </div>
+                    </CardContent>
+                  </a>
                 </Card>
               </div>
             ))}
