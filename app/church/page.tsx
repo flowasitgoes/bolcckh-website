@@ -59,7 +59,7 @@ const churchPanels = [
   {
     title: '聚會資訊',
     subtitle: 'Gathering information',
-    href: 'https://www.bolkh.org.tw/service/servicetime/ ',
+    href: '/about',
     bgColor: 'bg-[#F3A149]',
     image: '/church/B1/B01-06.png'
   }
