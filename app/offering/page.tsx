@@ -103,7 +103,7 @@ export default function OfferingPage() {
                   非會友也可以直接進行奉獻
                 </p>
                 <a 
-                  href="/offering/direct-offering"
+                  href="https://www.bolcckh.org.tw/online-offering"
                   className="block w-full bg-[#21807a] text-white text-center py-3 px-6 rounded-lg hover:bg-[#1a6b66] transition-colors duration-300 font-semibold"
                 >
                   直接奉獻
