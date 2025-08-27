@@ -126,6 +126,12 @@ export function Footer() {
           Copyright 2025 Bread of Life Christian in Kaohsiung. All rights reserved.
         </div>
       </div>
+      {/* Created by TJ-Tech */}
+      <div className="bg-[#0a1515] py-3">
+        <div className="text-center text-gray-300 text-sm">
+          Created by <a href="https://porfolio.tj-tech.pro/" target="_blank" rel="noopener noreferrer" className="text-orange-theme hover:text-orange-400 transition-colors">TJ-Tech.</a>
+        </div>
+      </div>
     </footer>
   )
 }
