@@ -7,42 +7,42 @@ export function ServicesSection() {
 
   const services = [
     { 
-      icon: "/home/icon/Home-01.png", 
+      icon: "/home/icon/加粗_工作區域 1 複本 0.png", 
       title: "主日週報",
       href: "https://drive.google.com/drive/folders/1t8h37AhnVgz4ABBHNZUm6mB3lizdSsso"
     },
     { 
-      icon: "/home/icon/Home-02.png", 
+      icon: "/home/icon/加粗_工作區域 1 複本 1.png", 
       title: "講道信息",
       href: "https://bolcckh.vercel.app/news/sunday-live"
     },
     { 
-      icon: "/home/icon/Home-03.png", 
+      icon: "/home/icon/加粗_工作區域 1 複本 2.png", 
       title: "我要奉獻",
       href: "https://bolcckh.vercel.app/offering"
     },
     { 
-      icon: "/home/icon/Home-04.png", 
+      icon: "/home/icon/加粗_工作區域 1 複本 3.png", 
       title: "牧區介紹",
       href: "https://bolcckh.vercel.app/church-department"
     },
     { 
-      icon: "/home/icon/Home-05.png", 
+      icon: "/home/icon/加粗_工作區域 1 複本 4.png", 
       title: "認識我們",
       href: "https://bolcckh.vercel.app/about"
     },
     { 
-      icon: "/home/icon/Home-06.png", 
+      icon: "/home/icon/加粗_工作區域 1 複本 5.png", 
       title: "活動訊息",
       href: "https://bolcckh.vercel.app/news"
     },
     { 
-      icon: "/home/icon/Home-07.png", 
+      icon: "/home/icon/加粗_工作區域 1 複本 6.png", 
       title: "領袖訓練",
       href: "https://bolcckh.vercel.app/up-coming"
     },
     { 
-      icon: "/home/icon/Home-08.png", 
+      icon: "/home/icon/加粗_工作區域 1 複本 7.png", 
       title: "社區關懷",
       href: "https://line.me/R/ti/p/@528fzbuu?ts=06111711&oat_content=url"
     },
