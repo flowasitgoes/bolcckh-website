@@ -324,7 +324,7 @@ export default function SmallGroupReportPage() {
                         : 'text-gray-500 hover:text-gray-700'
                     }`}
                   >
-                    報表四
+                    場地異動申請表
                   </button>
                 </div>
 
@@ -849,12 +849,14 @@ export default function SmallGroupReportPage() {
                       <input type="text" className="border-b border-gray-400 flex-1 px-2 py-1" />
                     </div>
                     
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="space-y-3">
                       <div className="flex items-center space-x-2">
                         <input type="checkbox" className="w-4 h-4" />
                         <span>音控自備人員</span>
                         <input type="text" className="border-b border-gray-400 flex-1 px-2 py-1" />
                       </div>
+                    </div>
+                    <div className="space-y-3">
                       <div className="flex items-center space-x-2">
                         <input type="checkbox" className="w-4 h-4" />
                         <span>音控教會支援同工</span>
@@ -862,12 +864,14 @@ export default function SmallGroupReportPage() {
                       </div>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="space-y-3">
                       <div className="flex items-center space-x-2">
                         <input type="checkbox" className="w-4 h-4" />
                         <span>PPT自備人員</span>
                         <input type="text" className="border-b border-gray-400 flex-1 px-2 py-1" />
                       </div>
+                    </div>  
+                    <div className="space-y-3">
                       <div className="flex items-center space-x-2">
                         <input type="checkbox" className="w-4 h-4" />
                         <span>PPT教會支援同工</span>
@@ -878,48 +882,51 @@ export default function SmallGroupReportPage() {
 
                   {/* Contact Information */}
                   <div className="border-t border-dashed border-gray-400 pt-4 space-y-4">
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="flex items-center space-x-2">
+                    {/* 借用申請人和聯絡電話 */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div className="space-y-3">
                         <span>借用申請人：</span>
-                        <input type="text" className="border-b border-gray-400 flex-1 px-2 py-1" />
+                        <input type="text" className="border-b border-gray-400 w-full px-2 py-1" />
                       </div>
-                      <div className="flex items-center space-x-2">
+                      <div className="space-y-3">
                         <span>聯絡電話：</span>
-                        <input type="tel" className="border-b border-gray-400 flex-1 px-2 py-1" />
+                        <input type="tel" className="border-b border-gray-400 w-full px-2 py-1" />
                       </div>
                     </div>
 
-                                         <div className="grid grid-cols-3 gap-4">
-                       <div className="flex items-center space-x-2">
-                         <span>牧區：</span>
-                         <input type="text" className="border-b border-gray-400 w-2/4 px-2 py-1" />
-                       </div>
-                       <div className="flex items-center space-x-2">
-                         <span>小組名稱：</span>
-                         <input type="text" className="border-b border-gray-400 w-2/4 px-2 py-1" />
-                       </div>
-                       <div className="flex items-center space-x-2">
-                         <span>牧區協理同工：</span>
-                         <input type="text" className="border-b border-gray-400 w-2/4 px-2 py-1" />
-                       </div>
-                     </div>
-
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="flex items-center space-x-2">
-                        <span>總召集人：</span>
-                        <input type="text" className="border-b border-gray-400 w-2/4  px-2 py-1" />
+                    {/* 牧區、小組名稱、牧區協理同工 */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                      <div className="space-y-3">
+                        <span>牧區：</span>
+                        <input type="text" className="border-b border-gray-400 w-full px-2 py-1" />
                       </div>
-                      <div className="flex items-center space-x-2">
+                      <div className="space-y-3">
+                        <span>小組名稱：</span>
+                        <input type="text" className="border-b border-gray-400 w-full px-2 py-1" />
+                      </div>
+                      <div className="space-y-3">
+                        <span>牧區協理同工：</span>
+                        <input type="text" className="border-b border-gray-400 w-full px-2 py-1" />
+                      </div>
+                    </div>
+
+                    {/* 總召集人和聯絡電話 */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div className="space-y-3">
+                        <span>總召集人：</span>
+                        <input type="text" className="border-b border-gray-400 w-full px-2 py-1" />
+                      </div>
+                      <div className="space-y-3">
                         <span>聯絡電話：</span>
-                        <input type="tel" className="border-b border-gray-400 flex-1 px-2 py-1" />
+                        <input type="tel" className="border-b border-gray-400 w-full px-2 py-1" />
                         <span className="text-sm">(總召集人指當日現場主要負責人)</span>
                       </div>
                     </div>
 
-                    <div className="space-y-2">
+                    <div className="space-y-3">
                       <div className="text-sm">
                         <span className="font-medium">本人對場地借用需知（請詳閱背面），確實明白並願意遵守實行。家屬同意簽名：</span>
-                        <input type="text" className="border-b border-gray-400 w-32 px-2 py-1 ml-2" />
+                        <input type="text" className="border-b border-gray-400 w-full md:w-32 px-2 py-1 mt-2 md:mt-0 md:ml-2" />
                       </div>
                       
 
@@ -965,12 +972,16 @@ export default function SmallGroupReportPage() {
                 </div>
 
                     {/* Final Section */}
-                    <div className="mt-6 space-y-2">
-                      <div className="flex items-center space-x-2">
-                        <span>保證金 $</span>
-                        <input type="number" className="border-b border-gray-400 w-24 px-2 py-1" />
-                        <span>借用人同意將此場地保證金轉為場地使用感恩奉獻 簽名：</span>
-                        <input type="text" className="border-b border-gray-400 w-32 px-2 py-1" />
+                    <div className="mt-6 space-y-3">
+                      <div className="flex flex-col md:flex-row md:items-center space-y-3 md:space-y-0 md:space-x-2">
+                        <div className="flex items-center space-x-2">
+                          <span>保證金 $</span>
+                          <input type="number" className="border-b border-gray-400 w-24 px-2 py-1" />
+                        </div>
+                        <div className="flex flex-col md:flex-row md:items-center space-y-3 md:space-y-0 md:space-x-2">
+                          <span>借用人同意將此場地保證金轉為場地使用感恩奉獻 簽名：</span>
+                          <input type="text" className="border-b border-gray-400 w-full md:w-32 px-2 py-1" />
+                        </div>
                       </div>
                       
 
@@ -1354,13 +1365,211 @@ export default function SmallGroupReportPage() {
                   </div>
                 )}
 
-                {/* Tab 3: 報表四 */}
+                {/* Tab 3: 場地異動申請表 */}
                 {activeTab === 3 && (
                   <div>
-                    <h1 className="text-2xl md:text-3xl font-bold text-[#333] mb-8 text-center">
-                      報表四
-                    </h1>
-                    <p className="text-center text-gray-600">報表四內容將在這裡顯示</p>
+                                          {/* Header */}
+                      <div className="text-center mb-6 border-b-2 border-gray-800 pb-4">
+                        <div className="text-2xl font-bold">高雄靈糧堂 - 場地異動申請表</div>
+                      </div>
+
+                    <form className="space-y-6">
+                      {/* 異動性質 */}
+                      <div className="flex items-center space-x-6">
+                        <span className="font-medium">異動性質：</span>
+                        <label className="flex items-center space-x-1">
+                          <input type="checkbox" className="w-4 h-4" />
+                          <span>取消場地</span>
+                        </label>
+                        <label className="flex items-center space-x-1">
+                          <input type="checkbox" className="w-4 h-4" />
+                          <span>變更地點</span>
+                        </label>
+                        <label className="flex items-center space-x-1">
+                          <input type="checkbox" className="w-4 h-4" />
+                          <span>變更時間</span>
+                        </label>
+                        <label className="flex items-center space-x-1">
+                          <input type="checkbox" className="w-4 h-4" />
+                          <span>其他</span>
+                        </label>
+                      </div>
+
+                      {/* 日期 */}
+                      <div className="flex justify-end items-center space-x-2">
+                        <span>年</span>
+                        <input type="number" className="border-b border-gray-400 w-16 text-center" placeholder="" />
+                        <span>月</span>
+                        <input type="number" className="border-b border-gray-400 w-12 text-center" placeholder="" />
+                        <span>日 p.</span>
+                      </div>
+
+                      {/* 申請項目表格 */}
+                      <div className="border border-gray-400">
+                        <table className="w-full border-collapse">
+                          <thead>
+                            <tr className="bg-gray-100">
+                              <th className="border border-gray-400 p-3 text-center font-bold" style={{width: '50%'}}>（原訂）申請項目</th>
+                              <th className="border border-gray-400 p-3 text-center font-bold" style={{width: '50%'}}>（新借）申請項目</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {/* 項目1 */}
+                            <tr>
+                              <td className="border border-gray-400 p-3">
+                                <div className="mb-2">
+                                  1. 聚會名稱：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
+                                  日期：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                                </div>
+                                <div>
+                                  借用場地：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
+                                  時間：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                                </div>
+                              </td>
+                              <td className="border border-gray-400 p-3">
+                                <div className="mb-2">
+                                  1. 聚會名稱：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
+                                  日期：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                                </div>
+                                <div>
+                                  借用場地：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
+                                  時間：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                                </div>
+                              </td>
+                            </tr>
+
+                            {/* 項目2 */}
+                            <tr>
+                              <td className="border border-gray-400 p-3">
+                                <div className="mb-2">
+                                  2. 聚會名稱：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
+                                  日期：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                                </div>
+                                <div>
+                                  借用場地：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
+                                  時間：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                                </div>
+                              </td>
+                              <td className="border border-gray-400 p-3">
+                                <div className="mb-2">
+                                  2. 聚會名稱：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
+                                  日期：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                                </div>
+                                <div>
+                                  借用場地：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
+                                  時間：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                                </div>
+                              </td>
+                            </tr>
+
+                            {/* 項目3 */}
+                            <tr>
+                              <td className="border border-gray-400 p-3">
+                                <div className="mb-2">
+                                  3. 聚會名稱：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
+                                  日期：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                                </div>
+                                <div>
+                                  借用場地：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
+                                  時間：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                                </div>
+                              </td>
+                              <td className="border border-gray-400 p-3">
+                                <div className="mb-2">
+                                  3. 聚會名稱：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
+                                  日期：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                                </div>
+                                <div>
+                                  借用場地：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
+                                  時間：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                                </div>
+                              </td>
+                            </tr>
+
+                            {/* 項目4 */}
+                            <tr>
+                              <td className="border border-gray-400 p-3">
+                                <div className="mb-2">
+                                  4. 聚會名稱：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
+                                  日期：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                                </div>
+                                <div>
+                                  借用場地：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
+                                  時間：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                                </div>
+                              </td>
+                              <td className="border border-gray-400 p-3">
+                                <div className="mb-2">
+                                  4. 聚會名稱：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
+                                  日期：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                                </div>
+                                <div>
+                                  借用場地：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
+                                  時間：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                                </div>
+                              </td>
+                            </tr>
+
+                            {/* 場地備註 */}
+                            <tr>
+                              <td className="border border-gray-400 p-3">
+                                <div className="mb-2">場地備註：</div>
+                                <textarea className="w-full h-16 border border-gray-400 p-2 resize-none"></textarea>
+                              </td>
+                              <td className="border border-gray-400 p-3">
+                                <div className="mb-2">場地備註：</div>
+                                <textarea className="w-full h-16 border border-gray-400 p-2 resize-none"></textarea>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                      {/* 注意事項 */}
+                      <div className="bg-white border border-gray-300 p-3 text-sm">
+                        注意事項：新借場地為尊貴廳、恩惠廳或管制場地，請重新填寫場地借用申請單。
+                      </div>
+
+                      {/* 簽核表格 */}
+                      {/* <div className="border border-gray-400">
+                        <table className="w-full border-collapse">
+                          <thead>
+                            <tr className="bg-gray-100">
+                              <th className="border border-gray-400 p-3 text-center font-bold" colSpan={2}>權責單位簽核欄</th>
+                              <th className="border border-gray-400 p-3 text-center font-bold" colSpan={2}>申請單位簽核欄</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td className="border border-gray-400 p-4 text-center" style={{width: '15%'}}>
+                                審<br />核
+                              </td>
+                              <td className="border border-gray-400 p-4 text-center" style={{width: '35%'}}>
+                                承<br />辦<br />人
+                              </td>
+                              <td className="border border-gray-400 p-4 text-center" style={{width: '15%'}}>
+                                主<br />管
+                              </td>
+                              <td className="border border-gray-400 p-4 text-center" style={{width: '35%'}}>
+                                申<br />請<br />人
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div> */}
+
+                      {/* 表格編號 */}
+                      <div className="text-right text-sm font-bold">
+                        R-GE-08-P03A
+                      </div>
+
+                      {/* Submit Button */}
+                      <div className="text-center pt-6">
+                        <button type="submit" className="bg-gray-800 text-white px-8 py-3 rounded hover:bg-gray-700 transition-colors">
+                          提交申請表
+                        </button>
+                      </div>
+                    </form>
                   </div>
                 )}
               </div>
