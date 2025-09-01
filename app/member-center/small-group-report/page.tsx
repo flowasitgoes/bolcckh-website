@@ -6,6 +6,7 @@ import { Footer } from "@/components/footer"
 import '@/styles/member-center.css'
 
 export default function SmallGroupReportPage() {
+  const [activeTab, setActiveTab] = useState(0)
   const [formData, setFormData] = useState({
     districtName: '',
     districtLeaderName: '',
@@ -279,11 +280,62 @@ export default function SmallGroupReportPage() {
             {/* Right Content Area */}
             <div className="right-content-area lg:col-span-3 bg-[#F3A149] p-6 md:p-8">
               <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
-                <h1 className="text-2xl md:text-3xl font-bold text-[#333] mb-8 text-center">
-                  小組週報表
-                </h1>
+                {/* Tab Navigation */}
+                <div className="flex flex-col md:flex-row border-b border-gray-200 mb-8">
+                  <button
+                    type="button"
+                    onClick={() => setActiveTab(0)}
+                    className={`px-6 py-3 text-lg font-semibold transition-colors ${
+                      activeTab === 0
+                        ? 'text-[#21807a] border-b-2 md:border-b-2 border-[#21807a]'
+                        : 'text-gray-500 hover:text-gray-700'
+                    }`}
+                  >
+                    小組週報表
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setActiveTab(1)}
+                    className={`px-6 py-3 text-lg font-semibold transition-colors ${
+                      activeTab === 1
+                        ? 'text-[#21807a] border-b-2 md:border-b-2 border-[#21807a]'
+                        : 'text-gray-500 hover:text-gray-700'
+                    }`}
+                  >
+                    追思禮拜場地申請表
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setActiveTab(2)}
+                    className={`px-6 py-3 text-lg font-semibold transition-colors ${
+                      activeTab === 2
+                        ? 'text-[#21807a] border-b-2 md:border-b-2 border-[#21807a]'
+                        : 'text-gray-500 hover:text-gray-700'
+                    }`}
+                  >
+                    報表三
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setActiveTab(3)}
+                    className={`px-6 py-3 text-lg font-semibold transition-colors ${
+                      activeTab === 3
+                        ? 'text-[#21807a] border-b-2 md:border-b-2 border-[#21807a]'
+                        : 'text-gray-500 hover:text-gray-700'
+                    }`}
+                  >
+                    報表四
+                  </button>
+                </div>
 
-                <form onSubmit={handleSubmit} className="space-y-8">
+                {/* Tab Content */}
+                {activeTab === 0 && (
+                  <div>
+                    <h1 className="text-2xl md:text-3xl font-bold text-[#333] mb-8 text-center">
+                      小組週報表
+                    </h1>
+
+                    <form onSubmit={handleSubmit} className="space-y-8">
                   {/* 基本資料 */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
@@ -670,6 +722,294 @@ export default function SmallGroupReportPage() {
                     </button>
                   </div>
                 </form>
+                  </div>
+                )}
+
+                {/* Tab 1: 追思禮拜場地申請表 */}
+                {activeTab === 1 && (
+                  <div>
+                    {/* Header */}
+                    <div className="text-center py-6 border-b-2 border-gray-800 mb-6">
+                      <div className="flex items-center justify-center mb-4">
+   
+                        <h1 className="text-xl font-bold">財團法人中國基督教靈糧世界佈道會高雄靈糧堂</h1>
+                      </div>
+                      <h2 className="text-lg font-semibold mb-4">本堂會友追思禮拜場地申請表</h2>
+                      <div className="flex justify-end items-center space-x-2 text-sm">
+                        <span>日期：</span>
+                        <input type="number" className="border-b border-gray-400 w-16 text-center" placeholder="年" />
+                        <span>年</span>
+                        <input type="number" className="border-b border-gray-400 w-12 text-center" placeholder="月" />
+                        <span>月</span>
+                        <input type="number" className="border-b border-gray-400 w-12 text-center" placeholder="日" />
+                        <span>日</span>
+                      </div>
+                    </div>
+
+                    <form className="space-y-6">
+                  {/* Deceased Name */}
+                  <div className="flex items-center space-x-2">
+                    <span>故</span>
+                    <input type="text" className="border-b border-gray-400 flex-1 px-2 py-1" placeholder="請輸入姓名" />
+                    <span>追思禮拜</span>
+                  </div>
+
+                  {/* Venue Selection */}
+                  <div className="space-y-2">
+                    <div className="flex items-center space-x-4">
+                      <span className="font-medium">借用場地：</span>
+                      <label className="flex items-center space-x-2">
+                        <input type="radio" name="venue" value="500" className="w-4 h-4" />
+                        <span>靈實廳(500人)</span>
+                      </label>
+                      <label className="flex items-center space-x-2">
+                        <input type="radio" name="venue" value="300" className="w-4 h-4" />
+                        <span>恩惠廳(300人)</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  {/* Ceremony Date and Time */}
+                  <div className="space-y-3">
+                    <div className="flex items-center space-x-2 text-sm">
+                      <span className="font-medium">儀式正式起/結時間：</span>
+                      <input type="number" className="border-b border-gray-400 w-16 text-center" placeholder="年" />
+                      <span>年</span>
+                      <input type="number" className="border-b border-gray-400 w-12 text-center" placeholder="月" />
+                      <span>月</span>
+                      <input type="number" className="border-b border-gray-400 w-12 text-center" placeholder="日" />
+                      <span>日</span>
+                      <span>星期(</span>
+                      <input type="text" className="border-b border-gray-400 w-8 text-center" placeholder="" />
+                      <span>)</span>
+                      <label className="flex items-center space-x-1">
+                        <input type="radio" name="ceremony_time" value="am" className="w-4 h-4" />
+                        <span>am</span>
+                      </label>
+                      <label className="flex items-center space-x-1">
+                        <input type="radio" name="ceremony_time" value="pm" className="w-4 h-4" />
+                        <span>pm</span>
+                      </label>
+                      <input type="time" className="border-b border-gray-400 px-2" />
+                      <span>至</span>
+                      <input type="time" className="border-b border-gray-400 px-2" />
+                      <span>止</span>
+                    </div>
+
+                    <div className="flex items-center space-x-2 text-sm">
+                      <span className="font-medium">佈置日期：</span>
+                      <input type="number" className="border-b border-gray-400 w-16 text-center" placeholder="年" />
+                      <span>年</span>
+                      <input type="number" className="border-b border-gray-400 w-12 text-center" placeholder="月" />
+                      <span>月</span>
+                      <input type="number" className="border-b border-gray-400 w-12 text-center" placeholder="日" />
+                      <span>日</span>
+                      <span>星期(</span>
+                      <input type="text" className="border-b border-gray-400 w-8 text-center" placeholder="" />
+                      <span>)</span>
+                      <label className="flex items-center space-x-1">
+                        <input type="radio" name="setup_time" value="am" className="w-4 h-4" />
+                        <span>am</span>
+                      </label>
+                      <label className="flex items-center space-x-1">
+                        <input type="radio" name="setup_time" value="pm" className="w-4 h-4" />
+                        <span>pm</span>
+                      </label>
+                      <input type="time" className="border-b border-gray-400 px-2" />
+                      <span>至</span>
+                      <input type="time" className="border-b border-gray-400 px-2" />
+                      <span>止</span>
+                    </div>
+                  </div>
+
+                  {/* Basic Equipment */}
+                  <div className="border-2 border-gray-800 p-4 space-y-3">
+                    <div>
+                      <span className="font-medium">基本設備：</span>
+                      <span className="text-sm">電子琴/桌子1張(講臺)/家屬來賓告示牌(含夫子3組)/會禮場地告示(1F、B1、B2)</span>
+                    </div>
+                    <div>
+                      <span className="font-medium">勾選器材：</span>
+                      <label className="inline-flex items-center space-x-1 mr-4">
+                        <input type="checkbox" className="w-4 h-4" />
+                        <span>詩袍30件</span>
+                      </label>
+                      <label className="inline-flex items-center space-x-1">
+                        <input type="checkbox" className="w-4 h-4" />
+                        <span>講義30本</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  {/* Additional Equipment */}
+                  <div className="space-y-3">
+                    <div className="flex items-center space-x-2">
+                      <input type="checkbox" className="w-4 h-4" />
+                      <span>其他設備 (例：對講機或高昂的物品等)</span>
+                      <input type="text" className="border-b border-gray-400 flex-1 px-2 py-1" />
+                    </div>
+                    
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="flex items-center space-x-2">
+                        <input type="checkbox" className="w-4 h-4" />
+                        <span>音控自備人員</span>
+                        <input type="text" className="border-b border-gray-400 flex-1 px-2 py-1" />
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <input type="checkbox" className="w-4 h-4" />
+                        <span>音控教會支援同工</span>
+                        <input type="text" className="border-b border-gray-400 flex-1 px-2 py-1" />
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="flex items-center space-x-2">
+                        <input type="checkbox" className="w-4 h-4" />
+                        <span>PPT自備人員</span>
+                        <input type="text" className="border-b border-gray-400 flex-1 px-2 py-1" />
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <input type="checkbox" className="w-4 h-4" />
+                        <span>PPT教會支援同工</span>
+                        <input type="text" className="border-b border-gray-400 flex-1 px-2 py-1" />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Contact Information */}
+                  <div className="border-t border-dashed border-gray-400 pt-4 space-y-4">
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="flex items-center space-x-2">
+                        <span>借用申請人：</span>
+                        <input type="text" className="border-b border-gray-400 flex-1 px-2 py-1" />
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span>聯絡電話：</span>
+                        <input type="tel" className="border-b border-gray-400 flex-1 px-2 py-1" />
+                      </div>
+                    </div>
+
+                                         <div className="grid grid-cols-3 gap-4">
+                       <div className="flex items-center space-x-2">
+                         <span>牧區：</span>
+                         <input type="text" className="border-b border-gray-400 w-2/4 px-2 py-1" />
+                       </div>
+                       <div className="flex items-center space-x-2">
+                         <span>小組名稱：</span>
+                         <input type="text" className="border-b border-gray-400 w-2/4 px-2 py-1" />
+                       </div>
+                       <div className="flex items-center space-x-2">
+                         <span>牧區協理同工：</span>
+                         <input type="text" className="border-b border-gray-400 w-2/4 px-2 py-1" />
+                       </div>
+                     </div>
+
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="flex items-center space-x-2">
+                        <span>總召集人：</span>
+                        <input type="text" className="border-b border-gray-400 w-2/4  px-2 py-1" />
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span>聯絡電話：</span>
+                        <input type="tel" className="border-b border-gray-400 flex-1 px-2 py-1" />
+                        <span className="text-sm">(總召集人指當日現場主要負責人)</span>
+                      </div>
+                    </div>
+
+                    <div className="space-y-2">
+                      <div className="text-sm">
+                        <span className="font-medium">本人對場地借用需知（請詳閱背面），確實明白並願意遵守實行。家屬同意簽名：</span>
+                        <input type="text" className="border-b border-gray-400 w-32 px-2 py-1 ml-2" />
+                      </div>
+                      
+
+
+
+                    </div>
+                  </div>
+
+                  {/* Pricing Table */}
+                  <div className="border-t border-dashed border-gray-400 pt-4">
+                    <h3 className="text-center font-medium mb-4">場地感恩奉獻參考表（本堂非營利組織）</h3>
+                    <p className="text-sm text-center mb-4">單位：新台幣 /使用時間以4小時為1單位（含佈置、佈置）。週間六時場地使用到下午4:00止，敬請留意使用時間！</p>
+                    
+                    <table className="w-full border-collapse border border-gray-400 mb-4">
+                    <thead>
+                        <tr className="bg-gray-100">
+                          <th className="border border-gray-400 p-2">借用性質</th>
+                          <th className="border border-gray-400 p-2">申請人資格</th>
+                          <th className="border border-gray-400 p-2">借用場地</th>
+                          <th className="border border-gray-400 p-2">保證金</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                          <td className="border border-gray-400 p-2 text-center" rowSpan={2}>追思</td>
+                          <td className="border border-gray-400 p-2 text-center" rowSpan={2}>本堂會友</td>
+                          <td className="border border-gray-400 p-2">靈實廳(500人)</td>
+                          <td className="border border-gray-400 p-2 text-center">$15,000</td>
+                      </tr>
+                      <tr>
+                          <td className="border border-gray-400 p-2">恩惠廳(300人)</td>
+                          <td className="border border-gray-400 p-2 text-center">$12,000</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                    <div className="text-xs space-y-1">
+                      <p><strong>註：</strong>1. 教會另提供影音設備組得分享，請參閱附件二、三。</p>
+                      <p>2. 保證金請於場地申請日起5日內完成匯款手續確認，場地借用才得以生效。</p>
+                      <p className="ml-4">匯款帳戶：合作金庫客雅分行 帳號：0510871004577 戶名：高雄靈糧堂 匯款及ATM轉帳請務必來電</p>
+                      <p className="ml-4">(07)345-6868#156 或 傳真(07)345-6527 至教會，以確認入帳記錄）會收保證金於場地告知設</p>
+                      <p className="ml-4">借使用恢復/無缺損，經總務部確認後歸還費用，場地借用人同意將此保證金轉為場地使用感恩奉獻。</p>
+                </div>
+
+                    {/* Final Section */}
+                    <div className="mt-6 space-y-2">
+                      <div className="flex items-center space-x-2">
+                        <span>保證金 $</span>
+                        <input type="number" className="border-b border-gray-400 w-24 px-2 py-1" />
+                        <span>借用人同意將此場地保證金轉為場地使用感恩奉獻 簽名：</span>
+                        <input type="text" className="border-b border-gray-400 w-32 px-2 py-1" />
+                      </div>
+                      
+
+                    </div>
+                    
+                    <div className="text-right mt-4">
+                      <span className="text-sm">高靈 1140701</span>
+                    </div>
+                  </div>
+
+                  {/* Submit Button */}
+                  <div className="text-center pt-6">
+                    <button type="submit" className="bg-gray-800 text-white px-8 py-3 rounded hover:bg-gray-700 transition-colors">
+                      提交申請表
+                    </button>
+                  </div>
+                </form>
+                  </div>
+                )}
+
+                {/* Tab 2: 報表三 */}
+                {activeTab === 2 && (
+                  <div>
+                    <h1 className="text-2xl md:text-3xl font-bold text-[#333] mb-8 text-center">
+                      報表三
+                    </h1>
+                    <p className="text-center text-gray-600">報表三內容將在這裡顯示</p>
+                  </div>
+                )}
+
+                {/* Tab 3: 報表四 */}
+                {activeTab === 3 && (
+                  <div>
+                    <h1 className="text-2xl md:text-3xl font-bold text-[#333] mb-8 text-center">
+                      報表四
+                    </h1>
+                    <p className="text-center text-gray-600">報表四內容將在這裡顯示</p>
+                  </div>
+                )}
               </div>
             </div>
           </div>
