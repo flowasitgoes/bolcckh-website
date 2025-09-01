@@ -1374,24 +1374,26 @@ export default function SmallGroupReportPage() {
 
                     <form className="space-y-6">
                       {/* 異動性質 */}
-                      <div className="flex items-center space-x-6">
+                      <div className="flex flex-col md:flex-row md:items-center space-y-3 md:space-y-0 md:space-x-6">
                         <span className="font-medium">異動性質：</span>
-                        <label className="flex items-center space-x-1">
-                          <input type="checkbox" className="w-4 h-4" />
-                          <span>取消場地</span>
-                        </label>
-                        <label className="flex items-center space-x-1">
-                          <input type="checkbox" className="w-4 h-4" />
-                          <span>變更地點</span>
-                        </label>
-                        <label className="flex items-center space-x-1">
-                          <input type="checkbox" className="w-4 h-4" />
-                          <span>變更時間</span>
-                        </label>
-                        <label className="flex items-center space-x-1">
-                          <input type="checkbox" className="w-4 h-4" />
-                          <span>其他</span>
-                        </label>
+                        <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-4">
+                          <label className="flex items-center space-x-1">
+                            <input type="checkbox" className="w-4 h-4" />
+                            <span>取消場地</span>
+                          </label>
+                          <label className="flex items-center space-x-1">
+                            <input type="checkbox" className="w-4 h-4" />
+                            <span>變更地點</span>
+                          </label>
+                          <label className="flex items-center space-x-1">
+                            <input type="checkbox" className="w-4 h-4" />
+                            <span>變更時間</span>
+                          </label>
+                          <label className="flex items-center space-x-1">
+                            <input type="checkbox" className="w-4 h-4" />
+                            <span>其他</span>
+                          </label>
+                        </div>
                       </div>
 
                       {/* 日期 */}
@@ -1404,124 +1406,226 @@ export default function SmallGroupReportPage() {
                       </div>
 
                       {/* 申請項目表格 */}
-                      <div className="border border-gray-400">
-                        <table className="w-full border-collapse">
-                          <thead>
-                            <tr className="bg-gray-100">
-                              <th className="border border-gray-400 p-3 text-center font-bold" style={{width: '50%'}}>（原訂）申請項目</th>
-                              <th className="border border-gray-400 p-3 text-center font-bold" style={{width: '50%'}}>（新借）申請項目</th>
-                            </tr>
-                          </thead>
-                          <tbody>
+                      <div className="space-y-6">
+                        {/* （原訂）申請項目 */}
+                        <div className="border border-gray-400">
+                          <div className="bg-gray-100 border-b border-gray-400 p-3 text-center font-bold">
+                            （原訂）申請項目
+                          </div>
+                          <div className="p-3 space-y-4">
                             {/* 項目1 */}
-                            <tr>
-                              <td className="border border-gray-400 p-3">
-                                <div className="mb-2">
-                                  1. 聚會名稱：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
-                                  日期：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                            <div className="border border-gray-400 p-3">
+                              <div className="mb-2 space-y-3">
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>1. 聚會名稱：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-48 px-2 py-1" />
                                 </div>
-                                <div>
-                                  借用場地：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
-                                  時間：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>日期：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-24 px-2 py-1" />
                                 </div>
-                              </td>
-                              <td className="border border-gray-400 p-3">
-                                <div className="mb-2">
-                                  1. 聚會名稱：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
-                                  日期：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                              </div>
+                              <div className="space-y-3">
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>借用場地：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-48 px-2 py-1" />
                                 </div>
-                                <div>
-                                  借用場地：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
-                                  時間：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>時間：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-24 px-2 py-1" />
                                 </div>
-                              </td>
-                            </tr>
+                              </div>
+                            </div>
 
                             {/* 項目2 */}
-                            <tr>
-                              <td className="border border-gray-400 p-3">
-                                <div className="mb-2">
-                                  2. 聚會名稱：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
-                                  日期：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                            <div className="border border-gray-400 p-3">
+                              <div className="mb-2 space-y-3">
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>2. 聚會名稱：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-48 px-2 py-1" />
                                 </div>
-                                <div>
-                                  借用場地：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
-                                  時間：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>日期：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-24 px-2 py-1" />
                                 </div>
-                              </td>
-                              <td className="border border-gray-400 p-3">
-                                <div className="mb-2">
-                                  2. 聚會名稱：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
-                                  日期：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                              </div>
+                              <div className="space-y-3">
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>借用場地：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-48 px-2 py-1" />
                                 </div>
-                                <div>
-                                  借用場地：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
-                                  時間：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>時間：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-24 px-2 py-1" />
                                 </div>
-                              </td>
-                            </tr>
+                              </div>
+                            </div>
 
                             {/* 項目3 */}
-                            <tr>
-                              <td className="border border-gray-400 p-3">
-                                <div className="mb-2">
-                                  3. 聚會名稱：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
-                                  日期：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                            <div className="border border-gray-400 p-3">
+                              <div className="mb-2 space-y-3">
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>3. 聚會名稱：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-48 px-2 py-1" />
                                 </div>
-                                <div>
-                                  借用場地：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
-                                  時間：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>日期：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-24 px-2 py-1" />
                                 </div>
-                              </td>
-                              <td className="border border-gray-400 p-3">
-                                <div className="mb-2">
-                                  3. 聚會名稱：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
-                                  日期：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                              </div>
+                              <div className="space-y-3">
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>借用場地：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-48 px-2 py-1" />
                                 </div>
-                                <div>
-                                  借用場地：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
-                                  時間：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>時間：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-24 px-2 py-1" />
                                 </div>
-                              </td>
-                            </tr>
+                              </div>
+                            </div>
 
                             {/* 項目4 */}
-                            <tr>
-                              <td className="border border-gray-400 p-3">
-                                <div className="mb-2">
-                                  4. 聚會名稱：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
-                                  日期：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                            <div className="border border-gray-400 p-3">
+                              <div className="mb-2 space-y-3">
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>4. 聚會名稱：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-48 px-2 py-1" />
                                 </div>
-                                <div>
-                                  借用場地：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
-                                  時間：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>日期：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-24 px-2 py-1" />
                                 </div>
-                              </td>
-                              <td className="border border-gray-400 p-3">
-                                <div className="mb-2">
-                                  4. 聚會名稱：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
-                                  日期：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                              </div>
+                              <div className="space-y-3">
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>借用場地：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-48 px-2 py-1" />
                                 </div>
-                                <div>
-                                  借用場地：<input type="text" className="border-b border-gray-400 w-48 px-2 py-1" />
-                                  時間：<input type="text" className="border-b border-gray-400 w-24 px-2 py-1" />
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>時間：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-24 px-2 py-1" />
                                 </div>
-                              </td>
-                            </tr>
+                              </div>
+                            </div>
 
                             {/* 場地備註 */}
-                            <tr>
-                              <td className="border border-gray-400 p-3">
-                                <div className="mb-2">場地備註：</div>
-                                <textarea className="w-full h-16 border border-gray-400 p-2 resize-none"></textarea>
-                              </td>
-                              <td className="border border-gray-400 p-3">
-                                <div className="mb-2">場地備註：</div>
-                                <textarea className="w-full h-16 border border-gray-400 p-2 resize-none"></textarea>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
+                            <div className="border border-gray-400 p-3">
+                              <div className="mb-2">場地備註：</div>
+                              <textarea className="w-full h-16 border border-gray-400 p-2 resize-none"></textarea>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* （新借）申請項目 */}
+                        <div className="border border-gray-400">
+                          <div className="bg-gray-100 border-b border-gray-400 p-3 text-center font-bold">
+                            （新借）申請項目
+                          </div>
+                          <div className="p-3 space-y-4">
+                            {/* 項目1 */}
+                            <div className="border border-gray-400 p-3">
+                              <div className="mb-2 space-y-3">
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>1. 聚會名稱：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-48 px-2 py-1" />
+                                </div>
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>日期：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-24 px-2 py-1" />
+                                </div>
+                              </div>
+                              <div className="space-y-3">
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>借用場地：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-48 px-2 py-1" />
+                                </div>
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>時間：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-24 px-2 py-1" />
+                                </div>
+                              </div>
+                            </div>
+
+                            {/* 項目2 */}
+                            <div className="border border-gray-400 p-3">
+                              <div className="mb-2 space-y-3">
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>2. 聚會名稱：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-48 px-2 py-1" />
+                                </div>
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>日期：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-24 px-2 py-1" />
+                                </div>
+                              </div>
+                              <div className="space-y-3">
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>借用場地：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-48 px-2 py-1" />
+                                </div>
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>時間：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-24 px-2 py-1" />
+                                </div>
+                              </div>
+                            </div>
+
+                            {/* 項目3 */}
+                            <div className="border border-gray-400 p-3">
+                              <div className="mb-2 space-y-3">
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>3. 聚會名稱：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-48 px-2 py-1" />
+                                </div>
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>日期：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-24 px-2 py-1" />
+                                </div>
+                              </div>
+                              <div className="space-y-3">
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>借用場地：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-48 px-2 py-1" />
+                                </div>
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>時間：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-24 px-2 py-1" />
+                                </div>
+                              </div>
+                            </div>
+
+                            {/* 項目4 */}
+                            <div className="border border-gray-400 p-3">
+                              <div className="mb-2 space-y-3">
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>4. 聚會名稱：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-48 px-2 py-1" />
+                                </div>
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>日期：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-24 px-2 py-1" />
+                                </div>
+                              </div>
+                              <div className="space-y-3">
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>借用場地：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-48 px-2 py-1" />
+                                </div>
+                                <div className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-2">
+                                  <span>時間：</span>
+                                  <input type="text" className="border-b border-gray-400 w-full md:w-24 px-2 py-1" />
+                                </div>
+                              </div>
+                            </div>
+
+                            {/* 場地備註 */}
+                            <div className="border border-gray-400 p-3">
+                              <div className="mb-2">場地備註：</div>
+                              <textarea className="w-full h-16 border border-gray-400 p-2 resize-none"></textarea>
+                            </div>
+                          </div>
+                        </div>
                       </div>
 
                       {/* 注意事項 */}
