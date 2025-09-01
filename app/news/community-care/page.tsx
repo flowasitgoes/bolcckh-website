@@ -5,33 +5,33 @@ import { NewsHero } from '@/components/ui/news'
 import '@/styles/news.css'
 
 export const metadata: Metadata = {
-  title: '好文分享 | 高雄靈糧堂 - 精選文章與見證',
-  description: '高雄靈糧堂好文分享，包含精選文章、見證分享、靈修心得等重要內容。',
-  keywords: '高雄靈糧堂, 好文分享, 精選文章, 見證分享, 靈修心得',
+  title: '社區關懷 | 高雄靈糧堂 - 關懷服務與社區活動',
+  description: '高雄靈糧堂社區關懷，包含關懷服務、社區活動、愛心行動等重要內容。',
+  keywords: '高雄靈糧堂, 社區關懷, 關懷服務, 社區活動, 愛心行動',
   
   openGraph: {
-    title: '好文分享 | 高雄靈糧堂 - 精選文章與見證',
-    description: '高雄靈糧堂好文分享，包含精選文章、見證分享、靈修心得等重要內容。',
-    url: 'https://conflux-tech.com/news/good-articles',
+    title: '社區關懷 | 高雄靈糧堂 - 關懷服務與社區活動',
+    description: '高雄靈糧堂社區關懷，包含關懷服務、社區活動、愛心行動等重要內容。',
+    url: 'https://conflux-tech.com/news/community-care',
     images: [
       {
         url: 'https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png',
         width: 1200,
         height: 630,
-        alt: '高雄靈糧堂好文分享',
+        alt: '高雄靈糧堂社區關懷',
       },
     ],
   },
   
   twitter: {
     card: 'summary_large_image',
-    title: '好文分享 | 高雄靈糧堂 - 精選文章與見證',
-    description: '高雄靈糧堂好文分享，包含精選文章、見證分享、靈修心得等重要內容。',
+    title: '社區關懷 | 高雄靈糧堂 - 關懷服務與社區活動',
+    description: '高雄靈糧堂社區關懷，包含關懷服務、社區活動、愛心行動等重要內容。',
     images: ['https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png'],
   },
 }
 
-export default function GoodArticlesPage() {
+export default function CommunityCarePage() {
   return (
     <div className="min-h-screen">
       <Header />
@@ -80,16 +80,16 @@ export default function GoodArticlesPage() {
                     </a>
                     <a 
                       href="/news/good-articles"
-                      className="block text-white px-4 py-3 border-l-4 border-l-[#F3A149] border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
+                      className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                     >
-                      好文分享
+                      <span>好文分享</span>
+                      <span className="text-[#F3A149] text-lg">›</span>
                     </a>
                     <a 
                       href="/news/community-care"
-                      className="flex justify-between items-center text-white px-4 py-3 hover:bg-[#1a6860] transition-colors"
+                      className="block text-white px-4 py-3 border-l-4 border-l-[#F3A149] hover:bg-[#1a6860] transition-colors"
                     >
-                      <span>社區關懷</span>
-                      <span className="text-[#F3A149] text-lg">›</span>
+                      社區關懷
                     </a>
                   </nav>
                 </div>
@@ -103,29 +103,29 @@ export default function GoodArticlesPage() {
                   <span className="mx-2">{'>'}</span>
                   <span className="text-[#21807a]">教會消息</span>
                   <span className="mx-2">{'>'}</span>
-                  <span className="text-[#21807a]">好文分享</span>
+                  <span className="text-[#21807a]">社區關懷</span>
                 </nav>
 
-                {/* Good Articles Content */}
+                {/* Community Care Content */}
                 <div className="bg-white shadow-sm">
                   <div className="news-content-wrapper p-12">
                     <div className="space-y-8">
                       {/* Article Items */}
                       <div className="flex gap-8 p-6 border-b border-gray-200 last:border-b-0 hover:bg-gray-50 transition-colors">
                         <div className="w-48 h-32 flex-shrink-0">
-                          <img src="/news/D-m01.png" alt="靈修心得分享" className="w-full h-full object-contain" />
+                          <img src="/news/D-m01.png" alt="社區關懷活動" className="w-full h-full object-contain" />
                         </div>
                         <div className="flex-1">
                           <div className="flex justify-between items-start gap-4">
                             <div>
-                              <h3 className="text-xl font-bold text-[#444] mb-2">每日靈修心得</h3>
-                              <p className="text-gray-600">透過每日讀經，讓我們更親近神，在生活中經歷祂的恩典</p>
+                              <h3 className="text-xl font-bold text-[#444] mb-2">社區關懷活動</h3>
+                              <p className="text-gray-600">透過各種關懷活動，讓我們將神的愛傳遞給社區中的每一個人</p>
                               <p className="text-gray-600">7/01(日)~7/07(日)</p>
                               <div className="flex flex-wrap gap-2 mt-2">
-                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">靈修</span>
-                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">讀經</span>
-                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">心得</span>
-                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">分享</span>
+                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">關懷</span>
+                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">服務</span>
+                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">愛心</span>
+                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">行動</span>
                               </div>
                             </div>
                             <div className="bg-[#F3A149] text-white p-3 text-center min-w-[80px] min-h-[80px] flex flex-col justify-center items-center flex-shrink-0">
@@ -138,19 +138,19 @@ export default function GoodArticlesPage() {
 
                       <div className="flex gap-8 p-6 border-b border-gray-200 last:border-b-0 hover:bg-gray-50 transition-colors">
                         <div className="w-48 h-32 flex-shrink-0">
-                          <img src="/news/D-m02.png" alt="見證分享" className="w-full h-full object-contain" />
+                          <img src="/news/D-m02.png" alt="愛心服務" className="w-full h-full object-contain" />
                         </div>
                         <div className="flex-1">
                           <div className="flex justify-between items-start gap-4">
                             <div>
-                              <h3 className="text-xl font-bold text-[#444] mb-2">生命見證分享</h3>
-                              <p className="text-gray-600">弟兄姊妹們分享在信仰路上的經歷與神的恩典</p>
+                              <h3 className="text-xl font-bold text-[#444] mb-2">愛心服務行動</h3>
+                              <p className="text-gray-600">弟兄姊妹們參與各種愛心服務，實踐耶穌基督的愛</p>
                               <p className="text-gray-600">7/08(日)~7/14(日)</p>
                               <div className="flex flex-wrap gap-2 mt-2">
-                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">見證</span>
-                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">分享</span>
-                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">恩典</span>
-                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">經歷</span>
+                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">愛心</span>
+                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">服務</span>
+                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">行動</span>
+                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">實踐</span>
                               </div>
                             </div>
                             <div className="bg-[#F3A149] text-white p-3 text-center min-w-[80px] min-h-[80px] flex flex-col justify-center items-center flex-shrink-0">
@@ -163,19 +163,19 @@ export default function GoodArticlesPage() {
 
                       <div className="flex gap-8 p-6 border-b border-gray-200 last:border-b-0 hover:bg-gray-50 transition-colors">
                         <div className="w-48 h-32 flex-shrink-0">
-                          <img src="/news/D-m03.png" alt="精選文章" className="w-full h-full object-contain" />
+                          <img src="/news/D-m03.png" alt="社區活動" className="w-full h-full object-contain" />
                         </div>
                         <div className="flex-1">
                           <div className="flex justify-between items-start gap-4">
                             <div>
-                              <h3 className="text-xl font-bold text-[#444] mb-2">精選文章推薦</h3>
-                              <p className="text-gray-600">精選各類信仰文章，幫助我們在屬靈生命上成長</p>
+                              <h3 className="text-xl font-bold text-[#444] mb-2">社區活動參與</h3>
+                              <p className="text-gray-600">積極參與社區活動，與鄰舍建立美好關係</p>
                               <p className="text-gray-600">7/15(日)~7/21(日)</p>
                               <div className="flex flex-wrap gap-2 mt-2">
-                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">精選</span>
-                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">文章</span>
-                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">推薦</span>
-                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">成長</span>
+                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">社區</span>
+                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">活動</span>
+                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">參與</span>
+                                <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">關係</span>
                               </div>
                             </div>
                             <div className="bg-[#F3A149] text-white p-3 text-center min-w-[80px] min-h-[80px] flex flex-col justify-center items-center flex-shrink-0">
@@ -213,4 +213,4 @@ export default function GoodArticlesPage() {
       <Footer />
     </div>
   )
-} 
+}

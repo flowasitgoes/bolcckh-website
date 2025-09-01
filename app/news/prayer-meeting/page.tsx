@@ -79,9 +79,16 @@ export default function PrayerMeetingPage() {
                     </a>
                     <a 
                       href="/news/good-articles"
-                      className="flex justify-between items-center text-white px-4 py-3 hover:bg-[#1a6860] transition-colors"
+                      className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                     >
                       <span>好文分享</span>
+                      <span className="text-[#F3A149] text-lg">›</span>
+                    </a>
+                    <a 
+                      href="/news/community-care"
+                      className="flex justify-between items-center text-white px-4 py-3 hover:bg-[#1a6860] transition-colors"
+                    >
+                      <span>社區關懷</span>
                       <span className="text-[#F3A149] text-lg">›</span>
                     </a>
                   </nav>
