@@ -4,6 +4,7 @@ import {
   HeroSection,
   ServicesSection,
   NewsSection,
+  CommunitySection,
   TestimonialSection,
   ArchiveSection,
   OnlineChannelSection,
@@ -48,6 +49,7 @@ export default function Home() {
         <HeroSection />
         <ServicesSection />
         <NewsSection />
+        <CommunitySection />
         <TestimonialSection />
         {/* <ArchiveSection /> */}
         {/* <OnlineChannelSection />  */}

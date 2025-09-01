@@ -4,7 +4,7 @@ import { Calendar } from "lucide-react"
 import useEmblaCarousel from 'embla-carousel-react'
 import { useCallback, useEffect, useState } from 'react'
 
-export function NewsSection() {
+export function CommunitySection() {
   const news = [
     {
       id: 1,
@@ -78,11 +78,11 @@ export function NewsSection() {
   }, [emblaApi, onSelect])
 
   return (
-    <section className="py-16 lg:py-24 bg-gray-50" style={{ borderBottom: '1px solid #cecece' }}>
+    <section className="py-16 lg:py-24 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-2xl lg:text-4xl text-teal-600 font-bold tracking-widest mb-2">最新消息</h2>
-          <h3 className="text-3xl lg:text-5xl font-bold text-[#444]">Latest News</h3>
+          <h2 className="text-2xl lg:text-4xl text-teal-600 font-bold tracking-widest mb-2">社區關懷</h2>
+          <h3 className="text-3xl lg:text-5xl font-bold text-[#444]">Community Care</h3>
         </div>
         {/* Carousel 區塊 */}
         <div className="overflow-hidden" ref={emblaRef}>

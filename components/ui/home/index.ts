@@ -1,6 +1,7 @@
 export { HeroSection } from './hero-section'
 export { ServicesSection } from './services-section'
 export { NewsSection } from './news-section'
+export { CommunitySection } from './community-section'
 export { TestimonialSection } from './testimonial-section'
 export { ArchiveSection } from './archive-section'
 export { OnlineChannelSection } from './online-channel-section'
