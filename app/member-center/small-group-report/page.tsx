@@ -1206,92 +1206,87 @@ export default function SmallGroupReportPage() {
                       {/* 其他支援 */}
                       <div className="space-y-3">
                         <div className="flex items-center space-x-2">
-                          <span className="font-medium">其他支援：</span>
-                          <label className="flex items-center space-x-1">
-                            <input type="checkbox" className="w-4 h-4" />
-                            <span>對講機</span>
-                          </label>
-                          <label className="flex items-center space-x-1">
-                            <input type="checkbox" className="w-4 h-4" />
-                            <span>排列需要音控影視同工支援</span>
-                          </label>
-                          <label className="flex items-center space-x-1">
-                            <input type="checkbox" className="w-4 h-4" />
-                            <span>需要其他物品</span>
-                          </label>
+                          <input type="checkbox" className="w-4 h-4" />
+                          <span>其他設備 (例：對講機或高昂的物品等)</span>
                           <input type="text" className="border-b border-gray-400 flex-1 px-2 py-1" />
                         </div>
-                        
-                        <div className="grid grid-cols-2 gap-4">
+                        <div className="space-y-3">
                           <div className="flex items-center space-x-2">
                             <input type="checkbox" className="w-4 h-4" />
                             <span>音控自備人員</span>
                             <input type="text" className="border-b border-gray-400 flex-1 px-2 py-1" />
                           </div>
+                        </div>
+                        <div className="space-y-3">
                           <div className="flex items-center space-x-2">
                             <input type="checkbox" className="w-4 h-4" />
                             <span>音控教會支援同工</span>
                             <input type="text" className="border-b border-gray-400 flex-1 px-2 py-1" />
                           </div>
                         </div>
-
-                        <div className="grid grid-cols-2 gap-4">
+                        <div className="space-y-3">
                           <div className="flex items-center space-x-2">
                             <input type="checkbox" className="w-4 h-4" />
                             <span>PPT自備人員</span>
                             <input type="text" className="border-b border-gray-400 flex-1 px-2 py-1" />
                           </div>
+                        </div>
+                        <div className="space-y-3">
                           <div className="flex items-center space-x-2">
                             <input type="checkbox" className="w-4 h-4" />
                             <span>PPT教會支援同工</span>
+                            <input type="text" className="border-b border-gray-400 flex-1 px-2 py-1" />
                           </div>
                         </div>
                       </div>
 
                       {/* 聯絡資訊 */}
                       <div className="border-t border-dashed border-gray-400 pt-4 space-y-4">
-                        <div className="grid grid-cols-2 gap-4">
-                          <div className="flex items-center space-x-2">
+                        {/* 借用申請人和聯絡電話 */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          <div className="space-y-3">
                             <span>借用申請人：</span>
-                            <input type="text" className="border-b border-gray-400 flex-1 px-2 py-1" />
+                            <input type="text" className="border-b border-gray-400 w-full px-2 py-1" />
                           </div>
-                          <div className="flex items-center space-x-2">
+                          <div className="space-y-3">
                             <span>聯絡電話：</span>
-                            <input type="tel" className="border-b border-gray-400 flex-1 px-2 py-1" />
+                            <input type="tel" className="border-b border-gray-400 w-full px-2 py-1" />
                           </div>
                         </div>
 
-                        <div className="grid grid-cols-3 gap-4">
-                          <div className="flex items-center space-x-2">
+                        {/* 牧區、小組名稱、牧區協理同工 */}
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                          <div className="space-y-3">
                             <span>牧區：</span>
-                            <input type="text" className="border-b border-gray-400 flex-1 px-2 py-1" />
+                            <input type="text" className="border-b border-gray-400 w-full px-2 py-1" />
                           </div>
-                          <div className="flex items-center space-x-2">
+                          <div className="space-y-3">
                             <span>小組名稱：</span>
-                            <input type="text" className="border-b border-gray-400 flex-1 px-2 py-1" />
+                            <input type="text" className="border-b border-gray-400 w-full px-2 py-1" />
                           </div>
-                          <div className="flex items-center space-x-2">
+                          <div className="space-y-3">
                             <span>牧區協理同工：</span>
-                            <input type="text" className="border-b border-gray-400 flex-1 px-2 py-1" />
+                            <input type="text" className="border-b border-gray-400 w-full px-2 py-1" />
                           </div>
                         </div>
 
-                        <div className="grid grid-cols-2 gap-4">
-                          <div className="flex items-center space-x-2">
+                        {/* 總召集人和聯絡電話 */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          <div className="space-y-3">
                             <span>總召集人：</span>
-                            <input type="text" className="border-b border-gray-400 flex-1 px-2 py-1" />
+                            <input type="text" className="border-b border-gray-400 w-full px-2 py-1" />
                           </div>
-                          <div className="flex items-center space-x-2">
+                          <div className="space-y-3">
                             <span>聯絡電話：</span>
-                            <input type="tel" className="border-b border-gray-400 flex-1 px-2 py-1" />
+                            <input type="tel" className="border-b border-gray-400 w-full px-2 py-1" />
                             <span className="text-sm">(總召集人指當日現場主要負責人)</span>
                           </div>
                         </div>
 
-                        <div className="space-y-2">
+                        <div className="space-y-3">
                           <div className="text-sm">
                             <span className="font-medium">本人對場地借用實知（請詳閱背面），確實明白並願意遵守實行。申請人同意簽名：</span>
-                            <input type="text" className="border-b border-gray-400 w-32 px-2 py-1 ml-2" />
+                            <input type="text" className="border-b border-gray-400 w-full md:w-32 px-2 py-1 mt-2 md:mt-0 md:ml-2" />
                           </div>
                           
 
@@ -1340,12 +1335,16 @@ export default function SmallGroupReportPage() {
                         </div>
 
                         {/* Final Section */}
-                        <div className="mt-6 space-y-2">
-                          <div className="flex items-center space-x-2">
-                            <span>保證金 $</span>
-                            <input type="number" className="border-b border-gray-400 w-24 px-2 py-1" />
-                            <span>借用人同意將此筆場地保證金轉為場地使用感恩奉獻 簽名</span>
-                            <input type="text" className="border-b border-gray-400 w-32 px-2 py-1" />
+                        <div className="mt-6 space-y-3">
+                          <div className="flex flex-col md:flex-row md:items-center space-y-3 md:space-y-0 md:space-x-2">
+                            <div className="flex items-center space-x-2">
+                              <span>保證金 $</span>
+                              <input type="number" className="border-b border-gray-400 w-24 px-2 py-1" />
+                            </div>
+                            <div className="flex flex-col md:flex-row md:items-center space-y-3 md:space-y-0 md:space-x-2">
+                              <span>借用人同意將此筆場地保證金轉為場地使用感恩奉獻 簽名</span>
+                              <input type="text" className="border-b border-gray-400 w-full md:w-32 px-2 py-1" />
+                            </div>
                           </div>
                           
                         </div>
