@@ -126,18 +126,61 @@ export default function PersonalInfoPage() {
                   </div>
                 </a>
 
+                {/* Separator */}
+                <div className="border-t border-white/20 my-4"></div>
+
                 {/* 小組長線上回報 */}
-                <a 
-                  href="/member-center/small-group-report"
-                  className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-white/10"
-                >
-                  <div className="flex items-center">
-                    <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
+                <div className="space-y-1">
+                  <div className="text-white/80 text-sm font-semibold px-4 py-2">
                     小組長線上回報
                   </div>
-                </a>
+                  
+                  {/* 子選項 */}
+                  <a 
+                    href="/member-center/small-group-report/weekly-report"
+                    className="block w-full text-left text-white rounded-lg px-4 py-2 ml-4 transition-colors duration-200 hover:bg-white/10"
+                  >
+                    <div className="flex items-center">
+                      <svg className="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
+                      小組週報表
+                    </div>
+                  </a>
+                  <a 
+                    href="/member-center/small-group-report/memorial-service"
+                    className="block w-full text-white rounded-lg px-4 py-2 ml-4 transition-colors duration-200 hover:bg-white/10"
+                  >
+                    <div className="flex items-center">
+                      <svg className="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                      追思禮拜場地申請表
+                    </div>
+                  </a>
+                  <a 
+                    href="/member-center/small-group-report/wedding-ceremony"
+                    className="block w-full text-left text-white rounded-lg px-4 py-2 ml-4 transition-colors duration-200 hover:bg-white/10"
+                  >
+                    <div className="flex items-center">
+                      <svg className="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                      </svg>
+                    婚禮典禮場地申請單
+                    </div>
+                  </a>
+                  <a 
+                    href="/member-center/small-group-report/venue-change"
+                    className="block w-full text-left text-white rounded-lg px-4 py-2 ml-4 transition-colors duration-200 hover:bg-white/10"
+                  >
+                    <div className="flex items-center">
+                      <svg className="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                    場地異動申請表
+                    </div>
+                  </a>
+                </div>
               </nav>
             </div>
 
