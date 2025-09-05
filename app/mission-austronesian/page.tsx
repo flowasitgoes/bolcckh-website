@@ -120,6 +120,84 @@ export default function AustronesianPage() {
                   </div>
                 </div>
 
+                {/* Country Sections */}
+                <div className="countries-link-section mb-12">
+                  <h2 className="text-3xl font-bold text-[#333] text-center mt-8 mb-8">靈糧國度家園</h2>
+                  
+                  {/* Countries Grid */}
+                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
+                    <Link href="/mission-austronesian-countries/niue" className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-center">
+                      <span className="text-[#333] font-medium">紐埃</span>
+                    </Link>
+                    <Link href="/mission-austronesian-countries/federated-states-of-micronesia" className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-center">
+                      <span className="text-[#333] font-medium">密克羅尼西亞聯邦</span>
+                    </Link>
+                    <Link href="/mission-austronesian-countries/brunei-darussalam" className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-center">
+                      <span className="text-[#333] font-medium">汶萊和平之國</span>
+                    </Link>
+                    <Link href="/mission-austronesian-countries/republic-of-the-philippines" className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-center">
+                      <span className="text-[#333] font-medium">菲律賓共和國</span>
+                    </Link>
+                    <Link href="/mission-austronesian-countries/republic-of-marshall-islands" className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-center">
+                      <span className="text-[#333] font-medium">馬紹爾群島共和國</span>
+                    </Link>
+                    <Link href="/mission-austronesian-countries/malaysia" className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-center">
+                      <span className="text-[#333] font-medium">馬來西亞</span>
+                    </Link>
+                    <Link href="/mission-austronesian-countries/democratic-republic-of-timor-leste" className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-center">
+                      <span className="text-[#333] font-medium">東帝汶民主共和國</span>
+                    </Link>
+                    <Link href="/mission-austronesian-countries/kingdom-of-tonga" className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-center">
+                      <span className="text-[#333] font-medium">東加王國</span>
+                    </Link>
+                    <Link href="/mission-austronesian-countries/tuvalu" className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-center">
+                      <span className="text-[#333] font-medium">吐瓦魯</span>
+                    </Link>
+                    <Link href="/mission-austronesian-countries/republic-of-kiribati" className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-center">
+                      <span className="text-[#333] font-medium">吉里巴斯共和國</span>
+                    </Link>
+                    <Link href="/mission-austronesian-countries/new-zealand" className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-center">
+                      <span className="text-[#333] font-medium">紐西蘭</span>
+                    </Link>
+                    <Link href="/mission-austronesian-countries/republic-of-singapore" className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-center">
+                      <span className="text-[#333] font-medium">新加坡共和國</span>
+                    </Link>
+                    <Link href="/mission-austronesian-countries/socialist-republic-of-vietnam" className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-center">
+                      <span className="text-[#333] font-medium">越南社會主義共和國</span>
+                    </Link>
+                    <Link href="/mission-austronesian-countries/independent-state-of-samoa" className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-center">
+                      <span className="text-[#333] font-medium">薩摩亞獨立國</span>
+                    </Link>
+                    <Link href="/mission-austronesian-countries/kingdom-of-thailand" className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-center">
+                      <span className="text-[#333] font-medium">泰王國</span>
+                    </Link>
+                    <Link href="/mission-austronesian-countries/independent-state-of-papua-new-guinea" className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-center">
+                      <span className="text-[#333] font-medium">巴布亞紐幾內亞獨立國</span>
+                    </Link>
+                    <Link href="/mission-austronesian-countries/republic-of-vanuatu" className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-center">
+                      <span className="text-[#333] font-medium">萬那杜共和國</span>
+                    </Link>
+                    <Link href="/mission-austronesian-countries/republik-indonesia" className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-center">
+                      <span className="text-[#333] font-medium">印度尼西亞共和國</span>
+                    </Link>
+                    <Link href="/mission-austronesian-countries/republic-of-fiji" className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-center">
+                      <span className="text-[#333] font-medium">斐濟共和國</span>
+                    </Link>
+                    <Link href="/mission-austronesian-countries/solomon-islands" className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-center">
+                      <span className="text-[#333] font-medium">索羅門群島</span>
+                    </Link>
+                    <Link href="/mission-austronesian-countries/republic-of-palau" className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-center">
+                      <span className="text-[#333] font-medium">帛琉共和國</span>
+                    </Link>
+                    <Link href="/mission-austronesian-countries/republic-of-nauru" className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-center">
+                      <span className="text-[#333] font-medium">諾魯共和國</span>
+                    </Link>
+                    <Link href="/mission-austronesian-countries/republic-of-madagascar" className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors text-center">
+                      <span className="text-[#333] font-medium">馬達加斯加共和國</span>
+                    </Link>
+                  </div>
+                </div>
+
                 {/* Navigation Button */}
                 <div className="mt-8 text-right">
                   <Link 
