@@ -49,7 +49,7 @@ export default function MemberRegisterPage() {
         </section>
 
         {/* Main Content Section */}
-        <section className="main-content-section bg-[#F3A149] py-12 md:py-16">
+        <section className="main-content-section bg-[#fe7f4c] py-12 md:py-16">
           <div className="max-w-6xl mx-auto px-4">
             {/* Back to Member Center Button */}
             <div className="mb-8 text-center">

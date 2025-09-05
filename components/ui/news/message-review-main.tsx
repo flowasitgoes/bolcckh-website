@@ -192,25 +192,25 @@ export function MessageReviewMain() {
                   className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                 >
                   <span>教會消息</span>
-                  <span className="text-[#F3A149] text-lg">›</span>
+                  <span className="text-[#fe7f4c] text-lg">›</span>
                 </a>
                 <a 
                   href="/news/sunday-live"
                   className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                 >
                   <span>主日直播</span>
-                  <span className="text-[#F3A149] text-lg">›</span>
+                  <span className="text-[#fe7f4c] text-lg">›</span>
                 </a>
                 <a 
                   href="/news/prayer-meeting"
                   className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                 >
                   <span>禱告會直播</span>
-                  <span className="text-[#F3A149] text-lg">›</span>
+                  <span className="text-[#fe7f4c] text-lg">›</span>
                 </a>
                 <a 
                   href="/news/message-review"
-                  className="block text-white px-4 py-3 border-l-4 border-l-[#F3A149] border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
+                  className="block text-white px-4 py-3 border-l-4 border-l-[#fe7f4c] border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                 >
                   重溫信息
                 </a>
@@ -219,14 +219,14 @@ export function MessageReviewMain() {
                   className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                 >
                   <span>好文分享</span>
-                  <span className="text-[#F3A149] text-lg">›</span>
+                  <span className="text-[#fe7f4c] text-lg">›</span>
                 </a>
                 <a 
                   href="/news/community-care"
                   className="flex justify-between items-center text-white px-4 py-3 hover:bg-[#1a6860] transition-colors"
                 >
                   <span>社區關懷</span>
-                  <span className="text-[#F3A149] text-lg">›</span>
+                  <span className="text-[#fe7f4c] text-lg">›</span>
                 </a>
               </nav>
             </div>
@@ -293,7 +293,7 @@ export function MessageReviewMain() {
                       onClick={() => handlePageChange(page)}
                       className={`w-10 h-10 rounded-full flex items-center justify-center font-bold transition-colors ${
                         currentPage === page
-                          ? 'bg-[#F3A149] text-white'
+                          ? 'bg-[#fe7f4c] text-white'
                           : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                       }`}
                     >

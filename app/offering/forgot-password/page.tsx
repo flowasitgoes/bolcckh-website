@@ -60,7 +60,7 @@ export default function ForgotPasswordPage() {
         </section>
 
         {/* Main Content Section */}
-        <section className="main-content-section bg-[#F3A149] py-12 md:py-16">
+        <section className="main-content-section bg-[#fe7f4c] py-12 md:py-16">
           <div className="max-w-2xl mx-auto px-4">
             <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
               <h3 className="text-xl md:text-2xl font-bold text-[#21807a] mb-6 text-center border-b border-[#21807a] pb-4">

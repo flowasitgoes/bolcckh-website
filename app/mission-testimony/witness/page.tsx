@@ -52,7 +52,7 @@ export default function WitnessPage() {
                   </Link>
                   <Link 
                     href="/mission-testimony/witness"
-                    className="block text-white px-4 py-3 border-l-4 border-l-[#F3A149] hover:bg-[#1a6860] transition-colors"
+                    className="block text-white px-4 py-3 border-l-4 border-l-[#fe7f4c] hover:bg-[#1a6860] transition-colors"
                   >
                     門訓見證
                   </Link>

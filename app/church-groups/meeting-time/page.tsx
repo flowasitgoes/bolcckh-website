@@ -18,7 +18,7 @@ export default function MeetingTimePage() {
           className="flex justify-center items-center relative"
           style={{ 
             minHeight: '540px',
-            background: '#F3A149',
+            background: '#fe7f4c',
             flexDirection: 'column',
             textAlign: 'center',
             fontSize: '30px'

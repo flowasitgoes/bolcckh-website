@@ -34,7 +34,7 @@ export default function MissionTestimonyPage() {
                 <nav className="space-y-0 p-6">
                   <Link 
                     href="/mission-testimony"
-                    className="block text-white px-4 py-3 border-l-4 border-l-[#F3A149] border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
+                    className="block text-white px-4 py-3 border-l-4 border-l-[#fe7f4c] border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                   >
                     神的作為 何等美好
                   </Link>

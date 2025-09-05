@@ -77,7 +77,7 @@ export default function MinistryCallingPage() {
               <p>
                 這呼召不只是牧師的,更是我們每一位弟兄姊妹的共同領受。
               </p>
-              <p className=" text-[#F3A149]">
+              <p className=" text-[#fe7f4c]">
                 「你們所做的,我要做比這更大的事」————約翰福音 14:12
               </p>
             </div>
@@ -137,7 +137,7 @@ export default function MinistryCallingPage() {
               靈命見證
             </h2>
             <div className="text-white text-lg md:text-xl leading-relaxed">
-              <p className="text-[#F3A149]">
+              <p className="text-[#fe7f4c]">
                 「當我參與社區關懷,看到街友因一句暖心問候回眸, 我領悟到,原來傳福音不只是講道,而是有被聽見、被接納的可能。」
               </p>
             </div>
@@ -170,7 +170,7 @@ export default function MinistryCallingPage() {
                 或留下你的聯繫方式,我們一起禱告、配搭、行動。
               </p>
             </div>
-            <button className="bg-[#F3A149] hover:bg-[#e89440] text-white font-bold py-4 px-8 rounded-lg text-xl transition-colors duration-300">
+            <button className="bg-[#fe7f4c] hover:bg-[#e89440] text-white font-bold py-4 px-8 rounded-lg text-xl transition-colors duration-300">
               我要參加說明會
             </button>
           </div>

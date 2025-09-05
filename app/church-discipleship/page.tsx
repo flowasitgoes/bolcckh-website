@@ -276,7 +276,7 @@ export default function ChurchDiscipleshipPage() {
           </div>
 
           {/* Right Content Area */}
-          <div className="lg:col-span-3 bg-[#F3A149] p-6 md:p-8">
+          <div className="lg:col-span-3 bg-[#fe7f4c] p-6 md:p-8">
             <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
               {/* YouTube Video Player */}
               <div className="mb-8">

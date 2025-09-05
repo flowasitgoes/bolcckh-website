@@ -4,7 +4,7 @@ export function MissionMainContent() {
       {/* Left Block */}
       <div className="w-1/2 flex flex-col">
         {/* Text Area - Orange background */}
-        <div className="h-full bg-[#F3A149] flex items-center justify-center p-6 md:p-8">
+        <div className="h-full bg-[#fe7f4c] flex items-center justify-center p-6 md:p-8">
           <div className="text-white text-center max-w-sm">
             <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-4" style={{borderBottom: '1px solid #FFF', paddingBottom: '10px'}}>
               廣傳福音 效法基督

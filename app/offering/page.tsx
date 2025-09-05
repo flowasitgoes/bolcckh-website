@@ -59,7 +59,7 @@ export default function OfferingPage() {
         </section>
 
         {/* Main Content Section */}
-        <section className="main-content-section bg-[#F3A149] py-12 md:py-16">
+        <section className="main-content-section bg-[#fe7f4c] py-12 md:py-16">
           <div className="max-w-6xl mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
               {/* 我是會友 */}

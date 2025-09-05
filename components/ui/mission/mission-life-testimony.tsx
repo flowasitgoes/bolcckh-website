@@ -1,6 +1,6 @@
 export function MissionLifeTestimony() {
   return (
-    <section className="mission-life-testimony py-12 md:py-16 bg-[#F3A149]">
+    <section className="mission-life-testimony py-12 md:py-16 bg-[#fe7f4c]">
       <div className="max-w-4xl mx-auto px-4">
         <div className="bg-white rounded-lg p-8 md:p-12 shadow-lg">
           <div className="text-center">

@@ -318,7 +318,7 @@ export default function SmallGroupReportPage() {
             </div>
 
             {/* Right Content Area */}
-            <div className="right-content-area lg:col-span-3 bg-[#F3A149] p-6 md:p-8">
+            <div className="right-content-area lg:col-span-3 bg-[#fe7f4c] p-6 md:p-8">
               <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
                 {/* Tab Navigation */}
                 <div className="flex flex-col md:flex-row border-b border-gray-200 mb-8">

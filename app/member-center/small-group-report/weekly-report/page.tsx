@@ -310,7 +310,7 @@ export default function WeeklyReportPage() {
           </div>
 
           {/* Right Content Area */}
-          <div className="right-content-area lg:col-span-3 bg-[#F3A149] p-6 md:p-8">
+          <div className="right-content-area lg:col-span-3 bg-[#fe7f4c] p-6 md:p-8">
             <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
               <h1 className="text-2xl md:text-3xl font-bold text-[#333] mb-8 text-center">
                 小組週報表

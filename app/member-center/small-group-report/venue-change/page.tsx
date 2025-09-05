@@ -292,7 +292,7 @@ export default function VenueChangePage() {
           </div>
 
           {/* Right Content Area */}
-          <div className="right-content-area lg:col-span-3 bg-[#F3A149] p-6 md:p-8">
+          <div className="right-content-area lg:col-span-3 bg-[#fe7f4c] p-6 md:p-8">
             <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
               <div className="text-center mb-6 border-b-2 border-gray-800 pb-4">
                 <div className="text-2xl font-bold">高雄靈糧堂 - 場地異動申請表</div>

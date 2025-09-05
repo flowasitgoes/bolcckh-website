@@ -39,7 +39,7 @@ const churchPanels = [
     title: '牧養裝備',
     subtitle: 'Pastoral care equipment',
     href: '/church-equip',
-    bgColor: 'bg-[#F3A149]',
+    bgColor: 'bg-[#fe7f4c]',
     image: '/church/B1/B01-06.png'
   },
   {
@@ -60,15 +60,15 @@ const churchPanels = [
     title: '聚會資訊',
     subtitle: 'Gathering information',
     href: '/about',
-    bgColor: 'bg-[#F3A149]',
+    bgColor: 'bg-[#fe7f4c]',
     image: '/church/B1/B01-06.png'
   }
 ]
 
 function ChurchPanel({ panel }: { panel: typeof churchPanels[0] }) {
   // 根據背景色決定文字顏色
-  const isOrangeBg = panel.bgColor === 'bg-[#F3A149]'
-  const textColor = isOrangeBg ? 'text-[#444]' : 'text-[#F3A149]'
+  const isOrangeBg = panel.bgColor === 'bg-[#fe7f4c]'
+  const textColor = isOrangeBg ? 'text-[#444]' : 'text-[#fe7f4c]'
   
   return (
     <Link href={panel.href} className="block">

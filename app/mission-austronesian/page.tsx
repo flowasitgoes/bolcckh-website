@@ -112,7 +112,7 @@ export default function AustronesianPage() {
                 </div>
 
                 {/* Orange Background Section */}
-                <div className="mission-testmony-witness-section bg-[#F3A149] p-32 rounded-lg">
+                <div className="mission-testmony-witness-section bg-[#fe7f4c] p-32 rounded-lg">
                   <div className="text-center">
                     <p className="text-black text-lg leading-relaxed">
                       隨著全球化的發展，南島語系國家的基督教面臨現代化和世俗化的挑戰，可能需要重新詮釋其信仰和實踐。

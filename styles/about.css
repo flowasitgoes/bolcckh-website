@@ -78,7 +78,7 @@
 }
 
 .timeline-line {
-  background-color: #F3A149;
+  background-color: #fe7f4c;
 }
 
 .flex-row-reverse {
@@ -112,7 +112,7 @@
   width: 100%;
   display: flex;
   height: 20px;
-  border-bottom: 3px solid #F3A149;
+  border-bottom: 3px solid #fe7f4c;
   /* background: rgb(119, 119, 119); */
   padding-bottom: 6px;
 }
@@ -128,7 +128,7 @@
   width: 75%;
   margin: 12px auto;
   margin-bottom: 80px;
-  background-color: #F3A149;
+  background-color: #fe7f4c;
   padding: 30px 12px;
 }
 
@@ -141,7 +141,7 @@
 }
 
 .contact-info-section-wrapper {
-  background-color: #F3A149;
+  background-color: #fe7f4c;
   padding: 0;
   width: 100%;
   max-width: 100%;
@@ -158,7 +158,7 @@
 
 .contact-info-card-wrapper,
 .contact-info-card-wrapper-item {
-  background-color: #F3A149;
+  background-color: #fe7f4c;
 }
 
 .schedule-column-title {
@@ -190,7 +190,7 @@
 
   .mission-container {
     padding: 30px 40px;
-    background-color: #F3A149;
+    background-color: #fe7f4c;
   }
 
   .cross-container {

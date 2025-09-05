@@ -8,7 +8,7 @@ interface MemberRegisterProps {
 
 export function MemberRegister({ onSwitchToLogin }: MemberRegisterProps) {
   return (
-    <div className="member-center-login right-content-area lg:col-span-3 bg-[#F3A149]">
+    <div className="member-center-login right-content-area lg:col-span-3 bg-[#fe7f4c]">
       <div className="member-center-login-box grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* LINE 會友登入 */}
         <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg flex flex-col justify-center">

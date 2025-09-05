@@ -69,7 +69,7 @@ export default function UpComingPage() {
           
           {/* Progress Bar */}
           <div className="w-full bg-gray-200 rounded-full h-2 mb-8">
-            <div className="bg-[#F3A149] h-2 rounded-full animate-pulse" style={{ width: '75%' }}></div>
+            <div className="bg-[#fe7f4c] h-2 rounded-full animate-pulse" style={{ width: '75%' }}></div>
           </div>
           
           {/* Back to Home Button */}

@@ -55,39 +55,39 @@ export default function CommunityCarePage() {
                       className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                     >
                       <span>教會消息</span>
-                      <span className="text-[#F3A149] text-lg">›</span>
+                      <span className="text-[#fe7f4c] text-lg">›</span>
                     </a>
                     <a 
                       href="/news/sunday-live"
                       className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                     >
                       <span>主日直播</span>
-                      <span className="text-[#F3A149] text-lg">›</span>
+                      <span className="text-[#fe7f4c] text-lg">›</span>
                     </a>
                     <a 
                       href="/news/prayer-meeting"
                       className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                     >
                       <span>禱告會直播</span>
-                      <span className="text-[#F3A149] text-lg">›</span>
+                      <span className="text-[#fe7f4c] text-lg">›</span>
                     </a>
                     <a 
                       href="/news/message-review"
                       className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                     >
                       <span>重溫信息</span>
-                      <span className="text-[#F3A149] text-lg">›</span>
+                      <span className="text-[#fe7f4c] text-lg">›</span>
                     </a>
                     <a 
                       href="/news/good-articles"
                       className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                     >
                       <span>好文分享</span>
-                      <span className="text-[#F3A149] text-lg">›</span>
+                      <span className="text-[#fe7f4c] text-lg">›</span>
                     </a>
                     <a 
                       href="/news/community-care"
-                      className="block text-white px-4 py-3 border-l-4 border-l-[#F3A149] hover:bg-[#1a6860] transition-colors"
+                      className="block text-white px-4 py-3 border-l-4 border-l-[#fe7f4c] hover:bg-[#1a6860] transition-colors"
                     >
                       社區關懷
                     </a>
@@ -128,7 +128,7 @@ export default function CommunityCarePage() {
                                 <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">行動</span>
                               </div>
                             </div>
-                            <div className="bg-[#F3A149] text-white p-3 text-center min-w-[80px] min-h-[80px] flex flex-col justify-center items-center flex-shrink-0">
+                            <div className="bg-[#fe7f4c] text-white p-3 text-center min-w-[80px] min-h-[80px] flex flex-col justify-center items-center flex-shrink-0">
                               <div className="text-xs font-medium leading-tight">2025/07</div>
                               <div className="text-2xl font-bold leading-tight mt-1">01</div>
                             </div>
@@ -153,7 +153,7 @@ export default function CommunityCarePage() {
                                 <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">實踐</span>
                               </div>
                             </div>
-                            <div className="bg-[#F3A149] text-white p-3 text-center min-w-[80px] min-h-[80px] flex flex-col justify-center items-center flex-shrink-0">
+                            <div className="bg-[#fe7f4c] text-white p-3 text-center min-w-[80px] min-h-[80px] flex flex-col justify-center items-center flex-shrink-0">
                               <div className="text-xs font-medium leading-tight">2025/07</div>
                               <div className="text-2xl font-bold leading-tight mt-1">08</div>
                             </div>
@@ -178,7 +178,7 @@ export default function CommunityCarePage() {
                                 <span className="bg-[#07847f] text-white text-xs px-2 py-1 rounded">關係</span>
                               </div>
                             </div>
-                            <div className="bg-[#F3A149] text-white p-3 text-center min-w-[80px] min-h-[80px] flex flex-col justify-center items-center flex-shrink-0">
+                            <div className="bg-[#fe7f4c] text-white p-3 text-center min-w-[80px] min-h-[80px] flex flex-col justify-center items-center flex-shrink-0">
                               <div className="text-xs font-medium leading-tight">2025/07</div>
                               <div className="text-2xl font-bold leading-tight mt-1">15</div>
                             </div>
@@ -188,7 +188,7 @@ export default function CommunityCarePage() {
 
                       {/* Pagination */}
                       <div className="pagination-container flex justify-center items-center gap-2 mt-8">
-                        <button className="w-10 h-10 bg-[#F3A149] text-white rounded-full flex items-center justify-center font-bold">1</button>
+                        <button className="w-10 h-10 bg-[#fe7f4c] text-white rounded-full flex items-center justify-center font-bold">1</button>
                         <button className="w-10 h-10 bg-gray-200 text-gray-700 rounded-full flex items-center justify-center hover:bg-gray-300 transition-colors">2</button>
                         <button className="w-10 h-10 bg-gray-200 text-gray-700 rounded-full flex items-center justify-center hover:bg-gray-300 transition-colors">3</button>
                         <button className="w-10 h-10 bg-gray-200 text-gray-700 rounded-full flex items-center justify-center hover:bg-gray-300 transition-colors">

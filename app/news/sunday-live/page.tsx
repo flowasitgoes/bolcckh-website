@@ -55,11 +55,11 @@ export default function SundayLivePage() {
                       className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                     >
                       <span>教會消息</span>
-                      <span className="text-[#F3A149] text-lg">›</span>
+                      <span className="text-[#fe7f4c] text-lg">›</span>
                     </a>
                     <a 
                       href="/news/sunday-live"
-                      className="block text-white px-4 py-3 border-l-4 border-l-[#F3A149] border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
+                      className="block text-white px-4 py-3 border-l-4 border-l-[#fe7f4c] border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                     >
                       主日直播
                     </a>
@@ -68,28 +68,28 @@ export default function SundayLivePage() {
                       className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                     >
                       <span>禱告會直播</span>
-                      <span className="text-[#F3A149] text-lg">›</span>
+                      <span className="text-[#fe7f4c] text-lg">›</span>
                     </a>
                     <a 
                       href="/news/message-review"
                       className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                     >
                       <span>重溫信息</span>
-                      <span className="text-[#F3A149] text-lg">›</span>
+                      <span className="text-[#fe7f4c] text-lg">›</span>
                     </a>
                     <a 
                       href="/news/good-articles"
                       className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                     >
                       <span>好文分享</span>
-                      <span className="text-[#F3A149] text-lg">›</span>
+                      <span className="text-[#fe7f4c] text-lg">›</span>
                     </a>
                     <a 
                       href="/news/community-care"
                       className="flex justify-between items-center text-white px-4 py-3 hover:bg-[#1a6860] transition-colors"
                     >
                       <span>社區關懷</span>
-                      <span className="text-[#F3A149] text-lg">›</span>
+                      <span className="text-[#fe7f4c] text-lg">›</span>
                     </a>
                   </nav>
                 </div>
@@ -193,11 +193,11 @@ export default function SundayLivePage() {
                         <h3 className="text-xl font-bold text-[#444] mb-4">崇拜時間:</h3>
                         <div className="space-y-3">
                           <div className="flex items-center gap-3">
-                            <div className="w-3 h-3 bg-[#F3A149] rounded-full"></div>
+                            <div className="w-3 h-3 bg-[#fe7f4c] rounded-full"></div>
                             <span className="text-gray-700">第一堂週日08:30(線上直播)</span>
                           </div>
                           <div className="flex items-center gap-3">
-                            <div className="w-3 h-3 bg-[#F3A149] rounded-full"></div>
+                            <div className="w-3 h-3 bg-[#fe7f4c] rounded-full"></div>
                             <span className="text-gray-700">第二堂週日10:30(線上直播)</span>
                           </div>
                         </div>
@@ -205,7 +205,7 @@ export default function SundayLivePage() {
 
                       {/* Back Button */}
                       <div className="flex justify-end mt-8">
-                        <button className="bg-[#F3A149] text-white px-6 py-3 rounded-lg hover:bg-[#e66a3a] transition-colors border border-white text-center">
+                        <button className="bg-[#fe7f4c] text-white px-6 py-3 rounded-lg hover:bg-[#e66a3a] transition-colors border border-white text-center">
                           <div className="flex text-center justify-center items-center  gap-2">
                             <span className='text-center'>回上一頁</span>
                           </div>

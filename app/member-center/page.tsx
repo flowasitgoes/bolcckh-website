@@ -179,7 +179,7 @@ export default function MemberCenterPage() {
             </div>
 
             {/* Right Content Area */}
-            <div className={`${!showRegister ? 'member-center-login' : 'member-center-register'} right-content-area lg:col-span-3 bg-[#F3A149]`}>
+            <div className={`${!showRegister ? 'member-center-login' : 'member-center-register'} right-content-area lg:col-span-3 bg-[#fe7f4c]`}>
               {showRegister ? (
                 <MemberRegister onSwitchToLogin={() => setShowRegister(false)} />
               ) : (

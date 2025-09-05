@@ -27,35 +27,35 @@ export default function BaptismCeremonyPage() {
                       className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                     >
                       <span>教會消息</span>
-                      <span className="text-[#F3A149] text-lg">›</span>
+                      <span className="text-[#fe7f4c] text-lg">›</span>
                     </a>
                     <a 
                       href="/news/sunday-live"
                       className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                     >
                       <span>主日直播</span>
-                      <span className="text-[#F3A149] text-lg">›</span>
+                      <span className="text-[#fe7f4c] text-lg">›</span>
                     </a>
                     <a 
                       href="/news/prayer-meeting"
                       className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                     >
                       <span>禱告會直播</span>
-                      <span className="text-[#F3A149] text-lg">›</span>
+                      <span className="text-[#fe7f4c] text-lg">›</span>
                     </a>
                     <a 
                       href="/news/message-review"
                       className="flex justify-between items-center text-white px-4 py-3 border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                     >
                       <span>重溫信息</span>
-                      <span className="text-[#F3A149] text-lg">›</span>
+                      <span className="text-[#fe7f4c] text-lg">›</span>
                     </a>
                     <a 
                       href="/news/good-articles"
                       className="flex justify-between items-center text-white px-4 py-3 hover:bg-[#1a6860] transition-colors"
                     >
                       <span>好文分享</span>
-                      <span className="text-[#F3A149] text-lg">›</span>
+                      <span className="text-[#fe7f4c] text-lg">›</span>
                     </a>
                   </nav>
                 </div>
@@ -98,7 +98,7 @@ export default function BaptismCeremonyPage() {
                     <div className="flex justify-end mt-8">
                       <Link 
                         href="/news"
-                        className="bg-[#F3A149] text-white px-6 py-3 rounded-lg hover:bg-[#e66a3a] transition-colors"
+                        className="bg-[#fe7f4c] text-white px-6 py-3 rounded-lg hover:bg-[#e66a3a] transition-colors"
                       >
                         回上一頁
                       </Link>

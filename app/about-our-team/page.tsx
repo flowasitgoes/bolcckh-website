@@ -118,7 +118,7 @@ export default function AboutOurTeamPage() {
                   onClick={() => setSelectedDepartment(dept)}
                   className={`department-tab px-4 py-2 text-lg font-medium transition-colors duration-200 ${
                     selectedDepartment === dept
-                      ? 'text-[#F3A149] border-b-2 border-[#F3A149]' 
+                      ? 'text-[#fe7f4c] border-b-2 border-[#fe7f4c]' 
                       : 'text-gray-600 hover:text-[#21807a]'
                   }`}
                 >

@@ -71,7 +71,7 @@ export default function ChurchDepartmentTaiwaneseLanguageLessonPage() {
         </div>
 
         {/* Main Content */}
-        <div className="flex-1 bg-[#F3A149] p-4 md:p-6 lg:p-8">
+        <div className="flex-1 bg-[#fe7f4c] p-4 md:p-6 lg:p-8">
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-lg p-4 md:p-6 lg:p-8 shadow-lg">
               {/* Course Information */}

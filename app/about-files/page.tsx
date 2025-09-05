@@ -173,7 +173,7 @@ export default function AboutFilesPage() {
           </nav>
         </div>
 
-      <section className="py-20 bg-[#F3A149]">
+      <section className="py-20 bg-[#fe7f4c]">
         <div className="container mx-auto px-4">
           {/* Tabs Navigation */}
           

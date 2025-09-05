@@ -46,7 +46,7 @@ export default function PrayersPage() {
                   </Link>
                   <Link 
                     href="/mission-testimony/prayers"
-                    className="block text-white px-4 py-3 border-l-4 border-l-[#F3A149] border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
+                    className="block text-white px-4 py-3 border-l-4 border-l-[#fe7f4c] border-b border-b-white/20 hover:bg-[#1a6860] transition-colors"
                   >
                     禱告蒙應允
                   </Link>
