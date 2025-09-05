@@ -84,13 +84,16 @@ export default function AustronesianPage() {
                 </div>
 
                 {/* Map Section */}
-                <div className="mb-12">
+                <div className="mb-12 -mx-12">
                   <div className="relative">
                     {/* Map Image */}
-                    <div className="relative w-full h-96 bg-cover bg-center rounded-lg overflow-hidden" 
-                         style={{
-                           backgroundImage: 'url("/mission/picture-new.jpg")'
-                         }}>
+                    <div className="relative w-full">
+                      <img 
+                        src="/mission/picture-new.jpg" 
+                        alt="南島語系國家分佈圖"
+                        className="w-full h-auto object-contain"
+                      />
+                      
                       {/* Map Overlay */}
                       <div className="absolute inset-0 bg-brown-800/20"></div>
                       
@@ -99,14 +102,11 @@ export default function AustronesianPage() {
                       <div className="absolute top-1/2 right-1/3 w-6 h-6 bg-red-500 rounded-full animate-pulse"></div>
                       
                       {/* Map Title */}
-                      <div className="absolute top-4 left-4 bg-white/90 px-4 py-2 rounded-lg">
-                        <h3 className="text-lg font-bold text-[#333]">南島語系國家分佈圖</h3>
+                      <div className="absolute top-4 left-4 bg-[#fe7f4c]/90 px-4 py-2 rounded-lg">
+                        <h3 className="text-lg font-bold text-[#333] ">南島語系國家分佈圖</h3>
                       </div>
                       
-                      {/* Notebook */}
-                      <div className="absolute bottom-4 left-4 w-16 h-20 bg-white rounded-lg shadow-lg flex items-center justify-center">
-                        <div className="w-8 h-10 bg-purple-500 rounded"></div>
-                      </div>
+
                     </div>
                   </div>
                 </div>
