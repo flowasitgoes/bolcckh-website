@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     url: 'https://conflux-tech.com/news/community-care',
     images: [
       {
-        url: 'https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png',
+        url: 'https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png',
         width: 1200,
         height: 630,
         alt: '高雄靈糧堂社區關懷',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '社區關懷 | 高雄靈糧堂 - 關懷服務與社區活動',
     description: '高雄靈糧堂社區關懷，包含關懷服務、社區活動、愛心行動等重要內容。',
-    images: ['https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png'],
+    images: ['https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png'],
   },
 }
 

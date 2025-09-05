@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     url: 'https://conflux-tech.com',
     images: [
       {
-        url: 'https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png',
+        url: 'https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png',
         width: 1200,
         height: 630,
         alt: '高雄靈糧堂首頁',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '高雄靈糧堂 - 首頁 | 歡迎來到主的家',
     description: '高雄靈糧堂官方網站首頁，提供教會最新消息、聚會時間、服務項目、信仰資源等資訊。',
-    images: ['https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png'],
+    images: ['https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png'],
   },
 }
 

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     url: 'https://conflux-tech.com/up-coming',
     images: [
       {
-        url: 'https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png',
+        url: 'https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png',
         width: 1200,
         height: 630,
         alt: '高雄靈糧堂即將推出',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '即將推出 | 高雄靈糧堂 - 網頁建置中',
     description: '此頁面正在建置中，請耐心等候。高雄靈糧堂致力於提供更好的服務體驗。',
-    images: ['https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png'],
+    images: ['https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png'],
   },
 }
 

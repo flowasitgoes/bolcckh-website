@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     url: 'https://conflux-tech.com/church-department-children',
     images: [
       {
-        url: 'https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png',
+        url: 'https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png',
         width: 1200,
         height: 630,
         alt: '高雄靈糧堂兒童牧區',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '兒童牧區 | 高雄靈糧堂',
     description: '高雄靈糧堂兒童牧區，提供兒童信徒的牧養和關懷，歡迎參加兒童牧區的聚會和活動。',
-    images: ['https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png'],
+    images: ['https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png'],
   },
 }
 

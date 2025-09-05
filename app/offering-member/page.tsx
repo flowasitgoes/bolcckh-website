@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: 'https://conflux-tech.com/member-center/login',
     images: [
       {
-        url: 'https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png',
+        url: 'https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png',
         width: 1200,
         height: 630,
         alt: '高雄靈糧堂會友中心',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '會友中心 | 高雄靈糧堂 - 會友登入與註冊',
     description: '高雄靈糧堂會友中心，提供 LINE 登入和手機會友登入/註冊服務，讓您輕鬆管理奉獻記錄。',
-    images: ['https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png'],
+    images: ['https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png'],
   },
 }
 

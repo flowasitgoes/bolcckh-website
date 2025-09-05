@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: 'https://conflux-tech.com/about-contact',
     images: [
       {
-        url: 'https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png',
+        url: 'https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png',
         width: 1200,
         height: 630,
         alt: '高雄靈糧堂聯絡我們',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '聯絡我們 | 高雄靈糧堂 - 地址、電話、交通資訊',
     description: '高雄靈糧堂聯絡資訊，包括地址、電話、交通方式、週日公車時刻表等，歡迎您前來參加聚會。',
-    images: ['https://conflux-tech.com/wp-content/uploads/2025/08/0815-21-scaled.png'],
+    images: ['https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png'],
   },
 }
 
