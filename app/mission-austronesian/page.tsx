@@ -185,7 +185,7 @@ export default function AustronesianPage() {
               {/* Full-width Teal Background Section */}
               <div className="mission-testmony-witness-section bg-[#07847f] -mx-12 py-32">
                 <div className="text-center">
-                  <p className="text-white text-lg leading-relaxed px-20 max-w-4xl mx-auto relative">
+                  <p className="text-white text-xl leading-relaxed px-20 max-w-4xl mx-auto relative">
                     {/* Left orange line */}
                     <span className="absolute left-0 top-1/2 transform -translate-y-1/2 w-1 h-16 bg-[#fe7f4c]"></span>
                     {/* Right orange line */}
