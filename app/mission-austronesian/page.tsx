@@ -217,7 +217,7 @@ export default function AustronesianPage() {
                 {/* Prayer Card 2 */}
                 <div className="bg-[#fe7f4c] p-8">
                   <div className="bg-white rounded-3xl p-24 max-w-4xl mx-auto prayer-card-content">
-                    <h3 className="text-2xl font-bold text-[#555] text-center mb-2">為原民祝福禱告</h3>
+                    <h3 className="text-2xl font-bold text-[#444] text-center mb-2">為原民祝福禱告</h3>
                     <p className="text-base text-[#e06838] font-bold text-center mb-6">Praying for the aboriginal people</p>
                     <hr className="border-[#07847f] border-b-2 mb-6" />
                     <div className="space-y-4 font-bold">
@@ -234,7 +234,7 @@ export default function AustronesianPage() {
                 {/* Prayer Card 3 */}
                 <div className="bg-[#fe7f4c] p-8">
                   <div className="bg-white rounded-3xl p-24 max-w-4xl mx-auto prayer-card-content">
-                    <h3 className="text-2xl font-bold text-[#555] text-center mb-2">為原民更多得醫治、恢復禱告</h3>
+                    <h3 className="text-2xl font-bold text-[#444] text-center mb-2">為原民更多得醫治、恢復禱告</h3>
                     <p className="text-base text-[#e06838] font-bold text-center mb-6">Pray for the native to receive more healing and recovery</p>
                     <hr className="border-[#07847f] border-b-2 mb-6" />
                     <div className="space-y-4 font-bold">
