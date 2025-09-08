@@ -200,7 +200,7 @@ export default function AustronesianPage() {
                 {/* Prayer Card 1 */}
                 <div className="bg-[#fe7f4c] p-8">
                   <div className="bg-white rounded-3xl p-24 max-w-4xl mx-auto prayer-card-content">
-                    <h3 className="text-2xl font-bold text-[#555] text-center mb-2">為我們和南島邦交國的關係禱告</h3>
+                    <h3 className="text-2xl font-bold text-[#444] text-center mb-2">為我們和南島邦交國的關係禱告</h3>
                     <p className="text-base text-[#e06838] font-bold text-center mb-6">Pray for our relationship with the States of diplomatic relations in Austronisian region</p>
                     <hr className="border-[#07847f] border-b-2 mb-6" />
                     <div className="space-y-4 font-bold">
