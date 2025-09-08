@@ -110,6 +110,24 @@
   .mission-testmony-witness-section {
     padding: 1.5rem !important;
   }
+  
+  /* Prayer cards mobile adjustments */
+  .prayer-cards-container {
+    gap: 0 !important; /* remove space-y-12 in mobile */
+    padding: 2rem 0 !important; /* py-8 instead of py-16 */
+  }
+  
+  .prayer-card-content {
+    padding: 2rem 2rem 1.25rem 2rem !important; /* p-8 but padding-bottom: 20px */
+  }
+  
+  .prayer-card-content h3 {
+    font-size: 1.125rem !important; /* text-lg - 18px */
+  }
+  
+  .prayer-card-content p {
+    font-size: 0.875rem !important; /* text-sm - max 14px */
+  }
 }
 
 /* 平板版本 - 768px到1024px */

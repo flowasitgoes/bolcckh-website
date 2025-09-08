@@ -21,8 +21,8 @@ export function Header() {
       { zh: "聚會資訊", href: "/church-groups" },
       { zh: "牧區族群", href: "/church-department" },
       { zh: "事工介紹與呼召", href: "/ministry-calling" },
-      { zh: "牧養裝備", href: "/church-discipleship/discipleship-school-upper-register" },
-      { zh: "門訓建造", href: "/church-discipleship" },
+      { zh: "門訓部專區", href: "#" },
+      { zh: "裝備課程", href: "/church-discipleship" },
     ] },
     { zh: "宣教使命", en: "Mission", href: "#mission", children: [
       { zh: "宣教使命", href: "/mission" },
@@ -130,7 +130,7 @@ export function Header() {
                          }`} style={{ transitionDelay: `${childIdx * 80}ms` }}>
                             <a
                               href={child.href}
-                            className="block text-gray-700 hover:text-orange-theme py-1 px-2 rounded transition-colors duration-200"
+                              className="block text-gray-700 hover:text-orange-theme py-1 px-2 rounded transition-colors duration-200"
                             >
                               {child.zh}
                             </a>

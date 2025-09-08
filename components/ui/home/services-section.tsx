@@ -44,7 +44,7 @@ export function ServicesSection() {
     { 
       icon: "/home/icon/加粗_工作區域 1 複本 7.png", 
       title: "社區關懷",
-      href: "https://line.me/R/ti/p/@528fzbuu?ts=06111711&oat_content=url"
+      href: "/news/community-care"
     },
   ]
 

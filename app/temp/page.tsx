@@ -6,7 +6,7 @@ import '@/styles/mission.css'
 
 export const metadata: Metadata = {
   title: '南島語系國家清單 | 高雄靈糧堂 - 臨時頁面',
-  description: '高雄靈糧堂南島語系靈糧國度家園清單，包含所有南島語系國家的專區連結。',
+  description: '高雄靈糧堂南島語系南島語系國家 清單，包含所有南島語系國家的專區連結。',
   keywords: '高雄靈糧堂, 南島語系國家, 專區清單, 宣教使命',
 }
 
@@ -158,8 +158,8 @@ export default function TempPage() {
               <div className="bg-white shadow-sm p-12">
                 {/* Page Title */}
                 <div className="text-center mb-12">
-                  <h1 className="text-4xl font-bold text-[#333] mb-4">南島語系靈糧國度家園清單</h1>
-                  <p className="text-lg text-gray-600">共 {countries.length} 個南島語系靈糧國度家園</p>
+                  <h1 className="text-4xl font-bold text-[#333] mb-4">南島語系南島語系國家 清單</h1>
+                  <p className="text-lg text-gray-600">共 {countries.length} 個南島語系南島語系國家 </p>
                 </div>
 
                 {/* Countries Grid */}
