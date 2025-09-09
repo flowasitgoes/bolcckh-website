@@ -39,7 +39,7 @@ export function ServicesSection() {
     { 
       icon: "/home/icon/加粗_工作區域 1 複本 6.png", 
       title: "領袖訓練",
-      href: "https://bolcckh.vercel.app/up-coming"
+      href: "/church-discipleship"
     },
     { 
       icon: "/home/icon/加粗_工作區域 1 複本 7.png", 
