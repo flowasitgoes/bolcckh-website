@@ -42,20 +42,10 @@ export default function ChurchDepartmentChildrenPage() {
           <img src="/church/B4/B4.png" alt="兒童牧區" />
         </div>
 
-        <section className="dt-2-col-side-section hero-section relative h-96 md:h-96 flex flex-col md:flex-row">
-          {/* Left side - Image */}
-          <div className="dt-left-side-section w-full md:w-1/2 h-48 md:h-full relative overflow-hidden">
-            <Image 
-              src="/church/church-陳沛玲牧師.jpg" 
-              alt="兒童牧區" 
-              fill
-              className="object-contain object-center" 
-              priority
-            />
-          </div>
-          {/* Right side - Orange background with text */}
-          <div className="dt-right-side-section w-full md:w-1/2 h-48 md:h-full bg-[#fe7f4c] flex flex-col justify-center items-center text-white p-4 md:p-8">
-            <div className="text-left">
+        <section className="dt-2-col-side-section hero-section relative h-48 md:h-96 flex flex-col md:flex-row">
+          {/* Full width - Orange background with text */}
+          <div className="dt-right-side-section w-full h-48 md:h-full bg-[#fe7f4c] flex flex-col justify-center items-center text-white p-4 md:p-8">
+            <div className="text-center">
               <h1 className="text-xl md:text-2xl font-bold mb-2">兒童牧區</h1>
               <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{color: '#172d2d', borderBottom: '1px solid #FFF', paddingBottom: '10px'}}>Welcome!</h2>
               {/* <div className="w-12 md:w-16 h-0.5 bg-white mx-auto mb-4"></div> */}
