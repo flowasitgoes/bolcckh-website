@@ -11,6 +11,7 @@ export function NewsMain() {
       id: 1,
       title: "「她的名字寫在日常裡」影畫展",
       date: "5/11 (日) - 5/25 (日)",
+      description: "透過藝術作品展現女性在日常生活中的美好與價值，邀請您一同欣賞這場溫馨感人的影畫展覽。",
       image: "/home/news-section/01.jpg",
       category: "主日直撥",
       dayMonth: { month: "2025/03", day: "28" }
@@ -19,6 +20,7 @@ export function NewsMain() {
       id: 2, 
       title: "親職講座",
       date: "6/1 (日) - 6/7 (日)",
+      description: "專業講師將分享現代親子教育的智慧與技巧，幫助父母建立更和諧的親子關係，共同成長。",
       image: "/home/news-section/02.jpg",
       category: "重溫信息",
       dayMonth: { month: "2025/06", day: "07" }
@@ -27,6 +29,7 @@ export function NewsMain() {
       id: 3,
       title: "受洗典禮",
       date: "6/22 (日) - 6/28 (日)",
+      description: "見證弟兄姊妹們在信仰路上的重要里程碑，一同為他們的決志與委身獻上感恩與祝福。",
       image: "/home/news-section/03.jpg",
       category: "禱告會直播",
       dayMonth: { month: "2025/06", day: "28" }
@@ -35,6 +38,7 @@ export function NewsMain() {
       id: 4,
       title: "兒童夏令營",
       date: "7/15 (二) - 7/19 (六)",
+      description: "為孩子們精心規劃的夏日活動，結合遊戲、學習與品格教育，讓孩子們度過充實快樂的假期。",
       image: "/home/news-section/04.jpg",
       category: "好文分享",
       dayMonth: { month: "2025/07", day: "15" }
@@ -43,6 +47,7 @@ export function NewsMain() {
       id: 5,
       title: "青年退修會",
       date: "8/10 (日) - 8/12 (二)",
+      description: "青年朋友們的靈性充電時光，透過敬拜、分享與團契，一同在信仰中成長，建立深厚友誼。",
       image: "/home/news-section/05.jpg",
       category: "主日直撥",
       dayMonth: { month: "2025/08", day: "10" }
@@ -156,7 +161,7 @@ export function NewsMain() {
                       {/* Content */}
                       <div className="flex-1">
                         <div className="flex justify-between items-start gap-4">
-                          <div>
+                          <div className="flex-1">
                             <h3 className="text-xl font-bold text-[#444] mb-2">
                               <a 
                                 href={item.id === 1 ? "/news/art-exhibition" :
@@ -169,7 +174,8 @@ export function NewsMain() {
                                 {item.title}
                               </a>
                             </h3>
-                            <p className="text-gray-600">{item.date}</p>
+                            <p className="text-gray-600 mb-3">{item.date}</p>
+                            <p className="text-gray-700 text-sm leading-relaxed">{item.description}</p>
                           </div>
                           <div className="bg-[#fe7f4c] text-white p-3 text-center min-w-[80px] min-h-[80px] flex flex-col justify-center items-center flex-shrink-0">
                             <div className="text-xs font-medium leading-tight">{item.dayMonth.month}</div>
