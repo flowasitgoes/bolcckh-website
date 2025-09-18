@@ -17,12 +17,12 @@ export function Header() {
       { zh: "檔案專區", href: "/about-files" },
     ] },
     { zh: "教會生活", en: "Church", href: "/church", children: [
-      { zh: "教會生活", href: "/church" },
+      // { zh: "教會生活", href: "/church" },
       { zh: "聚會資訊", href: "/church-groups" },
       { zh: "牧區族群", href: "/church-department" },
       { zh: "事工介紹與呼召", href: "/ministry-calling" },
       { zh: "裝備內容", href: "#" },
-      { zh: "課程報名", href: "/church-discipleship" },
+      // { zh: "課程報名", href: "/church-discipleship" },
     ] },
     { zh: "宣教使命", en: "Mission", href: "#mission", children: [
       { zh: "宣教使命", href: "/mission" },
@@ -36,9 +36,9 @@ export function Header() {
       { zh: "支持奉獻", href: "/offering" },
       { zh: "線上奉獻", href: "/online-offering" },
     ] },
-    { zh: "部門介紹", en: "Department", href: "/department", children: [
-      { zh: "部門介紹", href: "/department" }
-    ] },
+    // { zh: "部門介紹", en: "Department", href: "/department", children: [
+    //   { zh: "部門介紹", href: "/department" }
+    // ] },
   ]
 
   // 假設 active 狀態由路徑判斷，這裡可根據實際需求調整
