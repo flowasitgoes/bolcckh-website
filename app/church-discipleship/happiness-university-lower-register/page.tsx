@@ -239,18 +239,6 @@ export default function HappinessUniversityLowerRegisterPage() {
                   幸福大學下-線上報名
                 </div>
               </a>
-
-              <a 
-                href="/church-discipleship/happiness-university-lower-wednesday" 
-                className="block w-full text-left text-white rounded-lg px-4 py-2 transition-colors duration-200 hover:bg-white/10 ml-4"
-              >
-                <div className="flex items-center">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-                  </svg>
-                  幸福大學下-週三班完成報名查詢
-                </div>
-              </a>
             </nav>
           </div>
 
@@ -274,14 +262,37 @@ export default function HappinessUniversityLowerRegisterPage() {
                       <iframe 
                         src="https://docs.google.com/forms/d/e/1FAIpQLSciHShLvk45Xq9QnhHTGPDM5Qo_Cl-OsYMidjCL1i2N_cfA2g/viewform?embedded=true" 
                         width="100%" 
-                        height="2557" 
+                        height={2557} 
                         frameBorder="0" 
-                        marginHeight="0" 
-                        marginWidth="0"
+                        marginHeight={0} 
+                        marginWidth={0}
                         className="rounded-lg"
                       >
                         載入中…
                       </iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* 週三班報名名單 */}
+              <div className="mt-8">
+                <h3 className="text-2xl md:text-3xl font-bold text-[#21807a] mb-6">
+                  幸福大學下-週三班完成報名查詢 | 高雄靈糧堂
+                </h3>
+                <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                  <p className="mb-4">
+                    歡迎查詢幸福大學下冊週三班的報名狀態。
+                  </p>
+                  <div className="mt-8">
+                    <h4 className="text-lg font-semibold text-[#21807a] mb-4">週三班報名名單</h4>
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <iframe 
+                        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRlnp-RdOdg2TsG7uiNteBOsfxENKbL9c8NBex8_8qcqERecd8chIf9GS1uL-Ya1GYCpIs2oNK2QPCk/pubhtml?gid=2076974207&single=true&widget=true&headers=false" 
+                        width="100%" 
+                        height={500}
+                        className="rounded-lg"
+                      ></iframe>
                     </div>
                   </div>
                 </div>

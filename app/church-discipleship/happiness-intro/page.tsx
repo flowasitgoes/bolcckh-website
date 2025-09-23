@@ -4,12 +4,35 @@ import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 
 export const metadata: Metadata = {
-  title: '門徒學校上-線上報名 | 高雄靈糧堂',
-  description: '高雄靈糧堂門徒學校上冊線上報名，提供完整的門徒訓練課程。',
-  keywords: '高雄靈糧堂, 門徒學校, 線上報名, 門徒訓練, 信仰成長',
+  title: '幸福門訓介紹 | 高雄靈糧堂',
+  description: '高雄靈糧堂幸福門訓介紹，提供門徒學校、幸福大學等課程，幫助弟兄姊妹在信仰上成長。',
+  keywords: '高雄靈糧堂, 幸福門訓, 門徒學校, 幸福大學, 信仰成長',
+  
+  // Open Graph (社群分享)
+  openGraph: {
+    title: '幸福門訓介紹 | 高雄靈糧堂',
+    description: '高雄靈糧堂幸福門訓介紹，提供門徒學校、幸福大學等課程，幫助弟兄姊妹在信仰上成長。',
+    url: 'https://conflux-tech.com/church-discipleship/happiness-intro',
+    images: [
+      {
+        url: 'https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png',
+        width: 1200,
+        height: 630,
+        alt: '高雄靈糧堂幸福門訓介紹',
+      },
+    ],
+  },
+  
+  // Twitter Card
+  twitter: {
+    card: 'summary_large_image',
+    title: '幸福門訓介紹 | 高雄靈糧堂',
+    description: '高雄靈糧堂幸福門訓介紹，提供門徒學校、幸福大學等課程，幫助弟兄姊妹在信仰上成長。',
+    images: ['https://conflux-tech.com/wp-content/uploads/2025/07/icon_工作區域-1_工作區域-1-2.png'],
+  },
 }
 
-export default function DiscipleshipSchoolUpperRegisterPage() {
+export default function HappinessIntroPage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -19,7 +42,7 @@ export default function DiscipleshipSchoolUpperRegisterPage() {
         <div className="absolute inset-0">
           <Image 
             src="/mission/C1/C1-bn.png" 
-            alt="門訓建造 - 開放書本" 
+            alt="幸福門訓介紹 - 開放書本" 
             fill
             className="object-cover"
             priority
@@ -28,7 +51,7 @@ export default function DiscipleshipSchoolUpperRegisterPage() {
         </div>
         <div className="relative z-10 flex items-center justify-center h-full">
           <h1 className="text-4xl md:text-6xl font-bold text-white text-center">
-            牧養裝備
+            幸福門訓介紹
           </h1>
         </div>
       </section>
@@ -45,8 +68,15 @@ export default function DiscipleshipSchoolUpperRegisterPage() {
             {/* Navigation Menu */}
             <nav className="space-y-2">
               <a 
-                href="#lesson1" 
+                href="/church-discipleship/happiness-intro" 
                 className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 bg-white/20"
+              >
+                幸福門訓介紹
+              </a>
+
+              <a 
+                href="/church-discipleship#lesson1" 
+                className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-white/10"
               >
                 <div className="flex items-center">
                   <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -114,7 +144,7 @@ export default function DiscipleshipSchoolUpperRegisterPage() {
               
               <a 
                 href="/church-discipleship/discipleship-school-upper-register" 
-                className="block w-full text-left text-orange-300 rounded-lg px-4 py-2 transition-colors duration-200 bg-white/20 ml-4"
+                className="block w-full text-left text-orange-300 rounded-lg px-4 py-2 transition-colors duration-200 hover:bg-white/10 ml-4"
               >
                 <div className="flex items-center">
                   <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -144,7 +174,7 @@ export default function DiscipleshipSchoolUpperRegisterPage() {
               
               <a 
                 href="/church-discipleship/happiness-university-upper-register" 
-                className="block w-full text-left text-white rounded-lg px-4 py-2 transition-colors duration-200 hover:bg-white/10 ml-4"
+                className="block w-full text-left text-orange-300 rounded-lg px-4 py-2 transition-colors duration-200 hover:bg-white/10 ml-4"
               >
                 <div className="flex items-center">
                   <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -171,78 +201,20 @@ export default function DiscipleshipSchoolUpperRegisterPage() {
             </nav>
           </div>
 
-          {/* Right Content Area */}
+          {/* Right Content Area - 空白橘色背景 */}
           <div className="lg:col-span-3 bg-[#fe7f4c] p-6 md:p-8">
-            <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
-              {/* Content Section */}
-              <div>
-                <h3 className="text-2xl md:text-3xl font-bold text-[#21807a] mb-6">
-                  門徒學校上-線上報名 | 高雄靈糧堂
-                </h3>
-                <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-          
-                  
-
-
-               
-
-                  {/* Google Form */}
-                  <div className="mt-8">
-                    <h4 className="text-lg font-semibold text-[#21807a] mb-4">線上報名表單</h4>
-                    <div className="bg-gray-50 p-4 rounded-lg">
-                      <iframe 
-                        src="https://docs.google.com/forms/d/e/1FAIpQLSe85Sk9aOP_EQ3OpCDXYzITlwA6lRZGFwS2DdBnO4k8jmiclQ/viewform?embedded=true" 
-                        width="100%" 
-                        height={2463} 
-                        frameBorder="0" 
-                        marginHeight={0} 
-                        marginWidth={0}
-                        className="rounded-lg"
-                      >
-                        載入中…
-                      </iframe>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* 週二班報名名單 */}
-              <div className="mt-8">
-                <h3 className="text-2xl md:text-3xl font-bold text-[#21807a] mb-6">
-                  門徒學校上-週二班完成報名查詢 | 高雄靈糧堂
-                </h3>
-                <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-                  <div className="mt-8">
-                    <h4 className="text-lg font-semibold text-[#21807a] mb-4">週二班報名名單</h4>
-                    <div className="bg-gray-50 p-4 rounded-lg">
-                      <iframe 
-                        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSDs6SeSI87aw0Jxujhq2kNRs8V_UYnre5lIADg49sWadEdVzvxj3D8f64TGEYNnQpWH6tUIcxOPp3B/pubhtml?gid=825945731&single=true&widget=true&headers=false" 
-                        width="100%" 
-                        height={500}
-                        className="rounded-lg"
-                      ></iframe>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* 週四班報名名單 */}
-              <div className="mt-8">
-                <h3 className="text-2xl md:text-3xl font-bold text-[#21807a] mb-6">
-                  門徒學校上-週四班完成報名查詢 | 高雄靈糧堂
-                </h3>
-                <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-                  <div className="mt-8">
-                    <h4 className="text-lg font-semibold text-[#21807a] mb-4">週四班報名名單</h4>
-                    <div className="bg-gray-50 p-4 rounded-lg">
-                      <iframe 
-                        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSDs6SeSI87aw0Jxujhq2kNRs8V_UYnre5lIADg49sWadEdVzvxj3D8f64TGEYNnQpWH6tUIcxOPp3B/pubhtml?gid=476565207&single=true&widget=true&headers=false" 
-                        width="100%" 
-                        height={500}
-                        className="rounded-lg"
-                      ></iframe>
-                    </div>
-                  </div>
+            <div className="bg-transparent min-h-[600px]">
+              {/* 幸福門訓圖片 */}
+              <div className="flex items-center justify-center h-full min-h-[500px]">
+                <div className="relative w-3/5 md:w-1/2">
+                  <Image 
+                    src="/church/happiness-disciple.png" 
+                    alt="幸福門訓介紹" 
+                    width={800}
+                    height={600}
+                    className="w-full h-auto"
+                    priority
+                  />
                 </div>
               </div>
             </div>

@@ -22,7 +22,7 @@ export function Header() {
       { zh: "牧區族群", href: "/church-department" },
       { zh: "事工介紹與呼召", href: "/ministry-calling" },
       { zh: "裝備內容", href: "#" },
-      // { zh: "課程報名", href: "/church-discipleship" },
+      { zh: "課程報名", href: "/church-discipleship" },
     ] },
     { zh: "宣教使命", en: "Mission", href: "#mission", children: [
       { zh: "宣教使命", href: "/mission" },

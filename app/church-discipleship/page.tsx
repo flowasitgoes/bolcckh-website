@@ -68,8 +68,15 @@ export default function ChurchDiscipleshipPage() {
             {/* Navigation Menu */}
             <nav className="space-y-2">
               <a 
+                href="/church-discipleship/happiness-intro" 
+                className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-white/10"
+              >
+                幸福門訓介紹
+              </a>
+
+              <a 
                 href="#lesson1" 
-                className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 bg-white/20"
+                className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-white/10"
               >
                 <div className="flex items-center">
                   <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -148,30 +155,6 @@ export default function ChurchDiscipleshipPage() {
               </a>
 
               <a 
-                href="/church-discipleship/discipleship-school-upper-tuesday" 
-                className="block w-full text-left text-white rounded-lg px-4 py-2 transition-colors duration-200 hover:bg-white/10 ml-4"
-              >
-                <div className="flex items-center">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-                  </svg>
-                  門徒學校上—週二班完成報名查詢
-                </div>
-              </a>
-
-              <a 
-                href="/church-discipleship/discipleship-school-upper-thursday" 
-                className="block w-full text-left text-white rounded-lg px-4 py-2 transition-colors duration-200 hover:bg-white/10 ml-4"
-              >
-                <div className="flex items-center">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-                  </svg>
-                  門徒學校上—週四班完成報名查詢
-                </div>
-              </a>
-
-              <a 
                 href="/church-discipleship/discipleship-school-lower-register" 
                 className="block w-full text-left text-white rounded-lg px-4 py-2 transition-colors duration-200 hover:bg-white/10 ml-4"
               >
@@ -180,30 +163,6 @@ export default function ChurchDiscipleshipPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                   </svg>
                   門徒學校下-線上報名
-                </div>
-              </a>
-
-              <a 
-                href="/church-discipleship/discipleship-school-lower-tuesday" 
-                className="block w-full text-left text-white rounded-lg px-4 py-2 transition-colors duration-200 hover:bg-white/10 ml-4"
-              >
-                <div className="flex items-center">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-                  </svg>
-                  門徒學校下—週二班完成報名查詢
-                </div>
-              </a>
-
-              <a 
-                href="/church-discipleship/discipleship-school-lower-thursday" 
-                className="block w-full text-left text-white rounded-lg px-4 py-2 transition-colors duration-200 hover:bg-white/10 ml-4"
-              >
-                <div className="flex items-center">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-                  </svg>
-                  門徒學校下—週四班完成報名查詢
                 </div>
               </a>
 
@@ -225,29 +184,7 @@ export default function ChurchDiscipleshipPage() {
                 </div>
               </a>
 
-              <a 
-                href="/church-discipleship/happiness-university-upper-wednesday" 
-                className="block w-full text-left text-white rounded-lg px-4 py-2 transition-colors duration-200 hover:bg-white/10 ml-4"
-              >
-                <div className="flex items-center">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-                  </svg>
-                  幸福大學上-週三班完成報名查詢
-                </div>
-              </a>
 
-              <a 
-                href="/church-discipleship/happiness-university-upper-thursday" 
-                className="block w-full text-left text-white rounded-lg px-4 py-2 transition-colors duration-200 hover:bg-white/10 ml-4"
-              >
-                <div className="flex items-center">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-                  </svg>
-                  幸福大學上-週四班完成報名查詢
-                </div>
-              </a>
 
               <a 
                 href="/church-discipleship/happiness-university-lower-register" 
@@ -261,57 +198,40 @@ export default function ChurchDiscipleshipPage() {
                 </div>
               </a>
 
-              <a 
-                href="/church-discipleship/happiness-university-lower-wednesday" 
-                className="block w-full text-left text-white rounded-lg px-4 py-2 transition-colors duration-200 hover:bg-white/10 ml-4"
-              >
-                <div className="flex items-center">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-                  </svg>
-                  幸福大學下-週三班完成報名查詢
-                </div>
-              </a>
             </nav>
           </div>
 
           {/* Right Content Area */}
           <div className="lg:col-span-3 bg-[#fe7f4c] p-6 md:p-8">
             <div className="bg-white rounded-lg p-6 md:p-8 shadow-lg">
-              {/* YouTube Video Player */}
-              <div className="mb-8">
-                <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-                  <iframe
-                    className="absolute top-0 left-0 w-full h-full rounded-lg"
-                    src="https://www.youtube.com/embed/clXw_TvwGpE"
-                    title="永恆唯一的盼望 - The Hope of Our Lives"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              </div>
-
-              {/* Content Section */}
+              {/* 幸福門訓介紹 Section - 預設顯示 */}
               <div>
                 <h3 className="text-2xl md:text-3xl font-bold text-[#21807a] mb-6">
-                  慕道班第一課「耶穌是誰」| 高雄靈糧堂
+                  幸福門訓介紹 | 高雄靈糧堂
                 </h3>
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                   <p className="mb-4">
-                    全家歸主是神的心意，也是我們每個基督徒的責任。我們要找到方法幫助家人相信耶穌，讓他們也能得著永生的盼望。
+                    幸福門訓是高雄靈糧堂為弟兄姊妹精心設計的信仰成長課程，旨在幫助每位信徒在基督裡扎根成長，建立穩固的屬靈根基。
                   </p>
                   <p className="mb-4">
-                    為什麼全家都要歸主？因為：
+                    我們的門訓課程包含：
+                  </p>
+                  <ul className="list-disc pl-6 space-y-2 mb-6">
+                    <li><strong>慕道班</strong> - 為初信者提供基礎信仰課程</li>
+                    <li><strong>門徒學校</strong> - 深化信仰，學習做主的門徒</li>
+                    <li><strong>幸福大學</strong> - 全方位生命建造，活出豐盛人生</li>
+                  </ul>
+                  <p className="mb-4">
+                    透過系統性的課程安排，我們希望幫助每位弟兄姊妹：
                   </p>
                   <ul className="list-disc pl-6 space-y-2">
-                    <li>這是神對我們家庭的祝福</li>
-                    <li>讓我們在信仰上同心同行</li>
-                    <li>為下一代建立屬靈的根基</li>
-                    <li>在永恆中一起享受神的同在</li>
+                    <li>認識真理，建立正確的信仰觀</li>
+                    <li>在愛中成長，活出基督的樣式</li>
+                    <li>建立屬靈的伙伴關係</li>
+                    <li>成為能夠祝福他人的器皿</li>
                   </ul>
-                  <p className="mt-6">
-                    讓我們一起學習如何帶領家人認識耶穌，讓整個家庭都能經歷神的愛和恩典。
+                  <p className="mt-6 text-lg font-medium text-[#21807a]">
+                    歡迎您加入我們的門訓課程，一起在信仰的道路上成長！
                   </p>
                 </div>
               </div>
@@ -323,3 +243,4 @@ export default function ChurchDiscipleshipPage() {
     </div>
   )
 }
+
