@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
+import { DiscipleshipSidebar } from '@/components/discipleship-sidebar'
 
 export const metadata: Metadata = {
   title: '門徒學校上-線上報名 | 高雄靈糧堂',
@@ -37,139 +38,7 @@ export default function DiscipleshipSchoolUpperRegisterPage() {
       <section className="main-content-section">
         <div className="grid grid-cols-1 lg:grid-cols-4">
           {/* Left Sidebar - Navigation */}
-          <div className="lg:col-span-1 bg-[#21807a] p-6 md:p-8">
-            <h2 className="text-xl md:text-2xl font-bold text-white mb-6 text-center">
-              | 門訓建造-幸福門訓
-            </h2>
-            
-            {/* Navigation Menu */}
-            <nav className="space-y-2">
-              <a 
-                href="#lesson1" 
-                className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 bg-white/20"
-              >
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                  </svg>
-                  慕道班第一課「耶穌是誰」
-                </div>
-              </a>
-
-              <a 
-                href="/church-discipleship/lesson2" 
-                className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-white/10"
-              >
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                  </svg>
-                  慕道班第二課「新生傳奇-重生」
-                </div>
-              </a>
-
-              <a 
-                href="/church-discipleship/lesson3" 
-                className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-white/10"
-              >
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                  </svg>
-                  慕道班第三課「天下第一書-聖經」
-                </div>
-              </a>
-
-              <a 
-                href="/church-discipleship/lesson4" 
-                className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-white/10"
-              >
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                  </svg>
-                  慕道班第四課「做個自由人」
-                </div>
-              </a>
-
-              <a 
-                href="/church-discipleship/lesson5" 
-                className="block w-full text-left text-white rounded-lg px-4 py-3 transition-colors duration-200 hover:bg-white/10"
-              >
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                  </svg>
-                  慕道班第五課「蒙福的記號」
-                </div>
-              </a>
-
-              <div className="border-t border-white/20 my-4"></div>
-
-              <div className="border-l-4 border-orange-300 pl-2 mb-2">
-                <div className="text-white font-semibold text-sm mb-2">
-                  牧養裝備-門徒學校
-                </div>
-              </div>
-              
-              <a 
-                href="/church-discipleship/discipleship-school-upper-register" 
-                className="block w-full text-left text-orange-300 rounded-lg px-4 py-2 transition-colors duration-200 bg-white/20 ml-4"
-              >
-                <div className="flex items-center">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                  </svg>
-                  門徒學校上-線上報名
-                </div>
-              </a>
-
-              <a 
-                href="/church-discipleship/discipleship-school-lower-register" 
-                className="block w-full text-left text-white rounded-lg px-4 py-2 transition-colors duration-200 hover:bg-white/10 ml-4"
-              >
-                <div className="flex items-center">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                  </svg>
-                  門徒學校下-線上報名
-                </div>
-              </a>
-
-              <div className="border-l-4 border-orange-300 pl-2 mb-2">
-                <div className="text-white font-semibold text-sm mb-2">
-                  牧養裝備-幸福大學
-                </div>
-              </div>
-              
-              <a 
-                href="/church-discipleship/happiness-university-upper-register" 
-                className="block w-full text-left text-white rounded-lg px-4 py-2 transition-colors duration-200 hover:bg-white/10 ml-4"
-              >
-                <div className="flex items-center">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                  </svg>
-                  幸福大學上-線上報名
-                </div>
-              </a>
-
-
-
-              <a 
-                href="/church-discipleship/happiness-university-lower-register" 
-                className="block w-full text-left text-white rounded-lg px-4 py-2 transition-colors duration-200 hover:bg-white/10 ml-4"
-              >
-                <div className="flex items-center">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                  </svg>
-                  幸福大學下-線上報名
-                </div>
-              </a>
-
-            </nav>
-          </div>
+          <DiscipleshipSidebar activeLink="/church-discipleship/discipleship-school-upper-register" />
 
           {/* Right Content Area */}
           <div className="lg:col-span-3 bg-[#fe7f4c] p-6 md:p-8">
@@ -245,6 +114,50 @@ export default function DiscipleshipSchoolUpperRegisterPage() {
                   </div>
                 </div>
               </div>
+
+              {/* 課程說明區域 */}
+              <div className="mt-8">
+                <div className="bg-[#21807a] rounded-lg p-6 md:p-8 text-white">
+                  <div className="space-y-4">
+                    <div className="flex flex-col md:flex-row">
+                      <span className="font-semibold text-white w-full md:w-32 flex-shrink-0">上課教材 :</span>
+                      <span className="text-white">門徒學校上</span>
+                    </div>
+                    
+                    <div className="flex flex-col md:flex-row">
+                      <span className="font-semibold text-white w-full md:w-32 flex-shrink-0">必讀書籍 :</span>
+                      <div className="text-white space-y-1">
+                        <div>幸福小組實作秘笈 / 發現你的恩賜</div>
+                        <div>祭祖的真義 / 征服人生 / 真理不怕挑戰</div>
+                      </div>
+                    </div>
+                    
+                    <div className="flex flex-col md:flex-row">
+                      <span className="font-semibold text-white w-full md:w-32 flex-shrink-0">注意事項 :</span>
+                      <span className="text-white">課程時間為12週。開課前請預先抄寫課本經文之填空。</span>
+                    </div>
+                    
+                    <div className="flex flex-col md:flex-row">
+                      <span className="font-semibold text-white w-full md:w-32 flex-shrink-0">報名日期 :</span>
+                      <div className="text-white space-y-1">
+                        <div>即日起~至額滿為止。(一班未滿8人，不予開課) 錄取名單於網頁公佈，每日更新一次。</div>
+                        <div>• 如不知報名什麼階段的門訓課程，請來電分機149安瑜姊妹查詢。</div>
+                      </div>
+                    </div>
+                    
+                    <div className="flex flex-col md:flex-row">
+                      <span className="font-semibold text-white w-full md:w-32 flex-shrink-0">申請資格 :</span>
+                      <div className="text-white space-y-1">
+                        <div>限本堂會友 / 門徒學校上或養育班已結業 / 經歷神營會已結業</div>
+                        <div>• 尚未上過經歷神營會者，需跟門徒學校(下) 一起報名</div>
+                        <div>• 需已經受洗</div>
+                        <div>• 須穩定參加小組</div>
+                        <div>• 須擔任幸福小組同工</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -253,3 +166,4 @@ export default function DiscipleshipSchoolUpperRegisterPage() {
     </div>
   )
 }
+
