@@ -16,7 +16,7 @@ export default function AboutFilesPage() {
     { id: 'files', label: '檔案專區' },
     { id: 'reports', label: '各區週報' },
     { id: 'groups', label: '各區小組資料' },
-    { id: 'baptism', label: '洗禮花絮下載' }
+    { id: 'baptism', label: '活動花絮下載' }
   ]
 
   // 檔案專區資料
@@ -79,7 +79,7 @@ export default function AboutFilesPage() {
     }
   ]
 
-  // 洗禮花絮下載
+  // 活動花絮下載
   const baptismImages = [
     'IMG_8010-1024x683.jpg',
     'IMG_7902-1024x683.jpg',

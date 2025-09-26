@@ -84,6 +84,22 @@ export default function MinistryCallingPage() {
           </div>
         </section>
 
+        {/* Mission Video Section */}
+        <section className="mission-video py-12 md:py-16 bg-gray-50">
+          <div className="max-w-4xl mx-auto px-4">
+            <div className="relative w-full h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden shadow-lg">
+              <iframe 
+                src="https://www.youtube.com/embed/yntjTYwPCZI" 
+                title="生根建造 2025 BOLCCKH" 
+                className="w-full h-full" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </section>
+
         {/* Ministry Categories Section */}
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4">

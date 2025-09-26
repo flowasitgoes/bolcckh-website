@@ -12,7 +12,7 @@ export function Footer() {
             <div className="flex items-center mb-6">
               {/* <img src="/logo.png" alt="BOLCCKH" className="h-12 mr-4" /> */}
               <div>
-                <img src="/footer-logo.png" alt="BOLCCKH" />
+                <img src="/footer-logo.png" alt="BOLCCKH" className={footerStyles.footerLogo} />
               </div>
             </div>
             {/* Email 訂閱欄 */}

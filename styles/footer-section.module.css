@@ -74,5 +74,11 @@
     font-size: 12px;
   }
 
+  /* Footer logo 手機版縮小 */
+  .footerLogo {
+    max-width: 200px;
+    height: auto;
+  }
+
 } 
 

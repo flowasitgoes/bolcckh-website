@@ -48,15 +48,15 @@ export function HeroSection() {
           />
         ))}
       </div>
-
-      {/* Overlay Image */}
-      <div className="relative z-[2] container mx-auto px-4 h-full flex items-center justify-center">
+      
+      {/* 浮水印隱藏 Overlay Image */}
+      {/* <div className="relative z-[2] container mx-auto px-4 h-full flex items-center justify-center">
         <img 
           src="/home/Home-02.png" 
           alt="Home overlay" 
           className="max-w-full max-h-full object-contain w-80 lg:w-[480px] h-auto"
         />
-      </div>
+      </div> */}
     </section>
   )
 }

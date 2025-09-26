@@ -29,9 +29,7 @@ export function Header() {
       { zh: "生命見證", href: "/mission-testimony" },
       { zh: "南島趴趴走", href: "/mission-austronesian" },
     ] },
-    { zh: "教會消息", en: "News", href: "/news", children: [
-      { zh: "教會消息", href: "/news" }
-    ] },
+    { zh: "教會消息", en: "News", href: "/news" },
     { zh: "支持奉獻", en: "Offering", href: "#offering", children: [
       { zh: "支持奉獻", href: "/offering" },
       { zh: "線上奉獻", href: "/online-offering" },
@@ -59,14 +57,14 @@ export function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center h-full">
             {navItems.map((item, idx) => (
-              <div
-                key={item.en}
-                className={`flex flex-col items-center px-6 h-full justify-center border-r border-gray-200 last:border-r-0 group relative ${idx === activeIndex ? 'text-orange-theme' : 'text-[#444]'}`}
-              >
-                <span className={`text-base font-bold mb-1 group-hover:text-orange-theme ${idx === activeIndex ? 'text-orange-theme' : ''}`}>{item.zh}</span>
-                <span className={`text-sm text-orange-theme font-medium group-hover:underline group-hover:text-orange-600`}>{item.en}</span>
-                {/* 下拉選單：僅關於教會有 */}
-                {item.children && (
+              item.children ? (
+                <div
+                  key={item.en}
+                  className={`flex flex-col items-center px-6 h-full justify-center border-r border-gray-200 last:border-r-0 group relative ${idx === activeIndex ? 'text-orange-theme' : 'text-[#444]'}`}
+                >
+                  <span className={`text-base font-bold mb-1 group-hover:text-orange-theme ${idx === activeIndex ? 'text-orange-theme' : ''}`}>{item.zh}</span>
+                  <span className={`text-sm text-orange-theme font-medium group-hover:underline group-hover:text-orange-600`}>{item.en}</span>
+                  {/* 下拉選單：僅關於教會有 */}
                   <div className="absolute left-1/2 -translate-x-1/2 top-full mt-0 w-56 bg-white/85 rounded-xl shadow-lg py-4 px-6 z-50 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-150">
                     <ul className="space-y-2">
                       {item.children.map((child) => (
@@ -78,8 +76,17 @@ export function Header() {
                       ))}
                     </ul>
                   </div>
-                )}
-              </div>
+                </div>
+              ) : (
+                <a
+                  key={item.en}
+                  href={item.href}
+                  className={`flex flex-col items-center px-6 h-full justify-center border-r border-gray-200 last:border-r-0 group relative ${idx === activeIndex ? 'text-orange-theme' : 'text-[#444]'}`}
+                >
+                  <span className={`text-base font-bold mb-1 group-hover:text-orange-theme ${idx === activeIndex ? 'text-orange-theme' : ''}`}>{item.zh}</span>
+                  <span className={`text-sm text-orange-theme font-medium group-hover:underline group-hover:text-orange-600`}>{item.en}</span>
+                </a>
+              )
             ))}
             {/* User icon */}
             <div className="member-center flex items-center pl-6">
